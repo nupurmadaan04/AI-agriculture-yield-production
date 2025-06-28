@@ -30,12 +30,6 @@ This project leverages machine learning techniques to predict **Rice Yield (Kg/h
 
 ---
 
-## 📏 Folder Structure
-
-<pre> \`\`\` AI-agriculture-yield-prediction/ ├── Datasets/ │ ├── Crops_data.csv │ ├── rice_data.csv │ └── rice_data_outlier_removed.csv ├── Models/ │ ├── rf_model.pkl │ ├── scaler.pkl │ └── test_predictions.csv ├── Plots/ │ ├── actual_vs_predicted.png │ └── residuals_distribution.png ├── Notebooks/ │ ├── 01_Preprocessing.ipynb │ ├── 02_EDA.ipynb │ ├── 03_Modelling.ipynb │ └── 04_Evaluation_Deployment.ipynb ├── README.md ├── LICENSE ├── requirements.txt └── .gitignore \`\`\` </pre>
-
----
-
 ## 📊 Model & Accuracy
 
 - **Model Used**: Random Forest Regressor
@@ -79,5 +73,6 @@ This project leverages machine learning techniques to predict **Rice Yield (Kg/h
 
 ## 📅 License
 
-MIT License
+This project is licensed under the [MIT License](LICENSE).
+
 
