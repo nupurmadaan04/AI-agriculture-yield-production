@@ -1,0 +1,19 @@
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore Python cache
+__pycache__/
+*.py[cod]
+
+# Ignore Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore model pickle files (optional)
+*.pkl
+
+# Ignore environment files
+.env
+
+# Ignore VSCode/IDE settings (optional)
+.vscode/

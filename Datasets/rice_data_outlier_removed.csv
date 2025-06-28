@@ -1,0 +1,2470 @@
+Unnamed: 0,Year,State Name,Dist Name,RICE AREA (1000 ha),RICE PRODUCTION (1000 tons),RICE YIELD (Kg per ha),State_en
+0,2010,Chhattisgarh,Durg,777.92,1319.18,1695.77,3
+1,2011,Chhattisgarh,Durg,806.55,1416.48,1756.23,3
+2,2012,Chhattisgarh,Durg,807.07,1534.22,1900.97,3
+3,2013,Chhattisgarh,Durg,819.44,1296.24,1581.86,3
+4,2014,Chhattisgarh,Durg,834.87,1444.24,1729.89,3
+5,2015,Chhattisgarh,Durg,817.68,880.6,1076.95,3
+6,2016,Chhattisgarh,Durg,858.91,1791.66,2085.96,3
+7,2017,Chhattisgarh,Durg,841.13,983.21,1168.92,3
+8,2010,Chhattisgarh,Bastar,621.89,1184.98,1905.45,3
+9,2011,Chhattisgarh,Bastar,627.73,772.88,1231.23,3
+10,2012,Chhattisgarh,Bastar,637.8,1341.33,2103.06,3
+11,2013,Chhattisgarh,Bastar,642.79,1265.91,1969.4,3
+12,2014,Chhattisgarh,Bastar,646.7,1377.04,2129.33,3
+13,2015,Chhattisgarh,Bastar,644.56,664.46,1030.87,3
+14,2016,Chhattisgarh,Bastar,656.26,1294.97,1973.24,3
+15,2017,Chhattisgarh,Bastar,660.36,801.82,1214.23,3
+16,2010,Chhattisgarh,Raipur,915.4,1521.13,1661.71,3
+17,2011,Chhattisgarh,Raipur,958.01,1421.37,1483.67,3
+18,2012,Chhattisgarh,Raipur,993.68,1974.69,1987.25,3
+19,2013,Chhattisgarh,Raipur,1009.22,1749.21,1733.23,3
+20,2014,Chhattisgarh,Raipur,1034.99,2127.73,2055.8,3
+21,2015,Chhattisgarh,Raipur,986.91,1412.83,1431.57,3
+22,2016,Chhattisgarh,Raipur,1009.29,2432.48,2410.09,3
+23,2017,Chhattisgarh,Raipur,959.01,1520.95,1585.96,3
+24,2010,Chhattisgarh,Bilaspur,705.67,1333.61,1889.83,3
+25,2011,Chhattisgarh,Bilaspur,749.08,1557.35,2079.01,3
+26,2012,Chhattisgarh,Bilaspur,747.27,1746.82,2337.61,3
+27,2013,Chhattisgarh,Bilaspur,726.15,1577.16,2171.95,3
+28,2014,Chhattisgarh,Bilaspur,728.84,1683.92,2310.43,3
+29,2015,Chhattisgarh,Bilaspur,731.83,1340.65,1831.92,3
+30,2016,Chhattisgarh,Bilaspur,727.5,1858.19,2554.21,3
+31,2017,Chhattisgarh,Bilaspur,727.94,1295.71,1779.97,3
+32,2010,Chhattisgarh,Raigarh,435.05,598.26,1375.15,3
+33,2011,Chhattisgarh,Raigarh,421.32,602.66,1430.41,3
+34,2012,Chhattisgarh,Raigarh,422.65,641.28,1517.28,3
+35,2013,Chhattisgarh,Raigarh,418.44,580.76,1387.92,3
+36,2014,Chhattisgarh,Raigarh,408.9,657.79,1608.68,3
+37,2015,Chhattisgarh,Raigarh,409.45,414.89,1013.29,3
+38,2016,Chhattisgarh,Raigarh,424.24,763.72,1800.23,3
+39,2017,Chhattisgarh,Raigarh,411.12,623.29,1516.07,3
+40,2010,Chhattisgarh,Surguja,371.28,399.46,1075.9,3
+41,2011,Chhattisgarh,Surguja,377.14,530.08,1405.53,3
+42,2012,Chhattisgarh,Surguja,373.71,610.07,1632.47,3
+43,2013,Chhattisgarh,Surguja,371.71,633.47,1704.2,3
+44,2014,Chhattisgarh,Surguja,381.43,687.04,1801.22,3
+45,2015,Chhattisgarh,Surguja,369.32,440.9,1193.82,3
+46,2016,Chhattisgarh,Surguja,376.38,652.25,1732.96,3
+47,2017,Chhattisgarh,Surguja,377.07,524.07,1389.84,3
+48,2010,Madhya Pradesh,Jabalpur,151.1,155.0,1025.81,10
+49,2011,Madhya Pradesh,Jabalpur,157.6,204.5,1297.59,10
+50,2012,Madhya Pradesh,Jabalpur,182.13,292.91,1608.25,10
+51,2013,Madhya Pradesh,Jabalpur,188.69,364.36,1931.0,10
+52,2014,Madhya Pradesh,Jabalpur,179.0,228.0,1273.74,10
+53,2015,Madhya Pradesh,Jabalpur,169.0,189.33,1120.3,10
+54,2016,Madhya Pradesh,Jabalpur,225.0,652.66,2900.71,10
+55,2017,Madhya Pradesh,Jabalpur,210.2,526.17,2503.19,10
+56,2010,Madhya Pradesh,Balaghat,247.9,353.0,1423.96,10
+57,2011,Madhya Pradesh,Balaghat,246.7,336.2,1362.79,10
+58,2012,Madhya Pradesh,Balaghat,260.77,486.46,1865.48,10
+59,2013,Madhya Pradesh,Balaghat,258.65,434.08,1678.25,10
+60,2014,Madhya Pradesh,Balaghat,245.0,449.33,1834.0,10
+61,2015,Madhya Pradesh,Balaghat,266.0,445.33,1674.17,10
+62,2016,Madhya Pradesh,Balaghat,272.0,675.33,2482.83,10
+63,2017,Madhya Pradesh,Balaghat,220.21,395.48,1795.92,10
+64,2010,Madhya Pradesh,Chhindwara,18.3,30.2,1650.27,10
+65,2011,Madhya Pradesh,Chhindwara,20.2,43.0,2128.71,10
+66,2012,Madhya Pradesh,Chhindwara,13.94,38.37,2752.51,10
+67,2013,Madhya Pradesh,Chhindwara,13.81,28.05,2031.14,10
+68,2014,Madhya Pradesh,Chhindwara,20.0,48.0,2400.0,10
+69,2015,Madhya Pradesh,Chhindwara,31.0,54.0,1741.94,10
+70,2016,Madhya Pradesh,Chhindwara,35.0,53.33,1523.71,10
+71,2017,Madhya Pradesh,Chhindwara,34.01,42.06,1236.7,10
+72,2010,Madhya Pradesh,Narsinghpur,12.5,19.5,1560.0,10
+73,2011,Madhya Pradesh,Narsinghpur,12.0,21.5,1791.67,10
+74,2012,Madhya Pradesh,Narsinghpur,12.91,17.21,1333.08,10
+75,2013,Madhya Pradesh,Narsinghpur,18.36,24.99,1361.11,10
+76,2014,Madhya Pradesh,Narsinghpur,18.0,25.33,1407.22,10
+77,2015,Madhya Pradesh,Narsinghpur,34.0,89.33,2627.35,10
+78,2016,Madhya Pradesh,Narsinghpur,55.0,154.66,2812.0,10
+79,2017,Madhya Pradesh,Narsinghpur,39.1,181.3,4636.83,10
+80,2010,Madhya Pradesh,Seoni / Shivani,116.3,153.9,1323.3,10
+81,2011,Madhya Pradesh,Seoni / Shivani,121.2,176.4,1455.45,10
+82,2012,Madhya Pradesh,Seoni / Shivani,136.55,281.01,2057.93,10
+83,2013,Madhya Pradesh,Seoni / Shivani,150.24,440.99,2935.24,10
+84,2014,Madhya Pradesh,Seoni / Shivani,139.0,199.33,1434.03,10
+85,2015,Madhya Pradesh,Seoni / Shivani,169.0,238.67,1412.25,10
+86,2016,Madhya Pradesh,Seoni / Shivani,182.0,450.0,2472.53,10
+87,2017,Madhya Pradesh,Seoni / Shivani,133.13,319.98,2403.52,10
+88,2010,Madhya Pradesh,Mandla,191.1,157.5,824.18,10
+89,2011,Madhya Pradesh,Mandla,198.7,201.8,1015.6,10
+90,2012,Madhya Pradesh,Mandla,210.44,212.69,1010.69,10
+91,2013,Madhya Pradesh,Mandla,212.68,242.15,1138.56,10
+92,2014,Madhya Pradesh,Mandla,209.0,274.0,1311.0,10
+93,2015,Madhya Pradesh,Mandla,215.0,365.33,1699.21,10
+94,2016,Madhya Pradesh,Mandla,227.0,440.66,1941.23,10
+95,2017,Madhya Pradesh,Mandla,215.1,689.45,3205.25,10
+96,2010,Madhya Pradesh,Sagar,6.0,4.5,750.0,10
+97,2011,Madhya Pradesh,Sagar,3.4,2.7,794.12,10
+98,2012,Madhya Pradesh,Sagar,5.26,3.33,633.08,10
+99,2013,Madhya Pradesh,Sagar,4.78,2.09,437.24,10
+100,2014,Madhya Pradesh,Sagar,5.0,5.33,1066.0,10
+101,2015,Madhya Pradesh,Sagar,7.0,2.0,285.71,10
+102,2016,Madhya Pradesh,Sagar,6.0,6.0,1000.0,10
+103,2017,Madhya Pradesh,Sagar,5.06,5.69,1124.51,10
+104,2010,Madhya Pradesh,Damoh,50.2,51.9,1033.86,10
+105,2011,Madhya Pradesh,Damoh,55.8,59.5,1066.31,10
+106,2012,Madhya Pradesh,Damoh,56.3,55.93,993.43,10
+107,2013,Madhya Pradesh,Damoh,55.63,62.31,1120.08,10
+108,2014,Madhya Pradesh,Damoh,66.0,70.67,1070.76,10
+109,2015,Madhya Pradesh,Damoh,73.0,82.67,1132.47,10
+110,2016,Madhya Pradesh,Damoh,80.0,150.0,1875.0,10
+111,2017,Madhya Pradesh,Damoh,75.73,126.22,1666.71,10
+112,2010,Madhya Pradesh,Tikamgarh,12.0,5.4,450.0,10
+113,2011,Madhya Pradesh,Tikamgarh,11.7,8.5,726.5,10
+114,2012,Madhya Pradesh,Tikamgarh,11.77,5.6,475.79,10
+115,2013,Madhya Pradesh,Tikamgarh,11.41,4.01,351.45,10
+116,2014,Madhya Pradesh,Tikamgarh,13.0,5.33,410.0,10
+117,2015,Madhya Pradesh,Tikamgarh,6.0,0.67,111.67,10
+118,2016,Madhya Pradesh,Tikamgarh,6.0,6.0,1000.0,10
+119,2017,Madhya Pradesh,Tikamgarh,4.56,1.64,359.65,10
+120,2010,Madhya Pradesh,Chhatarpur,8.9,5.5,617.98,10
+121,2011,Madhya Pradesh,Chhatarpur,9.1,7.9,868.13,10
+122,2012,Madhya Pradesh,Chhatarpur,5.79,2.17,374.78,10
+123,2013,Madhya Pradesh,Chhatarpur,5.37,4.75,884.54,10
+124,2014,Madhya Pradesh,Chhatarpur,10.0,8.67,867.0,10
+125,2015,Madhya Pradesh,Chhatarpur,8.0,2.67,333.75,10
+126,2016,Madhya Pradesh,Chhatarpur,8.0,8.66,1082.5,10
+127,2017,Madhya Pradesh,Chhatarpur,6.33,2.98,470.77,10
+128,2010,Madhya Pradesh,Panna,53.7,51.6,960.89,10
+129,2011,Madhya Pradesh,Panna,61.3,61.0,995.11,10
+130,2012,Madhya Pradesh,Panna,63.64,64.91,1019.96,10
+131,2013,Madhya Pradesh,Panna,80.65,91.51,1134.66,10
+132,2014,Madhya Pradesh,Panna,56.0,76.67,1369.11,10
+133,2015,Madhya Pradesh,Panna,55.0,17.33,315.09,10
+134,2016,Madhya Pradesh,Panna,69.0,179.33,2598.99,10
+135,2017,Madhya Pradesh,Panna,58.4,140.2,2400.68,10
+136,2010,Madhya Pradesh,Rewa,102.1,67.5,661.12,10
+137,2011,Madhya Pradesh,Rewa,120.4,141.8,1177.74,10
+138,2012,Madhya Pradesh,Rewa,123.51,199.65,1616.47,10
+139,2013,Madhya Pradesh,Rewa,119.62,214.11,1789.92,10
+140,2014,Madhya Pradesh,Rewa,136.0,246.0,1808.82,10
+141,2015,Madhya Pradesh,Rewa,121.0,114.67,947.69,10
+142,2016,Madhya Pradesh,Rewa,126.0,352.0,2793.65,10
+144,2010,Madhya Pradesh,Sidhi,102.5,91.3,890.73,10
+145,2011,Madhya Pradesh,Sidhi,87.8,84.5,962.41,10
+146,2012,Madhya Pradesh,Sidhi,115.75,238.24,2058.23,10
+147,2013,Madhya Pradesh,Sidhi,116.25,172.7,1485.59,10
+148,2014,Madhya Pradesh,Sidhi,100.0,126.0,1260.0,10
+149,2015,Madhya Pradesh,Sidhi,118.0,137.33,1163.81,10
+150,2016,Madhya Pradesh,Sidhi,118.0,348.0,2949.15,10
+151,2017,Madhya Pradesh,Sidhi,113.95,233.5,2049.14,10
+152,2010,Madhya Pradesh,Satna,71.7,74.3,1036.26,10
+153,2011,Madhya Pradesh,Satna,82.4,135.9,1649.27,10
+154,2012,Madhya Pradesh,Satna,85.38,197.67,2315.18,10
+155,2013,Madhya Pradesh,Satna,82.07,188.56,2297.55,10
+156,2014,Madhya Pradesh,Satna,104.0,201.33,1935.87,10
+157,2015,Madhya Pradesh,Satna,104.0,238.0,2288.46,10
+158,2016,Madhya Pradesh,Satna,120.0,393.33,3277.75,10
+159,2017,Madhya Pradesh,Satna,132.0,324.8,2460.61,10
+160,2010,Madhya Pradesh,Shahdol,236.6,227.1,959.85,10
+161,2011,Madhya Pradesh,Shahdol,258.6,353.7,1367.75,10
+162,2012,Madhya Pradesh,Shahdol,257.73,383.9,1489.54,10
+163,2013,Madhya Pradesh,Shahdol,257.18,484.88,1885.37,10
+164,2014,Madhya Pradesh,Shahdol,269.0,510.67,1898.4,10
+165,2015,Madhya Pradesh,Shahdol,229.0,378.0,1650.66,10
+166,2016,Madhya Pradesh,Shahdol,276.0,583.32,2113.48,10
+167,2017,Madhya Pradesh,Shahdol,240.33,389.9,1622.35,10
+168,2010,Madhya Pradesh,Gwalior,24.5,64.0,2612.24,10
+169,2011,Madhya Pradesh,Gwalior,34.7,111.2,3204.61,10
+170,2012,Madhya Pradesh,Gwalior,49.16,89.43,1819.16,10
+171,2013,Madhya Pradesh,Gwalior,57.51,135.09,2348.98,10
+172,2014,Madhya Pradesh,Gwalior,49.0,111.33,2272.04,10
+173,2015,Madhya Pradesh,Gwalior,53.0,150.0,2830.19,10
+174,2016,Madhya Pradesh,Gwalior,58.0,95.33,1643.62,10
+175,2017,Madhya Pradesh,Gwalior,9.11,26.29,2885.84,10
+176,2010,Madhya Pradesh,Shivpuri,8.3,13.2,1590.36,10
+177,2011,Madhya Pradesh,Shivpuri,9.0,14.2,1577.78,10
+178,2012,Madhya Pradesh,Shivpuri,13.4,19.88,1483.58,10
+179,2013,Madhya Pradesh,Shivpuri,14.63,17.06,1166.1,10
+180,2014,Madhya Pradesh,Shivpuri,14.0,17.33,1237.86,10
+181,2015,Madhya Pradesh,Shivpuri,11.0,27.33,2484.55,10
+182,2016,Madhya Pradesh,Shivpuri,14.0,39.33,2809.29,10
+183,2017,Madhya Pradesh,Shivpuri,4.4,10.8,2454.55,10
+184,2010,Madhya Pradesh,Guna,1.3,1.3,1000.0,10
+185,2011,Madhya Pradesh,Guna,1.4,1.6,1142.86,10
+186,2012,Madhya Pradesh,Guna,1.87,4.52,2417.11,10
+187,2013,Madhya Pradesh,Guna,1.92,3.17,1651.04,10
+188,2014,Madhya Pradesh,Guna,3.0,6.66,2220.0,10
+189,2015,Madhya Pradesh,Guna,4.0,6.0,1500.0,10
+190,2016,Madhya Pradesh,Guna,0.0,0.0,0.0,10
+191,2017,Madhya Pradesh,Guna,5.71,9.11,1595.45,10
+192,2010,Madhya Pradesh,Datia,5.7,7.1,1245.61,10
+193,2011,Madhya Pradesh,Datia,5.0,6.2,1240.0,10
+194,2012,Madhya Pradesh,Datia,8.08,16.53,2045.79,10
+195,2013,Madhya Pradesh,Datia,12.14,13.9,1144.98,10
+196,2014,Madhya Pradesh,Datia,30.0,29.33,977.67,10
+197,2015,Madhya Pradesh,Datia,14.0,24.0,1714.29,10
+198,2016,Madhya Pradesh,Datia,17.0,36.66,2156.47,10
+199,2017,Madhya Pradesh,Datia,16.6,30.18,1818.07,10
+200,2010,Madhya Pradesh,Morena,9.7,28.8,2969.07,10
+201,2011,Madhya Pradesh,Morena,15.1,44.9,2973.51,10
+202,2012,Madhya Pradesh,Morena,13.71,50.67,3695.84,10
+203,2013,Madhya Pradesh,Morena,16.11,58.64,3639.98,10
+204,2014,Madhya Pradesh,Morena,20.0,46.0,2300.0,10
+205,2015,Madhya Pradesh,Morena,20.0,70.0,3500.0,10
+206,2016,Madhya Pradesh,Morena,19.0,46.66,2455.79,10
+207,2017,Madhya Pradesh,Morena,21.4,60.1,2808.41,10
+208,2010,Madhya Pradesh,Bhind,5.6,15.3,2732.14,10
+209,2011,Madhya Pradesh,Bhind,0.4,1.3,3250.0,10
+210,2012,Madhya Pradesh,Bhind,4.62,12.47,2699.13,10
+211,2013,Madhya Pradesh,Bhind,4.8,20.81,4335.42,10
+212,2014,Madhya Pradesh,Bhind,6.0,20.67,3445.0,10
+213,2015,Madhya Pradesh,Bhind,6.0,27.33,4555.0,10
+214,2016,Madhya Pradesh,Bhind,7.0,15.33,2190.0,10
+215,2017,Madhya Pradesh,Bhind,3.0,5.76,1920.0,10
+216,2010,Madhya Pradesh,Indore,0.0,0.0,0.0,10
+217,2011,Madhya Pradesh,Indore,0.0,0.0,0.0,10
+218,2012,Madhya Pradesh,Indore,0.0,0.0,0.0,10
+219,2013,Madhya Pradesh,Indore,0.01,0.0,0.0,10
+220,2014,Madhya Pradesh,Indore,0.0,0.0,0.0,10
+221,2015,Madhya Pradesh,Indore,0.0,0.0,0.0,10
+222,2016,Madhya Pradesh,Indore,0.0,0.0,0.0,10
+223,2017,Madhya Pradesh,Indore,0.45,1.02,2266.67,10
+224,2010,Madhya Pradesh,Ratlam,1.7,1.3,764.71,10
+225,2011,Madhya Pradesh,Ratlam,1.9,1.8,947.37,10
+226,2012,Madhya Pradesh,Ratlam,1.36,1.55,1139.71,10
+227,2013,Madhya Pradesh,Ratlam,1.29,1.55,1201.55,10
+228,2014,Madhya Pradesh,Ratlam,0.0,0.0,0.0,10
+229,2015,Madhya Pradesh,Ratlam,0.0,0.0,0.0,10
+230,2016,Madhya Pradesh,Ratlam,1.0,0.66,660.0,10
+231,2017,Madhya Pradesh,Ratlam,0.0,0.0,0.0,10
+232,2010,Madhya Pradesh,Ujjain,0.0,0.0,0.0,10
+233,2011,Madhya Pradesh,Ujjain,0.0,0.0,0.0,10
+234,2012,Madhya Pradesh,Ujjain,0.0,0.0,0.0,10
+235,2013,Madhya Pradesh,Ujjain,0.0,0.0,0.0,10
+236,2014,Madhya Pradesh,Ujjain,0.0,0.0,0.0,10
+237,2015,Madhya Pradesh,Ujjain,0.0,0.0,0.0,10
+238,2016,Madhya Pradesh,Ujjain,0.0,0.0,0.0,10
+239,2017,Madhya Pradesh,Ujjain,0.2,0.38,1900.0,10
+240,2010,Madhya Pradesh,Mandsaur,0.0,0.0,0.0,10
+241,2011,Madhya Pradesh,Mandsaur,0.0,0.0,0.0,10
+242,2012,Madhya Pradesh,Mandsaur,0.04,0.02,500.0,10
+243,2013,Madhya Pradesh,Mandsaur,0.04,0.01,250.0,10
+244,2014,Madhya Pradesh,Mandsaur,0.0,0.0,0.0,10
+245,2015,Madhya Pradesh,Mandsaur,0.0,0.0,0.0,10
+246,2016,Madhya Pradesh,Mandsaur,0.0,0.0,0.0,10
+247,2017,Madhya Pradesh,Mandsaur,0.8,1.76,2200.0,10
+248,2010,Madhya Pradesh,Dewas,0.2,0.2,1000.0,10
+249,2011,Madhya Pradesh,Dewas,0.2,0.2,1000.0,10
+250,2012,Madhya Pradesh,Dewas,0.14,0.12,857.14,10
+251,2013,Madhya Pradesh,Dewas,0.11,0.08,727.27,10
+252,2014,Madhya Pradesh,Dewas,1.0,0.67,670.0,10
+253,2015,Madhya Pradesh,Dewas,0.0,0.0,0.0,10
+254,2016,Madhya Pradesh,Dewas,0.0,0.0,0.0,10
+255,2017,Madhya Pradesh,Dewas,0.1,0.07,730.0,10
+256,2010,Madhya Pradesh,Dhar,1.2,0.9,750.0,10
+257,2011,Madhya Pradesh,Dhar,1.3,1.1,846.15,10
+258,2012,Madhya Pradesh,Dhar,0.76,0.66,868.42,10
+259,2013,Madhya Pradesh,Dhar,0.66,0.5,757.58,10
+260,2014,Madhya Pradesh,Dhar,1.0,0.67,670.0,10
+261,2015,Madhya Pradesh,Dhar,0.0,0.0,0.0,10
+262,2016,Madhya Pradesh,Dhar,0.0,0.0,0.0,10
+263,2017,Madhya Pradesh,Dhar,0.73,1.05,1442.47,10
+264,2010,Madhya Pradesh,Jhabua,19.9,13.6,683.42,10
+265,2011,Madhya Pradesh,Jhabua,20.9,14.8,708.13,10
+266,2012,Madhya Pradesh,Jhabua,18.98,9.64,507.9,10
+267,2013,Madhya Pradesh,Jhabua,18.82,24.32,1292.24,10
+268,2014,Madhya Pradesh,Jhabua,16.0,11.34,708.75,10
+269,2015,Madhya Pradesh,Jhabua,15.0,11.33,755.33,10
+270,2016,Madhya Pradesh,Jhabua,17.0,19.99,1175.88,10
+271,2017,Madhya Pradesh,Jhabua,13.63,16.77,1230.37,10
+272,2010,Madhya Pradesh,Khargone / West Nimar,4.3,3.3,767.44,10
+273,2011,Madhya Pradesh,Khargone / West Nimar,3.6,2.9,805.56,10
+274,2012,Madhya Pradesh,Khargone / West Nimar,3.09,2.47,799.35,10
+275,2013,Madhya Pradesh,Khargone / West Nimar,2.83,1.21,427.56,10
+276,2014,Madhya Pradesh,Khargone / West Nimar,2.0,4.0,2000.0,10
+277,2015,Madhya Pradesh,Khargone / West Nimar,2.0,0.67,335.0,10
+278,2016,Madhya Pradesh,Khargone / West Nimar,1.0,0.66,660.0,10
+279,2017,Madhya Pradesh,Khargone / West Nimar,1.76,1.94,1100.0,10
+280,2010,Madhya Pradesh,Khandwa / East Nimar,8.6,11.7,1360.47,10
+281,2011,Madhya Pradesh,Khandwa / East Nimar,7.6,9.4,1236.84,10
+282,2012,Madhya Pradesh,Khandwa / East Nimar,5.1,7.73,1515.69,10
+283,2013,Madhya Pradesh,Khandwa / East Nimar,4.88,3.92,803.28,10
+284,2014,Madhya Pradesh,Khandwa / East Nimar,8.0,10.0,1250.0,10
+285,2015,Madhya Pradesh,Khandwa / East Nimar,7.0,3.33,475.71,10
+286,2016,Madhya Pradesh,Khandwa / East Nimar,8.0,7.33,916.25,10
+287,2017,Madhya Pradesh,Khandwa / East Nimar,5.89,3.38,573.85,10
+288,2010,Madhya Pradesh,Sehore,6.6,7.2,1090.91,10
+289,2011,Madhya Pradesh,Sehore,13.1,22.1,1687.02,10
+290,2012,Madhya Pradesh,Sehore,17.98,45.87,2551.17,10
+291,2013,Madhya Pradesh,Sehore,20.18,61.92,3068.38,10
+292,2014,Madhya Pradesh,Sehore,46.0,147.33,3202.83,10
+293,2015,Madhya Pradesh,Sehore,33.0,116.67,3535.45,10
+294,2016,Madhya Pradesh,Sehore,24.0,94.67,3944.58,10
+295,2017,Madhya Pradesh,Sehore,36.45,71.99,1975.03,10
+296,2010,Madhya Pradesh,Raisen,26.2,33.2,1267.18,10
+297,2011,Madhya Pradesh,Raisen,21.5,30.7,1427.91,10
+298,2012,Madhya Pradesh,Raisen,35.34,45.38,1284.1,10
+299,2013,Madhya Pradesh,Raisen,62.69,54.14,863.61,10
+300,2014,Madhya Pradesh,Raisen,137.0,342.67,2501.24,10
+301,2015,Madhya Pradesh,Raisen,99.0,226.67,2289.6,10
+302,2016,Madhya Pradesh,Raisen,135.0,304.66,2256.74,10
+303,2017,Madhya Pradesh,Raisen,112.0,236.84,2114.64,10
+304,2010,Madhya Pradesh,Vidisha,0.4,0.4,1000.0,10
+305,2011,Madhya Pradesh,Vidisha,0.4,0.4,1000.0,10
+306,2012,Madhya Pradesh,Vidisha,0.27,0.27,1000.0,10
+307,2013,Madhya Pradesh,Vidisha,1.5,0.84,560.0,10
+308,2014,Madhya Pradesh,Vidisha,4.0,3.33,832.5,10
+309,2015,Madhya Pradesh,Vidisha,3.0,4.0,1333.33,10
+310,2016,Madhya Pradesh,Vidisha,3.0,4.0,1333.33,10
+311,2017,Madhya Pradesh,Vidisha,10.5,23.8,2266.67,10
+312,2010,Madhya Pradesh,Betul,43.7,60.8,1391.3,10
+313,2011,Madhya Pradesh,Betul,42.1,65.8,1562.95,10
+314,2012,Madhya Pradesh,Betul,44.86,121.76,2714.22,10
+315,2013,Madhya Pradesh,Betul,43.84,98.85,2254.79,10
+316,2014,Madhya Pradesh,Betul,47.0,105.33,2241.06,10
+317,2015,Madhya Pradesh,Betul,42.0,72.0,1714.29,10
+318,2016,Madhya Pradesh,Betul,55.0,97.33,1769.64,10
+319,2017,Madhya Pradesh,Betul,45.0,79.11,1758.0,10
+320,2010,Madhya Pradesh,Rajgarh,0.5,0.4,800.0,10
+321,2011,Madhya Pradesh,Rajgarh,0.6,0.5,833.33,10
+322,2012,Madhya Pradesh,Rajgarh,0.42,0.34,809.52,10
+323,2013,Madhya Pradesh,Rajgarh,0.36,0.24,666.67,10
+324,2014,Madhya Pradesh,Rajgarh,1.0,0.67,670.0,10
+325,2015,Madhya Pradesh,Rajgarh,1.0,1.33,1330.0,10
+326,2016,Madhya Pradesh,Rajgarh,1.0,2.66,2660.0,10
+327,2017,Madhya Pradesh,Rajgarh,1.15,0.75,648.7,10
+328,2010,Madhya Pradesh,Shajapur,0.1,0.1,1000.0,10
+329,2011,Madhya Pradesh,Shajapur,0.1,0.1,1000.0,10
+330,2012,Madhya Pradesh,Shajapur,0.07,0.04,571.43,10
+331,2013,Madhya Pradesh,Shajapur,0.04,0.02,500.0,10
+332,2014,Madhya Pradesh,Shajapur,0.0,0.0,0.0,10
+333,2015,Madhya Pradesh,Shajapur,0.0,0.0,0.0,10
+334,2016,Madhya Pradesh,Shajapur,0.0,0.0,0.0,10
+335,2017,Madhya Pradesh,Shajapur,0.05,0.04,800.0,10
+336,2010,Madhya Pradesh,Hoshangabad,24.1,55.6,2307.05,10
+337,2011,Madhya Pradesh,Hoshangabad,26.0,52.3,2011.54,10
+338,2012,Madhya Pradesh,Hoshangabad,30.05,61.74,2054.58,10
+339,2013,Madhya Pradesh,Hoshangabad,41.8,65.92,1577.03,10
+340,2014,Madhya Pradesh,Hoshangabad,103.0,190.67,1851.17,10
+341,2015,Madhya Pradesh,Hoshangabad,111.0,316.67,2852.88,10
+342,2016,Madhya Pradesh,Hoshangabad,122.0,280.66,2300.49,10
+343,2017,Madhya Pradesh,Hoshangabad,136.8,312.65,2285.45,10
+344,2010,Andhra Pradesh,Srikakulam,279.72,358.64,1282.12,0
+345,2011,Andhra Pradesh,Srikakulam,272.7,537.7,1971.75,0
+346,2012,Andhra Pradesh,Srikakulam,271.63,689.11,2537.01,0
+347,2013,Andhra Pradesh,Srikakulam,261.53,500.73,1914.64,0
+348,2014,Andhra Pradesh,Srikakulam,272.51,613.59,2251.58,0
+349,2015,Andhra Pradesh,Srikakulam,270.13,664.52,2459.96,0
+350,2016,Andhra Pradesh,Srikakulam,268.4,801.97,2987.93,0
+351,2017,Andhra Pradesh,Srikakulam,279.15,735.77,2635.76,0
+352,2010,Andhra Pradesh,Visakhapatnam,184.32,376.1,2040.45,0
+353,2011,Andhra Pradesh,Visakhapatnam,174.41,303.62,1740.86,0
+354,2012,Andhra Pradesh,Visakhapatnam,166.65,312.24,1873.71,0
+355,2013,Andhra Pradesh,Visakhapatnam,163.79,330.13,2015.54,0
+356,2014,Andhra Pradesh,Visakhapatnam,167.72,343.73,2049.37,0
+357,2015,Andhra Pradesh,Visakhapatnam,170.96,416.89,2438.59,0
+358,2016,Andhra Pradesh,Visakhapatnam,172.56,436.84,2531.46,0
+359,2017,Andhra Pradesh,Visakhapatnam,173.38,421.22,2429.45,0
+360,2010,Andhra Pradesh,East Godavari,410.53,1357.62,3306.99,0
+361,2011,Andhra Pradesh,East Godavari,337.09,1176.83,3491.14,0
+362,2012,Andhra Pradesh,East Godavari,401.06,1101.91,2747.49,0
+363,2013,Andhra Pradesh,East Godavari,404.68,1211.71,2994.24,0
+364,2014,Andhra Pradesh,East Godavari,394.12,1563.23,3966.38,0
+365,2015,Andhra Pradesh,East Godavari,381.74,1445.57,3786.79,0
+366,2016,Andhra Pradesh,East Godavari,383.96,1627.03,4237.51,0
+367,2017,Andhra Pradesh,East Godavari,386.54,1672.79,4327.61,0
+368,2010,Andhra Pradesh,West Godavari,456.52,1490.32,3264.52,0
+369,2011,Andhra Pradesh,West Godavari,363.79,1308.47,3596.77,0
+370,2012,Andhra Pradesh,West Godavari,422.51,1289.34,3051.62,0
+371,2013,Andhra Pradesh,West Godavari,420.62,1342.34,3191.34,0
+372,2014,Andhra Pradesh,West Godavari,409.29,1624.32,3968.63,0
+373,2015,Andhra Pradesh,West Godavari,403.8,1558.51,3859.61,0
+374,2016,Andhra Pradesh,West Godavari,399.41,1666.1,4171.38,0
+375,2017,Andhra Pradesh,West Godavari,393.22,1693.91,4307.75,0
+376,2010,Andhra Pradesh,Krishna,355.34,1090.69,3069.43,0
+377,2011,Andhra Pradesh,Krishna,272.03,1011.54,3718.49,0
+378,2012,Andhra Pradesh,Krishna,264.53,950.52,3593.24,0
+379,2013,Andhra Pradesh,Krishna,363.32,1175.52,3235.49,0
+380,2014,Andhra Pradesh,Krishna,288.04,998.8,3467.57,0
+381,2015,Andhra Pradesh,Krishna,220.68,762.64,3455.86,0
+382,2016,Andhra Pradesh,Krishna,231.41,897.72,3879.35,0
+383,2017,Andhra Pradesh,Krishna,258.73,1031.95,3988.57,0
+384,2010,Andhra Pradesh,Guntur,401.59,1090.52,2715.51,0
+385,2011,Andhra Pradesh,Guntur,347.32,1316.41,3790.21,0
+386,2012,Andhra Pradesh,Guntur,206.87,725.08,3504.99,0
+387,2013,Andhra Pradesh,Guntur,391.92,1340.84,3421.25,0
+388,2014,Andhra Pradesh,Guntur,333.74,1298.65,3891.24,0
+389,2015,Andhra Pradesh,Guntur,183.64,557.07,3033.49,0
+390,2016,Andhra Pradesh,Guntur,194.37,801.72,4124.67,0
+391,2017,Andhra Pradesh,Guntur,224.27,936.37,4175.12,0
+392,2010,Andhra Pradesh,S.P.S. Nellore,330.44,1202.9,3640.34,0
+393,2011,Andhra Pradesh,S.P.S. Nellore,299.61,1193.7,3984.22,0
+394,2012,Andhra Pradesh,S.P.S. Nellore,270.94,1098.63,4054.89,0
+395,2013,Andhra Pradesh,S.P.S. Nellore,277.55,1113.37,4011.42,0
+396,2014,Andhra Pradesh,S.P.S. Nellore,280.73,1123.27,4001.19,0
+397,2015,Andhra Pradesh,S.P.S. Nellore,305.12,1357.59,4449.4,0
+398,2016,Andhra Pradesh,S.P.S. Nellore,219.86,919.78,4183.55,0
+399,2017,Andhra Pradesh,S.P.S. Nellore,242.52,1105.54,4558.52,0
+400,2010,Andhra Pradesh,Kurnool,162.16,480.21,2961.26,0
+401,2011,Andhra Pradesh,Kurnool,125.68,448.24,3566.47,0
+402,2012,Andhra Pradesh,Kurnool,97.75,367.26,3757.06,0
+403,2013,Andhra Pradesh,Kurnool,147.06,543.56,3696.13,0
+404,2014,Andhra Pradesh,Kurnool,131.75,509.21,3865.01,0
+405,2015,Andhra Pradesh,Kurnool,62.69,200.17,3192.9,0
+406,2016,Andhra Pradesh,Kurnool,115.13,457.91,3977.44,0
+407,2017,Andhra Pradesh,Kurnool,109.67,391.52,3570.06,0
+408,2010,Andhra Pradesh,Ananthapur,59.8,171.4,2866.22,0
+409,2011,Andhra Pradesh,Ananthapur,48.67,120.07,2467.02,0
+410,2012,Andhra Pradesh,Ananthapur,29.05,76.45,2631.67,0
+411,2013,Andhra Pradesh,Ananthapur,40.4,87.94,2176.73,0
+412,2014,Andhra Pradesh,Ananthapur,29.21,82.53,2825.4,0
+413,2015,Andhra Pradesh,Ananthapur,33.62,97.65,2904.52,0
+414,2016,Andhra Pradesh,Ananthapur,22.89,57.43,2509.33,0
+415,2017,Andhra Pradesh,Ananthapur,30.91,86.36,2793.52,0
+416,2010,Andhra Pradesh,Kadapa YSR,70.38,129.55,1840.72,0
+417,2011,Andhra Pradesh,Kadapa YSR,53.9,158.66,2943.6,0
+418,2012,Andhra Pradesh,Kadapa YSR,30.75,80.8,2627.64,0
+419,2013,Andhra Pradesh,Kadapa YSR,62.71,178.29,2843.09,0
+420,2014,Andhra Pradesh,Kadapa YSR,45.89,165.84,3613.86,0
+421,2015,Andhra Pradesh,Kadapa YSR,40.26,123.13,3058.37,0
+422,2016,Andhra Pradesh,Kadapa YSR,50.33,165.64,3291.14,0
+423,2017,Andhra Pradesh,Kadapa YSR,54.98,139.76,2542.13,0
+424,2010,Andhra Pradesh,Chittoor,61.58,185.14,3006.5,0
+425,2011,Andhra Pradesh,Chittoor,51.11,168.93,3305.22,0
+426,2012,Andhra Pradesh,Chittoor,47.51,171.41,3607.87,0
+427,2013,Andhra Pradesh,Chittoor,49.86,169.02,3389.89,0
+428,2014,Andhra Pradesh,Chittoor,40.97,132.42,3232.12,0
+429,2015,Andhra Pradesh,Chittoor,88.15,334.55,3795.24,0
+430,2016,Andhra Pradesh,Chittoor,46.7,170.2,3644.56,0
+431,2017,Andhra Pradesh,Chittoor,64.81,246.15,3797.99,0
+432,2010,Telangana,Hyderabad,52.36,136.1,2599.31,16
+433,2011,Telangana,Hyderabad,43.67,103.1,2360.89,16
+434,2012,Telangana,Hyderabad,40.91,98.4,2405.28,16
+435,2013,Telangana,Hyderabad,45.04,102.87,2283.97,16
+436,2014,Telangana,Hyderabad,34.88,91.21,2614.97,16
+437,2015,Telangana,Hyderabad,24.28,61.41,2529.24,16
+438,2016,Telangana,Hyderabad,41.22,117.83,2858.43,16
+439,2017,Telangana,Hyderabad,50.34,150.2,2983.71,16
+440,2010,Telangana,Nizamabad,221.62,844.24,3809.4,16
+441,2011,Telangana,Nizamabad,259.81,972.2,3741.97,16
+442,2012,Telangana,Nizamabad,192.96,736.19,3815.25,16
+443,2013,Telangana,Nizamabad,260.81,1044.19,4003.64,16
+444,2014,Telangana,Nizamabad,169.27,620.53,3665.92,16
+445,2015,Telangana,Nizamabad,98.03,262.79,2680.71,16
+446,2016,Telangana,Nizamabad,265.97,1067.01,4011.74,16
+447,2017,Telangana,Nizamabad,267.21,968.95,3626.14,16
+448,2010,Telangana,Medak,144.56,514.92,3561.98,16
+449,2011,Telangana,Medak,137.03,406.96,2969.86,16
+450,2012,Telangana,Medak,110.36,372.6,3376.22,16
+451,2013,Telangana,Medak,170.97,624.49,3652.63,16
+452,2014,Telangana,Medak,110.89,363.08,3274.24,16
+453,2015,Telangana,Medak,84.17,239.78,2848.76,16
+454,2016,Telangana,Medak,160.77,596.06,3707.62,16
+455,2017,Telangana,Medak,180.79,615.82,3406.18,16
+456,2010,Telangana,Mahabubnagar,196.7,545.77,2774.63,16
+457,2011,Telangana,Mahabubnagar,172.07,396.56,2304.64,16
+458,2012,Telangana,Mahabubnagar,142.03,380.5,2679.01,16
+459,2013,Telangana,Mahabubnagar,168.63,478.7,2838.76,16
+460,2014,Telangana,Mahabubnagar,160.77,418.1,2600.61,16
+461,2015,Telangana,Mahabubnagar,96.28,215.02,2233.28,16
+462,2016,Telangana,Mahabubnagar,143.31,386.46,2696.59,16
+463,2017,Telangana,Mahabubnagar,170.82,420.07,2459.12,16
+464,2010,Telangana,Nalgonda,405.32,1323.71,3265.84,16
+465,2011,Telangana,Nalgonda,327.76,963.8,2940.57,16
+466,2012,Telangana,Nalgonda,208.52,683.87,3279.64,16
+467,2013,Telangana,Nalgonda,393.74,1205.29,3061.13,16
+468,2014,Telangana,Nalgonda,323.38,1041.36,3220.24,16
+469,2015,Telangana,Nalgonda,212.73,620.45,2916.61,16
+470,2016,Telangana,Nalgonda,356.25,1256.43,3526.82,16
+471,2017,Telangana,Nalgonda,415.25,1380.74,3325.09,16
+472,2010,Telangana,Warangal,268.06,860.41,3209.77,16
+473,2011,Telangana,Warangal,224.35,573.94,2558.23,16
+474,2012,Telangana,Warangal,209.71,689.02,3285.58,16
+475,2013,Telangana,Warangal,254.85,800.52,3141.14,16
+476,2014,Telangana,Warangal,142.01,437.44,3080.35,16
+477,2015,Telangana,Warangal,181.07,572.94,3164.19,16
+478,2016,Telangana,Warangal,275.02,973.41,3539.43,16
+479,2017,Telangana,Warangal,269.29,783.31,2908.75,16
+480,2010,Telangana,Khammam,218.25,704.07,3225.98,16
+481,2011,Telangana,Khammam,165.31,411.69,2490.41,16
+482,2012,Telangana,Khammam,153.84,473.08,3075.14,16
+483,2013,Telangana,Khammam,191.78,575.28,2999.69,16
+484,2014,Telangana,Khammam,145.71,456.18,3130.74,16
+485,2015,Telangana,Khammam,121.72,369.34,3034.34,16
+486,2016,Telangana,Khammam,121.0,445.76,3683.86,16
+487,2017,Telangana,Khammam,161.32,512.4,3176.26,16
+488,2010,Telangana,Karimnagar,381.52,1351.86,3543.35,16
+489,2011,Telangana,Karimnagar,343.38,1120.05,3261.84,16
+490,2012,Telangana,Karimnagar,289.43,1026.88,3547.94,16
+491,2013,Telangana,Karimnagar,417.91,1500.84,3591.3,16
+492,2014,Telangana,Karimnagar,278.43,990.96,3559.1,16
+493,2015,Telangana,Karimnagar,170.4,553.96,3250.94,16
+494,2016,Telangana,Karimnagar,369.13,1457.37,3948.09,16
+495,2017,Telangana,Karimnagar,353.68,1182.07,3342.24,16
+496,2010,Telangana,Adilabad,90.55,255.15,2817.78,16
+497,2011,Telangana,Adilabad,76.17,199.33,2616.91,16
+498,2012,Telangana,Adilabad,70.75,187.27,2646.93,16
+499,2013,Telangana,Adilabad,90.69,248.91,2744.62,16
+500,2014,Telangana,Adilabad,50.08,126.13,2518.57,16
+501,2015,Telangana,Adilabad,57.5,151.6,2636.52,16
+502,2016,Telangana,Adilabad,95.89,298.74,3115.42,16
+503,2017,Telangana,Adilabad,93.67,249.88,2667.68,16
+504,2010,Karnataka,Bangalore,12.06,32.09,2660.86,8
+505,2011,Karnataka,Bangalore,11.08,32.5,2933.21,8
+506,2012,Karnataka,Bangalore,8.92,22.85,2561.66,8
+507,2013,Karnataka,Bangalore,7.75,21.56,2781.94,8
+508,2014,Karnataka,Bangalore,6.84,18.35,2682.75,8
+509,2015,Karnataka,Bangalore,5.97,14.64,2452.26,8
+510,2016,Karnataka,Bangalore,4.96,9.26,1866.88,8
+511,2017,Karnataka,Bangalore,5.24,15.46,2950.57,8
+512,2010,Karnataka,Kolar,19.25,48.94,2542.34,8
+513,2011,Karnataka,Kolar,10.82,27.11,2505.55,8
+514,2012,Karnataka,Kolar,7.2,17.76,2466.67,8
+515,2013,Karnataka,Kolar,4.08,9.49,2325.98,8
+516,2014,Karnataka,Kolar,1.15,2.8,2434.78,8
+517,2015,Karnataka,Kolar,1.73,4.23,2445.09,8
+518,2016,Karnataka,Kolar,2.64,5.88,2229.72,8
+519,2017,Karnataka,Kolar,1.69,5.46,3233.55,8
+520,2010,Karnataka,Tumkur,34.58,98.43,2846.44,8
+521,2011,Karnataka,Tumkur,28.44,79.64,2800.28,8
+522,2012,Karnataka,Tumkur,14.89,37.72,2533.24,8
+523,2013,Karnataka,Tumkur,13.04,38.49,2951.69,8
+524,2014,Karnataka,Tumkur,9.51,26.93,2831.76,8
+525,2015,Karnataka,Tumkur,10.38,29.25,2817.92,8
+526,2016,Karnataka,Tumkur,10.76,26.21,2434.88,8
+527,2017,Karnataka,Tumkur,4.86,12.29,2529.02,8
+528,2010,Karnataka,Mysore,143.53,441.19,3073.85,8
+529,2011,Karnataka,Mysore,136.45,431.65,3163.43,8
+530,2012,Karnataka,Mysore,102.1,325.11,3184.23,8
+531,2013,Karnataka,Mysore,117.83,407.47,3458.12,8
+532,2014,Karnataka,Mysore,117.04,395.0,3374.91,8
+533,2015,Karnataka,Mysore,107.4,366.09,3408.66,8
+534,2016,Karnataka,Mysore,72.46,204.8,2826.23,8
+535,2017,Karnataka,Mysore,68.14,210.73,3092.59,8
+536,2010,Karnataka,Mandya,81.04,277.06,3418.81,8
+537,2011,Karnataka,Mandya,74.16,251.64,3393.2,8
+538,2012,Karnataka,Mandya,49.95,155.66,3116.32,8
+539,2013,Karnataka,Mandya,65.62,229.15,3492.08,8
+540,2014,Karnataka,Mandya,66.52,245.46,3690.02,8
+541,2015,Karnataka,Mandya,58.49,214.38,3665.24,8
+542,2016,Karnataka,Mandya,43.66,113.68,2603.46,8
+543,2017,Karnataka,Mandya,33.85,100.51,2969.07,8
+544,2010,Karnataka,Hassan,51.75,149.23,2883.67,8
+545,2011,Karnataka,Hassan,48.87,120.86,2473.09,8
+546,2012,Karnataka,Hassan,49.29,107.78,2186.65,8
+547,2013,Karnataka,Hassan,51.8,158.59,3061.58,8
+548,2014,Karnataka,Hassan,48.07,146.29,3043.27,8
+549,2015,Karnataka,Hassan,42.82,117.08,2734.24,8
+550,2016,Karnataka,Hassan,26.1,53.23,2039.43,8
+551,2017,Karnataka,Hassan,21.63,70.09,3241.2,8
+552,2010,Karnataka,Shimoge,132.39,366.59,2769.02,8
+553,2011,Karnataka,Shimoge,128.98,376.58,2919.68,8
+554,2012,Karnataka,Shimoge,123.31,328.9,2667.26,8
+555,2013,Karnataka,Shimoge,124.62,380.81,3055.77,8
+556,2014,Karnataka,Shimoge,121.87,370.01,3036.1,8
+557,2015,Karnataka,Shimoge,110.03,286.76,2606.2,8
+558,2016,Karnataka,Shimoge,104.44,218.6,2092.95,8
+559,2017,Karnataka,Shimoge,93.52,235.1,2513.97,8
+560,2010,Karnataka,Chickmagalur,44.06,115.48,2620.97,8
+561,2011,Karnataka,Chickmagalur,45.38,116.76,2572.94,8
+562,2012,Karnataka,Chickmagalur,37.99,87.47,2302.45,8
+563,2013,Karnataka,Chickmagalur,41.05,112.1,2730.82,8
+564,2014,Karnataka,Chickmagalur,40.34,105.3,2610.31,8
+565,2015,Karnataka,Chickmagalur,33.04,88.32,2673.12,8
+566,2016,Karnataka,Chickmagalur,29.93,71.84,2400.32,8
+567,2017,Karnataka,Chickmagalur,26.9,64.63,2402.86,8
+568,2010,Karnataka,Chitradurga,156.47,532.01,3400.08,8
+569,2011,Karnataka,Chitradurga,151.32,516.96,3416.34,8
+570,2012,Karnataka,Chitradurga,120.43,395.38,3283.07,8
+571,2013,Karnataka,Chitradurga,129.79,456.33,3515.91,8
+572,2014,Karnataka,Chitradurga,138.71,504.16,3634.63,8
+573,2015,Karnataka,Chitradurga,99.56,371.56,3732.02,8
+574,2016,Karnataka,Chitradurga,78.72,252.25,3204.37,8
+575,2017,Karnataka,Chitradurga,65.99,248.3,3762.79,8
+576,2010,Karnataka,Bellary,130.68,462.98,3542.85,8
+577,2011,Karnataka,Bellary,116.17,410.63,3534.73,8
+578,2012,Karnataka,Bellary,109.15,387.78,3552.73,8
+579,2013,Karnataka,Bellary,110.55,418.62,3786.7,8
+580,2014,Karnataka,Bellary,118.64,408.13,3440.07,8
+581,2015,Karnataka,Bellary,93.67,341.44,3645.14,8
+582,2016,Karnataka,Bellary,87.01,337.8,3882.34,8
+583,2017,Karnataka,Bellary,101.93,388.34,3809.74,8
+584,2010,Karnataka,Dharwad,81.43,133.81,1643.25,8
+585,2011,Karnataka,Dharwad,77.22,137.78,1784.25,8
+586,2012,Karnataka,Dharwad,79.78,74.7,936.32,8
+587,2013,Karnataka,Dharwad,73.73,155.57,2110.0,8
+588,2014,Karnataka,Dharwad,68.9,157.35,2283.74,8
+589,2015,Karnataka,Dharwad,70.59,67.57,957.22,8
+590,2016,Karnataka,Dharwad,59.82,56.76,948.88,8
+591,2017,Karnataka,Dharwad,52.59,74.86,1423.5,8
+592,2010,Karnataka,Belgaum,68.47,135.88,1984.52,8
+593,2011,Karnataka,Belgaum,68.31,132.5,1939.69,8
+594,2012,Karnataka,Belgaum,63.7,95.08,1492.62,8
+595,2013,Karnataka,Belgaum,58.67,123.84,2110.79,8
+596,2014,Karnataka,Belgaum,59.94,176.69,2947.78,8
+597,2015,Karnataka,Belgaum,61.23,40.8,666.34,8
+598,2016,Karnataka,Belgaum,65.59,123.76,1886.84,8
+599,2017,Karnataka,Belgaum,64.58,148.63,2301.29,8
+600,2010,Karnataka,Bijapur / Vijayapura,0.21,0.59,2809.52,8
+601,2011,Karnataka,Bijapur / Vijayapura,0.18,0.47,2611.11,8
+602,2012,Karnataka,Bijapur / Vijayapura,0.15,0.38,2533.33,8
+603,2013,Karnataka,Bijapur / Vijayapura,0.1,0.31,3100.0,8
+604,2014,Karnataka,Bijapur / Vijayapura,0.08,0.23,2875.0,8
+605,2015,Karnataka,Bijapur / Vijayapura,0.08,0.23,2875.0,8
+606,2016,Karnataka,Bijapur / Vijayapura,0.03,0.09,2774.19,8
+607,2017,Karnataka,Bijapur / Vijayapura,0.03,0.09,2866.67,8
+608,2010,Karnataka,Bidar,4.93,3.87,784.99,8
+609,2011,Karnataka,Bidar,6.49,4.46,687.21,8
+610,2012,Karnataka,Bidar,4.94,4.88,987.85,8
+611,2013,Karnataka,Bidar,3.57,5.54,1551.82,8
+612,2014,Karnataka,Bidar,2.06,1.99,966.02,8
+613,2015,Karnataka,Bidar,1.55,1.32,851.61,8
+614,2016,Karnataka,Bidar,0.52,0.63,1198.1,8
+615,2017,Karnataka,Bidar,1.02,1.9,1864.44,8
+616,2010,Karnataka,Raichur,252.89,787.56,3114.24,8
+617,2011,Karnataka,Raichur,218.77,660.4,3018.7,8
+618,2012,Karnataka,Raichur,228.59,735.3,3216.68,8
+619,2013,Karnataka,Raichur,254.24,836.0,3288.23,8
+620,2014,Karnataka,Raichur,237.74,733.65,3085.93,8
+621,2015,Karnataka,Raichur,166.0,527.46,3177.47,8
+622,2016,Karnataka,Raichur,169.29,631.06,3727.77,8
+623,2017,Karnataka,Raichur,167.4,546.61,3265.36,8
+624,2010,Karnataka,Gulbarga / Kalaburagi,100.31,205.31,2046.76,8
+625,2011,Karnataka,Gulbarga / Kalaburagi,73.06,139.12,1904.19,8
+626,2012,Karnataka,Gulbarga / Kalaburagi,67.09,90.94,1355.49,8
+627,2013,Karnataka,Gulbarga / Kalaburagi,74.68,147.94,1980.99,8
+628,2014,Karnataka,Gulbarga / Kalaburagi,87.77,225.47,2568.87,8
+629,2015,Karnataka,Gulbarga / Kalaburagi,53.56,108.01,2016.62,8
+630,2016,Karnataka,Gulbarga / Kalaburagi,96.88,322.59,3329.87,8
+631,2017,Karnataka,Gulbarga / Kalaburagi,113.28,362.88,3203.49,8
+632,2010,Karnataka,Dakshina Kannada,110.97,261.18,2353.61,8
+633,2011,Karnataka,Dakshina Kannada,110.5,268.07,2425.97,8
+634,2012,Karnataka,Dakshina Kannada,105.81,268.86,2540.97,8
+635,2013,Karnataka,Dakshina Kannada,106.93,288.23,2695.5,8
+636,2014,Karnataka,Dakshina Kannada,101.9,270.35,2653.09,8
+637,2015,Karnataka,Dakshina Kannada,98.3,253.36,2577.42,8
+638,2016,Karnataka,Dakshina Kannada,87.13,247.02,2835.18,8
+639,2017,Karnataka,Dakshina Kannada,80.26,233.13,2904.74,8
+640,2010,Karnataka,Uttara Kannada,79.02,150.72,1907.37,8
+641,2011,Karnataka,Uttara Kannada,75.75,155.4,2051.49,8
+642,2012,Karnataka,Uttara Kannada,74.28,150.07,2020.33,8
+643,2013,Karnataka,Uttara Kannada,69.97,170.32,2434.19,8
+644,2014,Karnataka,Uttara Kannada,68.51,152.7,2228.87,8
+645,2015,Karnataka,Uttara Kannada,67.34,111.64,1657.86,8
+646,2016,Karnataka,Uttara Kannada,66.67,130.86,1962.86,8
+647,2017,Karnataka,Uttara Kannada,62.87,124.24,1976.12,8
+648,2010,Karnataka,Kodagu / Coorg,35.44,93.45,2636.85,8
+649,2011,Karnataka,Kodagu / Coorg,34.22,93.23,2724.43,8
+650,2012,Karnataka,Kodagu / Coorg,31.37,77.78,2479.44,8
+651,2013,Karnataka,Kodagu / Coorg,32.03,92.21,2878.86,8
+652,2014,Karnataka,Kodagu / Coorg,30.96,86.9,2806.85,8
+653,2015,Karnataka,Kodagu / Coorg,28.34,76.49,2699.01,8
+654,2016,Karnataka,Kodagu / Coorg,27.93,67.9,2431.41,8
+655,2017,Karnataka,Kodagu / Coorg,27.17,64.26,2364.95,8
+656,2010,Tamil Nadu,Chengalpattu MGR / Kanchipuram,178.96,628.84,3513.86,15
+657,2011,Tamil Nadu,Chengalpattu MGR / Kanchipuram,169.64,708.45,4176.2,15
+658,2012,Tamil Nadu,Chengalpattu MGR / Kanchipuram,156.12,645.34,4133.62,15
+659,2013,Tamil Nadu,Chengalpattu MGR / Kanchipuram,181.39,843.36,4649.43,15
+660,2014,Tamil Nadu,Chengalpattu MGR / Kanchipuram,158.23,716.1,4525.69,15
+661,2015,Tamil Nadu,Chengalpattu MGR / Kanchipuram,199.14,748.5,3758.66,15
+662,2016,Tamil Nadu,Chengalpattu MGR / Kanchipuram,169.58,585.18,3450.65,15
+663,2017,Tamil Nadu,Chengalpattu MGR / Kanchipuram,193.22,807.43,4178.74,15
+664,2010,Tamil Nadu,South Arcot / Cuddalore,265.75,813.52,3061.22,15
+665,2011,Tamil Nadu,South Arcot / Cuddalore,250.84,719.86,2869.8,15
+666,2012,Tamil Nadu,South Arcot / Cuddalore,227.55,735.82,3233.66,15
+667,2013,Tamil Nadu,South Arcot / Cuddalore,297.93,1362.57,4573.46,15
+668,2014,Tamil Nadu,South Arcot / Cuddalore,306.16,1474.55,4816.27,15
+669,2015,Tamil Nadu,South Arcot / Cuddalore,322.29,1280.44,3972.94,15
+670,2016,Tamil Nadu,South Arcot / Cuddalore,314.21,1233.22,3924.87,15
+671,2017,Tamil Nadu,South Arcot / Cuddalore,294.85,1267.83,4299.84,15
+672,2010,Tamil Nadu,North Arcot / Vellore,168.71,510.52,3026.02,15
+673,2011,Tamil Nadu,North Arcot / Vellore,101.93,453.75,4451.58,15
+674,2012,Tamil Nadu,North Arcot / Vellore,127.48,478.31,3752.04,15
+675,2013,Tamil Nadu,North Arcot / Vellore,122.0,551.9,4523.77,15
+677,2015,Tamil Nadu,North Arcot / Vellore,190.65,752.96,3949.44,15
+678,2016,Tamil Nadu,North Arcot / Vellore,183.45,737.75,4021.55,15
+679,2017,Tamil Nadu,North Arcot / Vellore,216.65,959.42,4428.49,15
+680,2010,Tamil Nadu,Salem,86.56,365.08,4217.65,15
+681,2011,Tamil Nadu,Salem,83.06,380.75,4584.04,15
+682,2012,Tamil Nadu,Salem,48.23,199.06,4127.31,15
+685,2015,Tamil Nadu,Salem,92.85,434.67,4681.42,15
+686,2016,Tamil Nadu,Salem,80.0,374.14,4676.96,15
+688,2010,Tamil Nadu,Coimbatore,101.47,242.76,2392.48,15
+689,2011,Tamil Nadu,Coimbatore,100.52,369.22,3672.92,15
+690,2012,Tamil Nadu,Coimbatore,85.87,248.58,2894.67,15
+691,2013,Tamil Nadu,Coimbatore,78.57,151.73,1931.27,15
+692,2014,Tamil Nadu,Coimbatore,74.8,320.06,4278.88,15
+693,2015,Tamil Nadu,Coimbatore,80.98,291.01,3593.32,15
+694,2016,Tamil Nadu,Coimbatore,70.87,265.71,3749.48,15
+695,2017,Tamil Nadu,Coimbatore,90.17,195.35,2166.46,15
+696,2010,Tamil Nadu,Tiruchirapalli / Trichy,150.38,598.76,3981.63,15
+697,2011,Tamil Nadu,Tiruchirapalli / Trichy,144.77,638.76,4412.36,15
+698,2012,Tamil Nadu,Tiruchirapalli / Trichy,85.54,259.44,3032.89,15
+701,2015,Tamil Nadu,Tiruchirapalli / Trichy,137.32,601.54,4380.47,15
+702,2016,Tamil Nadu,Tiruchirapalli / Trichy,123.55,529.5,4285.73,15
+703,2017,Tamil Nadu,Tiruchirapalli / Trichy,99.63,476.51,4782.99,15
+704,2010,Tamil Nadu,Thanjavur,496.12,1140.85,2299.56,15
+705,2011,Tamil Nadu,Thanjavur,450.12,1813.04,4027.91,15
+706,2012,Tamil Nadu,Thanjavur,450.22,834.93,1854.48,15
+707,2013,Tamil Nadu,Thanjavur,507.5,2316.46,4564.48,15
+708,2014,Tamil Nadu,Thanjavur,543.51,2195.63,4039.75,15
+709,2015,Tamil Nadu,Thanjavur,548.65,1696.83,3092.72,15
+710,2016,Tamil Nadu,Thanjavur,541.98,1356.07,2502.07,15
+711,2017,Tamil Nadu,Thanjavur,520.25,1840.14,3537.05,15
+712,2010,Tamil Nadu,Madurai,94.77,432.12,4559.67,15
+714,2012,Tamil Nadu,Madurai,37.82,143.45,3792.97,15
+715,2013,Tamil Nadu,Madurai,52.0,240.54,4625.77,15
+716,2014,Tamil Nadu,Madurai,73.63,340.08,4618.77,15
+717,2015,Tamil Nadu,Madurai,85.6,354.99,4147.08,15
+718,2016,Tamil Nadu,Madurai,77.18,313.06,4056.26,15
+719,2017,Tamil Nadu,Madurai,36.78,171.29,4656.49,15
+720,2010,Tamil Nadu,Ramananthapuram,245.9,536.94,2183.57,15
+721,2011,Tamil Nadu,Ramananthapuram,242.4,866.89,3576.28,15
+722,2012,Tamil Nadu,Ramananthapuram,210.11,239.34,1139.12,15
+723,2013,Tamil Nadu,Ramananthapuram,196.9,148.16,752.46,15
+724,2014,Tamil Nadu,Ramananthapuram,201.57,729.45,3618.84,15
+725,2015,Tamil Nadu,Ramananthapuram,212.4,593.55,2794.49,15
+726,2016,Tamil Nadu,Ramananthapuram,215.67,446.92,2072.3,15
+727,2017,Tamil Nadu,Ramananthapuram,217.34,438.45,2017.36,15
+728,2010,Tamil Nadu,Thirunelveli,99.77,441.26,4422.77,15
+729,2011,Tamil Nadu,Thirunelveli,121.6,441.97,3634.62,15
+730,2012,Tamil Nadu,Thirunelveli,51.63,207.05,4010.27,15
+733,2015,Tamil Nadu,Thirunelveli,117.07,563.01,4809.17,15
+734,2016,Tamil Nadu,Thirunelveli,48.44,179.75,3710.76,15
+735,2017,Tamil Nadu,Thirunelveli,77.0,355.16,4612.54,15
+736,2010,Tamil Nadu,The Nilgiris,0.39,1.4,3589.74,15
+737,2011,Tamil Nadu,The Nilgiris,0.4,1.65,4125.0,15
+738,2012,Tamil Nadu,The Nilgiris,0.29,1.15,3965.52,15
+739,2013,Tamil Nadu,The Nilgiris,0.33,1.42,4303.03,15
+741,2015,Tamil Nadu,The Nilgiris,0.32,1.42,4437.5,15
+742,2016,Tamil Nadu,The Nilgiris,0.24,1.04,4292.18,15
+743,2017,Tamil Nadu,The Nilgiris,0.24,0.92,3853.56,15
+744,2010,Tamil Nadu,Kanyakumari,16.99,80.39,4731.61,15
+746,2012,Tamil Nadu,Kanyakumari,12.41,57.88,4663.98,15
+749,2015,Tamil Nadu,Kanyakumari,12.96,55.79,4304.78,15
+750,2016,Tamil Nadu,Kanyakumari,12.16,48.67,4003.78,15
+751,2017,Tamil Nadu,Kanyakumari,9.63,33.03,3431.03,15
+752,2010,Maharashtra,Bombay,0.0,0.0,0.0,11
+753,2011,Maharashtra,Bombay,0.0,0.0,0.0,11
+754,2012,Maharashtra,Bombay,0.0,0.0,0.0,11
+755,2016,Maharashtra,Bombay,0.0,0.0,0.0,11
+756,2010,Maharashtra,Thane,138.3,280.58,2028.78,11
+757,2011,Maharashtra,Thane,140.4,343.98,2450.0,11
+758,2012,Maharashtra,Thane,139.6,362.94,2599.86,11
+759,2013,Maharashtra,Thane,139.6,334.0,2392.55,11
+760,2014,Maharashtra,Thane,132.8,328.7,2475.15,11
+761,2015,Maharashtra,Thane,133.9,306.5,2289.02,11
+762,2016,Maharashtra,Thane,132.7,375.3,2828.18,11
+763,2017,Maharashtra,Thane,132.68,246.3,1856.37,11
+764,2010,Maharashtra,Raigad,126.2,299.08,2369.89,11
+765,2011,Maharashtra,Raigad,126.8,306.16,2414.51,11
+766,2012,Maharashtra,Raigad,127.9,333.33,2606.18,11
+767,2013,Maharashtra,Raigad,127.9,365.9,2860.83,11
+768,2014,Maharashtra,Raigad,125.3,350.8,2799.68,11
+769,2015,Maharashtra,Raigad,115.6,339.9,2940.31,11
+770,2016,Maharashtra,Raigad,113.3,309.1,2728.16,11
+771,2017,Maharashtra,Raigad,114.24,310.8,2720.66,11
+772,2010,Maharashtra,Ratnagiri,156.0,430.11,2757.12,11
+773,2011,Maharashtra,Ratnagiri,155.5,437.44,2813.12,11
+774,2012,Maharashtra,Ratnagiri,150.7,428.18,2841.27,11
+775,2013,Maharashtra,Ratnagiri,148.9,451.6,3032.91,11
+776,2014,Maharashtra,Ratnagiri,142.5,448.3,3145.96,11
+777,2015,Maharashtra,Ratnagiri,138.2,370.2,2678.73,11
+778,2016,Maharashtra,Ratnagiri,139.34,445.3,3195.78,11
+779,2017,Maharashtra,Ratnagiri,139.25,430.7,3093.02,11
+780,2010,Maharashtra,Nasik,59.1,24.03,406.6,11
+781,2011,Maharashtra,Nasik,62.9,77.8,1236.88,11
+782,2012,Maharashtra,Nasik,67.9,80.79,1189.84,11
+783,2013,Maharashtra,Nasik,72.6,93.3,1285.12,11
+784,2014,Maharashtra,Nasik,71.2,86.7,1217.7,11
+785,2015,Maharashtra,Nasik,69.6,101.1,1452.59,11
+786,2016,Maharashtra,Nasik,71.9,145.8,2027.82,11
+787,2017,Maharashtra,Nasik,72.5,153.6,2118.62,11
+788,2010,Maharashtra,Dhule,28.4,31.38,1104.93,11
+789,2011,Maharashtra,Dhule,27.3,37.0,1355.31,11
+790,2012,Maharashtra,Dhule,27.2,35.76,1314.71,11
+791,2013,Maharashtra,Dhule,30.2,30.0,993.38,11
+792,2014,Maharashtra,Dhule,18.3,9.0,491.8,11
+793,2015,Maharashtra,Dhule,21.2,20.0,943.4,11
+794,2016,Maharashtra,Dhule,31.7,39.9,1258.68,11
+795,2017,Maharashtra,Dhule,33.6,44.2,1315.48,11
+796,2010,Maharashtra,Jalgaon,0.0,0.0,0.0,11
+797,2011,Maharashtra,Jalgaon,0.2,0.3,1500.0,11
+798,2012,Maharashtra,Jalgaon,0.03,0.0,0.0,11
+799,2013,Maharashtra,Jalgaon,0.0,0.0,0.0,11
+800,2014,Maharashtra,Jalgaon,0.0,0.0,0.0,11
+801,2015,Maharashtra,Jalgaon,0.0,0.0,0.0,11
+802,2016,Maharashtra,Jalgaon,0.0,0.0,0.0,11
+803,2017,Maharashtra,Jalgaon,0.0,0.0,0.0,11
+804,2010,Maharashtra,Ahmednagar,7.5,7.03,937.33,11
+805,2011,Maharashtra,Ahmednagar,7.9,7.8,987.34,11
+806,2012,Maharashtra,Ahmednagar,7.5,4.61,614.67,11
+807,2013,Maharashtra,Ahmednagar,7.9,19.0,2405.06,11
+808,2014,Maharashtra,Ahmednagar,8.6,2.2,255.81,11
+809,2015,Maharashtra,Ahmednagar,14.0,17.2,1228.57,11
+810,2016,Maharashtra,Ahmednagar,15.0,26.2,1746.67,11
+811,2017,Maharashtra,Ahmednagar,16.2,37.3,2302.47,11
+812,2010,Maharashtra,Pune,60.9,71.92,1180.95,11
+813,2011,Maharashtra,Pune,62.0,85.6,1380.65,11
+814,2012,Maharashtra,Pune,77.6,106.16,1368.04,11
+815,2013,Maharashtra,Pune,82.1,153.2,1866.02,11
+816,2014,Maharashtra,Pune,82.1,136.1,1657.73,11
+817,2015,Maharashtra,Pune,54.6,107.3,1965.2,11
+818,2016,Maharashtra,Pune,53.5,115.4,2157.01,11
+819,2017,Maharashtra,Pune,52.0,124.0,2384.62,11
+820,2010,Maharashtra,Satara,50.8,82.24,1618.9,11
+821,2011,Maharashtra,Satara,50.5,83.0,1643.56,11
+822,2012,Maharashtra,Satara,51.0,70.04,1373.33,11
+823,2013,Maharashtra,Satara,50.4,75.6,1500.0,11
+824,2014,Maharashtra,Satara,52.9,94.7,1790.17,11
+825,2015,Maharashtra,Satara,52.7,79.7,1512.33,11
+826,2016,Maharashtra,Satara,47.0,82.1,1746.81,11
+827,2017,Maharashtra,Satara,45.8,83.0,1812.23,11
+828,2010,Maharashtra,Sangli,20.2,53.87,2666.83,11
+829,2011,Maharashtra,Sangli,18.1,33.7,1861.88,11
+830,2012,Maharashtra,Sangli,17.5,33.74,1928.0,11
+831,2013,Maharashtra,Sangli,14.5,25.5,1758.62,11
+832,2014,Maharashtra,Sangli,15.5,31.4,2025.81,11
+833,2015,Maharashtra,Sangli,22.6,43.4,1920.35,11
+834,2016,Maharashtra,Sangli,16.8,42.9,2553.57,11
+835,2017,Maharashtra,Sangli,17.0,39.3,2311.76,11
+836,2010,Maharashtra,Solapur,0.7,0.23,328.57,11
+837,2011,Maharashtra,Solapur,0.7,0.2,285.71,11
+838,2012,Maharashtra,Solapur,0.4,0.09,225.0,11
+839,2013,Maharashtra,Solapur,0.4,0.1,250.0,11
+840,2014,Maharashtra,Solapur,0.4,0.1,250.0,11
+841,2015,Maharashtra,Solapur,0.2,0.0,0.0,11
+842,2016,Maharashtra,Solapur,0.2,0.04,215.0,11
+843,2017,Maharashtra,Solapur,0.6,0.07,116.67,11
+844,2010,Maharashtra,Kolhapur,112.0,323.12,2885.0,11
+845,2011,Maharashtra,Kolhapur,104.9,280.88,2677.6,11
+846,2012,Maharashtra,Kolhapur,108.5,283.96,2617.14,11
+847,2013,Maharashtra,Kolhapur,109.6,341.8,3118.61,11
+848,2014,Maharashtra,Kolhapur,111.8,338.6,3028.62,11
+849,2015,Maharashtra,Kolhapur,112.4,276.6,2460.85,11
+850,2016,Maharashtra,Kolhapur,114.2,397.8,3483.36,11
+851,2017,Maharashtra,Kolhapur,109.46,334.3,3054.2,11
+852,2010,Maharashtra,Aurangabad,0.01,0.02,2000.0,11
+853,2011,Maharashtra,Aurangabad,0.0,0.0,0.0,11
+854,2012,Maharashtra,Aurangabad,0.0,0.0,0.0,11
+855,2013,Maharashtra,Aurangabad,0.0,0.0,0.0,11
+856,2014,Maharashtra,Aurangabad,0.0,0.0,0.0,11
+857,2015,Maharashtra,Aurangabad,0.0,0.0,0.0,11
+858,2016,Maharashtra,Aurangabad,6.5,3.1,476.92,11
+859,2017,Maharashtra,Aurangabad,0.0,0.0,0.0,11
+860,2010,Maharashtra,Parbhani,5.1,2.47,484.31,11
+861,2011,Maharashtra,Parbhani,2.3,0.8,347.83,11
+862,2012,Maharashtra,Parbhani,2.0,0.33,165.0,11
+863,2013,Maharashtra,Parbhani,0.7,0.3,428.57,11
+864,2014,Maharashtra,Parbhani,0.3,0.0,0.0,11
+865,2015,Maharashtra,Parbhani,0.0,0.0,0.0,11
+866,2016,Maharashtra,Parbhani,0.02,0.0,200.0,11
+867,2017,Maharashtra,Parbhani,0.0,0.0,0.0,11
+868,2010,Maharashtra,Beed,0.8,0.34,425.0,11
+869,2011,Maharashtra,Beed,0.6,0.28,466.67,11
+870,2012,Maharashtra,Beed,0.6,0.27,450.0,11
+871,2013,Maharashtra,Beed,0.5,0.3,600.0,11
+872,2014,Maharashtra,Beed,0.4,0.1,250.0,11
+873,2015,Maharashtra,Beed,0.3,0.0,0.0,11
+874,2016,Maharashtra,Beed,0.1,0.07,700.0,11
+875,2017,Maharashtra,Beed,0.06,0.03,461.54,11
+876,2010,Maharashtra,Nanded,5.2,2.71,521.15,11
+877,2011,Maharashtra,Nanded,4.0,1.5,375.0,11
+878,2012,Maharashtra,Nanded,4.0,2.09,522.5,11
+879,2013,Maharashtra,Nanded,0.8,0.4,500.0,11
+880,2014,Maharashtra,Nanded,0.8,0.1,125.0,11
+881,2015,Maharashtra,Nanded,0.4,0.1,250.0,11
+882,2016,Maharashtra,Nanded,0.7,1.3,1857.14,11
+883,2017,Maharashtra,Nanded,0.81,1.2,1485.15,11
+884,2010,Maharashtra,Osmanabad,17.5,6.19,353.71,11
+885,2011,Maharashtra,Osmanabad,17.4,7.3,419.54,11
+886,2012,Maharashtra,Osmanabad,19.8,7.77,392.42,11
+887,2013,Maharashtra,Osmanabad,20.7,11.5,555.56,11
+888,2014,Maharashtra,Osmanabad,18.9,3.6,190.48,11
+889,2015,Maharashtra,Osmanabad,10.0,0.9,90.0,11
+890,2016,Maharashtra,Osmanabad,9.6,2.1,218.75,11
+891,2017,Maharashtra,Osmanabad,10.3,3.0,291.26,11
+892,2010,Maharashtra,Buldhana,0.0,0.0,0.0,11
+893,2011,Maharashtra,Buldhana,0.0,0.0,0.0,11
+894,2012,Maharashtra,Buldhana,0.0,0.0,0.0,11
+895,2013,Maharashtra,Buldhana,0.0,0.0,0.0,11
+896,2014,Maharashtra,Buldhana,0.0,0.0,0.0,11
+897,2015,Maharashtra,Buldhana,0.0,0.0,0.0,11
+898,2016,Maharashtra,Buldhana,0.01,0.0,400.0,11
+899,2017,Maharashtra,Buldhana,0.0,0.0,0.0,11
+900,2010,Maharashtra,Akola,0.0,0.0,0.0,11
+901,2011,Maharashtra,Akola,0.2,0.2,1000.0,11
+902,2012,Maharashtra,Akola,0.0,0.0,0.0,11
+903,2013,Maharashtra,Akola,0.0,0.0,0.0,11
+904,2014,Maharashtra,Akola,0.0,0.0,0.0,11
+905,2015,Maharashtra,Akola,0.0,0.0,0.0,11
+906,2016,Maharashtra,Akola,0.0,0.0,0.0,11
+907,2017,Maharashtra,Akola,0.0,0.0,0.0,11
+908,2010,Maharashtra,Amarawati,3.8,2.76,726.32,11
+909,2011,Maharashtra,Amarawati,4.1,3.1,756.1,11
+910,2012,Maharashtra,Amarawati,3.8,1.55,407.89,11
+911,2013,Maharashtra,Amarawati,4.7,0.8,170.21,11
+912,2014,Maharashtra,Amarawati,5.3,1.6,301.89,11
+913,2015,Maharashtra,Amarawati,5.6,1.2,214.29,11
+914,2016,Maharashtra,Amarawati,6.9,4.6,666.67,11
+915,2017,Maharashtra,Amarawati,8.9,3.0,337.08,11
+916,2010,Maharashtra,Yeotmal,0.0,0.0,0.0,11
+917,2011,Maharashtra,Yeotmal,0.1,0.1,1000.0,11
+918,2012,Maharashtra,Yeotmal,0.1,0.04,400.0,11
+919,2013,Maharashtra,Yeotmal,0.1,0.0,0.0,11
+920,2014,Maharashtra,Yeotmal,0.0,0.0,0.0,11
+921,2015,Maharashtra,Yeotmal,0.0,0.0,0.0,11
+922,2016,Maharashtra,Yeotmal,0.0,0.0,0.0,11
+923,2017,Maharashtra,Yeotmal,0.0,0.0,0.0,11
+924,2010,Maharashtra,Wardha,0.0,0.0,0.0,11
+925,2011,Maharashtra,Wardha,0.0,0.0,0.0,11
+926,2012,Maharashtra,Wardha,0.0,0.0,0.0,11
+927,2013,Maharashtra,Wardha,0.0,0.0,0.0,11
+928,2014,Maharashtra,Wardha,0.0,0.0,0.0,11
+929,2015,Maharashtra,Wardha,0.0,0.0,0.0,11
+930,2016,Maharashtra,Wardha,0.0,0.0,0.0,11
+931,2017,Maharashtra,Wardha,0.0,0.0,0.0,11
+932,2010,Maharashtra,Nagpur,71.5,70.3,983.22,11
+933,2011,Maharashtra,Nagpur,77.5,117.4,1514.84,11
+934,2012,Maharashtra,Nagpur,67.1,100.45,1497.02,11
+935,2013,Maharashtra,Nagpur,77.8,105.2,1352.18,11
+936,2014,Maharashtra,Nagpur,78.8,95.5,1211.93,11
+937,2015,Maharashtra,Nagpur,88.7,107.3,1209.7,11
+938,2016,Maharashtra,Nagpur,87.7,170.4,1942.99,11
+939,2017,Maharashtra,Nagpur,97.28,183.6,1887.43,11
+940,2010,Maharashtra,Bhandara,378.6,607.65,1604.99,11
+941,2011,Maharashtra,Bhandara,365.8,633.82,1732.7,11
+942,2012,Maharashtra,Bhandara,370.7,734.97,1982.65,11
+943,2013,Maharashtra,Bhandara,396.1,649.59,1639.96,11
+944,2014,Maharashtra,Bhandara,383.8,699.5,1822.56,11
+945,2015,Maharashtra,Bhandara,370.4,573.8,1549.14,11
+946,2016,Maharashtra,Bhandara,391.7,888.7,2268.83,11
+947,2017,Maharashtra,Bhandara,315.89,449.1,1421.69,11
+948,2010,Maharashtra,Chandrapur,275.5,400.48,1453.65,11
+949,2011,Maharashtra,Chandrapur,315.0,390.29,1239.02,11
+950,2012,Maharashtra,Chandrapur,315.1,490.78,1557.54,11
+951,2013,Maharashtra,Chandrapur,319.4,450.2,1409.52,11
+952,2014,Maharashtra,Chandrapur,301.5,319.6,1060.03,11
+953,2015,Maharashtra,Chandrapur,292.4,247.9,847.81,11
+954,2016,Maharashtra,Chandrapur,296.5,530.8,1790.22,11
+955,2017,Maharashtra,Chandrapur,284.38,287.3,1010.26,11
+956,2010,Gujarat,Ahmedabad,122.94,332.07,2701.08,4
+957,2011,Gujarat,Ahmedabad,138.29,377.46,2729.43,4
+958,2012,Gujarat,Ahmedabad,114.57,230.48,2011.77,4
+959,2013,Gujarat,Ahmedabad,122.39,290.15,2370.66,4
+960,2014,Gujarat,Ahmedabad,130.4,347.73,2666.66,4
+961,2015,Gujarat,Ahmedabad,130.69,336.39,2574.07,4
+962,2016,Gujarat,Ahmedabad,153.19,414.33,2704.69,4
+963,2017,Gujarat,Ahmedabad,157.76,350.56,2222.13,4
+964,2010,Gujarat,Amreli,0.0,0.0,0.0,4
+965,2011,Gujarat,Amreli,0.0,0.0,0.0,4
+966,2012,Gujarat,Amreli,0.0,0.0,0.0,4
+967,2013,Gujarat,Amreli,0.0,0.0,0.0,4
+968,2014,Gujarat,Amreli,0.0,0.0,0.0,4
+969,2015,Gujarat,Amreli,0.0,0.0,0.0,4
+970,2016,Gujarat,Amreli,0.0,0.0,0.0,4
+971,2017,Gujarat,Amreli,0.0,0.0,0.0,4
+972,2010,Gujarat,Banaskantha,0.0,0.0,0.0,4
+973,2011,Gujarat,Banaskantha,0.0,0.0,0.0,4
+974,2012,Gujarat,Banaskantha,0.0,0.0,0.0,4
+975,2013,Gujarat,Banaskantha,0.0,0.0,0.0,4
+976,2014,Gujarat,Banaskantha,0.0,0.0,0.0,4
+977,2015,Gujarat,Banaskantha,0.08,0.09,1125.0,4
+978,2016,Gujarat,Banaskantha,0.0,0.0,0.0,4
+979,2017,Gujarat,Banaskantha,0.0,0.0,0.0,4
+980,2010,Gujarat,Bharuch,25.2,35.2,1396.83,4
+981,2011,Gujarat,Bharuch,31.0,40.1,1293.55,4
+982,2012,Gujarat,Bharuch,23.4,33.3,1423.08,4
+983,2013,Gujarat,Bharuch,22.65,28.4,1253.86,4
+984,2014,Gujarat,Bharuch,20.79,29.11,1400.19,4
+985,2015,Gujarat,Bharuch,17.74,19.55,1102.03,4
+986,2016,Gujarat,Bharuch,22.4,22.58,1008.35,4
+987,2017,Gujarat,Bharuch,19.52,25.68,1315.44,4
+988,2010,Gujarat,Vadodara / Baroda,55.1,68.1,1235.93,4
+989,2011,Gujarat,Vadodara / Baroda,44.4,55.3,1245.5,4
+990,2012,Gujarat,Vadodara / Baroda,44.6,63.2,1417.04,4
+991,2013,Gujarat,Vadodara / Baroda,38.07,50.7,1331.76,4
+992,2014,Gujarat,Vadodara / Baroda,41.68,66.82,1603.17,4
+993,2015,Gujarat,Vadodara / Baroda,39.6,63.87,1612.88,4
+994,2016,Gujarat,Vadodara / Baroda,40.6,72.66,1789.73,4
+995,2017,Gujarat,Vadodara / Baroda,45.0,71.93,1598.48,4
+996,2010,Gujarat,Bhavnagar,0.0,0.0,0.0,4
+997,2011,Gujarat,Bhavnagar,0.0,0.0,0.0,4
+998,2012,Gujarat,Bhavnagar,0.0,0.0,0.0,4
+999,2013,Gujarat,Bhavnagar,0.0,0.0,0.0,4
+1000,2014,Gujarat,Bhavnagar,0.0,0.0,0.0,4
+1001,2015,Gujarat,Bhavnagar,0.0,0.0,0.0,4
+1002,2016,Gujarat,Bhavnagar,0.0,0.0,0.0,4
+1003,2017,Gujarat,Bhavnagar,0.0,0.0,0.0,4
+1004,2010,Gujarat,Valsad,155.6,383.6,2465.3,4
+1005,2011,Gujarat,Valsad,149.6,368.4,2462.57,4
+1006,2012,Gujarat,Valsad,124.0,300.7,2425.0,4
+1007,2013,Gujarat,Valsad,150.35,348.71,2319.32,4
+1008,2014,Gujarat,Valsad,139.23,338.52,2431.37,4
+1009,2015,Gujarat,Valsad,118.98,294.03,2471.26,4
+1010,2016,Gujarat,Valsad,142.31,381.77,2682.63,4
+1011,2017,Gujarat,Valsad,121.65,307.38,2526.81,4
+1012,2010,Gujarat,Dangs,18.0,23.4,1300.0,4
+1013,2011,Gujarat,Dangs,18.0,30.7,1705.56,4
+1014,2012,Gujarat,Dangs,13.8,21.8,1579.71,4
+1015,2013,Gujarat,Dangs,16.81,43.18,2568.71,4
+1016,2014,Gujarat,Dangs,14.46,21.6,1493.78,4
+1017,2015,Gujarat,Dangs,21.11,41.66,1973.47,4
+1018,2016,Gujarat,Dangs,22.2,53.64,2415.72,4
+1019,2017,Gujarat,Dangs,20.83,49.96,2398.34,4
+1020,2010,Gujarat,Jamnagar,0.0,0.0,0.0,4
+1021,2011,Gujarat,Jamnagar,0.0,0.0,0.0,4
+1022,2012,Gujarat,Jamnagar,0.0,0.0,0.0,4
+1023,2013,Gujarat,Jamnagar,0.0,0.0,0.0,4
+1024,2014,Gujarat,Jamnagar,0.0,0.0,0.0,4
+1025,2015,Gujarat,Jamnagar,0.0,0.0,0.0,4
+1026,2016,Gujarat,Jamnagar,0.0,0.0,0.0,4
+1027,2017,Gujarat,Jamnagar,0.0,0.0,0.0,4
+1028,2010,Gujarat,Junagadh,0.0,0.0,0.0,4
+1029,2011,Gujarat,Junagadh,0.2,0.5,2500.0,4
+1030,2012,Gujarat,Junagadh,0.0,0.0,0.0,4
+1031,2013,Gujarat,Junagadh,0.0,0.0,0.0,4
+1032,2014,Gujarat,Junagadh,0.0,0.0,0.0,4
+1033,2015,Gujarat,Junagadh,0.0,0.0,0.0,4
+1034,2016,Gujarat,Junagadh,0.0,0.0,0.0,4
+1035,2017,Gujarat,Junagadh,0.0,0.0,0.0,4
+1036,2010,Gujarat,Kheda,186.6,425.6,2280.81,4
+1037,2011,Gujarat,Kheda,201.3,451.3,2241.93,4
+1038,2012,Gujarat,Kheda,179.4,443.9,2474.36,4
+1039,2013,Gujarat,Kheda,228.11,565.12,2477.4,4
+1040,2014,Gujarat,Kheda,220.87,584.24,2645.17,4
+1041,2015,Gujarat,Kheda,219.25,574.85,2621.91,4
+1042,2016,Gujarat,Kheda,222.46,588.99,2647.59,4
+1043,2017,Gujarat,Kheda,235.19,610.28,2594.81,4
+1044,2010,Gujarat,Kutch,0.0,0.0,0.0,4
+1045,2011,Gujarat,Kutch,0.0,0.0,0.0,4
+1046,2012,Gujarat,Kutch,0.0,0.0,0.0,4
+1047,2013,Gujarat,Kutch,0.0,0.0,0.0,4
+1048,2014,Gujarat,Kutch,0.0,0.0,0.0,4
+1049,2015,Gujarat,Kutch,0.0,0.0,0.0,4
+1050,2016,Gujarat,Kutch,0.0,0.0,0.0,4
+1051,2017,Gujarat,Kutch,0.0,0.0,0.0,4
+1052,2010,Gujarat,Mehsana,14.76,32.53,2203.86,4
+1053,2011,Gujarat,Mehsana,9.01,17.94,1991.67,4
+1054,2012,Gujarat,Mehsana,2.83,6.52,2300.18,4
+1055,2013,Gujarat,Mehsana,9.06,19.61,2164.91,4
+1056,2014,Gujarat,Mehsana,10.29,25.99,2525.58,4
+1057,2015,Gujarat,Mehsana,11.58,26.32,2271.73,4
+1058,2016,Gujarat,Mehsana,8.49,15.96,1879.08,4
+1059,2017,Gujarat,Mehsana,12.08,24.52,2030.04,4
+1060,2010,Gujarat,Panchmahal,106.7,93.0,871.6,4
+1061,2011,Gujarat,Panchmahal,115.3,132.5,1149.18,4
+1062,2012,Gujarat,Panchmahal,99.3,155.5,1565.96,4
+1063,2013,Gujarat,Panchmahal,120.49,159.44,1323.26,4
+1064,2014,Gujarat,Panchmahal,110.17,105.99,962.05,4
+1065,2015,Gujarat,Panchmahal,105.67,93.59,885.67,4
+1066,2016,Gujarat,Panchmahal,126.38,152.59,1207.35,4
+1067,2017,Gujarat,Panchmahal,127.96,144.13,1126.36,4
+1068,2010,Gujarat,Rajkot,0.0,0.0,0.0,4
+1069,2011,Gujarat,Rajkot,0.0,0.0,0.0,4
+1070,2012,Gujarat,Rajkot,0.0,0.0,0.0,4
+1071,2013,Gujarat,Rajkot,0.0,0.0,0.0,4
+1072,2014,Gujarat,Rajkot,0.0,0.0,0.0,4
+1073,2015,Gujarat,Rajkot,0.0,0.0,0.0,4
+1074,2016,Gujarat,Rajkot,0.0,0.0,0.0,4
+1075,2017,Gujarat,Rajkot,0.0,0.0,0.0,4
+1076,2010,Gujarat,Sabarkantha,5.6,12.0,2142.86,4
+1077,2011,Gujarat,Sabarkantha,6.7,15.9,2373.13,4
+1078,2012,Gujarat,Sabarkantha,3.7,8.2,2216.22,4
+1079,2013,Gujarat,Sabarkantha,1.68,3.56,2119.05,4
+1080,2014,Gujarat,Sabarkantha,5.89,10.15,1723.26,4
+1081,2015,Gujarat,Sabarkantha,4.73,12.67,2678.65,4
+1082,2016,Gujarat,Sabarkantha,7.67,21.14,2756.13,4
+1083,2017,Gujarat,Sabarkantha,8.66,29.87,3448.97,4
+1084,2010,Gujarat,Surat,117.6,260.3,2213.44,4
+1085,2011,Gujarat,Surat,121.2,298.4,2462.05,4
+1086,2012,Gujarat,Surat,95.3,233.3,2448.06,4
+1087,2013,Gujarat,Surat,110.55,268.87,2432.11,4
+1088,2014,Gujarat,Surat,100.68,241.43,2397.99,4
+1089,2015,Gujarat,Surat,104.13,227.2,2181.89,4
+1090,2016,Gujarat,Surat,101.53,263.84,2598.74,4
+1091,2017,Gujarat,Surat,105.79,273.93,2589.32,4
+1092,2010,Gujarat,Surendranagar,0.0,0.0,0.0,4
+1093,2011,Gujarat,Surendranagar,0.5,1.2,2400.0,4
+1094,2012,Gujarat,Surendranagar,0.2,0.4,2000.0,4
+1095,2013,Gujarat,Surendranagar,0.23,0.36,1565.22,4
+1096,2014,Gujarat,Surendranagar,0.0,0.0,0.0,4
+1097,2015,Gujarat,Surendranagar,0.66,1.66,2515.15,4
+1098,2016,Gujarat,Surendranagar,0.37,0.97,2596.77,4
+1099,2017,Gujarat,Surendranagar,0.85,1.57,1853.77,4
+1100,2010,Rajasthan,Ajmer,0.01,0.02,2000.0,14
+1101,2011,Rajasthan,Ajmer,0.01,0.02,2000.0,14
+1102,2012,Rajasthan,Ajmer,0.01,0.01,1000.0,14
+1103,2013,Rajasthan,Ajmer,0.01,0.01,1000.0,14
+1104,2014,Rajasthan,Ajmer,0.01,0.02,2000.0,14
+1105,2015,Rajasthan,Ajmer,0.0,0.0,0.0,14
+1106,2016,Rajasthan,Ajmer,0.01,0.02,2285.71,14
+1107,2017,Rajasthan,Ajmer,0.01,0.02,2333.33,14
+1108,2010,Rajasthan,Alwar,0.38,0.77,2026.32,14
+1109,2011,Rajasthan,Alwar,0.38,0.71,1868.42,14
+1110,2012,Rajasthan,Alwar,0.79,1.39,1759.49,14
+1111,2013,Rajasthan,Alwar,0.4,0.86,2150.0,14
+1112,2014,Rajasthan,Alwar,0.35,0.77,2200.0,14
+1113,2015,Rajasthan,Alwar,0.29,0.58,2000.0,14
+1114,2016,Rajasthan,Alwar,0.27,0.61,2289.47,14
+1115,2017,Rajasthan,Alwar,0.24,0.56,2367.09,14
+1116,2010,Rajasthan,Banswara,27.47,18.49,673.37,14
+1117,2011,Rajasthan,Banswara,28.93,37.54,1297.65,14
+1118,2012,Rajasthan,Banswara,30.07,32.23,1071.85,14
+1119,2013,Rajasthan,Banswara,30.27,29.75,982.68,14
+1120,2014,Rajasthan,Banswara,28.05,18.43,657.08,14
+1121,2015,Rajasthan,Banswara,27.54,14.34,520.72,14
+1122,2016,Rajasthan,Banswara,29.52,31.15,1055.47,14
+1123,2017,Rajasthan,Banswara,28.87,29.52,1022.5,14
+1124,2010,Rajasthan,Barmer,0.0,0.0,0.0,14
+1125,2011,Rajasthan,Barmer,0.0,0.0,0.0,14
+1126,2012,Rajasthan,Barmer,0.0,0.0,0.0,14
+1127,2013,Rajasthan,Barmer,0.0,0.0,0.0,14
+1128,2014,Rajasthan,Barmer,0.0,0.0,0.0,14
+1129,2015,Rajasthan,Barmer,0.0,0.0,0.0,14
+1130,2016,Rajasthan,Barmer,0.0,0.0,0.0,14
+1131,2017,Rajasthan,Barmer,0.0,0.0,0.0,14
+1132,2010,Rajasthan,Bharatpur,2.22,4.48,2018.02,14
+1133,2011,Rajasthan,Bharatpur,2.92,6.95,2380.14,14
+1134,2012,Rajasthan,Bharatpur,1.49,2.92,1959.73,14
+1135,2013,Rajasthan,Bharatpur,2.36,4.73,2004.24,14
+1136,2014,Rajasthan,Bharatpur,2.64,5.79,2193.18,14
+1137,2015,Rajasthan,Bharatpur,2.61,5.98,2291.19,14
+1138,2016,Rajasthan,Bharatpur,1.78,4.06,2283.62,14
+1139,2017,Rajasthan,Bharatpur,1.36,3.01,2209.1,14
+1140,2010,Rajasthan,Bhilwara,0.39,0.79,2025.64,14
+1141,2011,Rajasthan,Bhilwara,0.37,0.69,1864.86,14
+1142,2012,Rajasthan,Bhilwara,0.26,0.45,1730.77,14
+1143,2013,Rajasthan,Bhilwara,0.29,0.63,2172.41,14
+1144,2014,Rajasthan,Bhilwara,0.51,1.12,2196.08,14
+1145,2015,Rajasthan,Bhilwara,0.57,1.14,2000.0,14
+1146,2016,Rajasthan,Bhilwara,0.51,1.18,2289.32,14
+1147,2017,Rajasthan,Bhilwara,0.58,1.36,2366.32,14
+1148,2010,Rajasthan,Bikaner,0.04,0.08,2000.0,14
+1149,2011,Rajasthan,Bikaner,0.03,0.06,2000.0,14
+1150,2012,Rajasthan,Bikaner,0.03,0.05,1666.67,14
+1151,2013,Rajasthan,Bikaner,0.02,0.04,2000.0,14
+1152,2014,Rajasthan,Bikaner,0.04,0.08,2000.0,14
+1153,2015,Rajasthan,Bikaner,0.02,0.03,1500.0,14
+1154,2016,Rajasthan,Bikaner,0.01,0.02,2250.0,14
+1155,2017,Rajasthan,Bikaner,0.0,0.0,0.0,14
+1156,2010,Rajasthan,Bundi,22.9,42.97,1876.42,14
+1157,2011,Rajasthan,Bundi,20.97,34.22,1631.86,14
+1158,2012,Rajasthan,Bundi,19.31,38.18,1977.21,14
+1159,2013,Rajasthan,Bundi,29.47,71.95,2441.47,14
+1160,2014,Rajasthan,Bundi,34.55,76.73,2220.84,14
+1161,2015,Rajasthan,Bundi,39.86,88.82,2228.3,14
+1162,2016,Rajasthan,Bundi,44.35,118.52,2672.73,14
+1163,2017,Rajasthan,Bundi,47.01,133.1,2831.55,14
+1164,2010,Rajasthan,Chittorgarh,1.28,2.57,2018.19,14
+1165,2011,Rajasthan,Chittorgarh,0.91,1.71,1882.79,14
+1166,2012,Rajasthan,Chittorgarh,0.7,1.23,1761.85,14
+1167,2013,Rajasthan,Chittorgarh,0.69,1.48,2133.93,14
+1168,2014,Rajasthan,Chittorgarh,0.88,1.91,2178.02,14
+1169,2015,Rajasthan,Chittorgarh,1.26,2.54,2015.79,14
+1170,2016,Rajasthan,Chittorgarh,1.13,1.79,1590.23,14
+1171,2017,Rajasthan,Chittorgarh,1.35,3.12,2314.17,14
+1172,2010,Rajasthan,Churu,0.0,0.0,0.0,14
+1173,2011,Rajasthan,Churu,0.0,0.0,0.0,14
+1174,2012,Rajasthan,Churu,0.0,0.0,0.0,14
+1175,2013,Rajasthan,Churu,0.0,0.0,0.0,14
+1176,2014,Rajasthan,Churu,0.0,0.0,0.0,14
+1177,2015,Rajasthan,Churu,0.0,0.0,0.0,14
+1178,2016,Rajasthan,Churu,0.0,0.0,0.0,14
+1179,2017,Rajasthan,Churu,0.0,0.0,0.0,14
+1180,2010,Rajasthan,Dungarpur,13.73,9.06,659.87,14
+1181,2011,Rajasthan,Dungarpur,22.03,17.13,777.58,14
+1182,2012,Rajasthan,Dungarpur,22.73,21.48,945.01,14
+1183,2013,Rajasthan,Dungarpur,22.89,25.09,1096.11,14
+1184,2014,Rajasthan,Dungarpur,16.33,11.38,696.88,14
+1185,2015,Rajasthan,Dungarpur,16.36,11.02,673.59,14
+1186,2016,Rajasthan,Dungarpur,17.68,22.43,1268.54,14
+1187,2017,Rajasthan,Dungarpur,17.17,19.73,1149.47,14
+1188,2010,Rajasthan,Ganganagar,30.34,108.5,3576.14,14
+1189,2011,Rajasthan,Ganganagar,31.32,99.15,3165.71,14
+1190,2012,Rajasthan,Ganganagar,29.01,79.68,2746.64,14
+1191,2013,Rajasthan,Ganganagar,32.28,122.69,3800.81,14
+1192,2014,Rajasthan,Ganganagar,39.42,139.12,3529.17,14
+1193,2015,Rajasthan,Ganganagar,45.9,133.06,2898.91,14
+1194,2016,Rajasthan,Ganganagar,48.22,140.27,2908.67,14
+1195,2017,Rajasthan,Ganganagar,42.18,127.29,3017.4,14
+1196,2010,Rajasthan,Jaipur,0.0,0.0,0.0,14
+1197,2011,Rajasthan,Jaipur,0.0,0.0,0.0,14
+1198,2012,Rajasthan,Jaipur,0.0,0.0,0.0,14
+1199,2013,Rajasthan,Jaipur,0.0,0.0,0.0,14
+1200,2014,Rajasthan,Jaipur,0.0,0.0,0.0,14
+1201,2015,Rajasthan,Jaipur,0.0,0.0,0.0,14
+1202,2016,Rajasthan,Jaipur,0.0,0.0,0.0,14
+1203,2017,Rajasthan,Jaipur,0.0,0.0,0.0,14
+1204,2010,Rajasthan,Jaisalmer,0.0,0.0,0.0,14
+1205,2011,Rajasthan,Jaisalmer,0.0,0.0,0.0,14
+1206,2012,Rajasthan,Jaisalmer,0.0,0.0,0.0,14
+1207,2013,Rajasthan,Jaisalmer,0.0,0.0,0.0,14
+1208,2014,Rajasthan,Jaisalmer,0.0,0.0,0.0,14
+1209,2015,Rajasthan,Jaisalmer,0.0,0.0,0.0,14
+1210,2016,Rajasthan,Jaisalmer,0.0,0.0,0.0,14
+1211,2017,Rajasthan,Jaisalmer,0.0,0.0,0.0,14
+1212,2010,Rajasthan,Jalore,0.0,0.0,0.0,14
+1213,2011,Rajasthan,Jalore,0.0,0.0,0.0,14
+1214,2012,Rajasthan,Jalore,0.0,0.0,0.0,14
+1215,2013,Rajasthan,Jalore,0.0,0.0,0.0,14
+1216,2014,Rajasthan,Jalore,0.0,0.0,0.0,14
+1217,2015,Rajasthan,Jalore,0.0,0.0,0.0,14
+1218,2016,Rajasthan,Jalore,0.0,0.0,0.0,14
+1219,2017,Rajasthan,Jalore,0.0,0.0,0.0,14
+1220,2010,Rajasthan,Jhalawar,2.29,5.86,2558.95,14
+1221,2011,Rajasthan,Jhalawar,1.78,7.3,4101.12,14
+1222,2012,Rajasthan,Jhalawar,1.62,2.86,1765.43,14
+1223,2013,Rajasthan,Jhalawar,2.06,4.42,2145.63,14
+1224,2014,Rajasthan,Jhalawar,3.23,7.06,2185.76,14
+1225,2015,Rajasthan,Jhalawar,3.26,6.59,2021.47,14
+1226,2016,Rajasthan,Jhalawar,4.42,8.05,1818.72,14
+1227,2017,Rajasthan,Jhalawar,4.45,12.82,2884.81,14
+1228,2010,Rajasthan,Jhunjhunu,0.0,0.0,0.0,14
+1229,2011,Rajasthan,Jhunjhunu,0.0,0.0,0.0,14
+1230,2012,Rajasthan,Jhunjhunu,0.0,0.0,0.0,14
+1231,2013,Rajasthan,Jhunjhunu,0.0,0.0,0.0,14
+1232,2014,Rajasthan,Jhunjhunu,0.0,0.0,0.0,14
+1233,2015,Rajasthan,Jhunjhunu,0.0,0.0,0.0,14
+1234,2016,Rajasthan,Jhunjhunu,0.0,0.0,0.0,14
+1235,2017,Rajasthan,Jhunjhunu,0.0,0.0,0.0,14
+1236,2010,Rajasthan,Jodhpur,0.0,0.0,0.0,14
+1237,2011,Rajasthan,Jodhpur,0.0,0.0,0.0,14
+1238,2012,Rajasthan,Jodhpur,0.0,0.0,0.0,14
+1239,2013,Rajasthan,Jodhpur,0.0,0.0,0.0,14
+1240,2014,Rajasthan,Jodhpur,0.0,0.0,0.0,14
+1241,2015,Rajasthan,Jodhpur,0.0,0.0,0.0,14
+1242,2016,Rajasthan,Jodhpur,0.0,0.0,0.0,14
+1243,2017,Rajasthan,Jodhpur,0.0,0.0,0.0,14
+1244,2010,Rajasthan,Kota,22.2,62.06,2795.5,14
+1245,2011,Rajasthan,Kota,16.72,38.41,2297.25,14
+1246,2012,Rajasthan,Kota,12.3,33.1,2691.06,14
+1247,2013,Rajasthan,Kota,17.18,40.85,2377.76,14
+1248,2014,Rajasthan,Kota,33.61,93.7,2787.86,14
+1249,2015,Rajasthan,Kota,36.14,93.68,2592.14,14
+1250,2016,Rajasthan,Kota,41.19,111.89,2716.4,14
+1251,2017,Rajasthan,Kota,39.05,108.62,2781.65,14
+1252,2010,Rajasthan,Nagaur,0.0,0.0,0.0,14
+1253,2011,Rajasthan,Nagaur,0.0,0.0,0.0,14
+1254,2012,Rajasthan,Nagaur,0.0,0.0,0.0,14
+1255,2013,Rajasthan,Nagaur,0.0,0.0,0.0,14
+1256,2014,Rajasthan,Nagaur,0.0,0.0,0.0,14
+1257,2015,Rajasthan,Nagaur,0.0,0.0,0.0,14
+1258,2016,Rajasthan,Nagaur,0.0,0.0,0.0,14
+1259,2017,Rajasthan,Nagaur,0.0,0.0,0.0,14
+1260,2010,Rajasthan,Pali,0.0,0.0,0.0,14
+1261,2011,Rajasthan,Pali,0.0,0.0,0.0,14
+1262,2012,Rajasthan,Pali,0.0,0.0,0.0,14
+1263,2013,Rajasthan,Pali,0.0,0.0,0.0,14
+1264,2014,Rajasthan,Pali,0.0,0.0,0.0,14
+1265,2015,Rajasthan,Pali,0.0,0.0,0.0,14
+1266,2016,Rajasthan,Pali,0.0,0.0,0.0,14
+1267,2017,Rajasthan,Pali,0.0,0.0,0.0,14
+1268,2010,Rajasthan,Swami Madhopur,2.48,3.55,1431.45,14
+1269,2011,Rajasthan,Swami Madhopur,2.09,2.95,1411.48,14
+1270,2012,Rajasthan,Swami Madhopur,2.21,3.31,1497.74,14
+1271,2013,Rajasthan,Swami Madhopur,2.37,3.6,1518.99,14
+1272,2014,Rajasthan,Swami Madhopur,2.87,4.46,1554.01,14
+1273,2015,Rajasthan,Swami Madhopur,3.91,6.69,1711.0,14
+1274,2016,Rajasthan,Swami Madhopur,3.5,6.51,1859.1,14
+1275,2017,Rajasthan,Swami Madhopur,2.87,5.1,1773.14,14
+1276,2010,Rajasthan,Sikar,0.0,0.0,0.0,14
+1277,2011,Rajasthan,Sikar,0.0,0.0,0.0,14
+1278,2012,Rajasthan,Sikar,0.0,0.0,0.0,14
+1279,2013,Rajasthan,Sikar,0.0,0.0,0.0,14
+1280,2014,Rajasthan,Sikar,0.0,0.0,0.0,14
+1281,2015,Rajasthan,Sikar,0.0,0.0,0.0,14
+1282,2016,Rajasthan,Sikar,0.0,0.0,0.0,14
+1283,2017,Rajasthan,Sikar,0.0,0.0,0.0,14
+1284,2010,Rajasthan,Sirohi,0.0,0.0,0.0,14
+1285,2011,Rajasthan,Sirohi,0.0,0.0,0.0,14
+1286,2012,Rajasthan,Sirohi,0.0,0.0,0.0,14
+1287,2013,Rajasthan,Sirohi,0.0,0.0,0.0,14
+1288,2014,Rajasthan,Sirohi,0.0,0.0,0.0,14
+1289,2015,Rajasthan,Sirohi,0.01,0.01,1000.0,14
+1290,2016,Rajasthan,Sirohi,0.0,0.0,2500.0,14
+1291,2017,Rajasthan,Sirohi,0.0,0.0,0.0,14
+1292,2010,Rajasthan,Tonk,0.0,0.0,0.0,14
+1293,2011,Rajasthan,Tonk,0.0,0.0,0.0,14
+1294,2012,Rajasthan,Tonk,0.0,0.0,0.0,14
+1295,2013,Rajasthan,Tonk,0.0,0.0,0.0,14
+1296,2014,Rajasthan,Tonk,0.01,0.01,1000.0,14
+1297,2015,Rajasthan,Tonk,0.01,0.01,1000.0,14
+1298,2016,Rajasthan,Tonk,0.0,0.0,2000.0,14
+1299,2017,Rajasthan,Tonk,0.0,0.0,2500.0,14
+1300,2010,Rajasthan,Udaipur,5.42,6.35,1172.07,14
+1301,2011,Rajasthan,Udaipur,5.9,6.55,1110.24,14
+1302,2012,Rajasthan,Udaipur,5.14,5.64,1097.17,14
+1303,2013,Rajasthan,Udaipur,5.29,6.49,1226.4,14
+1304,2014,Rajasthan,Udaipur,5.27,6.1,1158.6,14
+1305,2015,Rajasthan,Udaipur,5.18,5.3,1023.02,14
+1306,2016,Rajasthan,Udaipur,5.17,6.19,1197.52,14
+1307,2017,Rajasthan,Udaipur,5.51,6.68,1210.68,14
+1308,2010,Punjab,Gurdaspur,204.0,705.0,3455.88,13
+1309,2011,Punjab,Gurdaspur,174.39,649.0,3721.54,13
+1310,2012,Punjab,Gurdaspur,201.0,618.0,3074.63,13
+1311,2013,Punjab,Gurdaspur,202.0,585.0,2896.04,13
+1312,2014,Punjab,Gurdaspur,202.0,524.0,2594.06,13
+1313,2015,Punjab,Gurdaspur,203.0,588.0,2896.55,13
+1314,2016,Punjab,Gurdaspur,203.0,634.0,3123.15,13
+1315,2017,Punjab,Gurdaspur,204.0,729.0,3573.53,13
+1316,2010,Punjab,Amritsar,358.0,1003.0,2801.68,13
+1317,2011,Punjab,Amritsar,357.0,972.0,2722.69,13
+1318,2012,Punjab,Amritsar,364.0,1143.0,3140.11,13
+1319,2013,Punjab,Amritsar,359.0,1112.0,3097.49,13
+1320,2014,Punjab,Amritsar,358.0,1045.0,2918.99,13
+1321,2015,Punjab,Amritsar,359.0,1017.0,2832.87,13
+1322,2016,Punjab,Amritsar,366.0,1188.0,3245.9,13
+1323,2017,Punjab,Amritsar,362.0,1436.0,3966.85,13
+1324,2010,Punjab,Kapurthala,118.0,459.0,3889.83,13
+1325,2011,Punjab,Kapurthala,118.0,433.0,3669.49,13
+1326,2012,Punjab,Kapurthala,117.0,445.0,3803.42,13
+1327,2013,Punjab,Kapurthala,117.0,451.0,3854.7,13
+1328,2014,Punjab,Kapurthala,117.0,439.0,3752.14,13
+1329,2015,Punjab,Kapurthala,118.0,474.0,4016.95,13
+1330,2016,Punjab,Kapurthala,118.0,483.0,4093.22,13
+1331,2017,Punjab,Kapurthala,118.0,513.0,4347.46,13
+1332,2010,Punjab,Jalandhar,198.38,728.91,3674.31,13
+1333,2011,Punjab,Jalandhar,199.77,720.86,3608.45,13
+1334,2012,Punjab,Jalandhar,199.77,768.96,3849.23,13
+1335,2013,Punjab,Jalandhar,201.16,719.22,3575.36,13
+1336,2014,Punjab,Jalandhar,201.77,753.86,3736.23,13
+1337,2015,Punjab,Jalandhar,203.99,806.72,3954.7,13
+1338,2016,Punjab,Jalandhar,206.6,857.6,4151.02,13
+1339,2017,Punjab,Jalandhar,207.6,887.02,4272.74,13
+1340,2010,Punjab,Hoshiarpur,95.62,351.09,3671.72,13
+1341,2011,Punjab,Hoshiarpur,96.23,357.14,3711.32,13
+1342,2012,Punjab,Hoshiarpur,92.23,344.04,3730.24,13
+1343,2013,Punjab,Hoshiarpur,91.84,330.78,3601.7,13
+1344,2014,Punjab,Hoshiarpur,93.23,332.14,3562.59,13
+1345,2015,Punjab,Hoshiarpur,95.01,353.28,3718.35,13
+1346,2016,Punjab,Hoshiarpur,97.4,388.4,3987.68,13
+1347,2017,Punjab,Hoshiarpur,98.4,401.98,4085.16,13
+1348,2010,Punjab,Roopnagar / Ropar,56.5,210.5,3725.66,13
+1349,2011,Punjab,Roopnagar / Ropar,54.0,186.5,3453.7,13
+1350,2012,Punjab,Roopnagar / Ropar,53.5,203.5,3803.74,13
+1351,2013,Punjab,Roopnagar / Ropar,50.5,175.5,3475.25,13
+1352,2014,Punjab,Roopnagar / Ropar,50.5,176.0,3485.15,13
+1353,2015,Punjab,Roopnagar / Ropar,51.5,219.0,4252.43,13
+1354,2016,Punjab,Roopnagar / Ropar,53.5,228.0,4261.68,13
+1355,2017,Punjab,Roopnagar / Ropar,55.5,224.0,4036.04,13
+1356,2010,Punjab,Ludhiana,269.3,1185.35,4401.6,13
+1357,2011,Punjab,Ludhiana,269.9,1148.6,4255.65,13
+1358,2012,Punjab,Ludhiana,269.9,1226.6,4544.65,13
+1359,2013,Punjab,Ludhiana,269.9,1189.65,4407.74,13
+1360,2014,Punjab,Ludhiana,269.9,1175.1,4353.83,13
+1361,2015,Punjab,Ludhiana,269.9,1238.6,4589.11,13
+1362,2016,Punjab,Ludhiana,271.9,1307.75,4809.67,13
+1363,2017,Punjab,Ludhiana,270.9,1283.25,4736.99,13
+1364,2010,Punjab,Ferozpur,542.16,2127.64,3924.38,13
+1365,2011,Punjab,Ferozpur,544.12,2047.84,3763.58,13
+1366,2012,Punjab,Ferozpur,560.04,2321.66,4145.53,13
+1367,2013,Punjab,Ferozpur,567.3,2328.1,4103.83,13
+1368,2014,Punjab,Ferozpur,595.32,2325.0,3905.46,13
+1369,2015,Punjab,Ferozpur,624.74,2489.98,3985.63,13
+1370,2016,Punjab,Ferozpur,642.84,2649.42,4121.43,13
+1371,2017,Punjab,Ferozpur,641.06,2726.58,4253.24,13
+1372,2010,Punjab,Bhatinda,284.84,1165.36,4091.28,13
+1373,2011,Punjab,Bhatinda,275.88,1108.16,4016.82,13
+1374,2012,Punjab,Bhatinda,287.96,1223.34,4248.3,13
+1375,2013,Punjab,Bhatinda,294.7,1280.9,4346.45,13
+1376,2014,Punjab,Bhatinda,309.68,1280.0,4133.3,13
+1377,2015,Punjab,Bhatinda,347.26,1497.02,4310.95,13
+1378,2016,Punjab,Bhatinda,376.16,1646.58,4377.34,13
+1379,2017,Punjab,Bhatinda,388.94,1783.42,4585.33,13
+1380,2010,Punjab,Sangrur,383.56,1677.92,4374.6,13
+1381,2011,Punjab,Sangrur,385.88,1676.12,4343.63,13
+1382,2012,Punjab,Sangrur,388.88,1819.72,4679.39,13
+1383,2013,Punjab,Sangrur,386.88,1818.08,4699.34,13
+1384,2014,Punjab,Sangrur,385.88,1817.92,4711.1,13
+1385,2015,Punjab,Sangrur,390.88,1875.72,4798.71,13
+1386,2016,Punjab,Sangrur,396.88,1903.4,4795.91,13
+1388,2010,Punjab,Patiala,315.64,1205.23,3818.37,13
+1389,2011,Punjab,Patiala,316.22,1242.78,3930.11,13
+1390,2012,Punjab,Patiala,314.72,1276.18,4054.97,13
+1391,2013,Punjab,Patiala,310.72,1276.77,4109.07,13
+1392,2014,Punjab,Patiala,310.72,1238.98,3987.45,13
+1393,2015,Punjab,Patiala,311.72,1263.68,4053.89,13
+1394,2016,Punjab,Patiala,313.72,1351.85,4309.1,13
+1395,2017,Punjab,Patiala,314.72,1359.15,4318.6,13
+1396,2010,Haryana,Hissar,208.82,687.24,3291.02,5
+1397,2011,Haryana,Hissar,205.52,671.66,3268.02,5
+1398,2012,Haryana,Hissar,207.57,730.4,3518.88,5
+1399,2013,Haryana,Hissar,217.36,773.85,3560.22,5
+1400,2014,Haryana,Hissar,243.91,822.3,3371.33,5
+1401,2015,Haryana,Hissar,282.25,930.63,3297.18,5
+1402,2016,Haryana,Hissar,289.75,1031.73,3560.75,5
+1403,2017,Haryana,Hissar,305.38,1077.83,3529.46,5
+1404,2010,Haryana,Gurgaon,54.0,140.0,2592.59,5
+1405,2011,Haryana,Gurgaon,54.8,149.0,2718.98,5
+1406,2012,Haryana,Gurgaon,49.23,134.0,2721.92,5
+1407,2013,Haryana,Gurgaon,55.0,149.0,2709.09,5
+1408,2014,Haryana,Gurgaon,57.0,159.0,2789.47,5
+1409,2015,Haryana,Gurgaon,59.0,138.0,2338.98,5
+1410,2016,Haryana,Gurgaon,62.1,166.0,2673.11,5
+1411,2017,Haryana,Gurgaon,64.2,174.0,2710.28,5
+1412,2010,Haryana,Jind,142.47,362.48,2544.33,5
+1413,2011,Haryana,Jind,143.4,379.98,2649.75,5
+1414,2012,Haryana,Jind,143.25,410.16,2863.19,5
+1415,2013,Haryana,Jind,148.44,417.6,2813.26,5
+1416,2014,Haryana,Jind,151.98,423.6,2787.21,5
+1417,2015,Haryana,Jind,158.14,401.2,2536.96,5
+1418,2016,Haryana,Jind,164.16,448.36,2731.24,5
+1419,2017,Haryana,Jind,165.65,491.38,2966.34,5
+1420,2010,Haryana,Mahendragarh / Narnaul,8.53,19.72,2312.93,5
+1421,2011,Haryana,Mahendragarh / Narnaul,7.95,21.17,2664.23,5
+1422,2012,Haryana,Mahendragarh / Narnaul,6.09,17.69,2903.38,5
+1423,2013,Haryana,Mahendragarh / Narnaul,6.38,16.24,2545.45,5
+1424,2014,Haryana,Mahendragarh / Narnaul,7.83,13.92,1777.78,5
+1425,2015,Haryana,Mahendragarh / Narnaul,8.99,20.59,2290.32,5
+1426,2016,Haryana,Mahendragarh / Narnaul,10.24,21.75,2124.65,5
+1427,2017,Haryana,Mahendragarh / Narnaul,10.59,25.52,2410.96,5
+1428,2010,Haryana,Ambala,165.6,556.0,3357.49,5
+1429,2011,Haryana,Ambala,164.5,615.0,3738.6,5
+1430,2012,Haryana,Ambala,162.13,645.0,3978.29,5
+1431,2013,Haryana,Ambala,158.0,600.0,3797.47,5
+1432,2014,Haryana,Ambala,163.0,596.0,3656.44,5
+1433,2015,Haryana,Ambala,167.8,638.0,3802.15,5
+1434,2016,Haryana,Ambala,167.3,645.0,3855.35,5
+1435,2017,Haryana,Ambala,170.6,681.0,3991.79,5
+1436,2010,Haryana,Karnal,499.53,1375.52,2753.61,5
+1437,2011,Haryana,Karnal,492.5,1539.02,3124.93,5
+1438,2012,Haryana,Karnal,489.8,1678.84,3427.62,5
+1439,2013,Haryana,Karnal,484.56,1677.4,3461.7,5
+1440,2014,Haryana,Karnal,489.02,1575.4,3221.55,5
+1441,2015,Haryana,Karnal,488.46,1543.8,3160.56,5
+1442,2016,Haryana,Karnal,498.94,1700.64,3408.51,5
+1443,2017,Haryana,Karnal,508.45,1927.62,3791.18,5
+1444,2010,Haryana,Rohtak,164.35,324.04,1971.63,5
+1445,2011,Haryana,Rohtak,165.43,381.17,2304.13,5
+1446,2012,Haryana,Rohtak,148.18,324.91,2192.65,5
+1447,2013,Haryana,Rohtak,174.26,406.91,2335.07,5
+1448,2014,Haryana,Rohtak,164.26,398.78,2427.74,5
+1449,2015,Haryana,Rohtak,188.46,471.78,2503.34,5
+1450,2016,Haryana,Rohtak,192.71,439.52,2280.71,5
+1451,2017,Haryana,Rohtak,197.13,502.65,2549.79,5
+1452,2010,Uttar Pradesh,Saharanpur,73.61,150.25,2041.16,17
+1453,2011,Uttar Pradesh,Saharanpur,73.32,162.98,2222.86,17
+1454,2012,Uttar Pradesh,Saharanpur,67.62,172.1,2545.1,17
+1455,2013,Uttar Pradesh,Saharanpur,69.58,164.6,2365.62,17
+1456,2014,Uttar Pradesh,Saharanpur,75.58,184.64,2442.97,17
+1457,2015,Uttar Pradesh,Saharanpur,86.82,196.19,2259.73,17
+1458,2016,Uttar Pradesh,Saharanpur,72.43,172.65,2383.63,17
+1459,2017,Uttar Pradesh,Saharanpur,70.55,185.44,2628.49,17
+1460,2010,Uttar Pradesh,Muzaffarnagar,36.0,80.52,2236.67,17
+1461,2011,Uttar Pradesh,Muzaffarnagar,35.44,83.2,2347.63,17
+1462,2012,Uttar Pradesh,Muzaffarnagar,35.44,90.35,2549.38,17
+1463,2013,Uttar Pradesh,Muzaffarnagar,30.84,78.09,2532.1,17
+1464,2014,Uttar Pradesh,Muzaffarnagar,33.7,86.62,2570.33,17
+1465,2015,Uttar Pradesh,Muzaffarnagar,34.15,86.71,2539.09,17
+1466,2016,Uttar Pradesh,Muzaffarnagar,32.18,83.84,2605.58,17
+1467,2017,Uttar Pradesh,Muzaffarnagar,32.93,93.32,2833.89,17
+1468,2010,Uttar Pradesh,Meerut,65.39,150.13,2295.87,17
+1469,2011,Uttar Pradesh,Meerut,65.75,167.52,2547.97,17
+1470,2012,Uttar Pradesh,Meerut,49.51,144.26,2913.95,17
+1471,2013,Uttar Pradesh,Meerut,56.25,155.75,2769.01,17
+1472,2014,Uttar Pradesh,Meerut,60.99,173.28,2841.15,17
+1473,2015,Uttar Pradesh,Meerut,68.4,188.14,2750.77,17
+1474,2016,Uttar Pradesh,Meerut,55.67,142.49,2559.65,17
+1475,2017,Uttar Pradesh,Meerut,52.41,145.29,2772.12,17
+1476,2010,Uttar Pradesh,Buland Shahar,86.59,196.54,2269.81,17
+1477,2011,Uttar Pradesh,Buland Shahar,99.69,239.59,2403.27,17
+1478,2012,Uttar Pradesh,Buland Shahar,21.19,58.04,2738.59,17
+1479,2013,Uttar Pradesh,Buland Shahar,105.21,277.84,2640.75,17
+1480,2014,Uttar Pradesh,Buland Shahar,119.04,308.09,2588.11,17
+1481,2015,Uttar Pradesh,Buland Shahar,116.05,311.97,2688.13,17
+1482,2016,Uttar Pradesh,Buland Shahar,93.81,236.88,2525.21,17
+1483,2017,Uttar Pradesh,Buland Shahar,102.1,304.58,2983.12,17
+1484,2010,Uttar Pradesh,Aligarh,81.9,162.33,1982.05,17
+1485,2011,Uttar Pradesh,Aligarh,106.14,229.88,2165.82,17
+1486,2012,Uttar Pradesh,Aligarh,39.59,96.75,2443.8,17
+1487,2013,Uttar Pradesh,Aligarh,110.75,250.83,2264.83,17
+1488,2014,Uttar Pradesh,Aligarh,119.89,258.96,2159.98,17
+1489,2015,Uttar Pradesh,Aligarh,113.81,257.09,2258.94,17
+1490,2016,Uttar Pradesh,Aligarh,101.27,248.94,2458.22,17
+1491,2017,Uttar Pradesh,Aligarh,107.56,278.09,2585.37,17
+1492,2010,Uttar Pradesh,Mathura,42.27,90.07,2130.83,17
+1493,2011,Uttar Pradesh,Mathura,48.02,108.63,2262.18,17
+1494,2012,Uttar Pradesh,Mathura,19.3,54.73,2835.75,17
+1495,2013,Uttar Pradesh,Mathura,52.65,126.58,2404.18,17
+1496,2014,Uttar Pradesh,Mathura,49.4,114.76,2323.08,17
+1497,2015,Uttar Pradesh,Mathura,48.72,108.36,2224.14,17
+1498,2016,Uttar Pradesh,Mathura,47.92,110.88,2313.99,17
+1499,2017,Uttar Pradesh,Mathura,46.13,83.54,1811.0,17
+1500,2010,Uttar Pradesh,Agra,11.41,28.01,2453.39,17
+1501,2011,Uttar Pradesh,Agra,12.25,33.03,2695.22,17
+1502,2012,Uttar Pradesh,Agra,10.15,27.68,2726.38,17
+1503,2013,Uttar Pradesh,Agra,16.03,42.66,2660.53,17
+1504,2014,Uttar Pradesh,Agra,18.09,43.48,2403.74,17
+1505,2015,Uttar Pradesh,Agra,17.4,41.72,2397.9,17
+1506,2016,Uttar Pradesh,Agra,13.08,34.16,2611.16,17
+1507,2017,Uttar Pradesh,Agra,12.91,34.08,2638.98,17
+1508,2010,Uttar Pradesh,Mainpuri,77.41,189.67,2450.29,17
+1509,2011,Uttar Pradesh,Mainpuri,76.91,198.63,2582.8,17
+1510,2012,Uttar Pradesh,Mainpuri,72.72,194.12,2669.52,17
+1511,2013,Uttar Pradesh,Mainpuri,79.43,211.23,2659.47,17
+1512,2014,Uttar Pradesh,Mainpuri,88.63,228.38,2576.74,17
+1513,2015,Uttar Pradesh,Mainpuri,88.43,229.4,2594.1,17
+1514,2016,Uttar Pradesh,Mainpuri,78.27,197.92,2528.67,17
+1515,2017,Uttar Pradesh,Mainpuri,76.61,226.59,2957.82,17
+1516,2010,Uttar Pradesh,Etah,35.85,76.18,2124.97,17
+1517,2011,Uttar Pradesh,Etah,34.46,87.99,2553.4,17
+1518,2012,Uttar Pradesh,Etah,20.83,56.04,2690.35,17
+1519,2013,Uttar Pradesh,Etah,36.32,82.98,2284.69,17
+1520,2014,Uttar Pradesh,Etah,37.39,86.02,2300.62,17
+1521,2015,Uttar Pradesh,Etah,47.21,79.57,1685.45,17
+1522,2016,Uttar Pradesh,Etah,32.5,76.61,2356.95,17
+1523,2017,Uttar Pradesh,Etah,28.79,71.3,2476.44,17
+1524,2010,Uttar Pradesh,Bareilly,165.69,273.45,1650.37,17
+1525,2011,Uttar Pradesh,Bareilly,162.32,407.37,2509.67,17
+1526,2012,Uttar Pradesh,Bareilly,83.83,191.38,2282.95,17
+1527,2013,Uttar Pradesh,Bareilly,162.92,366.56,2249.94,17
+1528,2014,Uttar Pradesh,Bareilly,163.95,337.57,2058.98,17
+1529,2015,Uttar Pradesh,Bareilly,158.63,327.41,2063.99,17
+1530,2016,Uttar Pradesh,Bareilly,160.28,358.38,2236.0,17
+1531,2017,Uttar Pradesh,Bareilly,145.23,357.42,2460.99,17
+1532,2010,Uttar Pradesh,Budaun,76.87,144.91,1885.13,17
+1533,2011,Uttar Pradesh,Budaun,94.4,203.28,2153.34,17
+1534,2012,Uttar Pradesh,Budaun,63.44,119.9,1889.91,17
+1535,2013,Uttar Pradesh,Budaun,95.23,211.3,2218.83,17
+1536,2014,Uttar Pradesh,Budaun,94.6,196.03,2072.08,17
+1537,2015,Uttar Pradesh,Budaun,79.57,152.86,1920.98,17
+1538,2016,Uttar Pradesh,Budaun,84.13,179.89,2138.13,17
+1539,2017,Uttar Pradesh,Budaun,88.35,188.48,2133.41,17
+1540,2010,Uttar Pradesh,Moradabad,158.55,288.11,1817.16,17
+1541,2011,Uttar Pradesh,Moradabad,141.48,293.56,2074.95,17
+1542,2012,Uttar Pradesh,Moradabad,135.89,311.32,2291.01,17
+1543,2013,Uttar Pradesh,Moradabad,148.26,324.39,2187.98,17
+1544,2014,Uttar Pradesh,Moradabad,133.38,316.45,2372.63,17
+1545,2015,Uttar Pradesh,Moradabad,139.57,323.42,2317.32,17
+1546,2016,Uttar Pradesh,Moradabad,143.02,320.77,2242.87,17
+1547,2017,Uttar Pradesh,Moradabad,140.63,327.24,2326.88,17
+1548,2010,Uttar Pradesh,Shahjahanpur,201.47,430.75,2138.04,17
+1549,2011,Uttar Pradesh,Shahjahanpur,213.18,555.12,2604.0,17
+1550,2012,Uttar Pradesh,Shahjahanpur,161.54,447.63,2771.02,17
+1551,2013,Uttar Pradesh,Shahjahanpur,198.11,531.71,2683.91,17
+1552,2014,Uttar Pradesh,Shahjahanpur,209.33,587.16,2804.95,17
+1553,2015,Uttar Pradesh,Shahjahanpur,155.99,491.22,3149.05,17
+1554,2016,Uttar Pradesh,Shahjahanpur,210.85,627.06,2974.0,17
+1555,2017,Uttar Pradesh,Shahjahanpur,210.76,686.88,3259.0,17
+1556,2010,Uttar Pradesh,Pilibhit,162.79,404.65,2485.72,17
+1557,2011,Uttar Pradesh,Pilibhit,155.15,435.51,2807.03,17
+1558,2012,Uttar Pradesh,Pilibhit,51.51,130.02,2524.17,17
+1559,2013,Uttar Pradesh,Pilibhit,135.91,380.14,2797.0,17
+1560,2014,Uttar Pradesh,Pilibhit,128.99,338.73,2626.02,17
+1561,2015,Uttar Pradesh,Pilibhit,145.07,436.66,3010.0,17
+1562,2016,Uttar Pradesh,Pilibhit,153.58,481.01,3132.0,17
+1563,2017,Uttar Pradesh,Pilibhit,140.74,461.08,3276.0,17
+1564,2010,Uttar Pradesh,Rampur,144.8,278.28,1921.82,17
+1565,2011,Uttar Pradesh,Rampur,144.99,316.84,2185.25,17
+1566,2012,Uttar Pradesh,Rampur,137.54,312.63,2273.01,17
+1567,2013,Uttar Pradesh,Rampur,136.97,306.95,2241.0,17
+1568,2014,Uttar Pradesh,Rampur,132.69,299.88,2260.0,17
+1569,2015,Uttar Pradesh,Rampur,129.98,293.74,2259.89,17
+1570,2016,Uttar Pradesh,Rampur,148.54,362.45,2440.0,17
+1571,2017,Uttar Pradesh,Rampur,138.67,328.51,2369.0,17
+1572,2010,Uttar Pradesh,Bijnor,59.18,132.72,2242.65,17
+1573,2011,Uttar Pradesh,Bijnor,57.9,138.66,2394.82,17
+1574,2012,Uttar Pradesh,Bijnor,16.12,44.27,2746.28,17
+1575,2013,Uttar Pradesh,Bijnor,52.94,123.3,2329.05,17
+1576,2014,Uttar Pradesh,Bijnor,54.81,143.38,2615.95,17
+1577,2015,Uttar Pradesh,Bijnor,51.35,133.0,2590.07,17
+1578,2016,Uttar Pradesh,Bijnor,53.39,134.92,2527.0,17
+1579,2017,Uttar Pradesh,Bijnor,50.88,127.77,2511.02,17
+1580,2010,Uttar Pradesh,Farrukhabad,30.14,66.79,2215.99,17
+1581,2011,Uttar Pradesh,Farrukhabad,31.11,81.74,2627.45,17
+1582,2012,Uttar Pradesh,Farrukhabad,32.56,94.73,2909.4,17
+1583,2013,Uttar Pradesh,Farrukhabad,37.91,107.37,2832.23,17
+1584,2014,Uttar Pradesh,Farrukhabad,33.91,85.57,2523.44,17
+1585,2015,Uttar Pradesh,Farrukhabad,41.55,96.52,2322.98,17
+1586,2016,Uttar Pradesh,Farrukhabad,37.59,99.89,2657.33,17
+1587,2017,Uttar Pradesh,Farrukhabad,34.62,108.09,3122.12,17
+1588,2010,Uttar Pradesh,Etawah,92.75,242.45,2614.02,17
+1589,2011,Uttar Pradesh,Etawah,97.45,272.9,2800.41,17
+1590,2012,Uttar Pradesh,Etawah,101.82,310.05,3045.08,17
+1591,2013,Uttar Pradesh,Etawah,111.84,345.67,3090.75,17
+1592,2014,Uttar Pradesh,Etawah,108.55,312.43,2878.21,17
+1593,2015,Uttar Pradesh,Etawah,107.19,283.25,2642.5,17
+1594,2016,Uttar Pradesh,Etawah,102.76,297.58,2895.75,17
+1595,2017,Uttar Pradesh,Etawah,101.35,295.3,2913.67,17
+1596,2010,Uttar Pradesh,Kanpur,73.48,169.59,2307.98,17
+1597,2011,Uttar Pradesh,Kanpur,74.54,200.68,2692.25,17
+1598,2012,Uttar Pradesh,Kanpur,71.56,194.06,2711.85,17
+1599,2013,Uttar Pradesh,Kanpur,75.03,198.24,2642.14,17
+1600,2014,Uttar Pradesh,Kanpur,67.39,161.97,2403.47,17
+1601,2015,Uttar Pradesh,Kanpur,69.58,172.09,2473.27,17
+1602,2016,Uttar Pradesh,Kanpur,77.92,238.75,3064.24,17
+1603,2017,Uttar Pradesh,Kanpur,73.99,221.22,2990.0,17
+1604,2010,Uttar Pradesh,Fatehpur,71.47,150.61,2107.32,17
+1605,2011,Uttar Pradesh,Fatehpur,79.78,186.54,2338.18,17
+1606,2012,Uttar Pradesh,Fatehpur,77.16,189.52,2456.19,17
+1607,2013,Uttar Pradesh,Fatehpur,86.46,225.23,2605.02,17
+1608,2014,Uttar Pradesh,Fatehpur,80.7,157.05,1946.1,17
+1609,2015,Uttar Pradesh,Fatehpur,81.95,167.75,2046.98,17
+1610,2016,Uttar Pradesh,Fatehpur,86.79,215.67,2485.0,17
+1611,2017,Uttar Pradesh,Fatehpur,82.06,216.65,2640.0,17
+1612,2010,Uttar Pradesh,Allahabad,189.33,427.16,2256.17,17
+1613,2011,Uttar Pradesh,Allahabad,191.54,483.78,2525.74,17
+1614,2012,Uttar Pradesh,Allahabad,195.08,527.66,2704.84,17
+1615,2013,Uttar Pradesh,Allahabad,210.42,533.42,2535.03,17
+1616,2014,Uttar Pradesh,Allahabad,192.64,407.27,2114.15,17
+1617,2015,Uttar Pradesh,Allahabad,192.54,366.11,1901.47,17
+1618,2016,Uttar Pradesh,Allahabad,211.76,565.56,2670.84,17
+1619,2017,Uttar Pradesh,Allahabad,215.88,575.93,2667.89,17
+1620,2010,Uttar Pradesh,Jhansi,8.13,15.79,1942.19,17
+1621,2011,Uttar Pradesh,Jhansi,14.28,26.26,1838.94,17
+1622,2012,Uttar Pradesh,Jhansi,11.36,21.32,1876.76,17
+1623,2013,Uttar Pradesh,Jhansi,12.1,21.87,1807.44,17
+1624,2014,Uttar Pradesh,Jhansi,10.55,18.45,1748.82,17
+1625,2015,Uttar Pradesh,Jhansi,10.29,17.14,1665.69,17
+1626,2016,Uttar Pradesh,Jhansi,11.66,15.05,1291.3,17
+1627,2017,Uttar Pradesh,Jhansi,10.21,16.22,1589.75,17
+1628,2010,Uttar Pradesh,Jalaun,0.57,1.11,1947.37,17
+1629,2011,Uttar Pradesh,Jalaun,0.53,0.98,1849.06,17
+1630,2012,Uttar Pradesh,Jalaun,0.51,0.56,1098.04,17
+1631,2013,Uttar Pradesh,Jalaun,0.52,0.93,1788.46,17
+1632,2014,Uttar Pradesh,Jalaun,0.51,0.89,1745.1,17
+1633,2015,Uttar Pradesh,Jalaun,1.56,2.8,1794.87,17
+1634,2016,Uttar Pradesh,Jalaun,0.42,0.65,1552.13,17
+1635,2017,Uttar Pradesh,Jalaun,0.27,0.34,1264.93,17
+1636,2010,Uttar Pradesh,Hamirpur,0.22,0.25,1136.36,17
+1637,2011,Uttar Pradesh,Hamirpur,0.14,0.19,1357.14,17
+1638,2012,Uttar Pradesh,Hamirpur,0.16,0.29,1812.5,17
+1639,2013,Uttar Pradesh,Hamirpur,0.13,0.24,1846.15,17
+1640,2014,Uttar Pradesh,Hamirpur,0.05,0.09,1800.0,17
+1641,2015,Uttar Pradesh,Hamirpur,0.09,0.1,1111.11,17
+1642,2016,Uttar Pradesh,Hamirpur,0.2,0.35,1778.89,17
+1643,2017,Uttar Pradesh,Hamirpur,0.08,0.15,1948.05,17
+1644,2010,Uttar Pradesh,Banda,53.92,60.55,1122.96,17
+1645,2011,Uttar Pradesh,Banda,64.3,90.48,1407.15,17
+1646,2012,Uttar Pradesh,Banda,58.32,99.95,1713.82,17
+1647,2013,Uttar Pradesh,Banda,66.51,120.09,1805.59,17
+1648,2014,Uttar Pradesh,Banda,58.56,94.68,1616.8,17
+1649,2015,Uttar Pradesh,Banda,57.82,66.82,1155.66,17
+1650,2016,Uttar Pradesh,Banda,73.75,131.0,1776.22,17
+1651,2017,Uttar Pradesh,Banda,60.72,118.86,1957.57,17
+1652,2010,Uttar Pradesh,Varanasi,184.99,454.49,2456.84,17
+1653,2011,Uttar Pradesh,Varanasi,179.82,458.49,2549.72,17
+1654,2012,Uttar Pradesh,Varanasi,174.38,465.76,2670.95,17
+1655,2013,Uttar Pradesh,Varanasi,187.12,472.72,2526.29,17
+1656,2014,Uttar Pradesh,Varanasi,174.44,467.59,2680.52,17
+1657,2015,Uttar Pradesh,Varanasi,187.87,504.19,2683.72,17
+1658,2016,Uttar Pradesh,Varanasi,196.4,526.55,2681.03,17
+1659,2017,Uttar Pradesh,Varanasi,194.46,573.42,2948.8,17
+1660,2010,Uttar Pradesh,Mirzpur,116.45,216.54,1859.51,17
+1661,2011,Uttar Pradesh,Mirzpur,125.91,266.41,2115.88,17
+1662,2012,Uttar Pradesh,Mirzpur,124.5,282.22,2266.83,17
+1663,2013,Uttar Pradesh,Mirzpur,111.94,253.45,2264.16,17
+1664,2014,Uttar Pradesh,Mirzpur,110.56,240.11,2171.76,17
+1665,2015,Uttar Pradesh,Mirzpur,126.61,209.26,1652.79,17
+1666,2016,Uttar Pradesh,Mirzpur,123.77,325.32,2628.42,17
+1667,2017,Uttar Pradesh,Mirzpur,123.58,321.45,2601.1,17
+1668,2010,Uttar Pradesh,Jaunpur,144.03,300.61,2087.13,17
+1669,2011,Uttar Pradesh,Jaunpur,145.19,325.06,2238.86,17
+1670,2012,Uttar Pradesh,Jaunpur,147.19,343.97,2336.91,17
+1671,2013,Uttar Pradesh,Jaunpur,149.52,342.39,2289.93,17
+1672,2014,Uttar Pradesh,Jaunpur,140.43,338.99,2413.94,17
+1673,2015,Uttar Pradesh,Jaunpur,143.9,253.26,1759.97,17
+1674,2016,Uttar Pradesh,Jaunpur,153.46,359.4,2342.0,17
+1675,2017,Uttar Pradesh,Jaunpur,157.28,362.68,2306.0,17
+1676,2010,Uttar Pradesh,Ghazipur,149.9,315.09,2102.0,17
+1677,2011,Uttar Pradesh,Ghazipur,148.84,340.25,2286.01,17
+1678,2012,Uttar Pradesh,Ghazipur,149.18,348.62,2336.91,17
+1679,2013,Uttar Pradesh,Ghazipur,148.9,318.04,2135.93,17
+1680,2014,Uttar Pradesh,Ghazipur,136.67,294.26,2153.07,17
+1681,2015,Uttar Pradesh,Ghazipur,154.41,334.3,2165.02,17
+1682,2016,Uttar Pradesh,Ghazipur,147.67,317.05,2147.0,17
+1683,2017,Uttar Pradesh,Ghazipur,154.82,384.25,2482.0,17
+1684,2010,Uttar Pradesh,Ballia,115.98,221.93,1913.52,17
+1685,2011,Uttar Pradesh,Ballia,116.37,295.63,2540.43,17
+1686,2012,Uttar Pradesh,Ballia,112.17,244.3,2177.94,17
+1687,2013,Uttar Pradesh,Ballia,118.0,261.96,2220.0,17
+1688,2014,Uttar Pradesh,Ballia,122.46,251.91,2057.08,17
+1689,2015,Uttar Pradesh,Ballia,115.76,196.1,1694.02,17
+1690,2016,Uttar Pradesh,Ballia,115.91,276.56,2386.0,17
+1691,2017,Uttar Pradesh,Ballia,115.87,290.02,2503.0,17
+1692,2010,Uttar Pradesh,Gorakhpur,319.9,672.53,2102.31,17
+1693,2011,Uttar Pradesh,Gorakhpur,320.33,729.07,2276.0,17
+1694,2012,Uttar Pradesh,Gorakhpur,316.05,749.79,2372.38,17
+1695,2013,Uttar Pradesh,Gorakhpur,311.9,760.63,2438.7,17
+1696,2014,Uttar Pradesh,Gorakhpur,318.4,744.0,2336.68,17
+1697,2015,Uttar Pradesh,Gorakhpur,320.34,628.4,1961.67,17
+1698,2016,Uttar Pradesh,Gorakhpur,318.29,702.75,2207.85,17
+1699,2017,Uttar Pradesh,Gorakhpur,319.73,805.12,2518.15,17
+1700,2010,Uttar Pradesh,Deoria,255.54,550.05,2152.5,17
+1701,2011,Uttar Pradesh,Deoria,254.83,583.62,2290.23,17
+1702,2012,Uttar Pradesh,Deoria,264.66,622.76,2353.06,17
+1703,2013,Uttar Pradesh,Deoria,258.23,654.34,2533.94,17
+1704,2014,Uttar Pradesh,Deoria,251.34,520.68,2071.62,17
+1705,2015,Uttar Pradesh,Deoria,236.49,274.07,1158.91,17
+1706,2016,Uttar Pradesh,Deoria,260.11,533.78,2052.11,17
+1707,2017,Uttar Pradesh,Deoria,255.14,640.36,2509.8,17
+1708,2010,Uttar Pradesh,Basti,368.26,805.26,2186.66,17
+1709,2011,Uttar Pradesh,Basti,355.31,876.12,2465.79,17
+1710,2012,Uttar Pradesh,Basti,356.77,876.76,2457.49,17
+1711,2013,Uttar Pradesh,Basti,368.75,949.18,2574.05,17
+1712,2014,Uttar Pradesh,Basti,365.71,779.56,2131.63,17
+1713,2015,Uttar Pradesh,Basti,362.07,741.14,2046.95,17
+1714,2016,Uttar Pradesh,Basti,373.91,817.97,2187.61,17
+1715,2017,Uttar Pradesh,Basti,370.85,955.54,2576.61,17
+1716,2010,Uttar Pradesh,Azamgarh,299.36,596.0,1990.91,17
+1717,2011,Uttar Pradesh,Azamgarh,298.23,678.51,2275.12,17
+1718,2012,Uttar Pradesh,Azamgarh,295.37,634.34,2147.61,17
+1719,2013,Uttar Pradesh,Azamgarh,305.06,662.6,2172.03,17
+1720,2014,Uttar Pradesh,Azamgarh,293.74,560.61,1908.52,17
+1721,2015,Uttar Pradesh,Azamgarh,292.99,533.16,1819.72,17
+1722,2016,Uttar Pradesh,Azamgarh,299.17,676.36,2260.81,17
+1723,2017,Uttar Pradesh,Azamgarh,307.36,730.13,2375.45,17
+1724,2010,Uttar Pradesh,Lucknow,51.54,98.59,1912.88,17
+1725,2011,Uttar Pradesh,Lucknow,51.58,103.6,2008.53,17
+1726,2012,Uttar Pradesh,Lucknow,51.14,104.83,2049.86,17
+1727,2013,Uttar Pradesh,Lucknow,52.16,105.67,2025.88,17
+1728,2014,Uttar Pradesh,Lucknow,54.13,125.84,2324.77,17
+1729,2015,Uttar Pradesh,Lucknow,52.94,107.27,2026.26,17
+1730,2016,Uttar Pradesh,Lucknow,63.8,124.29,1948.0,17
+1731,2017,Uttar Pradesh,Lucknow,51.62,139.73,2707.0,17
+1732,2010,Uttar Pradesh,Unnao,88.19,146.54,1661.64,17
+1733,2011,Uttar Pradesh,Unnao,96.84,172.11,1777.26,17
+1734,2012,Uttar Pradesh,Unnao,98.28,192.83,1962.05,17
+1735,2013,Uttar Pradesh,Unnao,102.46,218.23,2129.9,17
+1736,2014,Uttar Pradesh,Unnao,96.44,161.82,1677.93,17
+1737,2015,Uttar Pradesh,Unnao,87.26,138.22,1584.0,17
+1738,2016,Uttar Pradesh,Unnao,99.89,193.98,1942.0,17
+1739,2017,Uttar Pradesh,Unnao,94.99,199.19,2097.0,17
+1740,2010,Uttar Pradesh,Rae-Bareily,134.94,285.87,2118.4,17
+1741,2011,Uttar Pradesh,Rae-Bareily,136.95,311.28,2272.94,17
+1742,2012,Uttar Pradesh,Rae-Bareily,135.76,338.49,2493.24,17
+1743,2013,Uttar Pradesh,Rae-Bareily,143.0,341.36,2387.15,17
+1744,2014,Uttar Pradesh,Rae-Bareily,146.52,310.62,2119.94,17
+1745,2015,Uttar Pradesh,Rae-Bareily,156.59,326.51,2085.17,17
+1746,2016,Uttar Pradesh,Rae-Bareily,141.09,335.6,2378.7,17
+1747,2017,Uttar Pradesh,Rae-Bareily,140.34,342.72,2442.01,17
+1748,2010,Uttar Pradesh,Sitapur,159.03,314.28,1976.23,17
+1749,2011,Uttar Pradesh,Sitapur,162.23,360.34,2221.17,17
+1750,2012,Uttar Pradesh,Sitapur,162.23,388.54,2394.99,17
+1751,2013,Uttar Pradesh,Sitapur,169.74,414.0,2439.02,17
+1752,2014,Uttar Pradesh,Sitapur,164.2,383.09,2333.07,17
+1753,2015,Uttar Pradesh,Sitapur,160.52,346.41,2158.05,17
+1754,2016,Uttar Pradesh,Sitapur,167.97,391.38,2330.0,17
+1755,2017,Uttar Pradesh,Sitapur,163.87,384.1,2344.0,17
+1756,2010,Uttar Pradesh,Hardoi,141.17,288.7,2045.05,17
+1757,2011,Uttar Pradesh,Hardoi,145.25,326.9,2250.6,17
+1758,2012,Uttar Pradesh,Hardoi,144.52,354.64,2453.92,17
+1759,2013,Uttar Pradesh,Hardoi,149.08,375.1,2516.1,17
+1760,2014,Uttar Pradesh,Hardoi,142.23,279.49,1965.06,17
+1761,2015,Uttar Pradesh,Hardoi,133.84,301.95,2256.05,17
+1762,2016,Uttar Pradesh,Hardoi,141.44,338.75,2395.0,17
+1763,2017,Uttar Pradesh,Hardoi,149.8,377.21,2518.0,17
+1764,2010,Uttar Pradesh,Kheri,188.22,400.8,2129.42,17
+1765,2011,Uttar Pradesh,Kheri,185.39,452.58,2441.23,17
+1766,2012,Uttar Pradesh,Kheri,186.68,478.46,2563.0,17
+1767,2013,Uttar Pradesh,Kheri,173.56,467.91,2695.96,17
+1768,2014,Uttar Pradesh,Kheri,157.23,428.28,2723.91,17
+1769,2015,Uttar Pradesh,Kheri,158.81,417.52,2629.05,17
+1770,2016,Uttar Pradesh,Kheri,182.52,506.32,2774.0,17
+1771,2017,Uttar Pradesh,Kheri,181.78,568.24,3126.0,17
+1772,2010,Uttar Pradesh,Faizabad,213.55,518.98,2430.25,17
+1773,2011,Uttar Pradesh,Faizabad,214.45,547.45,2552.81,17
+1774,2012,Uttar Pradesh,Faizabad,215.59,573.06,2658.1,17
+1775,2013,Uttar Pradesh,Faizabad,219.18,586.77,2677.11,17
+1776,2014,Uttar Pradesh,Faizabad,213.2,498.52,2338.27,17
+1777,2015,Uttar Pradesh,Faizabad,205.4,431.45,2100.54,17
+1778,2016,Uttar Pradesh,Faizabad,213.98,545.34,2548.56,17
+1779,2017,Uttar Pradesh,Faizabad,220.25,643.48,2921.54,17
+1780,2010,Uttar Pradesh,Gonda,229.06,509.24,2223.17,17
+1781,2011,Uttar Pradesh,Gonda,234.18,526.48,2248.19,17
+1782,2012,Uttar Pradesh,Gonda,228.79,535.3,2339.7,17
+1783,2013,Uttar Pradesh,Gonda,232.16,543.38,2340.54,17
+1784,2014,Uttar Pradesh,Gonda,242.56,476.73,1965.41,17
+1785,2015,Uttar Pradesh,Gonda,232.82,452.05,1941.63,17
+1786,2016,Uttar Pradesh,Gonda,247.76,554.25,2237.05,17
+1787,2017,Uttar Pradesh,Gonda,232.55,556.96,2394.98,17
+1788,2010,Uttar Pradesh,Bahraich,235.85,475.82,2017.47,17
+1789,2011,Uttar Pradesh,Bahraich,235.19,491.18,2088.44,17
+1790,2012,Uttar Pradesh,Bahraich,232.68,544.28,2339.18,17
+1791,2013,Uttar Pradesh,Bahraich,234.37,531.06,2265.9,17
+1792,2014,Uttar Pradesh,Bahraich,245.2,541.57,2208.69,17
+1793,2015,Uttar Pradesh,Bahraich,240.68,458.91,1906.72,17
+1794,2016,Uttar Pradesh,Bahraich,231.43,548.93,2371.89,17
+1795,2017,Uttar Pradesh,Bahraich,239.92,612.52,2553.03,17
+1796,2010,Uttar Pradesh,Sultanpur,159.85,363.21,2272.28,17
+1797,2011,Uttar Pradesh,Sultanpur,160.34,381.03,2376.39,17
+1798,2012,Uttar Pradesh,Sultanpur,160.78,410.64,2554.09,17
+1799,2013,Uttar Pradesh,Sultanpur,163.21,386.45,2367.79,17
+1800,2014,Uttar Pradesh,Sultanpur,140.23,235.25,1677.64,17
+1801,2015,Uttar Pradesh,Sultanpur,151.91,309.77,2039.13,17
+1802,2016,Uttar Pradesh,Sultanpur,161.92,376.08,2322.67,17
+1803,2017,Uttar Pradesh,Sultanpur,160.48,463.45,2887.88,17
+1804,2010,Uttar Pradesh,Pratapgarh,97.44,195.82,2009.65,17
+1805,2011,Uttar Pradesh,Pratapgarh,97.81,226.62,2316.94,17
+1806,2012,Uttar Pradesh,Pratapgarh,99.17,240.99,2430.07,17
+1807,2013,Uttar Pradesh,Pratapgarh,99.25,237.79,2395.87,17
+1808,2014,Uttar Pradesh,Pratapgarh,104.14,235.68,2263.11,17
+1809,2015,Uttar Pradesh,Pratapgarh,124.7,224.34,1799.04,17
+1810,2016,Uttar Pradesh,Pratapgarh,99.01,217.03,2192.0,17
+1811,2017,Uttar Pradesh,Pratapgarh,96.36,227.79,2364.0,17
+1812,2010,Uttar Pradesh,Barabanki,178.44,422.32,2366.73,17
+1813,2011,Uttar Pradesh,Barabanki,177.97,491.56,2762.04,17
+1814,2012,Uttar Pradesh,Barabanki,183.96,562.37,3057.02,17
+1815,2013,Uttar Pradesh,Barabanki,181.24,517.97,2857.92,17
+1816,2014,Uttar Pradesh,Barabanki,191.88,529.6,2760.06,17
+1817,2015,Uttar Pradesh,Barabanki,186.63,513.41,2750.95,17
+1818,2016,Uttar Pradesh,Barabanki,183.33,499.76,2726.0,17
+1819,2017,Uttar Pradesh,Barabanki,181.6,520.66,2867.0,17
+1820,2010,Uttarakhand,Nainital,132.4,337.26,2547.28,18
+1821,2011,Uttarakhand,Nainital,128.23,377.12,2940.97,18
+1822,2012,Uttarakhand,Nainital,129.04,398.26,3086.33,18
+1823,2013,Uttarakhand,Nainital,126.75,394.42,3111.79,18
+1824,2014,Uttarakhand,Nainital,125.42,401.82,3203.8,18
+1825,2015,Uttarakhand,Nainital,127.04,431.22,3394.36,18
+1826,2016,Uttarakhand,Nainital,130.44,429.93,3295.98,18
+1827,2017,Uttarakhand,Nainital,132.39,462.89,3496.51,18
+1828,2010,Uttarakhand,Almorah,32.99,36.41,1103.67,18
+1829,2011,Uttarakhand,Almorah,32.47,40.71,1253.77,18
+1830,2012,Uttarakhand,Almorah,31.56,39.4,1248.42,18
+1831,2013,Uttarakhand,Almorah,29.18,38.04,1303.63,18
+1832,2014,Uttarakhand,Almorah,30.03,39.7,1322.01,18
+1833,2015,Uttarakhand,Almorah,31.9,39.18,1228.21,18
+1834,2016,Uttarakhand,Almorah,29.64,40.74,1374.8,18
+1835,2017,Uttarakhand,Almorah,28.79,36.67,1273.68,18
+1836,2010,Uttarakhand,Pithorgarh,29.76,35.91,1206.65,18
+1837,2011,Uttarakhand,Pithorgarh,28.97,36.97,1276.15,18
+1838,2012,Uttarakhand,Pithorgarh,26.21,34.18,1304.08,18
+1839,2013,Uttarakhand,Pithorgarh,27.01,37.7,1395.78,18
+1840,2014,Uttarakhand,Pithorgarh,26.44,33.74,1276.1,18
+1841,2015,Uttarakhand,Pithorgarh,26.49,35.07,1323.9,18
+1842,2016,Uttarakhand,Pithorgarh,27.51,37.07,1347.27,18
+1843,2017,Uttarakhand,Pithorgarh,26.3,33.83,1286.44,18
+1844,2010,Uttarakhand,Chamoli,22.14,32.43,1464.77,18
+1845,2011,Uttarakhand,Chamoli,20.02,27.22,1359.64,18
+1846,2012,Uttarakhand,Chamoli,21.25,28.85,1357.65,18
+1847,2013,Uttarakhand,Chamoli,20.28,26.64,1313.61,18
+1848,2014,Uttarakhand,Chamoli,20.21,26.09,1290.95,18
+1849,2015,Uttarakhand,Chamoli,20.39,28.12,1379.11,18
+1850,2016,Uttarakhand,Chamoli,20.7,27.62,1334.57,18
+1851,2017,Uttarakhand,Chamoli,19.59,27.22,1389.64,18
+1852,2010,Uttarakhand,Uttar Kashi,10.4,17.13,1647.12,18
+1853,2011,Uttarakhand,Uttar Kashi,10.62,17.17,1616.76,18
+1854,2012,Uttarakhand,Uttar Kashi,9.92,18.6,1875.0,18
+1855,2013,Uttarakhand,Uttar Kashi,9.01,15.98,1773.58,18
+1856,2014,Uttarakhand,Uttar Kashi,9.92,16.5,1663.31,18
+1857,2015,Uttarakhand,Uttar Kashi,10.74,18.98,1767.23,18
+1858,2016,Uttarakhand,Uttar Kashi,10.11,17.89,1769.86,18
+1859,2017,Uttarakhand,Uttar Kashi,10.25,17.57,1714.51,18
+1860,2010,Uttarakhand,Tehri Garhwal,11.4,16.66,1461.4,18
+1861,2011,Uttarakhand,Tehri Garhwal,12.38,18.41,1487.08,18
+1862,2012,Uttarakhand,Tehri Garhwal,11.11,16.01,1441.04,18
+1863,2013,Uttarakhand,Tehri Garhwal,11.35,17.6,1550.66,18
+1864,2014,Uttarakhand,Tehri Garhwal,11.29,18.99,1682.02,18
+1865,2015,Uttarakhand,Tehri Garhwal,11.63,19.88,1709.37,18
+1866,2016,Uttarakhand,Tehri Garhwal,11.87,18.66,1571.21,18
+1867,2017,Uttarakhand,Tehri Garhwal,10.41,20.49,1966.97,18
+1868,2010,Uttarakhand,Garhwal,17.18,18.65,1085.56,18
+1869,2011,Uttarakhand,Garhwal,15.98,18.44,1153.94,18
+1870,2012,Uttarakhand,Garhwal,15.53,18.21,1172.57,18
+1871,2013,Uttarakhand,Garhwal,13.92,17.91,1286.64,18
+1872,2014,Uttarakhand,Garhwal,14.57,17.36,1191.49,18
+1873,2015,Uttarakhand,Garhwal,12.52,16.76,1338.66,18
+1874,2016,Uttarakhand,Garhwal,10.85,15.18,1398.36,18
+1875,2017,Uttarakhand,Garhwal,10.02,13.87,1384.61,18
+1876,2010,Uttarakhand,Dehradun,11.19,21.83,1950.85,18
+1877,2011,Uttarakhand,Dehradun,10.91,23.08,2115.49,18
+1878,2012,Uttarakhand,Dehradun,11.05,22.7,2054.3,18
+1879,2013,Uttarakhand,Dehradun,10.11,21.54,2130.56,18
+1880,2014,Uttarakhand,Dehradun,9.18,17.67,1924.84,18
+1881,2015,Uttarakhand,Dehradun,10.25,22.13,2159.02,18
+1882,2016,Uttarakhand,Dehradun,10.19,20.74,2036.13,18
+1883,2017,Uttarakhand,Dehradun,9.29,19.56,2105.25,18
+1884,2010,Assam,Cachar,226.24,484.37,2140.96,1
+1885,2011,Assam,Cachar,231.41,518.02,2238.54,1
+1886,2012,Assam,Cachar,231.39,497.93,2151.91,1
+1887,2013,Assam,Cachar,220.66,444.13,2012.73,1
+1888,2014,Assam,Cachar,230.62,515.42,2234.93,1
+1889,2015,Assam,Cachar,229.66,452.79,1971.57,1
+1890,2016,Assam,Cachar,232.73,466.41,2004.13,1
+1891,2017,Assam,Cachar,220.46,410.15,1860.41,1
+1892,2010,Assam,Darrang,348.39,670.09,1923.39,1
+1893,2011,Assam,Darrang,348.28,625.31,1795.42,1
+1894,2012,Assam,Darrang,332.25,690.2,2077.35,1
+1895,2013,Assam,Darrang,326.36,632.91,1939.3,1
+1896,2014,Assam,Darrang,336.82,719.26,2135.44,1
+1897,2015,Assam,Darrang,335.64,727.47,2167.41,1
+1898,2016,Assam,Darrang,328.99,682.28,2073.87,1
+1899,2017,Assam,Darrang,325.73,705.38,2165.54,1
+1900,2010,Assam,Dibrugarh,140.73,291.54,2071.63,1
+1901,2011,Assam,Dibrugarh,142.05,223.28,1571.84,1
+1902,2012,Assam,Dibrugarh,136.65,256.98,1880.57,1
+1903,2013,Assam,Dibrugarh,140.39,253.89,1808.46,1
+1904,2014,Assam,Dibrugarh,138.24,234.63,1697.27,1
+1905,2015,Assam,Dibrugarh,142.05,268.08,1887.22,1
+1906,2016,Assam,Dibrugarh,136.61,244.61,1790.58,1
+1907,2017,Assam,Dibrugarh,141.46,266.26,1882.21,1
+1908,2010,Assam,Goalpara,380.68,763.77,2006.35,1
+1909,2011,Assam,Goalpara,368.67,689.19,1869.4,1
+1910,2012,Assam,Goalpara,378.9,771.09,2035.09,1
+1911,2013,Assam,Goalpara,364.15,835.72,2295.02,1
+1912,2014,Assam,Goalpara,358.88,802.94,2237.35,1
+1913,2015,Assam,Goalpara,356.18,737.67,2071.04,1
+1914,2016,Assam,Goalpara,359.26,812.66,2262.03,1
+1915,2017,Assam,Goalpara,348.15,763.55,2193.13,1
+1916,2010,Assam,Kamrup,491.76,993.12,2019.52,1
+1917,2011,Assam,Kamrup,488.48,913.45,1869.98,1
+1918,2012,Assam,Kamrup,453.14,927.06,2045.86,1
+1919,2013,Assam,Kamrup,461.88,979.23,2120.1,1
+1920,2014,Assam,Kamrup,455.11,992.44,2180.66,1
+1921,2015,Assam,Kamrup,445.0,945.56,2124.85,1
+1922,2016,Assam,Kamrup,442.4,949.9,2147.15,1
+1923,2017,Assam,Kamrup,427.41,1051.16,2459.38,1
+1924,2010,Assam,Karbi Anglong,126.1,237.35,1882.24,1
+1925,2011,Assam,Karbi Anglong,121.57,174.4,1434.56,1
+1926,2012,Assam,Karbi Anglong,128.42,199.17,1550.93,1
+1927,2013,Assam,Karbi Anglong,130.2,219.92,1689.09,1
+1928,2014,Assam,Karbi Anglong,128.0,218.19,1704.61,1
+1929,2015,Assam,Karbi Anglong,129.58,213.17,1645.08,1
+1930,2016,Assam,Karbi Anglong,133.53,247.31,1852.07,1
+1931,2017,Assam,Karbi Anglong,132.87,255.01,1919.27,1
+1932,2010,Assam,Lakhimpur,217.52,345.12,1586.61,1
+1933,2011,Assam,Lakhimpur,229.3,368.12,1605.41,1
+1934,2012,Assam,Lakhimpur,225.3,439.02,1948.6,1
+1935,2013,Assam,Lakhimpur,223.45,389.72,1744.1,1
+1936,2014,Assam,Lakhimpur,209.71,392.43,1871.3,1
+1937,2015,Assam,Lakhimpur,211.61,383.71,1813.29,1
+1938,2016,Assam,Lakhimpur,193.62,333.4,1721.92,1
+1939,2017,Assam,Lakhimpur,190.66,345.26,1810.82,1
+1940,2010,Assam,North Cachar Hil / Dima hasao,15.25,21.66,1420.33,1
+1941,2011,Assam,North Cachar Hil / Dima hasao,15.57,36.09,2317.92,1
+1942,2012,Assam,North Cachar Hil / Dima hasao,16.19,36.96,2282.89,1
+1943,2013,Assam,North Cachar Hil / Dima hasao,15.82,31.84,2012.64,1
+1944,2014,Assam,North Cachar Hil / Dima hasao,14.7,34.51,2347.62,1
+1945,2015,Assam,North Cachar Hil / Dima hasao,14.61,31.83,2178.64,1
+1946,2016,Assam,North Cachar Hil / Dima hasao,15.03,31.7,2108.61,1
+1947,2017,Assam,North Cachar Hil / Dima hasao,13.79,31.09,2254.3,1
+1948,2010,Assam,Nagaon,274.15,543.86,1983.8,1
+1949,2011,Assam,Nagaon,282.09,530.2,1879.54,1
+1950,2012,Assam,Nagaon,259.56,564.62,2175.3,1
+1951,2013,Assam,Nagaon,286.77,684.62,2387.35,1
+1952,2014,Assam,Nagaon,291.65,624.8,2142.29,1
+1953,2015,Assam,Nagaon,287.8,668.99,2324.5,1
+1954,2016,Assam,Nagaon,287.34,674.49,2347.39,1
+1955,2017,Assam,Nagaon,286.16,709.39,2478.97,1
+1956,2010,Assam,Sibsagar,295.51,650.67,2201.85,1
+1957,2011,Assam,Sibsagar,297.88,613.36,2059.08,1
+1958,2012,Assam,Sibsagar,300.09,703.63,2344.73,1
+1959,2013,Assam,Sibsagar,314.79,691.05,2195.27,1
+1960,2014,Assam,Sibsagar,313.37,658.9,2102.63,1
+1961,2015,Assam,Sibsagar,315.03,665.27,2111.77,1
+1962,2016,Assam,Sibsagar,320.47,656.05,2047.11,1
+1963,2017,Assam,Sibsagar,330.49,718.15,2172.97,1
+1964,2010,Himachal Pradesh,Bilashpur,1.51,3.13,2072.85,6
+1965,2011,Himachal Pradesh,Bilashpur,1.5,3.11,2073.33,6
+1966,2012,Himachal Pradesh,Bilashpur,1.5,3.16,2106.67,6
+1967,2013,Himachal Pradesh,Bilashpur,1.46,3.03,2075.34,6
+1968,2014,Himachal Pradesh,Bilashpur,1.44,3.3,2291.67,6
+1969,2015,Himachal Pradesh,Bilashpur,1.43,2.97,2076.92,6
+1970,2016,Himachal Pradesh,Bilashpur,1.41,2.94,2078.5,6
+1971,2017,Himachal Pradesh,Bilashpur,1.43,2.98,2090.34,6
+1972,2010,Himachal Pradesh,Chamba,2.62,3.16,1206.11,6
+1973,2011,Himachal Pradesh,Chamba,2.61,3.14,1203.07,6
+1974,2012,Himachal Pradesh,Chamba,2.62,3.19,1217.56,6
+1975,2013,Himachal Pradesh,Chamba,2.54,3.06,1204.72,6
+1976,2014,Himachal Pradesh,Chamba,2.52,3.33,1321.43,6
+1977,2015,Himachal Pradesh,Chamba,2.49,3.0,1204.82,6
+1978,2016,Himachal Pradesh,Chamba,2.46,2.97,1203.65,6
+1979,2017,Himachal Pradesh,Chamba,2.49,3.0,1203.93,6
+1980,2010,Himachal Pradesh,Kangra,38.95,59.87,1537.1,6
+1981,2011,Himachal Pradesh,Kangra,38.76,59.57,1536.89,6
+1982,2012,Himachal Pradesh,Kangra,38.92,60.43,1552.67,6
+1983,2013,Himachal Pradesh,Kangra,37.76,58.06,1537.61,6
+1984,2014,Himachal Pradesh,Kangra,37.38,63.2,1690.74,6
+1985,2015,Himachal Pradesh,Kangra,36.98,56.84,1537.05,6
+1986,2016,Himachal Pradesh,Kangra,36.59,56.24,1537.13,6
+1987,2017,Himachal Pradesh,Kangra,36.98,56.95,1539.86,6
+1988,2010,Himachal Pradesh,Kinnaur,0.02,0.02,1000.0,6
+1989,2011,Himachal Pradesh,Kinnaur,0.02,0.02,1000.0,6
+1990,2012,Himachal Pradesh,Kinnaur,0.02,0.02,1000.0,6
+1991,2013,Himachal Pradesh,Kinnaur,0.01,0.02,2000.0,6
+1992,2014,Himachal Pradesh,Kinnaur,0.01,0.02,2000.0,6
+1993,2015,Himachal Pradesh,Kinnaur,0.01,0.02,2000.0,6
+1994,2016,Himachal Pradesh,Kinnaur,0.01,0.02,1500.0,6
+1995,2017,Himachal Pradesh,Kinnaur,0.01,0.02,1571.43,6
+1996,2010,Himachal Pradesh,Kullu,1.42,1.85,1302.82,6
+1997,2011,Himachal Pradesh,Kullu,1.41,1.84,1304.96,6
+1998,2012,Himachal Pradesh,Kullu,1.42,1.87,1316.9,6
+1999,2013,Himachal Pradesh,Kullu,1.37,1.8,1313.87,6
+2000,2014,Himachal Pradesh,Kullu,1.36,1.96,1441.18,6
+2001,2015,Himachal Pradesh,Kullu,1.34,1.76,1313.43,6
+2002,2016,Himachal Pradesh,Kullu,1.33,1.74,1307.52,6
+2003,2017,Himachal Pradesh,Kullu,1.34,1.76,1308.04,6
+2004,2010,Himachal Pradesh,Lahul & Spiti,0.0,0.0,0.0,6
+2005,2011,Himachal Pradesh,Lahul & Spiti,0.0,0.0,0.0,6
+2006,2012,Himachal Pradesh,Lahul & Spiti,0.0,0.0,0.0,6
+2007,2013,Himachal Pradesh,Lahul & Spiti,0.0,0.0,0.0,6
+2008,2014,Himachal Pradesh,Lahul & Spiti,0.0,0.0,0.0,6
+2009,2015,Himachal Pradesh,Lahul & Spiti,0.0,0.0,0.0,6
+2010,2016,Himachal Pradesh,Lahul & Spiti,0.0,0.0,0.0,6
+2011,2017,Himachal Pradesh,Lahul & Spiti,0.0,0.0,0.0,6
+2012,2010,Himachal Pradesh,Solan,4.11,10.36,2520.68,6
+2013,2011,Himachal Pradesh,Solan,4.09,10.31,2520.78,6
+2014,2012,Himachal Pradesh,Solan,4.11,10.46,2545.01,6
+2015,2013,Himachal Pradesh,Solan,3.98,10.05,2525.13,6
+2016,2014,Himachal Pradesh,Solan,3.94,10.94,2776.65,6
+2017,2015,Himachal Pradesh,Solan,3.9,9.84,2523.08,6
+2018,2016,Himachal Pradesh,Solan,3.86,9.73,2521.24,6
+2019,2017,Himachal Pradesh,Solan,3.9,9.84,2521.4,6
+2020,2010,Himachal Pradesh,Mandi,19.96,24.06,1205.41,6
+2021,2011,Himachal Pradesh,Mandi,19.86,23.94,1205.44,6
+2022,2012,Himachal Pradesh,Mandi,19.95,24.28,1217.04,6
+2023,2013,Himachal Pradesh,Mandi,19.35,23.33,1205.68,6
+2024,2014,Himachal Pradesh,Mandi,19.15,25.39,1325.85,6
+2025,2015,Himachal Pradesh,Mandi,18.95,32.84,1732.98,6
+2026,2016,Himachal Pradesh,Mandi,18.75,22.6,1205.34,6
+2027,2017,Himachal Pradesh,Mandi,18.95,32.84,1733.09,6
+2028,2010,Himachal Pradesh,Shimla,1.2,1.1,916.67,6
+2029,2011,Himachal Pradesh,Shimla,1.19,1.09,915.97,6
+2030,2012,Himachal Pradesh,Shimla,1.2,1.11,925.0,6
+2031,2013,Himachal Pradesh,Shimla,1.16,1.07,922.41,6
+2032,2014,Himachal Pradesh,Shimla,1.15,1.16,1008.7,6
+2033,2015,Himachal Pradesh,Shimla,1.14,1.04,912.28,6
+2034,2016,Himachal Pradesh,Shimla,1.12,1.03,917.26,6
+2035,2017,Himachal Pradesh,Shimla,1.14,1.04,917.25,6
+2036,2010,Himachal Pradesh,Sirmaur,5.65,6.69,1184.07,6
+2037,2011,Himachal Pradesh,Sirmaur,5.62,5.62,1000.0,6
+2038,2012,Himachal Pradesh,Sirmaur,5.65,6.75,1194.69,6
+2039,2013,Himachal Pradesh,Sirmaur,5.48,6.49,1184.31,6
+2040,2014,Himachal Pradesh,Sirmaur,5.43,7.06,1300.18,6
+2041,2015,Himachal Pradesh,Sirmaur,5.37,6.35,1182.5,6
+2042,2016,Himachal Pradesh,Sirmaur,5.31,6.29,1183.99,6
+2043,2017,Himachal Pradesh,Sirmaur,5.37,6.35,1183.9,6
+2044,2010,Kerala,Alappuzha,37.06,91.33,2464.38,9
+2045,2011,Kerala,Alappuzha,36.25,111.98,3089.1,9
+2046,2012,Kerala,Alappuzha,36.2,104.59,2889.23,9
+2047,2013,Kerala,Alappuzha,37.4,106.87,2857.49,9
+2048,2014,Kerala,Alappuzha,34.42,103.1,2995.35,9
+2049,2015,Kerala,Alappuzha,31.72,89.34,2816.52,9
+2050,2016,Kerala,Alappuzha,32.45,102.44,3156.53,9
+2051,2017,Kerala,Alappuzha,36.33,105.68,2909.18,9
+2052,2010,Kerala,Kannur,14.39,32.95,2290.77,9
+2053,2011,Kerala,Kannur,12.76,29.0,2272.19,9
+2054,2012,Kerala,Kannur,13.79,32.22,2337.18,9
+2055,2013,Kerala,Kannur,13.33,31.55,2367.13,9
+2056,2014,Kerala,Kannur,11.04,26.46,2397.51,9
+2057,2015,Kerala,Kannur,12.55,28.41,2263.13,9
+2058,2016,Kerala,Kannur,10.16,24.1,2372.41,9
+2059,2017,Kerala,Kannur,10.07,23.85,2367.44,9
+2060,2010,Kerala,Eranakulam,9.38,18.77,2000.0,9
+2061,2011,Kerala,Eranakulam,7.98,17.2,2154.6,9
+2062,2012,Kerala,Eranakulam,4.18,9.17,2194.92,9
+2063,2013,Kerala,Eranakulam,4.18,9.42,2252.51,9
+2064,2014,Kerala,Eranakulam,4.78,10.33,2161.09,9
+2065,2015,Kerala,Eranakulam,6.13,13.09,2136.1,9
+2066,2016,Kerala,Eranakulam,4.87,11.02,2263.54,9
+2067,2017,Kerala,Eranakulam,5.58,13.35,2392.29,9
+2068,2010,Kerala,Kottayam,16.24,44.76,2756.96,9
+2069,2011,Kerala,Kottayam,22.42,66.09,2948.17,9
+2070,2012,Kerala,Kottayam,18.51,53.56,2893.16,9
+2071,2013,Kerala,Kottayam,16.28,52.17,3204.94,9
+2072,2014,Kerala,Kottayam,17.86,50.83,2846.02,9
+2073,2015,Kerala,Kottayam,16.98,51.27,3019.08,9
+2074,2016,Kerala,Kottayam,17.77,49.33,2775.98,9
+2075,2017,Kerala,Kottayam,18.09,51.34,2838.85,9
+2076,2010,Kerala,Kozhikode,10.16,21.91,2155.16,9
+2077,2011,Kerala,Kozhikode,8.76,19.53,2230.21,9
+2078,2012,Kerala,Kozhikode,10.14,23.52,2318.58,9
+2079,2013,Kerala,Kozhikode,9.87,23.79,2409.93,9
+2080,2014,Kerala,Kozhikode,8.6,20.39,2369.95,9
+2081,2015,Kerala,Kozhikode,8.84,18.98,2147.88,9
+2082,2016,Kerala,Kozhikode,7.06,16.32,2312.37,9
+2083,2017,Kerala,Kozhikode,7.73,18.09,2339.6,9
+2084,2010,Kerala,Malappuram,8.95,21.07,2354.19,9
+2085,2011,Kerala,Malappuram,7.53,18.58,2467.46,9
+2086,2012,Kerala,Malappuram,6.67,15.38,2305.85,9
+2087,2013,Kerala,Malappuram,7.55,19.71,2610.6,9
+2088,2014,Kerala,Malappuram,8.4,22.28,2652.38,9
+2089,2015,Kerala,Malappuram,8.69,23.65,2721.52,9
+2090,2016,Kerala,Malappuram,7.14,17.21,2410.5,9
+2091,2017,Kerala,Malappuram,7.79,23.57,3025.8,9
+2092,2010,Kerala,Palakkad,87.51,218.16,2492.97,9
+2093,2011,Kerala,Palakkad,84.0,224.41,2671.55,9
+2094,2012,Kerala,Palakkad,79.2,189.23,2389.27,9
+2095,2013,Kerala,Palakkad,82.9,238.07,2871.77,9
+2096,2014,Kerala,Palakkad,82.91,236.4,2851.28,9
+2097,2015,Kerala,Palakkad,81.12,228.46,2816.32,9
+2098,2016,Kerala,Palakkad,65.51,144.27,2202.23,9
+2099,2017,Kerala,Palakkad,75.28,198.63,2638.64,9
+2100,2010,Kerala,Kollam,6.33,13.79,2178.52,9
+2101,2011,Kerala,Kollam,4.9,13.76,2808.16,9
+2102,2012,Kerala,Kollam,3.67,8.97,2444.14,9
+2103,2013,Kerala,Kollam,3.83,10.78,2814.62,9
+2104,2014,Kerala,Kollam,3.92,10.72,2734.69,9
+2105,2015,Kerala,Kollam,4.09,11.75,2872.86,9
+2106,2016,Kerala,Kollam,3.94,11.23,2849.57,9
+2107,2017,Kerala,Kollam,5.01,13.15,2623.75,9
+2108,2010,Kerala,Thrissur,20.26,53.08,2619.94,9
+2109,2011,Kerala,Thrissur,21.17,62.32,2943.79,9
+2110,2012,Kerala,Thrissur,23.1,67.57,2925.11,9
+2111,2013,Kerala,Thrissur,22.27,66.65,2992.82,9
+2112,2014,Kerala,Thrissur,24.15,76.02,3147.83,9
+2113,2015,Kerala,Thrissur,24.63,78.89,3203.0,9
+2114,2016,Kerala,Thrissur,21.1,57.48,2724.08,9
+2115,2017,Kerala,Thrissur,21.48,69.11,3217.9,9
+2116,2010,Kerala,Thiruvananthapuram,2.92,6.92,2369.86,9
+2117,2011,Kerala,Thiruvananthapuram,2.4,6.14,2558.33,9
+2118,2012,Kerala,Thiruvananthapuram,1.82,4.1,2252.75,9
+2119,2013,Kerala,Thiruvananthapuram,2.0,5.33,2665.0,9
+2120,2014,Kerala,Thiruvananthapuram,2.09,5.56,2660.29,9
+2121,2015,Kerala,Thiruvananthapuram,2.12,5.45,2570.75,9
+2122,2016,Kerala,Thiruvananthapuram,1.39,3.07,2204.74,9
+2123,2017,Kerala,Thiruvananthapuram,1.74,4.55,2620.03,9
+2124,2010,Orissa,Balasore,397.78,737.06,1852.93,12
+2125,2011,Orissa,Balasore,409.65,796.09,1943.34,12
+2126,2012,Orissa,Balasore,374.12,719.82,1924.04,12
+2127,2013,Orissa,Balasore,394.7,529.28,1340.97,12
+2128,2014,Orissa,Balasore,382.85,734.41,1918.27,12
+2129,2015,Orissa,Balasore,383.52,783.5,2042.92,12
+2130,2016,Orissa,Balasore,377.78,1101.66,2916.14,12
+2131,2017,Orissa,Balasore,370.15,800.97,2163.91,12
+2132,2010,Orissa,Bolangir,340.57,717.03,2105.38,12
+2133,2011,Orissa,Bolangir,306.31,364.9,1191.28,12
+2134,2012,Orissa,Bolangir,330.84,1193.17,3606.49,12
+2135,2013,Orissa,Bolangir,340.9,1071.26,3142.45,12
+2136,2014,Orissa,Bolangir,334.45,1073.18,3208.79,12
+2137,2015,Orissa,Bolangir,323.73,511.39,1579.68,12
+2138,2016,Orissa,Bolangir,332.24,883.22,2658.38,12
+2139,2017,Orissa,Bolangir,284.7,424.44,1490.83,12
+2140,2010,Orissa,Cuttack,484.39,733.51,1514.3,12
+2141,2011,Orissa,Cuttack,476.08,805.35,1691.63,12
+2142,2012,Orissa,Cuttack,468.8,1076.68,2296.67,12
+2143,2013,Orissa,Cuttack,462.49,630.32,1362.88,12
+2144,2014,Orissa,Cuttack,461.62,910.11,1971.56,12
+2145,2015,Orissa,Cuttack,431.39,806.7,1870.0,12
+2146,2016,Orissa,Cuttack,437.4,1254.27,2867.56,12
+2147,2017,Orissa,Cuttack,417.2,708.65,1698.59,12
+2148,2010,Orissa,Dhenkanal,176.24,178.0,1009.99,12
+2149,2011,Orissa,Dhenkanal,172.26,274.2,1591.78,12
+2150,2012,Orissa,Dhenkanal,167.9,402.23,2395.65,12
+2151,2013,Orissa,Dhenkanal,171.29,398.64,2327.28,12
+2152,2014,Orissa,Dhenkanal,188.9,550.87,2916.2,12
+2153,2015,Orissa,Dhenkanal,165.51,199.94,1208.02,12
+2154,2016,Orissa,Dhenkanal,154.21,399.75,2592.24,12
+2155,2017,Orissa,Dhenkanal,154.31,211.31,1369.39,12
+2156,2010,Orissa,Ganjam,312.26,514.88,1648.88,12
+2157,2011,Orissa,Ganjam,298.38,193.29,647.8,12
+2158,2012,Orissa,Ganjam,289.29,525.84,1817.69,12
+2159,2013,Orissa,Ganjam,289.88,126.18,435.28,12
+2160,2014,Orissa,Ganjam,301.93,772.5,2558.54,12
+2161,2015,Orissa,Ganjam,279.06,501.53,1797.21,12
+2162,2016,Orissa,Ganjam,285.92,799.75,2797.11,12
+2163,2017,Orissa,Ganjam,243.24,402.84,1656.14,12
+2164,2010,Orissa,Kalahandi,380.47,839.62,2206.8,12
+2165,2011,Orissa,Kalahandi,313.1,285.25,911.05,12
+2166,2012,Orissa,Kalahandi,355.5,861.05,2422.08,12
+2167,2013,Orissa,Kalahandi,353.28,830.89,2351.93,12
+2168,2014,Orissa,Kalahandi,328.61,746.19,2270.75,12
+2169,2015,Orissa,Kalahandi,291.63,300.97,1032.03,12
+2170,2016,Orissa,Kalahandi,318.39,667.81,2097.46,12
+2171,2017,Orissa,Kalahandi,288.76,489.55,1695.35,12
+2172,2010,Orissa,Keonjhar,181.57,194.97,1073.8,12
+2173,2011,Orissa,Keonjhar,171.46,293.73,1713.11,12
+2174,2012,Orissa,Keonjhar,170.65,283.99,1664.17,12
+2175,2013,Orissa,Keonjhar,175.37,272.65,1554.71,12
+2176,2014,Orissa,Keonjhar,175.8,412.75,2347.84,12
+2177,2015,Orissa,Keonjhar,182.9,206.98,1131.66,12
+2178,2016,Orissa,Keonjhar,192.84,422.25,2189.64,12
+2179,2017,Orissa,Keonjhar,188.36,395.04,2097.26,12
+2180,2010,Orissa,Koraput,439.01,873.99,1990.82,12
+2181,2011,Orissa,Koraput,411.18,400.35,973.66,12
+2182,2012,Orissa,Koraput,417.65,871.13,2085.79,12
+2183,2013,Orissa,Koraput,446.81,1119.39,2505.29,12
+2184,2014,Orissa,Koraput,449.92,978.68,2175.23,12
+2185,2015,Orissa,Koraput,410.45,609.13,1484.05,12
+2186,2016,Orissa,Koraput,429.65,1038.55,2417.2,12
+2187,2017,Orissa,Koraput,401.48,898.1,2236.97,12
+2188,2010,Orissa,Mayurbhanja,284.63,265.38,932.37,12
+2189,2011,Orissa,Mayurbhanja,299.21,563.67,1883.86,12
+2190,2012,Orissa,Mayurbhanja,287.33,495.92,1725.96,12
+2191,2013,Orissa,Mayurbhanja,305.17,424.21,1390.08,12
+2192,2014,Orissa,Mayurbhanja,315.96,687.42,2175.66,12
+2193,2015,Orissa,Mayurbhanja,318.03,312.85,983.71,12
+2194,2016,Orissa,Mayurbhanja,306.67,723.12,2357.97,12
+2195,2017,Orissa,Mayurbhanja,324.09,655.66,2023.08,12
+2196,2010,Orissa,Phulbani ( Kandhamal ),117.54,150.21,1277.95,12
+2197,2011,Orissa,Phulbani ( Kandhamal ),102.18,120.19,1176.26,12
+2198,2012,Orissa,Phulbani ( Kandhamal ),112.62,246.92,2192.51,12
+2199,2013,Orissa,Phulbani ( Kandhamal ),114.06,193.98,1700.68,12
+2200,2014,Orissa,Phulbani ( Kandhamal ),105.24,221.6,2105.66,12
+2201,2015,Orissa,Phulbani ( Kandhamal ),90.57,83.55,922.49,12
+2202,2016,Orissa,Phulbani ( Kandhamal ),97.4,248.61,2552.46,12
+2203,2017,Orissa,Phulbani ( Kandhamal ),89.04,155.67,1748.32,12
+2204,2010,Orissa,Puri,348.57,593.22,1701.87,12
+2205,2011,Orissa,Puri,332.69,434.65,1306.47,12
+2206,2012,Orissa,Puri,325.04,759.04,2335.22,12
+2207,2013,Orissa,Puri,334.95,364.58,1088.46,12
+2208,2014,Orissa,Puri,325.46,692.52,2127.82,12
+2209,2015,Orissa,Puri,321.38,493.49,1535.53,12
+2210,2016,Orissa,Puri,294.5,752.82,2556.26,12
+2211,2017,Orissa,Puri,276.34,433.1,1567.27,12
+2212,2010,Orissa,Sambalpur,550.84,993.07,1802.83,12
+2213,2011,Orissa,Sambalpur,518.7,1016.49,1959.69,12
+2214,2012,Orissa,Sambalpur,518.66,1586.6,3059.04,12
+2215,2013,Orissa,Sambalpur,580.29,1240.17,2137.16,12
+2216,2014,Orissa,Sambalpur,599.69,1567.98,2614.65,12
+2217,2015,Orissa,Sambalpur,548.69,837.19,1525.8,12
+2218,2016,Orissa,Sambalpur,528.04,1150.15,2178.15,12
+2219,2017,Orissa,Sambalpur,529.76,626.07,1181.8,12
+2220,2010,Orissa,Sundargarh,211.82,140.22,661.98,12
+2221,2011,Orissa,Sundargarh,193.34,346.84,1793.94,12
+2222,2012,Orissa,Sundargarh,204.43,474.43,2320.75,12
+2223,2013,Orissa,Sundargarh,211.03,411.87,1951.71,12
+2224,2014,Orissa,Sundargarh,195.83,496.44,2535.06,12
+2225,2015,Orissa,Sundargarh,194.65,228.15,1172.1,12
+2226,2016,Orissa,Sundargarh,207.74,352.36,1696.16,12
+2227,2017,Orissa,Sundargarh,198.96,349.97,1759.0,12
+2228,2010,West Bengal,24 Parganas,595.7,1462.91,2455.78,19
+2229,2011,West Bengal,24 Parganas,610.43,1500.62,2458.3,19
+2230,2012,West Bengal,24 Parganas,595.84,1553.5,2607.24,19
+2231,2013,West Bengal,24 Parganas,612.93,1658.81,2706.36,19
+2232,2014,West Bengal,24 Parganas,620.48,1702.5,2743.84,19
+2233,2015,West Bengal,24 Parganas,622.27,1602.26,2574.86,19
+2234,2016,West Bengal,24 Parganas,582.01,1554.29,2670.56,19
+2235,2017,West Bengal,24 Parganas,606.14,1690.69,2789.27,19
+2236,2010,West Bengal,Nadia,235.74,650.47,2759.27,19
+2237,2011,West Bengal,Nadia,252.14,744.49,2952.68,19
+2238,2012,West Bengal,Nadia,232.86,668.3,2869.96,19
+2239,2013,West Bengal,Nadia,239.03,734.42,3072.5,19
+2240,2014,West Bengal,Nadia,242.85,780.86,3215.4,19
+2241,2015,West Bengal,Nadia,237.13,743.07,3133.6,19
+2242,2016,West Bengal,Nadia,226.16,733.95,3245.22,19
+2243,2017,West Bengal,Nadia,242.66,804.3,3314.53,19
+2244,2010,West Bengal,Murshidabad,304.18,861.73,2832.96,19
+2245,2011,West Bengal,Murshidabad,351.02,957.31,2727.22,19
+2246,2012,West Bengal,Murshidabad,352.39,973.7,2763.13,19
+2247,2013,West Bengal,Murshidabad,350.73,1116.7,3183.93,19
+2248,2014,West Bengal,Murshidabad,367.46,1190.49,3239.78,19
+2249,2015,West Bengal,Murshidabad,383.0,1257.25,3282.64,19
+2250,2016,West Bengal,Murshidabad,375.29,1235.66,3292.58,19
+2251,2017,West Bengal,Murshidabad,367.54,1178.19,3205.58,19
+2252,2010,West Bengal,Burdwan,562.86,1665.94,2959.78,19
+2253,2011,West Bengal,Burdwan,592.8,1749.32,2950.94,19
+2254,2012,West Bengal,Burdwan,593.42,1922.46,3239.63,19
+2255,2013,West Bengal,Burdwan,604.19,2016.62,3337.72,19
+2256,2014,West Bengal,Burdwan,583.28,1896.03,3250.63,19
+2257,2015,West Bengal,Burdwan,578.47,1949.43,3369.98,19
+2258,2016,West Bengal,Burdwan,493.44,1514.45,3069.16,19
+2259,2017,West Bengal,Burdwan,520.61,1597.43,3068.36,19
+2260,2010,West Bengal,Birbhum,249.03,747.95,3003.45,19
+2261,2011,West Bengal,Birbhum,386.88,1126.8,2912.53,19
+2262,2012,West Bengal,Birbhum,372.09,1084.23,2913.89,19
+2263,2013,West Bengal,Birbhum,384.61,1274.1,3312.71,19
+2264,2014,West Bengal,Birbhum,384.73,1261.88,3279.91,19
+2265,2015,West Bengal,Birbhum,399.51,1340.67,3355.79,19
+2266,2016,West Bengal,Birbhum,401.63,1309.02,3259.3,19
+2267,2017,West Bengal,Birbhum,423.81,1376.11,3246.97,19
+2268,2010,West Bengal,Bankura,198.02,507.49,2562.82,19
+2269,2011,West Bengal,Bankura,376.99,1119.51,2969.6,19
+2270,2012,West Bengal,Bankura,376.29,1033.74,2747.19,19
+2271,2013,West Bengal,Bankura,377.61,1045.36,2768.36,19
+2272,2014,West Bengal,Bankura,356.09,984.16,2763.8,19
+2273,2015,West Bengal,Bankura,360.61,990.64,2747.12,19
+2274,2016,West Bengal,Bankura,376.63,1058.24,2809.78,19
+2275,2017,West Bengal,Bankura,384.61,1081.48,2811.87,19
+2276,2010,West Bengal,Hooghly,292.37,904.16,3092.52,19
+2277,2011,West Bengal,Hooghly,277.2,806.84,2910.68,19
+2278,2012,West Bengal,Hooghly,273.45,793.04,2900.13,19
+2279,2013,West Bengal,Hooghly,286.05,807.73,2823.74,19
+2280,2014,West Bengal,Hooghly,276.03,860.05,3115.78,19
+2281,2015,West Bengal,Hooghly,277.62,871.28,3138.39,19
+2282,2016,West Bengal,Hooghly,266.97,837.1,3135.59,19
+2283,2017,West Bengal,Hooghly,260.37,839.67,3224.91,19
+2284,2010,West Bengal,Howrah,115.47,304.76,2639.3,19
+2285,2011,West Bengal,Howrah,107.05,225.33,2104.9,19
+2286,2012,West Bengal,Howrah,111.21,286.83,2579.17,19
+2287,2013,West Bengal,Howrah,108.64,275.13,2532.49,19
+2288,2014,West Bengal,Howrah,117.36,320.39,2729.98,19
+2289,2015,West Bengal,Howrah,112.82,222.22,1969.69,19
+2290,2016,West Bengal,Howrah,115.79,299.34,2585.08,19
+2291,2017,West Bengal,Howrah,110.38,300.67,2724.04,19
+2292,2010,West Bengal,Jalpaiguri,224.11,493.74,2203.11,19
+2293,2011,West Bengal,Jalpaiguri,224.62,469.65,2090.86,19
+2294,2012,West Bengal,Jalpaiguri,228.12,492.88,2160.62,19
+2295,2013,West Bengal,Jalpaiguri,229.65,523.15,2278.03,19
+2296,2014,West Bengal,Jalpaiguri,230.54,561.85,2437.1,19
+2297,2015,West Bengal,Jalpaiguri,220.26,556.42,2526.2,19
+2298,2016,West Bengal,Jalpaiguri,210.97,483.41,2291.3,19
+2299,2017,West Bengal,Jalpaiguri,214.23,514.26,2400.54,19
+2300,2010,West Bengal,Darjeeling,32.26,77.8,2411.66,19
+2301,2011,West Bengal,Darjeeling,32.29,75.84,2348.71,19
+2302,2012,West Bengal,Darjeeling,32.42,67.56,2083.9,19
+2303,2013,West Bengal,Darjeeling,32.16,72.3,2248.13,19
+2304,2014,West Bengal,Darjeeling,32.56,68.54,2105.04,19
+2305,2015,West Bengal,Darjeeling,32.59,76.95,2361.15,19
+2306,2016,West Bengal,Darjeeling,27.3,60.2,2204.81,19
+2307,2017,West Bengal,Darjeeling,28.27,65.58,2319.88,19
+2308,2010,West Bengal,Malda,200.76,630.48,3140.47,19
+2309,2011,West Bengal,Malda,204.93,611.97,2986.24,19
+2310,2012,West Bengal,Malda,207.59,644.57,3105.01,19
+2311,2013,West Bengal,Malda,198.77,704.37,3543.64,19
+2312,2014,West Bengal,Malda,204.19,707.57,3465.25,19
+2313,2015,West Bengal,Malda,206.35,705.36,3418.27,19
+2314,2016,West Bengal,Malda,197.17,670.65,3401.3,19
+2315,2017,West Bengal,Malda,213.93,629.95,2944.6,19
+2316,2010,West Bengal,Cooch Behar,275.29,656.87,2386.1,19
+2317,2011,West Bengal,Cooch Behar,273.28,600.69,2198.08,19
+2318,2012,West Bengal,Cooch Behar,277.81,670.26,2412.66,19
+2319,2013,West Bengal,Cooch Behar,273.13,727.97,2665.29,19
+2320,2014,West Bengal,Cooch Behar,277.39,720.1,2595.98,19
+2321,2015,West Bengal,Cooch Behar,270.15,722.23,2673.44,19
+2322,2016,West Bengal,Cooch Behar,270.75,705.71,2606.44,19
+2323,2017,West Bengal,Cooch Behar,273.05,745.2,2729.15,19
+2324,2010,West Bengal,Purulia,152.9,261.75,1711.9,19
+2325,2011,West Bengal,Purulia,270.59,732.35,2706.49,19
+2326,2012,West Bengal,Purulia,289.14,730.73,2527.25,19
+2327,2013,West Bengal,Purulia,302.88,731.54,2415.28,19
+2328,2014,West Bengal,Purulia,279.72,599.42,2142.93,19
+2329,2015,West Bengal,Purulia,272.13,500.44,1838.97,19
+2330,2016,West Bengal,Purulia,276.82,649.82,2347.45,19
+2331,2017,West Bengal,Purulia,273.17,751.47,2750.89,19
+2332,2010,West Bengal,Midnapur,1066.2,2947.41,2764.41,19
+2333,2011,West Bengal,Midnapur,1055.4,2784.21,2638.06,19
+2334,2012,West Bengal,Midnapur,1093.5,2940.45,2689.03,19
+2335,2013,West Bengal,Midnapur,1105.54,2618.92,2368.91,19
+2336,2014,West Bengal,Midnapur,1154.23,3152.73,2731.46,19
+2337,2015,West Bengal,Midnapur,1136.11,3215.01,2829.84,19
+2338,2016,West Bengal,Midnapur,988.33,2852.72,2886.39,19
+2339,2017,West Bengal,Midnapur,970.95,3001.78,3091.58,19
+2340,2010,West Bengal,West Dinajpur,439.26,1216.16,2768.66,19
+2341,2011,West Bengal,West Dinajpur,418.08,1105.35,2643.87,19
+2342,2012,West Bengal,West Dinajpur,408.21,1084.49,2656.7,19
+2343,2013,West Bengal,West Dinajpur,407.78,1069.76,2623.38,19
+2344,2014,West Bengal,West Dinajpur,399.61,1120.63,2804.31,19
+2345,2015,West Bengal,West Dinajpur,414.94,1195.03,2880.01,19
+2346,2016,West Bengal,West Dinajpur,402.75,1141.76,2834.93,19
+2347,2017,West Bengal,West Dinajpur,417.97,1082.16,2589.08,19
+2348,2010,Bihar,Champaran,338.32,303.72,897.73,2
+2349,2011,Bihar,Champaran,437.79,901.33,2058.82,2
+2350,2012,Bihar,Champaran,421.99,884.17,2095.24,2
+2351,2013,Bihar,Champaran,426.86,680.3,1593.73,2
+2352,2014,Bihar,Champaran,423.39,869.69,2054.11,2
+2353,2015,Bihar,Champaran,417.51,568.41,1361.43,2
+2354,2016,Bihar,Champaran,417.65,854.79,2046.69,2
+2355,2017,Bihar,Champaran,401.13,642.01,1600.53,2
+2356,2010,Bihar,Muzaffarpur,293.36,131.42,447.98,2
+2357,2011,Bihar,Muzaffarpur,313.51,651.88,2079.3,2
+2358,2012,Bihar,Muzaffarpur,294.93,650.25,2204.76,2
+2359,2013,Bihar,Muzaffarpur,294.37,275.92,937.32,2
+2360,2014,Bihar,Muzaffarpur,306.03,607.61,1985.46,2
+2361,2015,Bihar,Muzaffarpur,277.12,258.9,934.25,2
+2362,2016,Bihar,Muzaffarpur,282.12,496.21,1758.86,2
+2363,2017,Bihar,Muzaffarpur,284.69,469.65,1649.7,2
+2364,2010,Bihar,Darbhanga,346.31,223.43,645.17,2
+2365,2011,Bihar,Darbhanga,351.8,630.23,1791.44,2
+2366,2012,Bihar,Darbhanga,330.56,460.01,1391.61,2
+2367,2013,Bihar,Darbhanga,349.92,399.58,1141.92,2
+2368,2014,Bihar,Darbhanga,376.24,645.79,1716.43,2
+2369,2015,Bihar,Darbhanga,383.19,490.02,1278.79,2
+2370,2016,Bihar,Darbhanga,373.9,730.2,1952.94,2
+2371,2017,Bihar,Darbhanga,379.07,641.69,1692.79,2
+2372,2010,Bihar,Saharsa,182.75,214.71,1174.88,2
+2373,2011,Bihar,Saharsa,196.4,332.12,1691.04,2
+2374,2012,Bihar,Saharsa,198.09,345.23,1742.79,2
+2375,2013,Bihar,Saharsa,195.88,316.59,1616.24,2
+2376,2014,Bihar,Saharsa,202.4,367.33,1814.87,2
+2377,2015,Bihar,Saharsa,178.44,345.27,1934.94,2
+2378,2016,Bihar,Saharsa,183.32,338.87,1848.51,2
+2379,2017,Bihar,Saharsa,168.85,279.7,1656.48,2
+2380,2010,Bihar,Purnea,396.16,495.69,1251.24,2
+2381,2011,Bihar,Purnea,419.45,844.03,2012.23,2
+2382,2012,Bihar,Purnea,417.81,964.87,2309.35,2
+2383,2013,Bihar,Purnea,414.1,1025.81,2477.2,2
+2384,2014,Bihar,Purnea,390.34,996.73,2553.49,2
+2385,2015,Bihar,Purnea,390.64,776.83,1988.61,2
+2386,2016,Bihar,Purnea,425.09,914.03,2150.19,2
+2387,2017,Bihar,Purnea,400.4,747.48,1866.82,2
+2388,2010,Bihar,Saran,247.47,252.41,1019.96,2
+2389,2011,Bihar,Saran,271.39,518.01,1908.73,2
+2390,2012,Bihar,Saran,261.69,599.32,2290.19,2
+2391,2013,Bihar,Saran,253.72,421.78,1662.38,2
+2392,2014,Bihar,Saran,249.96,521.42,2086.01,2
+2393,2015,Bihar,Saran,243.95,288.01,1180.61,2
+2394,2016,Bihar,Saran,249.96,463.22,1853.21,2
+2395,2017,Bihar,Saran,236.63,413.07,1745.64,2
+2396,2010,Bihar,Patna,116.1,135.51,1167.18,2
+2397,2011,Bihar,Patna,186.6,515.01,2759.97,2
+2398,2012,Bihar,Patna,171.92,473.05,2751.57,2
+2399,2013,Bihar,Patna,106.13,249.87,2354.38,2
+2400,2014,Bihar,Patna,147.61,380.22,2575.84,2
+2401,2015,Bihar,Patna,170.18,501.36,2946.06,2
+2402,2016,Bihar,Patna,176.45,543.02,3077.4,2
+2403,2017,Bihar,Patna,191.89,597.76,3115.03,2
+2404,2010,Bihar,Mungair,128.49,57.92,450.77,2
+2405,2011,Bihar,Mungair,176.23,348.38,1976.85,2
+2406,2012,Bihar,Mungair,161.48,360.51,2232.54,2
+2407,2013,Bihar,Mungair,157.75,284.02,1800.44,2
+2408,2014,Bihar,Mungair,153.82,386.55,2513.0,2
+2409,2015,Bihar,Mungair,177.81,435.69,2450.31,2
+2410,2016,Bihar,Mungair,185.5,563.27,3036.5,2
+2411,2017,Bihar,Mungair,192.94,514.37,2666.03,2
+2412,2010,Bihar,Bhagalpur,110.94,189.38,1707.05,2
+2413,2011,Bihar,Bhagalpur,126.43,471.72,3731.08,2
+2414,2012,Bihar,Bhagalpur,131.5,358.37,2725.25,2
+2415,2013,Bihar,Bhagalpur,125.04,341.09,2727.85,2
+2416,2014,Bihar,Bhagalpur,124.21,419.46,3377.02,2
+2417,2015,Bihar,Bhagalpur,127.48,394.51,3094.68,2
+2418,2016,Bihar,Bhagalpur,127.54,397.85,3119.4,2
+2419,2017,Bihar,Bhagalpur,125.45,441.68,3520.68,2
+2420,2010,Jharkhand,Santhal Paragana / Dumka,194.39,243.47,1252.48,7
+2421,2011,Jharkhand,Santhal Paragana / Dumka,201.41,430.52,2137.53,7
+2422,2012,Jharkhand,Santhal Paragana / Dumka,228.54,443.0,1938.39,7
+2423,2013,Jharkhand,Santhal Paragana / Dumka,215.71,388.89,1802.84,7
+2424,2014,Jharkhand,Santhal Paragana / Dumka,234.67,452.21,1927.0,7
+2425,2015,Jharkhand,Santhal Paragana / Dumka,244.19,249.3,1020.93,7
+2426,2016,Jharkhand,Santhal Paragana / Dumka,265.27,629.56,2373.3,7
+2427,2017,Jharkhand,Santhal Paragana / Dumka,351.0,726.35,2069.39,7
+2428,2010,Bihar,Shahabad (now part of Bhojpur district),429.27,770.04,1793.84,2
+2429,2011,Bihar,Shahabad (now part of Bhojpur district),460.7,1732.18,3759.89,2
+2430,2012,Bihar,Shahabad (now part of Bhojpur district),458.75,1726.82,3764.19,2
+2431,2013,Bihar,Shahabad (now part of Bhojpur district),493.8,1690.29,3423.03,2
+2432,2014,Bihar,Shahabad (now part of Bhojpur district),480.88,1619.59,3367.97,2
+2433,2015,Bihar,Shahabad (now part of Bhojpur district),477.68,1605.57,3361.18,2
+2434,2016,Bihar,Shahabad (now part of Bhojpur district),498.15,1498.63,3008.38,2
+2435,2017,Bihar,Shahabad (now part of Bhojpur district),492.74,1840.01,3734.21,2
+2436,2010,Bihar,Gaya,256.23,338.42,1320.77,2
+2437,2011,Bihar,Gaya,410.65,1293.08,3148.86,2
+2438,2012,Bihar,Gaya,450.17,1499.42,3330.79,2
+2439,2013,Bihar,Gaya,333.23,964.36,2893.98,2
+2440,2014,Bihar,Gaya,408.54,1427.25,3493.54,2
+2441,2015,Bihar,Gaya,388.34,1137.68,2929.6,2
+2442,2016,Bihar,Gaya,420.09,1438.68,3424.65,2
+2443,2017,Bihar,Gaya,433.19,1505.74,3475.97,2
+2444,2010,Jharkhand,Hazaribagh,89.57,74.2,828.43,7
+2445,2011,Jharkhand,Hazaribagh,129.17,286.95,2221.56,7
+2446,2012,Jharkhand,Hazaribagh,136.42,252.05,1847.61,7
+2447,2013,Jharkhand,Hazaribagh,169.33,415.7,2454.89,7
+2448,2014,Jharkhand,Hazaribagh,116.67,290.1,2486.47,7
+2449,2015,Jharkhand,Hazaribagh,182.45,191.96,1052.13,7
+2450,2016,Jharkhand,Hazaribagh,182.11,388.81,2135.06,7
+2451,2017,Jharkhand,Hazaribagh,266.02,533.69,2006.23,7
+2452,2010,Jharkhand,Dhanbad,10.78,13.18,1222.4,7
+2453,2011,Jharkhand,Dhanbad,20.39,57.79,2833.67,7
+2454,2012,Jharkhand,Dhanbad,23.18,42.02,1812.76,7
+2455,2013,Jharkhand,Dhanbad,22.1,59.72,2702.9,7
+2456,2014,Jharkhand,Dhanbad,20.85,52.94,2539.25,7
+2457,2015,Jharkhand,Dhanbad,15.15,15.88,1048.07,7
+2458,2016,Jharkhand,Dhanbad,20.33,31.88,1568.31,7
+2459,2017,Jharkhand,Dhanbad,53.28,113.46,2129.71,7
+2460,2010,Jharkhand,Palamau,55.5,29.47,530.99,7
+2461,2011,Jharkhand,Palamau,69.97,137.2,1960.84,7
+2462,2012,Jharkhand,Palamau,96.26,209.34,2174.74,7
+2463,2013,Jharkhand,Palamau,58.39,86.99,1489.81,7
+2464,2014,Jharkhand,Palamau,43.82,48.98,1117.75,7
+2465,2015,Jharkhand,Palamau,87.44,68.88,787.74,7
+2466,2016,Jharkhand,Palamau,99.93,210.26,2104.1,7
+2467,2017,Jharkhand,Palamau,121.89,253.28,2077.92,7
+2468,2010,Jharkhand,Ranchi,299.39,287.66,960.82,7
+2469,2011,Jharkhand,Ranchi,308.08,666.56,2163.59,7
+2470,2012,Jharkhand,Ranchi,342.83,670.11,1954.64,7
+2471,2013,Jharkhand,Ranchi,353.05,714.66,2024.25,7
+2472,2014,Jharkhand,Ranchi,316.66,658.31,2078.92,7
+2473,2015,Jharkhand,Ranchi,370.06,352.66,952.98,7
+2474,2016,Jharkhand,Ranchi,550.38,1195.51,2172.16,7
+2475,2017,Jharkhand,Ranchi,556.33,1124.5,2021.3,7
+2476,2010,Jharkhand,Singhbhum,187.56,111.26,593.2,7
+2477,2011,Jharkhand,Singhbhum,253.68,485.46,1913.67,7
+2478,2012,Jharkhand,Singhbhum,263.85,517.22,1960.28,7
+2479,2013,Jharkhand,Singhbhum,267.06,579.7,2170.67,7
+2480,2014,Jharkhand,Singhbhum,256.33,586.63,2288.57,7
+2481,2015,Jharkhand,Singhbhum,263.21,264.71,1005.7,7
+2482,2016,Jharkhand,Singhbhum,224.05,319.01,1423.84,7
+2483,2017,Jharkhand,Singhbhum,386.91,669.97,1731.62,7
