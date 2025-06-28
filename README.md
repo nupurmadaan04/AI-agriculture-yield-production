@@ -32,9 +32,9 @@ This project leverages machine learning techniques to predict **Rice Yield (Kg/h
 
 ## 📏 Folder Structure
 
-AI-agriculture-yield-prediction/
-│
-├── Datasets/
+`AI-agriculture-yield-prediction/`
+`│`
+`├── Datasets/`
 │ ├── Crops_data.csv
 │ ├── rice_data.csv
 │ └── rice_data_outlier_removed.csv
