@@ -66,7 +66,7 @@ This project leverages machine learning techniques to predict **Rice Yield (Kg/h
 
 ## 🚑 Author
 
-- **Name**: [Your Name Here]
+- **Name**: [Nupur Madaan]
 - **Internship Project**: AI in Agriculture — Yield Prediction
 
 ---
