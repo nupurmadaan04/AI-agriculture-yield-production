@@ -151,4 +151,4 @@ In evaluator:
     - Parameters
     - Return values
     - Purpose
-- Key logic (e.g., sMAPE handling zero division) is explained via inline comments.
+- Key logic is explained via inline comments.
