@@ -45,7 +45,7 @@ evaluator.save_results_to_csv(results, "path/to/save/results.csv")
 ## 📥 Input/Output Format
 
 ### Input CSV format
-- .csv file containing Actual and Predicted values.
+.csv file containing Actual and Predicted values.
 `Actual`: Ground truth values.
 `Predicted`: Model output.
 
@@ -71,9 +71,9 @@ These are pre-built metrics that inherit from the Metric interface:
 - `MAPEMetric`: Symmetric Mean Absolute Percentage Error.
 
 All metrics implement the following methods:
-`calculate(y_true, y_pred)`
-`name()`
-`description()`
+- `calculate(y_true, y_pred)`
+- `name()`
+- `description()`
 
 ## ➕ Adding a New Metric
 
