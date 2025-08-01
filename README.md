@@ -61,6 +61,7 @@ This project leverages machine learning techniques to predict **Rice Yield (Kg/h
 1. Clone the repository
 2. Install dependencies: `pip install -r requirements.txt`
 3. Run notebooks in sequence: `01` to `04`
+4. Don't forget to star the repo 
 
 ---
 
