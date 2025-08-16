@@ -1,62 +1,19 @@
-
-# System files
+# Ignore system files
 .DS_Store
 Thumbs.db
 
-# Python
+# Ignore Python cache
 __pycache__/
 *.py[cod]
-*.so
-*.egg
-*.egg-info/
-dist/
-build/
-.eggs/
 
-# Jupyter Notebooks
+# Ignore Jupyter notebook checkpoints
 .ipynb_checkpoints/
 
-# VS Code
-.vscode/
-
-# Data and models
-*.csv
+# Ignore model pickle files (optional)
 *.pkl
-*.h5
-*.joblib
-*.npy
-*.npz
-*.sav
 
-# Environment
+# Ignore environment files
 .env
-.venv/
-venv/
-ENV/
 
-# Logs
-*.log
-
-# Plots and images
-*.png
-*.jpg
-*.jpeg
-*.svg
-*.pdf
-
-# Misc
-*.bak
-*.tmp
-
-# Ignore Plots and Datasets folders except for versioned files
-!Plots/
-!Datasets/
-!Models/
-
-# But ignore all files inside Plots, Datasets, and Models except for README.md
-Plots/*
-!Plots/README.md
-Datasets/*
-!Datasets/README.md
-Models/*
-!Models/README.md
+# Ignore VSCode/IDE settings (optional)
+.vscode/
