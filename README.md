@@ -1,12 +1,11 @@
-# 🌾 AI in Agriculture: Crop Monitoring and Yield Prediction
+# AI in Agriculture: Crop Monitoring and Yield Prediction
 
-## 📄 Project Overview
+## Project Overview
 
 This project leverages machine learning techniques to predict **Rice Yield (Kg/ha)** based on agricultural data such as year, area of cultivation, production, and state. It demonstrates the use of **EDA**, **outlier removal**, **data preprocessing**, **model training**, and **evaluation**.
 
----
 
-## 📊 Dataset
+## Dataset
 
 ### Source:
 
@@ -17,9 +16,9 @@ This project leverages machine learning techniques to predict **Rice Yield (Kg/h
 - `rice_data.csv`: Extracted rice-related data
 - `rice_data_outlier_removed.csv`: Cleaned rice dataset after removing outliers using IQR
 
----
 
-## 📚 Notebooks
+
+## Notebooks
 
 | Notebook                         | Description                                                                                           |
 | -------------------------------- | ----------------------------------------------------------------------------------------------------- |
@@ -28,9 +27,9 @@ This project leverages machine learning techniques to predict **Rice Yield (Kg/h
 | `03_Modelling.ipynb`             | Trained Random Forest model, performed scaling, trained/test split, saved model and scaler            |
 | `04_Evaluation_Deployment.ipynb` | Evaluated the model (R², MAE, RMSE), plotted results, and saved prediction output                     |
 
----
 
-## 📊 Model & Accuracy
+
+## Model & Accuracy
 
 - **Model Used**: Random Forest Regressor
 - **Train Accuracy**: ~99.2%
@@ -38,42 +37,43 @@ This project leverages machine learning techniques to predict **Rice Yield (Kg/h
 - **MAE**: ~107.5
 - **RMSE**: ~56287.4
 
----
 
-## 🔧 Tech Stack
+
+## Tech Stack
 
 - **Language**: Python
 - **Libraries**: pandas, numpy, matplotlib, seaborn, sklearn
 - **IDE**: Jupyter Notebook (Anaconda)
 
----
 
-## 📢 Notes
+
+## Notes
 
 - Outliers were removed using IQR before training.
 - Data was scaled using `StandardScaler`.
 - Cross-validation was also explored to prevent overfitting.
 
----
 
-## 🚀 How to Run
+
+## How to Run
 
 1. Clone the repository
 2. Install dependencies: `pip install -r requirements.txt`
 3. Run notebooks in sequence: `01` to `04`
 4. Don't forget to star the repo 
 
----
 
-## 🚑 Author
+
+## Author
 
 - **Name**: [Nupur Madaan]
 - **Internship Project**: AI in Agriculture — Yield Prediction
 
----
 
-## 📅 License
+
+## License
 
 This project is licensed under the [MIT License](LICENSE).
+
 
 
