@@ -73,7 +73,7 @@ This project leverages machine learning techniques to predict **Rice Yield (Kg/h
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [MIT License](LICENSE.md).
 
 
 
