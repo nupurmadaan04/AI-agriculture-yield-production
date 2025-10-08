@@ -3,3 +3,6 @@ numpy==1.26.4
 matplotlib==3.8.4
 seaborn==0.13.2
 scikit-learn==1.4.2
+plotly==5.17.0
+folium==0.15.0
+streamlit==1.28.1
