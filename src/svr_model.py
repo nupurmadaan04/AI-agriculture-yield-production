@@ -6,7 +6,8 @@ from sklearn.metrics import mean_squared_error, r2_score, mean_absolute_error
 from sklearn.preprocessing import StandardScaler, LabelEncoder
 import pickle
 
-df = pd.read_csv('../Datasets/Crops_data.csv')
+df = pd.read_csv('E:/PROGRAMMING-2/AI-agriculture-yield-production/Datasets/Crops_data.csv')
+print(df.head())
 
 rice_area_col = 'RICE AREA (1000 ha)'
 rice_prod_col = 'RICE PRODUCTION (1000 tons)'
@@ -63,9 +64,9 @@ print(f"RBF: R²={rbf_r2:.4f}, MSE={rbf_mse:.2f}, MAE={rbf_mae:.2f}")
 print(f"Best Params: {rbf.best_params_}")
 print(f"\nBest Model: {'Linear' if linear_r2 > rbf_r2 else 'RBF'} (R²={max(linear_r2, rbf_r2):.4f})")
 
-os.makedirs('../Models', exist_ok=True)
-with open('../Models/svr_linear_model.pkl', 'wb') as f:
+os.makedirs('E:/PROGRAMMING-2/AI-agriculture-yield-production/Models', exist_ok=True)
+with open('E:/PROGRAMMING-2/AI-agriculture-yield-production/Models/svr_linear_model.pkl', 'wb') as f:
     pickle.dump(linear, f)
-with open('../Models/svr_rbf_model.pkl', 'wb') as f:
+with open('E:/PROGRAMMING-2/AI-agriculture-yield-production/Models/svr_rbf_model.pkl', 'wb') as f:
     pickle.dump(rbf.best_estimator_, f)
 print("Models saved successfully!")
