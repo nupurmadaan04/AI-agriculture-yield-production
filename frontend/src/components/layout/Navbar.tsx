@@ -51,6 +51,13 @@ const navGroups: NavGroup[] = [
         icon: LineChart,
       },
       {
+        name: 'Operational Intelligence',
+        path: '/observability',
+        description: 'Runtime telemetry, forecast tracing, model integrity, and alert logs.',
+        badge: 'Ops',
+        icon: Activity,
+      },
+      {
         name: 'Forecast Audit & Provenance',
         path: '/forecast',
         description: 'Cryptographic execution logs, model artifacts, and audit trails.',

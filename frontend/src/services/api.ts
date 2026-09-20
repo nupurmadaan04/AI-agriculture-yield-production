@@ -89,6 +89,20 @@ import {
   ForecastHealthResponse,
 } from '../types/modeling'
 import {
+  SystemHealthItem,
+  RuntimeMetricsResponse,
+  ForecastOperationsMetrics,
+  StrategyMonitoringResponse,
+  PredictionTraceResponse,
+  ModelIntegrityResponse,
+  DatasetIntegrityResponse,
+  StrategyRegistryHealthResponse,
+  OperationalErrorsResponse,
+  AlertsResponse,
+  DriftMonitoringResponse,
+  ObservabilitySummaryResponse,
+} from '../types/observability'
+import {
   PostHarvestPredictRequest,
   PostHarvestPredictResponse,
   PreSeasonPredictRequest,
@@ -776,6 +790,43 @@ export const api = {
 
   getForecastHealth: (): Promise<ForecastHealthResponse> =>
     fetchJson<ForecastHealthResponse>('/forecast/health'),
+
+  // Day 28: Production Observability & Operations Endpoints
+  getObservabilitySummary: (): Promise<ObservabilitySummaryResponse> =>
+    fetchJson<ObservabilitySummaryResponse>('/observability/summary'),
+
+  getObservabilityHealth: (): Promise<SystemHealthItem> =>
+    fetchJson<SystemHealthItem>('/observability/health'),
+
+  getObservabilityMetrics: (): Promise<RuntimeMetricsResponse> =>
+    fetchJson<RuntimeMetricsResponse>('/observability/metrics'),
+
+  getObservabilityForecasts: (): Promise<ForecastOperationsMetrics> =>
+    fetchJson<ForecastOperationsMetrics>('/observability/forecasts'),
+
+  getObservabilityStrategies: (): Promise<StrategyMonitoringResponse> =>
+    fetchJson<StrategyMonitoringResponse>('/observability/strategies'),
+
+  getObservabilityModels: (): Promise<ModelIntegrityResponse> =>
+    fetchJson<ModelIntegrityResponse>('/observability/models'),
+
+  getObservabilityDataset: (): Promise<DatasetIntegrityResponse> =>
+    fetchJson<DatasetIntegrityResponse>('/observability/dataset'),
+
+  getObservabilityRegistry: (): Promise<StrategyRegistryHealthResponse> =>
+    fetchJson<StrategyRegistryHealthResponse>('/observability/registry'),
+
+  getPredictionTrace: (requestId: string): Promise<PredictionTraceResponse> =>
+    fetchJson<PredictionTraceResponse>(`/observability/trace/${encodeURIComponent(requestId)}`),
+
+  getObservabilityErrors: (limit = 50): Promise<OperationalErrorsResponse> =>
+    fetchJson<OperationalErrorsResponse>(`/observability/errors?limit=${limit}`),
+
+  getObservabilityAlerts: (): Promise<AlertsResponse> =>
+    fetchJson<AlertsResponse>('/observability/alerts'),
+
+  getObservabilityDrift: (): Promise<DriftMonitoringResponse> =>
+    fetchJson<DriftMonitoringResponse>('/observability/drift'),
 }
 
 // TanStack Query Custom Hooks
@@ -1793,6 +1844,112 @@ export function useForecastHealth() {
     staleTime: 1000 * 60 * 5,
   })
 }
+
+// Day 28 Production Observability & Operational Intelligence Hooks
+export function useObservabilitySummary() {
+  return useQuery({
+    queryKey: ['observability-summary'],
+    queryFn: api.getObservabilitySummary,
+    refetchInterval: 5000,
+    staleTime: 1000 * 3,
+  })
+}
+
+export function useObservabilityHealth() {
+  return useQuery({
+    queryKey: ['observability-health'],
+    queryFn: api.getObservabilityHealth,
+    refetchInterval: 5000,
+    staleTime: 1000 * 3,
+  })
+}
+
+export function useObservabilityMetrics() {
+  return useQuery({
+    queryKey: ['observability-metrics'],
+    queryFn: api.getObservabilityMetrics,
+    refetchInterval: 5000,
+    staleTime: 1000 * 3,
+  })
+}
+
+export function useObservabilityForecasts() {
+  return useQuery({
+    queryKey: ['observability-forecasts'],
+    queryFn: api.getObservabilityForecasts,
+    refetchInterval: 10000,
+    staleTime: 1000 * 5,
+  })
+}
+
+export function useObservabilityStrategies() {
+  return useQuery({
+    queryKey: ['observability-strategies'],
+    queryFn: api.getObservabilityStrategies,
+    refetchInterval: 10000,
+    staleTime: 1000 * 5,
+  })
+}
+
+export function useObservabilityModels() {
+  return useQuery({
+    queryKey: ['observability-models'],
+    queryFn: api.getObservabilityModels,
+    staleTime: 1000 * 30,
+  })
+}
+
+export function useObservabilityDataset() {
+  return useQuery({
+    queryKey: ['observability-dataset'],
+    queryFn: api.getObservabilityDataset,
+    staleTime: 1000 * 60,
+  })
+}
+
+export function useObservabilityRegistry() {
+  return useQuery({
+    queryKey: ['observability-registry'],
+    queryFn: api.getObservabilityRegistry,
+    staleTime: 1000 * 60,
+  })
+}
+
+export function usePredictionTrace(requestId: string) {
+  return useQuery({
+    queryKey: ['prediction-trace', requestId],
+    queryFn: () => api.getPredictionTrace(requestId),
+    enabled: Boolean(requestId && requestId.trim().length > 0),
+    staleTime: 1000 * 60 * 5,
+  })
+}
+
+export function useObservabilityErrors(limit = 50) {
+  return useQuery({
+    queryKey: ['observability-errors', limit],
+    queryFn: () => api.getObservabilityErrors(limit),
+    refetchInterval: 10000,
+    staleTime: 1000 * 5,
+  })
+}
+
+export function useObservabilityAlerts() {
+  return useQuery({
+    queryKey: ['observability-alerts'],
+    queryFn: api.getObservabilityAlerts,
+    refetchInterval: 5000,
+    staleTime: 1000 * 3,
+  })
+}
+
+export function useObservabilityDrift() {
+  return useQuery({
+    queryKey: ['observability-drift'],
+    queryFn: api.getObservabilityDrift,
+    staleTime: 1000 * 60 * 5,
+  })
+}
+
 
 
 

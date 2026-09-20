@@ -282,6 +282,19 @@ async def request_context_middleware(request: Request, call_next):
                     "duration_ms": duration_ms
                 }
             )
+
+        try:
+            from src.observability_engine import observability_engine
+            observability_engine.record_request_telemetry(
+                request_id=request_id,
+                method=request.method,
+                endpoint=request.url.path,
+                status_code=response.status_code,
+                duration_ms=duration_ms,
+            )
+        except Exception:
+            pass
+
         return response
     except Exception as exc:
         duration_ms = round((time.perf_counter() - start_time) * 1000, 2)
@@ -289,6 +302,19 @@ async def request_context_middleware(request: Request, call_next):
             f"Unhandled exception during {request.method} {request.url.path}: {exc}",
             extra={"request_id": request_id, "endpoint": request.url.path, "duration_ms": duration_ms}
         )
+        try:
+            from src.observability_engine import observability_engine
+            observability_engine.record_request_telemetry(
+                request_id=request_id,
+                method=request.method,
+                endpoint=request.url.path,
+                status_code=500,
+                duration_ms=duration_ms,
+                error_type="INTERNAL_SERVER_ERROR",
+                details={"error": str(exc)},
+            )
+        except Exception:
+            pass
         raise exc
 
 # Structured Exception Handlers
@@ -2781,6 +2807,14 @@ async def get_forecast_health():
     except Exception as e:
         logger.error(f"Error fetching forecast health: {e}", exc_info=True)
         raise HTTPException(status_code=500, detail=f"Failed to retrieve forecast health: {str(e)}")
+
+
+# ---------------------------------------------------------------------------
+# Day 28 Production Observability & Operational Intelligence Endpoints
+# ---------------------------------------------------------------------------
+from backend.routers.observability import router as observability_router
+app.include_router(observability_router)
+
 
 
 

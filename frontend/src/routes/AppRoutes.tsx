@@ -18,6 +18,7 @@ import { Explainability } from '../pages/Explainability'
 import { DecisionIntelligence } from '../pages/DecisionIntelligence'
 import { ModelingReadiness } from '../pages/ModelingReadiness'
 import { ForecastIntelligence } from '../pages/ForecastIntelligence'
+import { ObservabilityCenter } from '../pages/ObservabilityCenter'
 import { Pricing } from '../pages/Pricing'
 import { Contact } from '../pages/Contact'
 import { NotFound } from '../pages/NotFound'
@@ -29,6 +30,7 @@ export const AppRoutes: React.FC = () => {
         <Route path="/" element={<Home />} />
         <Route path="/forecast" element={<ForecastIntelligence />} />
         <Route path="/forecast-intelligence" element={<ForecastIntelligence />} />
+        <Route path="/observability" element={<ObservabilityCenter />} />
         <Route path="/decision-intelligence" element={<DecisionIntelligence />} />
         <Route path="/modeling-readiness" element={<ModelingReadiness />} />
         <Route path="/monitoring" element={<AgriculturalMonitoring />} />
@@ -48,6 +50,8 @@ export const AppRoutes: React.FC = () => {
         <Route path="/contact" element={<Contact />} />
         
         {/* Convenience Redirects */}
+        <Route path="/ops" element={<Navigate to="/observability" replace />} />
+        <Route path="/telemetry" element={<Navigate to="/observability" replace />} />
         <Route path="/readiness" element={<Navigate to="/modeling-readiness" replace />} />
         <Route path="/multi-crop" element={<Navigate to="/modeling-readiness" replace />} />
         <Route path="/decision" element={<Navigate to="/decision-intelligence" replace />} />

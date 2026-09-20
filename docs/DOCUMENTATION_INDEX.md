@@ -150,6 +150,28 @@ This index organizes all research, architecture, methodology, operational, and d
 - [DAY26_DEPLOYMENT_AUDIT.md](DAY26_DEPLOYMENT_AUDIT.md) — Pre-deployment architecture, path, and security audit report.
 - [DAY26_FINAL_STATUS.md](DAY26_FINAL_STATUS.md) — Day 26 containerization and operation compliance scorecard.
 
+---
+
+## 12. Performance Engineering & Load Testing (Day 27)
+- [DAY27_PERFORMANCE_BASELINE.md](DAY27_PERFORMANCE_BASELINE.md) — Latency and throughput benchmarks across analytical and inference endpoints.
+- [DAY27_LOAD_TEST_REPORT.md](DAY27_LOAD_TEST_REPORT.md) — Concurrent multi-client load testing and throughput validation.
+- [DAY27_DETERMINISM_REPORT.md](DAY27_DETERMINISM_REPORT.md) — Concurrent bitwise deterministic inference verification.
+- [DAY27_RESOURCE_PROFILE.md](DAY27_RESOURCE_PROFILE.md) — CPU, memory RSS, and process profiling under sustained workload.
+- [DAY27_PERFORMANCE_AUDIT.md](DAY27_PERFORMANCE_AUDIT.md) — Critical bottlenecks, hot-path analysis, and caching efficacy.
+- [DAY27_FINAL_STATUS.md](DAY27_FINAL_STATUS.md) — Day 27 performance scorecard and latency SLO sign-off.
+
+---
+
+## 13. Production Observability & Operational Intelligence (Day 28)
+- [DAY28_OBSERVABILITY_AUDIT.md](DAY28_OBSERVABILITY_AUDIT.md) — Pre-observability audit and telemetry assessment.
+- [DAY28_MONITORING_ARCHITECTURE.md](DAY28_MONITORING_ARCHITECTURE.md) — Production observability architecture, ring buffers, and storage topology.
+- [DAY28_RUNTIME_METRICS.md](DAY28_RUNTIME_METRICS.md) — Telemetry principles, latency percentiles ($P_{50}, P_{90}, P_{95}, P_{99}$), and zero-fabrication standards.
+- [DAY28_ALERTING_POLICY.md](DAY28_ALERTING_POLICY.md) — Configured operational alert rules, thresholds, and evaluation lifecycle.
+- [DAY28_FAILURE_DIAGNOSTICS.md](DAY28_FAILURE_DIAGNOSTICS.md) — Structured error categorization taxonomy and operational remediation guidance.
+- [DAY28_FORECAST_TRACE.md](DAY28_FORECAST_TRACE.md) — Step-by-step 6-stage prediction trace pipeline, microsecond latency capture, and audit fallback.
+- [DAY28_FINAL_STATUS.md](DAY28_FINAL_STATUS.md) — Day 28 final operational intelligence compliance scorecard.
+
+
 
 
 
