@@ -7,7 +7,7 @@
 [![Scikit-Learn](https://img.shields.io/badge/scikit--learn-1.3+-F7931E.svg)](https://scikit-learn.org/)
 [![Docker](https://img.shields.io/badge/Docker-Ready-2496ED.svg)](https://www.docker.com/)
 [![Tests Passing](https://img.shields.io/badge/tests-100%25%20passing-brightgreen.svg)](tests/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE.md)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 An evidence-driven, scientifically audited agricultural decision intelligence platform combining longitudinal multi-crop panel data (29 verified crops, 71,601 records), temporally validated machine learning forecasting, statistical baseline benchmarking, Tree SHAP explainability, SLSQP scenario optimization, and governed production forecast serving with cryptographic provenance.
 
@@ -44,7 +44,7 @@ Unlike traditional black-box platforms that apply complex machine learning model
 - **Evidence-Based Model Certification**: Multi-crop governance matrix certifying 1 Production-Ready ML (Oilseeds), 1 Conditional ML (Sugarcane), and 12 Statistical Baseline models.
 - **Explainable AI (Tree SHAP)**: Local and global feature attributions with force plots and summary distributions.
 - **Pareto Decision Intelligence & Scenarios**: SLSQP optimization for multi-crop acreage allocation and input sensitivity analysis.
-- **Governed Production Forecast API**: Pre-inference rejection guards (`UNSUPPORTED_CROP`, `DISTRICT_UNSUPPORTED`), 3-$\sigma$ variance clipping, and append-oriented audit logging.
+- **Governed Production Forecast API**: Pre-inference rejection guards (`UNSUPPORTED_CROP`, `DISTRICT_UNSUPPORTED`), 3-sigma variance clipping, and append-oriented audit logging.
 - **Cryptographic Provenance**: Every prediction includes an SHA-256 lineage fingerprint answering *"Why this prediction?"*.
 
 ---
@@ -109,7 +109,7 @@ The platform ingests and standardizes longitudinal panel data from verified auth
 
 ## Data Pipeline
 
-1. **Unit Harmonization**: Standardized into $\text{production\_tonnes}$, $\text{area\_ha}$, and $\text{yield\_kg\_ha}$.
+1. **Unit Harmonization**: Standardized into `production_tonnes`, `area_ha`, and `yield_kg_ha`.
 2. **Quality & Invariant Auditing**: 14 automated invariant checks (boundary clamping $[0, 150000]$, negative area removal, duplicate detection).
 3. **Zero-Leakage Lag Generator**: Shift operators ($t-1, t-2$, rolling 3-year mean) computed strictly within grouped district-crop panels to prevent future temporal leakage.
 
@@ -141,8 +141,8 @@ Validation is conducted strictly using **4-Fold Expanding Walk-Forward Validatio
 > **The system does not assume that machine learning outperforms statistical baselines. Crop-specific models are evaluated using temporally ordered validation and are deployed only when their performance demonstrates sufficient robustness relative to simpler historical baselines.**
 
 To achieve production certification, an algorithm must meet two non-negotiable gates:
-1. **Error Reduction**: $\text{MAE}_{\text{ML}} < \text{MAE}_{\text{Baseline}}$ with at least **+5.0% relative gain**.
-2. **Fold Consistency**: Win rate $\ge \mathbf{75\%}$ across temporal walk-forward folds.
+1. **Error Reduction**: **MAE (ML) < MAE (Baseline)** with at least **+5.0% relative gain**.
+2. **Fold Consistency**: Win rate **≥ 75%** across temporal walk-forward folds.
 
 Where ML fails these gates, the platform certifies the **Historical District Mean Persistence Baseline**. Choosing statistical baselines when ML is unproven is a core strength of responsible engineering.
 
@@ -201,7 +201,10 @@ When a forecast request is received, the governance engine executes a 5-step pip
 ## Reproducibility
 
 Dual independent inference runs across all 14 commodities produced **bitwise identical outputs**:
-$$\Delta = |\text{Prediction}_{\text{Run 1}} - \text{Prediction}_{\text{Run 2}}| = \mathbf{0.00000000}$$
+
+```
+Δ = |Prediction (Run 1) - Prediction (Run 2)| = 0.00000000
+```
 
 Every prediction payload includes an SHA-256 cryptographic lineage hash. All inference requests and governance rejections are written to an append-oriented audit log (`Datasets/metadata/prediction_audit_log.csv`).
 
@@ -269,6 +272,7 @@ AI-agriculture-yield-production/
 ├── Dockerfile                         # Container definition
 ├── docker-compose.yml                 # Multi-container orchestration
 ├── pyproject.toml                     # Python dependencies & pytest configuration
+├── LICENSE                            # MIT License
 └── README.md                          # Project README
 ```
 
@@ -316,7 +320,7 @@ API Documentation: [http://localhost:8000/docs](http://localhost:8000/docs)
 cd frontend
 npm run dev
 ```
-Client Application: [http://localhost:5173](http://localhost:5173)
+Client Application: [http://localhost:5173](http://localhost:5173) (or [http://localhost:3000](http://localhost:3000))
 
 ### Running with Docker Compose
 ```bash
@@ -362,11 +366,17 @@ python -m src.forecast_validation
 - **Days 17–19**: Multi-crop data harmonization (`AGRI_PANEL_1.0`), baseline benchmarking, and algorithm screening across 14 commodities.
 - **Days 20–22**: Temporal walk-forward validation, error regime diagnostics, and exogenous weather ablation audits.
 - **Day 23**: Final model certification audit, residual distributions, and bitwise reproducibility verification.
-- **Day 24**: Production forecast serving, pre-inference guards, 3-$\sigma$ variance clipping, cryptographic provenance, and audit logging.
+- **Day 24**: Production forecast serving, pre-inference guards, 3-sigma variance clipping, cryptographic provenance, and audit logging.
 - **Day 25**: Final scientific audit, model cards, dataset card, architecture documentation, and product release packaging.
+
+---
+
+## Contributing
+
+We welcome contributions! Please review our [CONTRIBUTING.md](CONTRIBUTING.md) guide for setup instructions, contribution workflow, and coding standards.
 
 ---
 
 ## License
 
-MIT License. Created for open scientific research, model governance benchmarking, and agricultural decision intelligence.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
