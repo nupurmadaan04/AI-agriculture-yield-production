@@ -21,12 +21,18 @@ class ForecastRouter:
         self.processed_dir = self.base_dir / "Datasets" / "processed"
         self._panel_df: Optional[pd.DataFrame] = None
         self._loaded_models: Dict[str, Any] = {}
+        self._stats_cache: Dict[Tuple[str, str, str, int], Tuple[Optional[float], float, int, pd.DataFrame]] = {}
 
     def _get_panel(self) -> pd.DataFrame:
         if self._panel_df is None:
             panel_p = self.processed_dir / "agricultural_panel.csv"
             if panel_p.exists():
-                self._panel_df = pd.read_csv(panel_p)
+                df = pd.read_csv(panel_p)
+                if not df.empty:
+                    df["_crop_lower"] = df["crop"].astype(str).str.lower().str.strip()
+                    df["_state_lower"] = df["state"].astype(str).str.lower().str.strip()
+                    df["_dist_lower"] = df["district"].astype(str).str.lower().str.strip()
+                self._panel_df = df
             else:
                 self._panel_df = pd.DataFrame()
         return self._panel_df
@@ -66,24 +72,34 @@ class ForecastRouter:
         """
         cert_status = strategy_meta.get("certification_status", "BASELINE_PRODUCTION")
         panel = self._get_panel()
-
-        # Extract district historical subset
-        dist_df = pd.DataFrame()
         yield_col = "yield_kg_ha" if not panel.empty and "yield_kg_ha" in panel.columns else "yield"
         area_col = "area_ha" if not panel.empty and "area_ha" in panel.columns else "area"
 
-        if not panel.empty:
-            dist_df = panel[
-                (panel["crop"].str.lower() == crop.lower())
-                & (panel["state"].str.lower() == state.lower())
-                & (panel["district"].str.lower() == district.lower())
-                & (panel["year"] < (forecast_year or 2018))
-            ]
+        cache_key = (crop.lower().strip(), state.lower().strip(), district.lower().strip(), forecast_year or 2018)
+        if cache_key in self._stats_cache:
+            dist_mean, dist_std, n_obs, dist_df = self._stats_cache[cache_key]
+        else:
+            dist_df = pd.DataFrame()
 
-        # Calculate historical stats for fallback & safety checks
-        dist_mean = float(dist_df[yield_col].mean()) if not dist_df.empty and not pd.isna(dist_df[yield_col].mean()) else None
-        dist_std = float(dist_df[yield_col].std()) if len(dist_df) > 1 and not pd.isna(dist_df[yield_col].std()) else 0.0
-        n_obs = len(dist_df)
+            if not panel.empty and "_crop_lower" in panel.columns:
+                dist_df = panel[
+                    (panel["_crop_lower"] == cache_key[0])
+                    & (panel["_state_lower"] == cache_key[1])
+                    & (panel["_dist_lower"] == cache_key[2])
+                    & (panel["year"] < cache_key[3])
+                ]
+            elif not panel.empty:
+                dist_df = panel[
+                    (panel["crop"].str.lower() == crop.lower())
+                    & (panel["state"].str.lower() == state.lower())
+                    & (panel["district"].str.lower() == district.lower())
+                    & (panel["year"] < (forecast_year or 2018))
+                ]
+
+            dist_mean = float(dist_df[yield_col].mean()) if not dist_df.empty and not pd.isna(dist_df[yield_col].mean()) else None
+            dist_std = float(dist_df[yield_col].std()) if len(dist_df) > 1 and not pd.isna(dist_df[yield_col].std()) else 0.0
+            n_obs = len(dist_df)
+            self._stats_cache[cache_key] = (dist_mean, dist_std, n_obs, dist_df)
 
         features = features or {}
 

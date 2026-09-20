@@ -134,6 +134,23 @@ class ModelingReadinessService:
         self.exo_folds_csv = os.path.join(METADATA_DIR, "exogenous_fold_results.csv")
         self.exo_crop_results_csv = os.path.join(METADATA_DIR, "exogenous_crop_results.csv")
         self.exo_selection_csv = os.path.join(METADATA_DIR, "exogenous_model_selection.csv")
+        self._cached_forecast_coverage: Optional[ForecastCoverageResponse] = None
+        self._cached_forecast_strategies: Optional[ForecastStrategiesResponse] = None
+        self._cached_forecast_cert_summary: Optional[ForecastCertificationSummaryResponse] = None
+        self._prediction_service = None
+        self._audit_logger = None
+
+    def _get_prediction_service(self):
+        if self._prediction_service is None:
+            from src.prediction_service import PredictionService
+            self._prediction_service = PredictionService()
+        return self._prediction_service
+
+    def _get_audit_logger(self):
+        if self._audit_logger is None:
+            from src.prediction_audit import PredictionAuditLogger
+            self._audit_logger = PredictionAuditLogger()
+        return self._audit_logger
 
     def _get_readiness_df(self) -> pd.DataFrame:
         if os.path.exists(self.readiness_csv):
@@ -1353,44 +1370,42 @@ class ModelingReadinessService:
 
     def get_forecast_strategies(self) -> ForecastStrategiesResponse:
         """Retrieves compiled multi-crop forecast strategy registry."""
+        if self._cached_forecast_strategies is not None:
+            return self._cached_forecast_strategies
+
         reg_json = os.path.join(BASE_DIR, "Models", "multicrop", "forecast_strategy_registry.json")
         if os.path.exists(reg_json):
             with open(reg_json, "r", encoding="utf-8") as f:
                 data = json.load(f)
-            meta = data.get("metadata", {})
-            strat_map = data.get("strategies", {})
-            items = [ForecastStrategyItem(**v) for v in strat_map.values()]
-            return ForecastStrategiesResponse(
-                total_strategies=len(items),
-                version=meta.get("version", "v1.0-Day24-Serving"),
-                validation_scope=meta.get("validation_scope", "expanding_walk_forward_2014_2017"),
-                temporal_boundary=meta.get("temporal_boundary", "1966-2017"),
-                strategies=items,
-            )
+        else:
+            from src.strategy_registry import StrategyRegistry
+            sr = StrategyRegistry()
+            data = sr.compile_strategy_registry()
 
-        # Fallback to direct compilation if file missing
-        from src.strategy_registry import StrategyRegistry
-        sr = StrategyRegistry()
-        data = sr.compile_strategy_registry()
         meta = data.get("metadata", {})
         strat_map = data.get("strategies", {})
         items = [ForecastStrategyItem(**v) for v in strat_map.values()]
-        return ForecastStrategiesResponse(
+        resp = ForecastStrategiesResponse(
             total_strategies=len(items),
             version=meta.get("version", "v1.0-Day24-Serving"),
             validation_scope=meta.get("validation_scope", "expanding_walk_forward_2014_2017"),
             temporal_boundary=meta.get("temporal_boundary", "1966-2017"),
             strategies=items,
         )
+        self._cached_forecast_strategies = resp
+        return resp
 
     def get_forecast_certification_summary(self) -> ForecastCertificationSummaryResponse:
-        """Retrieves high-level certification governance summary for forecast serving."""
+        """Summarizes the governance status distribution across all 14 evaluated crops."""
+        if self._cached_forecast_cert_summary is not None:
+            return self._cached_forecast_cert_summary
+
         cert_resp = self.get_final_certification()
         prod = [c.crop for c in cert_resp.certifications if c.final_status == "PRODUCTION_READY"]
         cond = [c.crop for c in cert_resp.certifications if c.final_status == "CONDITIONAL_PRODUCTION"]
         base = [c.crop for c in cert_resp.certifications if c.final_status == "BASELINE_PRODUCTION"]
 
-        return ForecastCertificationSummaryResponse(
+        resp = ForecastCertificationSummaryResponse(
             total_crops_certified=cert_resp.total_crops_certified,
             production_ready_crops=prod,
             conditional_production_crops=cond,
@@ -1398,9 +1413,14 @@ class ModelingReadinessService:
             governance_policy="Strict Day 23 Certification: ML served only if gain >= 5% and win rate >= 75%. Baseline fallback enforced for high variance.",
             certification_source="Day 23 Independent Walk-Forward Audit (2014-2017)",
         )
+        self._cached_forecast_cert_summary = resp
+        return resp
 
     def get_forecast_coverage(self) -> ForecastCoverageResponse:
         """Retrieves geographic coverage metadata for supported crops, states, and districts."""
+        if self._cached_forecast_coverage is not None:
+            return self._cached_forecast_coverage
+
         cov_csv = os.path.join(BASE_DIR, "Datasets", "metadata", "forecast_coverage.csv")
         if not os.path.exists(cov_csv):
             from src.strategy_registry import StrategyRegistry
@@ -1409,23 +1429,25 @@ class ModelingReadinessService:
         else:
             df = pd.read_csv(cov_csv)
 
-        items = [ForecastCoverageItem(**row.to_dict()) for _, row in df.iterrows()]
+        records = df.to_dict(orient="records")
+        items = [ForecastCoverageItem(**r) for r in records]
         unique_crops = sorted(df["crop"].unique().tolist())
         unique_states = sorted(df["state"].unique().tolist())
         dist_count = int(df["district"].nunique())
 
-        return ForecastCoverageResponse(
+        resp = ForecastCoverageResponse(
             total_records=len(items),
             unique_crops=unique_crops,
             unique_states=unique_states,
             unique_districts_count=dist_count,
             coverage=items,
         )
+        self._cached_forecast_coverage = resp
+        return resp
 
     def predict_forecast_service(self, req: ForecastPredictRequest) -> ForecastPredictResponse:
         """Executes full governed forecasting inference with safety checks, provenance, and audit logging."""
-        from src.prediction_service import PredictionService
-        service = PredictionService()
+        service = self._get_prediction_service()
         result = service.predict_forecast(
             crop=req.crop,
             state=req.state,
@@ -1439,6 +1461,11 @@ class ModelingReadinessService:
 
     def get_forecast_provenance(self, request_id: str) -> Optional[Dict[str, Any]]:
         """Retrieves cryptographic provenance metadata for a prior forecast request ID."""
+        service = self._get_prediction_service()
+        cached = service.get_provenance_by_id(request_id)
+        if cached:
+            return cached
+
         audit_csv = os.path.join(BASE_DIR, "Datasets", "metadata", "prediction_audit_log.csv")
         if os.path.exists(audit_csv):
             df = pd.read_csv(audit_csv)
@@ -1450,8 +1477,7 @@ class ModelingReadinessService:
 
     def get_forecast_audit_logs(self, limit: int = 50) -> ForecastAuditResponse:
         """Retrieves recent audit log events."""
-        from src.prediction_audit import PredictionAuditLogger
-        logger_inst = PredictionAuditLogger()
+        logger_inst = self._get_audit_logger()
         events_raw = logger_inst.get_recent_audit_logs(limit=limit)
         items = [ForecastAuditItem(**e) for e in events_raw]
         return ForecastAuditResponse(

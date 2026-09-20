@@ -22,6 +22,8 @@ class CertificationGuard:
 
         self.strategy_registry: Dict[str, Any] = {}
         self.coverage_df: pd.DataFrame = pd.DataFrame()
+        self._coverage_set: set[Tuple[str, str, str]] = set()
+        self._artifact_hashes: Dict[str, Tuple[bool, str]] = {}
         self._load_metadata()
 
     def _load_metadata(self):
@@ -34,6 +36,13 @@ class CertificationGuard:
         cov_csv = self.meta_dir / "forecast_coverage.csv"
         if cov_csv.exists():
             self.coverage_df = pd.read_csv(cov_csv)
+            self._coverage_set = set(
+                zip(
+                    self.coverage_df["crop"].str.lower().str.strip(),
+                    self.coverage_df["state"].str.lower().str.strip(),
+                    self.coverage_df["district"].str.lower().str.strip(),
+                )
+            )
 
     def validate_request(
         self,
@@ -71,7 +80,16 @@ class CertificationGuard:
         cert_status = strategy_meta.get("certification_status")
 
         # 3. Geographic coverage check
-        if not self.coverage_df.empty:
+        if self._coverage_set:
+            key = (crop_clean.lower(), state.strip().lower(), district.strip().lower())
+            if key not in self._coverage_set:
+                return (
+                    False,
+                    "DISTRICT_UNSUPPORTED",
+                    f"District '{district.strip()}' in state '{state.strip()}' is not supported in historical training data for {crop_clean}.",
+                    None,
+                )
+        elif not self.coverage_df.empty:
             match = self.coverage_df[
                 (self.coverage_df["crop"].str.lower() == crop_clean.lower())
                 & (self.coverage_df["state"].str.lower() == state.strip().lower())
@@ -108,13 +126,18 @@ class CertificationGuard:
 
     def verify_artifact_integrity(self, crop: str) -> Tuple[bool, str]:
         """Verifies SHA-256 hash integrity of model artifact against model registry."""
+        if crop in self._artifact_hashes:
+            return self._artifact_hashes[crop]
+
         if crop not in self.strategy_registry:
             return False, "Crop not registered"
 
         meta = self.strategy_registry[crop]
         artifact_name = meta.get("model_artifact")
         if not artifact_name:
-            return True, "Baseline strategy (no ML artifact required)"
+            res = (True, "Baseline strategy (no ML artifact required)")
+            self._artifact_hashes[crop] = res
+            return res
 
         artifact_path = self.models_dir / artifact_name
         if not artifact_path.exists():
@@ -123,4 +146,6 @@ class CertificationGuard:
         with open(artifact_path, "rb") as f:
             h = hashlib.sha256(f.read()).hexdigest()
 
-        return True, f"SHA256:{h[:16]}"
+        res = (True, f"SHA256:{h[:16]}")
+        self._artifact_hashes[crop] = res
+        return res
