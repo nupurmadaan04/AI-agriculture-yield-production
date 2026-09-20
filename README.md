@@ -1,4 +1,4 @@
-# Agricultural Intelligence Platform
+# Agricultural Intelligence & Forecasting Platform
 
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.100+-009688.svg)](https://fastapi.tiangolo.com)
@@ -6,33 +6,38 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0+-3178C6.svg)](https://www.typescriptlang.org/)
 [![Scikit-Learn](https://img.shields.io/badge/scikit--learn-1.3+-F7931E.svg)](https://scikit-learn.org/)
 [![Docker](https://img.shields.io/badge/Docker-Ready-2496ED.svg)](https://www.docker.com/)
-[![Tests Passing](https://img.shields.io/badge/tests-100%25%20passing-brightgreen.svg)](tests/)
+[![Tests Passing](https://img.shields.io/badge/tests-456%20passed-brightgreen.svg)](tests/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-An evidence-driven, scientifically audited agricultural decision intelligence platform combining longitudinal multi-crop panel data (29 verified crops, 71,601 records), temporally validated machine learning forecasting, statistical baseline benchmarking, Tree SHAP explainability, SLSQP scenario optimization, and governed production forecast serving with cryptographic provenance.
+An evidence-driven, scientifically audited agricultural decision intelligence and forecast serving platform combining longitudinal multi-crop panel data (29 verified crops, 71,601 records, 1966–2017), temporally validated machine learning forecasting, statistical persistence baselines, Tree SHAP explainability, SLSQP scenario optimization, cryptographic provenance, runtime observability, and post-outcome monitoring with Population Stability Index (PSI) drift detection.
 
 ---
 
 ## Overview
 
-The **Agricultural Intelligence Platform** transforms decades of longitudinal district-level agricultural panel records and meteorological telemetry into structured, scientifically audited, and cryptographically verifiable **Decision Briefs**, **Model Governance Scorecards**, and **Production Forecasts**.
+The **Agricultural Intelligence Platform** transforms decades of longitudinal district-level agricultural panel records and meteorological telemetry into structured, scientifically audited, and cryptographically verifiable **Decision Briefs**, **Model Governance Scorecards**, **Production Forecasts**, and **Post-Outcome Monitoring Intelligence**.
 
 Unlike traditional black-box platforms that apply complex machine learning models uniformly without verification, this system implements an **evidence-first model governance framework**: machine learning models are deployed into production only when empirical temporal walk-forward validation demonstrates statistically significant superiority over simpler historical persistence baselines.
 
----
-
-## Problem Statement
-
-1. **Optimistic Bias & Data Leakage**: Standard agricultural machine learning studies frequently use randomized train/test splits that leak future temporal signals into training sets.
-2. **Universal ML Forcing**: Machine learning models are often deployed blindly across all commodities even when simpler historical district averages achieve lower error and higher stability.
-3. **Black-Box Opacity**: Agronomists and policymakers cannot audit how yield predictions or risk recommendations were derived without transparent feature attribution and data lineage.
-4. **Lack of Governance & Provenance**: Production agricultural forecasts rarely carry verifiable cryptographic provenance linking predictions back to model versions, training boundaries, and audit logs.
-
----
-
-## Research Question
-
-> **"Can a multi-crop agricultural forecasting system systematically evaluate machine learning algorithms against statistical persistence baselines across multi-fold temporal walk-forward validation, enforce evidence-based model governance, and serve certified forecasts with complete cryptographic provenance?"**
+```
+DATA
+  ↓
+GOVERNED FORECAST
+  ↓
+EXPLAINABILITY (Tree SHAP)
+  ↓
+PROVENANCE (SHA-256 Lineage)
+  ↓
+MONITORING
+  ↓
+OBSERVED OUTCOME (Post-Harvest)
+  ↓
+OUTCOME EVALUATION
+  ↓
+ERROR / BIAS / DRIFT DIAGNOSIS
+  ↓
+MONITORING STATUS & EVIDENCE ALERTS
+```
 
 ---
 
@@ -46,6 +51,9 @@ Unlike traditional black-box platforms that apply complex machine learning model
 - **Pareto Decision Intelligence & Scenarios**: SLSQP optimization for multi-crop acreage allocation and input sensitivity analysis.
 - **Governed Production Forecast API**: Pre-inference rejection guards (`UNSUPPORTED_CROP`, `DISTRICT_UNSUPPORTED`), 3-sigma variance clipping, and append-oriented audit logging.
 - **Cryptographic Provenance**: Every prediction includes an SHA-256 lineage fingerprint answering *"Why this prediction?"*.
+- **Prediction Explorer**: Filterable historical archive connecting predictions to local SHAP attributions, fallback traces, and raw JSON export.
+- **Production Observability Center**: Live CPU/RSS telemetry, stage latency breakdowns ($P_{50}..P_{99}$), cryptographic dataset/model integrity checks, and FIFO event rings.
+- **Forecast Monitoring & Outcome Intelligence**: Post-harvest evaluation against ground truth, Population Stability Index (PSI) drift tracking, directional signed bias diagnostics ($\text{predicted} - \text{observed}$), and evidence-first alerts.
 
 ---
 
@@ -88,14 +96,17 @@ Unlike traditional black-box platforms that apply complex machine learning model
                  │ Prediction Service + SHA-256 Lineage │
                  └──────────────────┬───────────────────┘
                                     ↓
-                 ┌──────────────────────────────────────┐
-                 │ FastAPI Backend + React Dashboard    │
-                 └──────────────────────────────────────┘
+          ┌─────────────────────────┴─────────────────────────┐
+          ↓                                                   ↓
+┌───────────────────────────┐                       ┌───────────────────────────┐
+│ Observability & Telemetry │                       │ Post-Outcome Monitoring   │
+│ (Latency, Memory, Traces) │                       │ (Drift PSI, Bias, Errors) │
+└───────────────────────────┘                       └───────────────────────────┘
 ```
 
 ---
 
-## Data Sources
+## Data Sources & Harmonization
 
 The platform ingests and standardizes longitudinal panel data from verified authorities:
 
@@ -105,75 +116,13 @@ The platform ingests and standardizes longitudinal panel data from verified auth
 | `DES_GOI_OGD` | Directorate of Economics & Statistics | Verified | 1997–2017 | District crop verification and cross-validation |
 | `IMD_GRIDDED_PRECIP` | India Meteorological Department | Gridded | 1970–2017 | Gridded rainfall exogenous ablation features |
 
----
-
-## Data Pipeline
-
 1. **Unit Harmonization**: Standardized into `production_tonnes`, `area_ha`, and `yield_kg_ha`.
 2. **Quality & Invariant Auditing**: 14 automated invariant checks (boundary clamping $[0, 150000]$, negative area removal, duplicate detection).
-3. **Zero-Leakage Lag Generator**: Shift operators ($t-1, t-2$, rolling 3-year mean) computed strictly within grouped district-crop panels to prevent future temporal leakage.
+3. **Zero-Leakage Lag Generator**: Shift operators ($t-1, t-2$, rolling 3-year mean) computed strictly within grouped district-crop panels.
 
 ---
 
-## Multi-Crop Modeling
-
-The platform evaluates machine learning algorithms (`RandomForestRegressor`, `GradientBoostingRegressor`) against statistical persistence baselines across 14 major agricultural commodities:
-
-- **Cereals & Millets**: Rice, Wheat, Maize, Sorghum, Kharif Sorghum, Pearl Millet
-- **Pulses**: Chickpea, Pigeonpea, Minor Pulses
-- **Oilseeds & Cash Crops**: Total Oilseeds, Groundnut, Rapeseed & Mustard, Sesamum, Sugarcane
-
----
-
-## Temporal Validation
-
-Validation is conducted strictly using **4-Fold Expanding Walk-Forward Validation**:
-
-- **Fold 1**: Train $\le 2013$ $\rightarrow$ Evaluate 2014
-- **Fold 2**: Train $\le 2014$ $\rightarrow$ Evaluate 2015
-- **Fold 3**: Train $\le 2015$ $\rightarrow$ Evaluate 2016
-- **Fold 4**: Train $\le 2016$ $\rightarrow$ Evaluate 2017
-
----
-
-## Model Selection Philosophy
-
-> **The system does not assume that machine learning outperforms statistical baselines. Crop-specific models are evaluated using temporally ordered validation and are deployed only when their performance demonstrates sufficient robustness relative to simpler historical baselines.**
-
-To achieve production certification, an algorithm must meet two non-negotiable gates:
-1. **Error Reduction**: **MAE (ML) < MAE (Baseline)** with at least **+5.0% relative gain**.
-2. **Fold Consistency**: Win rate **≥ 75%** across temporal walk-forward folds.
-
-Where ML fails these gates, the platform certifies the **Historical District Mean Persistence Baseline**. Choosing statistical baselines when ML is unproven is a core strength of responsible engineering.
-
----
-
-## Explainable AI & Decision Intelligence
-
-- **Tree SHAP Attributions**: Exact local Shapley contributions calculated per prediction, decomposing how previous yield lags and cultivated area influenced the estimate.
-- **Executive Decision Briefs**: Multi-signal fusion combining yield forecasts, historical volatility, anomaly detections, and Pareto-optimal scenario recommendations into auditable markdown/HTML reports.
-
----
-
-## Forecast Governance & Production Routing
-
-When a forecast request is received, the governance engine executes a 5-step pipeline:
-
-```
-[Request Input] 
-  ↓ (1. Completeness Check)
-  ↓ (2. Crop Registration Check)
-  ↓ (3. District Coverage Check) ──► Rejects unmapped geographies (DISTRICT_UNSUPPORTED)
-  ↓ (4. Model Artifact & SHA-256 Hash Verification)
-  ↓ (5. Strategy Dispatcher)
-      ├── PRODUCTION_READY     → Oilseeds Random Forest (with Sparse District Fallback)
-      ├── CONDITIONAL_PROD     → Sugarcane Gradient Boosting (with 3-Sigma Variance Clipping)
-      └── BASELINE_PRODUCTION  → Historical District Mean Persistence (12 Commodities)
-```
-
----
-
-## Validation Results
+## Validation & Certified Governance Matrix
 
 | Crop Commodity | Certified Strategy Status | Primary Deployed Strategy | Mean Strategy MAE | Relative Gain vs Baseline | Fold Win Rate |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -192,13 +141,9 @@ When a forecast request is received, the governance engine executes a 5-step pip
 | **Sorghum** | `BASELINE_PRODUCTION` | Historical District Mean Persistence | 532.95 kg/ha | 0.00% | Baseline Preferred |
 | **Pearl Millet** | `BASELINE_PRODUCTION` | Historical District Mean Persistence | 815.38 kg/ha | 0.00% | Baseline Preferred |
 
-*Illustrative Prediction Examples*:
-- Oilseeds in Ludhiana, Punjab: **`817.06 kg/ha`** (Random Forest ML)
-- Sugarcane in Meerut, Uttar Pradesh: **`9,469.76 kg/ha`** (Gradient Boosting with Variance Clipping)
-
 ---
 
-## Reproducibility
+## Reproducibility & Provenance
 
 Dual independent inference runs across all 14 commodities produced **bitwise identical outputs**:
 
@@ -206,21 +151,39 @@ Dual independent inference runs across all 14 commodities produced **bitwise ide
 Δ = |Prediction (Run 1) - Prediction (Run 2)| = 0.00000000
 ```
 
-Every prediction payload includes an SHA-256 cryptographic lineage hash. All inference requests and governance rejections are written to an append-oriented audit log (`Datasets/metadata/prediction_audit_log.csv`).
+Every prediction payload includes an SHA-256 cryptographic lineage hash. All inference requests, strategy fallbacks, and governance rejections are written to an append-oriented audit log (`Datasets/metadata/prediction_audit_log.csv`).
 
 ---
 
 ## API & Endpoints
 
-The FastAPI backend exposes 50+ endpoints including 7 dedicated forecast serving routes:
+The FastAPI backend exposes 60+ production endpoints:
 
+### Forecast & Governance
+- `POST /api/forecast/predict`: Governed forecasting inference with provenance and audit logging.
 - `GET /api/forecast/strategies`: Multi-crop strategy registry and evaluation evidence.
 - `GET /api/forecast/certification`: High-level governance status breakdown.
 - `GET /api/forecast/coverage`: 9,019 crop-state-district geographic coverage mappings.
-- `POST /api/forecast/predict`: Governed forecasting inference with provenance and audit logging.
 - `GET /api/forecast/provenance/{request_id}`: Cryptographic lineage record lookup.
 - `GET /api/forecast/audit`: Append-oriented prediction audit trail events.
 - `GET /api/forecast/health`: Subsystem health and governance guard status.
+
+### Observability & Runtime Telemetry
+- `GET /api/observability/summary`: Executive system telemetry, memory, and latency percentiles.
+- `GET /api/observability/trace/{request_id}`: Step-level execution trace ($P_{50}..P_{99}$ latency).
+- `GET /api/observability/models`: Cryptographic SHA-256 hash checks of deployed model artifacts.
+- `GET /api/observability/dataset`: Cryptographic SHA-256 hash check of canonical dataset panel.
+
+### Forecast Monitoring & Outcome Intelligence
+- `GET /api/monitoring/summary`: Executive monitoring status and active alerts summary.
+- `GET /api/monitoring/operations`: Audit log request volumes and crop/strategy breakdowns.
+- `GET /api/monitoring/distributions`: Actual prediction moments vs historical baseline.
+- `GET /api/monitoring/drift`: Population Stability Index (PSI) feature and prediction drift.
+- `GET /api/monitoring/outcomes`: Strict post-harvest evaluated outcomes.
+- `GET /api/monitoring/errors`: Stratified error decompositions (temporal, district, yield regime).
+- `GET /api/monitoring/bias`: Directional signed bias metrics and analytical interpretations.
+- `GET /api/monitoring/forecast-alerts`: Evidence-first operational alerts.
+- `GET /api/monitoring/forecast-health`: System diagnostic health check.
 
 ---
 
@@ -228,9 +191,11 @@ The FastAPI backend exposes 50+ endpoints including 7 dedicated forecast serving
 
 A responsive React 18 + TypeScript + Tailwind CSS application featuring:
 - **Forecast Decision Wizard (`/forecast`)**: 4-step guided request form, dynamic district filtering, validation limitation notices, Result Cards, expandable *"Why this prediction?"* explanations, and live audit logs.
+- **Prediction Explorer (`/prediction-explorer`)**: Filterable forecast archive with inline local Tree SHAP attributions, fallback status indicators, and provenance inspection.
+- **Forecast Monitoring (`/forecast-monitoring`)**: Post-outcome evaluation against ground truth, Population Stability Index (PSI) drift tracking, stratified error tabs, and evidence-first alerts.
+- **Observability Center (`/observability`)**: Runtime latency percentiles, process RSS telemetry, model hash verification, and prediction execution traces.
 - **Modeling Readiness & Robustness (`/modeling-readiness`)**: 7-tab matrix showing baseline benchmarking, walk-forward folds, error regimes, exogenous ablations, and final certification scorecards.
 - **Decision Intelligence (`/decision-intelligence`)**: Executive decision briefs and interactive provenance DAGs.
-- **Agricultural Monitoring (`/monitoring`)**: Live CUSUM drift and temporal anomaly heatmaps.
 
 ---
 
@@ -247,12 +212,17 @@ AI-agriculture-yield-production/
 │   ├── prediction_audit.py            # Append-oriented audit logger
 │   ├── forecast_validation.py         # Determinism benchmark runner
 │   ├── multicrop_pipeline.py          # Zero-leakage pre-season lag feature pipeline
+│   ├── observability_engine.py        # Host & process telemetry & trace buffers
 │   └── ...
 ├── backend/                           # FastAPI backend server
 │   ├── main.py                        # Master API router
-│   ├── schemas/modeling.py            # Pydantic data contracts
-│   └── services/modeling_service.py   # Domain query handlers
+│   ├── routers/                       # Modular REST routers (forecast, observability, monitoring)
+│   ├── schemas/                       # Pydantic data contracts
+│   └── services/                      # Domain query handlers & monitoring services
 ├── frontend/                          # React + TypeScript client application
+│   ├── src/pages/ForecastMonitoring.tsx   # Day 30 Outcome Intelligence & Drift UI
+│   ├── src/pages/PredictionExplorer.tsx   # Day 29 Prediction Explorer & SHAP UI
+│   ├── src/pages/ObservabilityCenter.tsx  # Day 28 Production Observability UI
 │   ├── src/pages/ForecastIntelligence.tsx # Production forecast serving UI
 │   ├── src/pages/ModelingReadiness.tsx    # Multi-crop certification UI
 │   └── src/services/api.ts            # TanStack Query API client
@@ -261,14 +231,15 @@ AI-agriculture-yield-production/
 │   └── metadata/                      # Registry, coverage, and audit logs
 ├── Models/                            # Certified model artifacts
 │   └── multicrop/                     # Joblib pipelines & JSON registries
-├── tests/                             # Pytest test suites (100% passing)
+├── tests/                             # Pytest test suites (456 tests, 100% passing)
 ├── docs/                              # Comprehensive scientific & architecture documentation
-│   ├── DATASET_CARD.md                # Dataset Card for AGRI_PANEL_1.0
-│   ├── MODEL_CARDS.md                 # Production model cards & baseline rationale
-│   ├── ARCHITECTURE.md                # 10-tier architecture specification
-│   ├── FINAL_SCIENTIFIC_AUDIT.md      # Canonical methodology & terminology audit
-│   ├── DEMO_SCRIPT.md                 # 5-7 minute interview demonstration script
-│   └── PROJECT_SUMMARY.md             # Executive portfolio summary
+│   ├── DOCUMENTATION_INDEX.md         # Master index of all 30-day documentation
+│   ├── DAY30_FORECAST_MONITORING.md   # Day 30 Monitoring Architecture
+│   ├── DAY30_OUTCOME_EVALUATION.md    # Day 30 Post-Harvest Evaluation Methodology
+│   ├── DAY30_DRIFT_AND_BIAS.md        # Day 30 Covariate Drift & Bias Analysis
+│   ├── DAY30_SCIENTIFIC_VALIDATION.md # Day 30 Validation & Golden Cases
+│   ├── DAY30_FINAL_STATUS.md          # Day 30 Executive Status Report
+│   └── ...
 ├── Dockerfile                         # Container definition
 ├── docker-compose.yml                 # Multi-container orchestration
 ├── pyproject.toml                     # Python dependencies & pytest configuration
@@ -278,14 +249,14 @@ AI-agriculture-yield-production/
 
 ---
 
-## Installation
+## Installation & Running Locally
 
 ### Prerequisites
 - Python 3.10+
 - Node.js 18+ and npm
 - (Optional) Docker and Docker Compose
 
-### 1. Clone & Set Up Backend
+### 1. Set Up Backend
 ```bash
 git clone https://github.com/nupurmadaan04/AI-agriculture-yield-production.git
 cd AI-agriculture-yield-production
@@ -304,37 +275,31 @@ cd frontend
 npm install
 ```
 
----
-
-## Running Locally
-
-### Backend Server
+### 3. Run Development Servers
 ```bash
-# From repository root
+# Terminal 1: Backend API (Port 8000)
 uvicorn backend.main:app --host 0.0.0.0 --port 8000 --reload
-```
-API Documentation: [http://localhost:8000/docs](http://localhost:8000/docs)
 
-### Frontend Development Server
-```bash
+# Terminal 2: Frontend Dashboard (Port 3000 / 5173)
 cd frontend
 npm run dev
 ```
-Client Application: [http://localhost:5173](http://localhost:5173) (or [http://localhost:3000](http://localhost:3000))
 
-### Running with Docker Compose
-```bash
-docker-compose up --build
-```
+- Web Dashboard: [http://localhost:3000](http://localhost:3000)
+- Interactive Swagger API Docs: [http://localhost:8000/docs](http://localhost:8000/docs)
 
 ---
 
-## Testing
+## Testing & Validation
 
-Execute the automated test suite across all engines, guards, and serving routers:
+Execute the full automated test suite:
 
 ```bash
 pytest tests/ -v
+```
+
+```
+============================= 456 passed in 405.02s =============================
 ```
 
 To verify deterministic serving invariance:
@@ -346,28 +311,9 @@ python -m src.forecast_validation
 
 ## Limitations
 
-1. **Historical Domain Boundaries**: The harmonized dataset covers 1966–2017. Post-2017 forecasts reflect historical lag persistence.
+1. **Historical Domain Boundaries**: The harmonized ground truth dataset covers 1966–2017. Post-2017 forecasts represent frozen pre-season projections and return `EVALUATION_UNAVAILABLE` until official harvest figures are released.
 2. **Observational Evidence**: The panel reflects observational district records and does not establish biological causality.
 3. **District Spatial Aggregation**: Yield metrics represent district-wide averages and should not be used as individual field-level agronomic prescriptions.
-
----
-
-## Future Work
-
-- Ingestion of real-time satellite vegetation index telemetry (Sentinel-2 NDVI/EVI).
-- Gridded meteorological reanalysis (ERA5-Land daily temperature and precipitation).
-- Distribution-free conformal prediction intervals for theoretical coverage guarantees.
-
----
-
-## Research Timeline
-
-- **Days 1–16**: Single-crop baseline modeling, Tree SHAP explainability, spatial clustering, and Pareto scenario optimization.
-- **Days 17–19**: Multi-crop data harmonization (`AGRI_PANEL_1.0`), baseline benchmarking, and algorithm screening across 14 commodities.
-- **Days 20–22**: Temporal walk-forward validation, error regime diagnostics, and exogenous weather ablation audits.
-- **Day 23**: Final model certification audit, residual distributions, and bitwise reproducibility verification.
-- **Day 24**: Production forecast serving, pre-inference guards, 3-sigma variance clipping, cryptographic provenance, and audit logging.
-- **Day 25**: Final scientific audit, model cards, dataset card, architecture documentation, and product release packaging.
 
 ---
 
