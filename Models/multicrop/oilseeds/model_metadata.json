@@ -1,0 +1,57 @@
+{
+  "model_id": "multicrop_oilseeds_forecaster",
+  "crop": "Oilseeds",
+  "algorithm": "RandomForestRegressor",
+  "version": "1.0.0",
+  "dataset_version": "AGRI_PANEL_1.0",
+  "feature_set_version": "PRE_SEASON_LAG_V1",
+  "training_period": "2011\u20132015",
+  "evaluation_period": "2016\u20132017",
+  "train_records": 1188,
+  "test_records": 62,
+  "metrics": {
+    "mae": 852.48,
+    "rmse": 2281.34,
+    "r2": 0.7048,
+    "mape": 21.61,
+    "smape": 22.7
+  },
+  "baseline_comparison": {
+    "baseline_model": "Naive Persistence (t-1)",
+    "baseline_mae": 746.72,
+    "baseline_rmse": 2041.8,
+    "baseline_r2": 0.7635,
+    "mae_improvement_abs": -105.76,
+    "mae_improvement_pct": -14.16
+  },
+  "status": "BASELINE_PREFERRED",
+  "feature_importance_native": {
+    "yield_lag_1": 0.4661,
+    "yield_lag_2": 0.4348,
+    "yield_rolling_3yr_mean": 0.061,
+    "area_lag_1": 0.018,
+    "state_encoded": 0.0079,
+    "year": 0.0122
+  },
+  "feature_importance_permutation": {
+    "yield_lag_1": 0.3264,
+    "yield_lag_2": 0.2999,
+    "yield_rolling_3yr_mean": 0.0921,
+    "area_lag_1": 0.0001,
+    "state_encoded": 0.0012,
+    "year": 0.0
+  },
+  "error_analysis": {
+    "p25": 73.65,
+    "p50_median": 139.25,
+    "p75": 570.28,
+    "p90": 1349.65,
+    "low_error_pct": 50.0,
+    "moderate_error_pct": 24.2,
+    "high_error_pct": 25.8
+  },
+  "uncertainty_spread_p10_p90": 797.62,
+  "artifact_path": "Models/multicrop/oilseeds/model_pipeline.pkl",
+  "sha256": "fcb29e9bf8c182fbe0d31ec498daaf6cfd01d7516ffa92d653b0fdb901e33e93",
+  "created_at": "2026-09-02T17:29:03.602354Z"
+}

@@ -1,0 +1,71 @@
+crop,experiment_id,experiment_name,feature_group,algorithm,n_features,mean_mae,median_mae,mean_rmse,mean_r2,mean_mape,mean_smape,baseline_mean_mae,historical_mean_mae,mean_improvement_vs_baseline_pct,median_improvement_vs_baseline_pct,mean_improvement_vs_historical_pct,win_rate_vs_baseline,win_rate_vs_historical
+Chickpea,EXP-22A,Historical Only (Model A),HISTORICAL,GradientBoostingRegressor,7,271.43,262.63,413.58,0.3135,37.13,54.55,263.69,271.43,-2.98,0.83,0.0,50.0,0.0
+Chickpea,EXP-22B,Historical + Rainfall,HIST_PLUS_RAINFALL,GradientBoostingRegressor,10,292.42,287.86,430.9,0.2531,39.54,55.68,263.69,271.43,-10.6,-7.36,-7.33,25.0,0.0
+Chickpea,EXP-22C,Historical + Temperature,HIST_PLUS_TEMP,GradientBoostingRegressor,10,275.99,270.11,416.02,0.3037,37.96,54.28,263.69,271.43,-4.71,-5.04,-1.81,25.0,50.0
+Chickpea,EXP-22D,Historical + Rainfall + Temperature,HIST_PLUS_WEATHER,GradientBoostingRegressor,13,293.04,292.78,430.83,0.2516,39.79,55.53,263.69,271.43,-10.79,-9.56,-7.66,25.0,0.0
+Chickpea,EXP-22E,Historical + All Exogenous (Model B),HIST_PLUS_ALL_EXO,GradientBoostingRegressor,17,284.49,285.23,421.45,0.2829,39.21,54.62,263.69,271.43,-7.65,-8.47,-4.73,25.0,25.0
+Groundnut,EXP-22A,Historical Only (Model A),HISTORICAL,RandomForestRegressor,7,306.51,299.39,484.97,0.6976,31.04,72.28,287.4,306.51,-6.61,-6.55,0.0,50.0,0.0
+Groundnut,EXP-22B,Historical + Rainfall,HIST_PLUS_RAINFALL,RandomForestRegressor,10,327.29,314.03,487.56,0.6929,30.0,67.78,287.4,306.51,-14.54,-3.79,-6.81,50.0,50.0
+Groundnut,EXP-22C,Historical + Temperature,HIST_PLUS_TEMP,RandomForestRegressor,10,309.71,311.53,482.41,0.7027,30.94,67.5,287.4,306.51,-7.76,-8.36,-1.52,0.0,50.0
+Groundnut,EXP-22D,Historical + Rainfall + Temperature,HIST_PLUS_WEATHER,RandomForestRegressor,13,335.38,322.66,501.87,0.6744,30.04,70.08,287.4,306.51,-17.44,-6.79,-9.75,25.0,25.0
+Groundnut,EXP-22E,Historical + All Exogenous (Model B),HIST_PLUS_ALL_EXO,RandomForestRegressor,17,337.51,324.35,507.78,0.6639,30.44,69.54,287.4,306.51,-18.22,-7.4,-10.49,25.0,50.0
+Kharif Sorghum,EXP-22A,Historical Only (Model A),HISTORICAL,RandomForestRegressor,7,303.12,283.94,502.0,0.5149,44.3,103.71,296.7,303.12,-2.02,-3.71,0.0,25.0,0.0
+Kharif Sorghum,EXP-22B,Historical + Rainfall,HIST_PLUS_RAINFALL,RandomForestRegressor,10,335.98,347.25,512.77,0.4933,43.69,102.4,296.7,303.12,-14.3,-12.82,-12.03,25.0,25.0
+Kharif Sorghum,EXP-22C,Historical + Temperature,HIST_PLUS_TEMP,RandomForestRegressor,10,317.07,312.33,509.78,0.499,45.55,103.01,296.7,303.12,-6.98,-7.1,-5.03,25.0,25.0
+Kharif Sorghum,EXP-22D,Historical + Rainfall + Temperature,HIST_PLUS_WEATHER,RandomForestRegressor,13,340.18,357.62,516.15,0.4871,44.67,102.34,296.7,303.12,-15.71,-16.61,-13.41,25.0,25.0
+Kharif Sorghum,EXP-22E,Historical + All Exogenous (Model B),HIST_PLUS_ALL_EXO,RandomForestRegressor,17,339.29,355.12,515.54,0.488,44.21,102.12,296.7,303.12,-15.53,-15.7,-13.22,25.0,25.0
+Maize,EXP-22A,Historical Only (Model A),HISTORICAL,RandomForestRegressor,7,653.8,669.71,1137.68,0.582,34.89,37.76,638.38,653.8,-3.04,-2.11,0.0,25.0,0.0
+Maize,EXP-22B,Historical + Rainfall,HIST_PLUS_RAINFALL,RandomForestRegressor,10,673.73,680.11,1148.74,0.5734,35.37,40.22,638.38,653.8,-6.2,-6.71,-3.06,25.0,0.0
+Maize,EXP-22C,Historical + Temperature,HIST_PLUS_TEMP,RandomForestRegressor,10,651.08,672.69,1118.42,0.595,34.14,38.94,638.38,653.8,-2.44,-0.42,0.59,50.0,25.0
+Maize,EXP-22D,Historical + Rainfall + Temperature,HIST_PLUS_WEATHER,RandomForestRegressor,13,666.06,677.39,1137.28,0.582,34.68,39.39,638.38,653.8,-4.91,-4.63,-1.82,25.0,0.0
+Maize,EXP-22E,Historical + All Exogenous (Model B),HIST_PLUS_ALL_EXO,RandomForestRegressor,17,665.2,675.98,1134.61,0.5842,34.39,39.74,638.38,653.8,-4.8,-4.69,-1.72,25.0,0.0
+Minor Pulses,EXP-22A,Historical Only (Model A),HISTORICAL,GradientBoostingRegressor,7,347.38,359.29,898.27,-0.0703,40.49,46.08,345.17,347.38,-0.3,-0.54,0.0,50.0,0.0
+Minor Pulses,EXP-22B,Historical + Rainfall,HIST_PLUS_RAINFALL,GradientBoostingRegressor,10,362.01,361.75,924.46,-0.153,41.52,51.59,345.17,347.38,-4.71,-3.85,-4.54,0.0,25.0
+Minor Pulses,EXP-22C,Historical + Temperature,HIST_PLUS_TEMP,GradientBoostingRegressor,10,359.27,377.07,917.28,-0.1202,39.45,47.48,345.17,347.38,-3.45,-3.87,-3.02,25.0,25.0
+Minor Pulses,EXP-22D,Historical + Rainfall + Temperature,HIST_PLUS_WEATHER,GradientBoostingRegressor,13,362.31,362.68,918.31,-0.1518,39.81,50.38,345.17,347.38,-5.04,-5.04,-4.94,0.0,25.0
+Minor Pulses,EXP-22E,Historical + All Exogenous (Model B),HIST_PLUS_ALL_EXO,GradientBoostingRegressor,17,379.07,383.77,1020.21,-0.5712,42.8,47.82,345.17,347.38,-10.07,-6.13,-10.01,25.0,50.0
+Oilseeds,EXP-22A,Historical Only (Model A),HISTORICAL,RandomForestRegressor,7,548.92,496.39,903.75,0.5453,40.98,132.09,616.6,548.92,8.37,1.81,0.0,50.0,0.0
+Oilseeds,EXP-22B,Historical + Rainfall,HIST_PLUS_RAINFALL,RandomForestRegressor,10,616.62,545.93,933.67,0.5054,37.9,130.88,616.6,548.92,0.3,0.06,-10.8,50.0,50.0
+Oilseeds,EXP-22C,Historical + Temperature,HIST_PLUS_TEMP,RandomForestRegressor,10,550.81,524.59,889.6,0.559,39.27,131.59,616.6,548.92,8.77,5.45,-1.26,75.0,75.0
+Oilseeds,EXP-22D,Historical + Rainfall + Temperature,HIST_PLUS_WEATHER,RandomForestRegressor,13,586.37,525.24,907.82,0.5311,36.38,131.27,616.6,548.92,4.33,0.6,-6.08,75.0,50.0
+Oilseeds,EXP-22E,Historical + All Exogenous (Model B),HIST_PLUS_ALL_EXO,RandomForestRegressor,17,584.97,525.12,897.91,0.5434,37.11,132.56,616.6,548.92,4.33,0.03,-6.23,50.0,25.0
+Pearl Millet,EXP-22A,Historical Only (Model A),HISTORICAL,RandomForestRegressor,7,280.1,278.26,522.9,0.6547,147.41,104.49,260.24,280.1,-7.68,-7.96,0.0,0.0,0.0
+Pearl Millet,EXP-22B,Historical + Rainfall,HIST_PLUS_RAINFALL,RandomForestRegressor,10,298.07,287.69,517.92,0.661,142.82,104.1,260.24,280.1,-14.61,-10.95,-6.29,0.0,25.0
+Pearl Millet,EXP-22C,Historical + Temperature,HIST_PLUS_TEMP,RandomForestRegressor,10,292.22,284.12,517.29,0.6624,162.24,104.77,260.24,280.1,-12.38,-10.94,-4.25,0.0,25.0
+Pearl Millet,EXP-22D,Historical + Rainfall + Temperature,HIST_PLUS_WEATHER,RandomForestRegressor,13,310.34,297.42,521.3,0.6568,146.24,104.46,260.24,280.1,-19.27,-14.59,-10.63,0.0,0.0
+Pearl Millet,EXP-22E,Historical + All Exogenous (Model B),HIST_PLUS_ALL_EXO,RandomForestRegressor,17,302.98,291.17,512.88,0.6679,152.84,104.07,260.24,280.1,-16.41,-11.6,-8.01,0.0,25.0
+Pigeonpea,EXP-22A,Historical Only (Model A),HISTORICAL,RandomForestRegressor,7,290.37,283.89,415.43,0.376,42.47,67.0,282.35,290.37,-3.17,-7.42,0.0,25.0,0.0
+Pigeonpea,EXP-22B,Historical + Rainfall,HIST_PLUS_RAINFALL,RandomForestRegressor,10,308.8,300.56,436.78,0.3001,42.68,66.58,282.35,290.37,-9.99,-6.83,-6.46,25.0,25.0
+Pigeonpea,EXP-22C,Historical + Temperature,HIST_PLUS_TEMP,RandomForestRegressor,10,292.09,285.92,412.52,0.3825,41.61,66.98,282.35,290.37,-3.89,-9.73,-0.45,25.0,25.0
+Pigeonpea,EXP-22D,Historical + Rainfall + Temperature,HIST_PLUS_WEATHER,RandomForestRegressor,13,308.81,301.19,434.42,0.3065,42.29,66.44,282.35,290.37,-9.95,-7.08,-6.36,25.0,25.0
+Pigeonpea,EXP-22E,Historical + All Exogenous (Model B),HIST_PLUS_ALL_EXO,RandomForestRegressor,17,300.93,294.8,425.76,0.3365,41.39,65.82,282.35,290.37,-7.17,-5.13,-3.74,25.0,25.0
+Rapeseed and Mustard,EXP-22A,Historical Only (Model A),HISTORICAL,RandomForestRegressor,7,199.43,210.95,315.51,0.6954,33.7,55.84,193.33,199.43,-4.05,-4.89,0.0,25.0,0.0
+Rapeseed and Mustard,EXP-22B,Historical + Rainfall,HIST_PLUS_RAINFALL,RandomForestRegressor,10,211.62,218.84,323.28,0.6765,34.89,68.49,193.33,199.43,-10.47,-12.57,-6.05,25.0,25.0
+Rapeseed and Mustard,EXP-22C,Historical + Temperature,HIST_PLUS_TEMP,RandomForestRegressor,10,206.31,217.16,320.81,0.6838,34.86,68.17,193.33,199.43,-8.05,-9.33,-3.7,25.0,25.0
+Rapeseed and Mustard,EXP-22D,Historical + Rainfall + Temperature,HIST_PLUS_WEATHER,RandomForestRegressor,13,218.35,220.59,325.06,0.6729,35.71,68.75,193.33,199.43,-14.09,-15.21,-9.48,25.0,25.0
+Rapeseed and Mustard,EXP-22E,Historical + All Exogenous (Model B),HIST_PLUS_ALL_EXO,RandomForestRegressor,17,221.59,221.93,326.86,0.6682,35.32,68.98,193.33,199.43,-15.47,-15.03,-10.82,25.0,25.0
+Rice,EXP-22A,Historical Only (Model A),HISTORICAL,RandomForestRegressor,7,325.25,334.17,487.96,0.8099,22.05,33.97,310.28,325.25,-5.08,-4.99,0.0,25.0,0.0
+Rice,EXP-22B,Historical + Rainfall,HIST_PLUS_RAINFALL,RandomForestRegressor,10,327.48,331.37,488.5,0.8097,22.38,34.42,310.28,325.25,-6.11,-6.06,-0.96,25.0,50.0
+Rice,EXP-22C,Historical + Temperature,HIST_PLUS_TEMP,RandomForestRegressor,10,324.93,332.47,487.38,0.8104,21.69,35.31,310.28,325.25,-5.05,-4.94,0.02,25.0,50.0
+Rice,EXP-22D,Historical + Rainfall + Temperature,HIST_PLUS_WEATHER,RandomForestRegressor,13,330.2,333.87,489.69,0.8088,21.89,35.51,310.28,325.25,-7.09,-6.66,-1.9,25.0,50.0
+Rice,EXP-22E,Historical + All Exogenous (Model B),HIST_PLUS_ALL_EXO,RandomForestRegressor,17,329.25,330.49,490.21,0.8084,22.04,34.97,310.28,325.25,-6.84,-6.19,-1.63,25.0,50.0
+Sesamum,EXP-22A,Historical Only (Model A),HISTORICAL,RandomForestRegressor,7,139.4,139.08,260.88,0.3685,54.01,57.33,137.44,139.4,-1.66,-1.26,0.0,50.0,0.0
+Sesamum,EXP-22B,Historical + Rainfall,HIST_PLUS_RAINFALL,RandomForestRegressor,10,137.68,136.18,256.58,0.3929,54.09,60.44,137.44,139.4,-0.31,0.77,1.3,50.0,100.0
+Sesamum,EXP-22C,Historical + Temperature,HIST_PLUS_TEMP,RandomForestRegressor,10,142.05,141.79,263.53,0.3546,54.65,60.42,137.44,139.4,-3.63,-0.2,-1.86,50.0,50.0
+Sesamum,EXP-22D,Historical + Rainfall + Temperature,HIST_PLUS_WEATHER,RandomForestRegressor,13,140.75,140.79,259.99,0.374,54.77,61.18,137.44,139.4,-2.69,0.48,-0.91,50.0,50.0
+Sesamum,EXP-22E,Historical + All Exogenous (Model B),HIST_PLUS_ALL_EXO,RandomForestRegressor,17,144.17,143.13,264.16,0.3503,56.84,62.06,137.44,139.4,-5.36,-1.5,-3.45,50.0,25.0
+Sorghum,EXP-22A,Historical Only (Model A),HISTORICAL,RandomForestRegressor,7,273.38,261.03,473.78,0.6072,40.67,91.39,264.02,273.38,-3.27,-0.33,0.0,50.0,0.0
+Sorghum,EXP-22B,Historical + Rainfall,HIST_PLUS_RAINFALL,RandomForestRegressor,10,302.22,302.23,490.52,0.5798,40.83,90.97,264.02,273.38,-14.76,-15.86,-11.58,25.0,25.0
+Sorghum,EXP-22C,Historical + Temperature,HIST_PLUS_TEMP,RandomForestRegressor,10,282.75,273.81,480.78,0.5976,41.52,90.99,264.02,273.38,-7.33,-5.92,-4.09,50.0,25.0
+Sorghum,EXP-22D,Historical + Rainfall + Temperature,HIST_PLUS_WEATHER,RandomForestRegressor,13,312.23,318.5,495.17,0.572,41.48,91.13,264.02,273.38,-19.0,-21.02,-15.8,0.0,25.0
+Sorghum,EXP-22E,Historical + All Exogenous (Model B),HIST_PLUS_ALL_EXO,RandomForestRegressor,17,312.34,317.64,495.31,0.5718,41.32,90.88,264.02,273.38,-19.11,-21.09,-15.94,25.0,25.0
+Sugarcane,EXP-22A,Historical Only (Model A),HISTORICAL,GradientBoostingRegressor,7,1457.23,1394.39,2251.72,0.5944,36.57,62.91,1485.7,1457.23,1.11,2.24,0.0,50.0,0.0
+Sugarcane,EXP-22B,Historical + Rainfall,HIST_PLUS_RAINFALL,GradientBoostingRegressor,10,1502.31,1459.72,2229.26,0.6005,39.83,63.8,1485.7,1457.23,-1.93,-1.53,-3.29,50.0,25.0
+Sugarcane,EXP-22C,Historical + Temperature,HIST_PLUS_TEMP,GradientBoostingRegressor,10,1481.12,1416.97,2208.23,0.6108,36.22,63.48,1485.7,1457.23,-0.91,2.2,-1.99,50.0,50.0
+Sugarcane,EXP-22D,Historical + Rainfall + Temperature,HIST_PLUS_WEATHER,GradientBoostingRegressor,13,1578.84,1602.38,2353.42,0.5561,42.38,64.11,1485.7,1457.23,-8.0,-6.8,-9.43,25.0,50.0
+Sugarcane,EXP-22E,Historical + All Exogenous (Model B),HIST_PLUS_ALL_EXO,GradientBoostingRegressor,17,1536.91,1538.04,2284.02,0.5833,40.55,64.67,1485.7,1457.23,-4.46,-5.57,-6.14,25.0,50.0
+Wheat,EXP-22A,Historical Only (Model A),HISTORICAL,GradientBoostingRegressor,7,405.01,404.9,583.02,0.7965,24.2,49.16,381.65,405.01,-8.08,-7.79,0.0,50.0,0.0
+Wheat,EXP-22B,Historical + Rainfall,HIST_PLUS_RAINFALL,GradientBoostingRegressor,10,421.61,426.62,603.28,0.7816,25.05,50.0,381.65,405.01,-12.37,-13.31,-4.15,25.0,0.0
+Wheat,EXP-22C,Historical + Temperature,HIST_PLUS_TEMP,GradientBoostingRegressor,10,403.42,420.44,586.28,0.7959,24.21,49.22,381.65,405.01,-8.8,-8.25,-0.47,50.0,75.0
+Wheat,EXP-22D,Historical + Rainfall + Temperature,HIST_PLUS_WEATHER,GradientBoostingRegressor,13,412.28,425.02,597.45,0.787,24.74,49.71,381.65,405.01,-10.73,-12.23,-2.37,50.0,50.0
+Wheat,EXP-22E,Historical + All Exogenous (Model B),HIST_PLUS_ALL_EXO,GradientBoostingRegressor,17,413.07,424.87,591.23,0.7898,24.71,49.56,381.65,405.01,-10.8,-13.15,-2.34,25.0,50.0

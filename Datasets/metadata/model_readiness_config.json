@@ -1,0 +1,23 @@
+{
+  "version": "1.0.0",
+  "description": "Configurable data sufficiency and screening rules for multi-crop agricultural forecasting readiness",
+  "criteria": {
+    "min_total_records": 200,
+    "min_years": 5,
+    "min_districts": 5,
+    "min_yield_completeness": 0.90,
+    "min_temporal_continuity": 0.60,
+    "min_district_median_years": 4,
+    "min_train_years": 4,
+    "min_test_years": 2,
+    "train_period": [2010, 2015],
+    "test_period": [2016, 2017],
+    "min_active_districts_in_test": 10,
+    "max_zero_yield_rate_for_ready": 0.50
+  },
+  "classification_definitions": {
+    "MODEL_READY": "Crop satisfies all data volume, target completeness, temporal continuity, and active geographic representation requirements to support rigorous out-of-time chronological validation.",
+    "ANALYTICS_READY": "Crop provides reliable historical observations for exploratory, regional, and comparative analytics, but exhibits localized cultivation, sparse active districts, or target zero-inflation precluding robust ML generalization.",
+    "INSUFFICIENT_DATA": "Crop possesses insufficient longitudinal records, severe temporal fragmentation, or extreme missingness precluding both modeling and descriptive analytics."
+  }
+}

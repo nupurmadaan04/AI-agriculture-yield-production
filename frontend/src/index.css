@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Warm ivory / off-white editorial surface */
+    --background: 40 20% 98%;
+    --foreground: 220 25% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 25% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 25% 12%;
+
+    /* Deep forest agricultural green */
+    --primary: 142 70% 28%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Neutral soft surface */
+    --secondary: 40 10% 94%;
+    --secondary-foreground: 220 25% 12%;
+
+    --muted: 40 10% 94%;
+    --muted-foreground: 215 15% 42%;
+
+    /* Muted Sage Accent */
+    --accent: 140 25% 94%;
+    --accent-foreground: 142 70% 22%;
+
+    /* Restrained semantic colors */
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 215 16% 88%;
+    --input: 215 16% 88%;
+    --ring: 142 70% 28%;
+
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    /* Dark charcoal calm lab background */
+    --background: 220 20% 8%;
+    --foreground: 210 25% 96%;
+
+    --card: 220 20% 11%;
+    --card-foreground: 210 25% 96%;
+
+    --popover: 220 20% 11%;
+    --popover-foreground: 210 25% 96%;
+
+    /* Brightened forest green for dark contrast */
+    --primary: 142 62% 45%;
+    --primary-foreground: 220 25% 10%;
+
+    --secondary: 220 16% 16%;
+    --secondary-foreground: 210 25% 96%;
+
+    --muted: 220 16% 15%;
+    --muted-foreground: 215 15% 62%;
+
+    --accent: 140 22% 16%;
+    --accent-foreground: 142 55% 75%;
+
+    --destructive: 0 65% 45%;
+    --destructive-foreground: 210 25% 96%;
+
+    --border: 220 16% 18%;
+    --input: 220 16% 18%;
+    --ring: 142 62% 45%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased selection:bg-primary/20 selection:text-primary min-h-screen flex flex-col;
+  }
+}
+
+/* Subtle scientific grid */
+.bg-grid-pattern {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(30, 41, 59, 0.035) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(30, 41, 59, 0.035) 1px, transparent 1px);
+}
+
+.dark .bg-grid-pattern {
+  background-image: 
+    linear-gradient(to right, rgba(241, 245, 249, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(241, 245, 249, 0.03) 1px, transparent 1px);
+}
+
+/* Restrained ambient hero backdrop */
+.hero-glow {
+  background: radial-gradient(circle at 50% 10%, rgba(21, 128, 61, 0.07), transparent 60%);
+}
+
+.dark .hero-glow {
+  background: radial-gradient(circle at 50% 10%, rgba(34, 197, 94, 0.05), transparent 60%);
+}
+
+/* Modern clean scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--muted-foreground) / 0.2);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--muted-foreground) / 0.4);
+}

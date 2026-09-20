@@ -1,0 +1,99 @@
+crop,model,train_period,test_period,train_records,test_records,mae,rmse,r2,mape,smape,valid_predictions,invalid_predictions,notes,status
+Barley,Naive Persistence (t-1),2010-2015,2016-2017,861,283,521.96,762.17,0.313,25.25,23.92,283,0,1-year historical district lag persistence,EVALUATED
+Barley,Historical District Mean,2010-2015,2016-2017,861,283,539.03,748.66,0.3371,21.75,23.52,283,0,District historical mean (2010-2015),EVALUATED
+Barley,Historical Crop Mean,2010-2015,2016-2017,861,283,877.96,1008.44,-0.2027,39.9,37.04,283,0,National historical crop mean (2010-2015),EVALUATED
+Barley,Linear District Trend,2010-2015,2016-2017,861,283,734.82,965.76,-0.1031,31.04,33.46,283,0,Ordinary least squares district temporal trend,EVALUATED
+Castor,Naive Persistence (t-1),2010-2015,2016-2017,676,225,226.45,364.65,0.7422,40.97,30.98,225,0,1-year historical district lag persistence,EVALUATED
+Castor,Historical District Mean,2010-2015,2016-2017,676,225,215.43,342.76,0.7723,39.04,28.15,225,0,District historical mean (2010-2015),EVALUATED
+Castor,Historical Crop Mean,2010-2015,2016-2017,676,225,525.95,718.53,-0.0008,95.31,60.38,225,0,National historical crop mean (2010-2015),EVALUATED
+Castor,Linear District Trend,2010-2015,2016-2017,676,225,260.31,418.97,0.6597,45.13,34.52,225,0,Ordinary least squares district temporal trend,EVALUATED
+Chickpea,Naive Persistence (t-1),2010-2015,2016-2017,1576,538,294.68,458.63,-0.0908,33.45,30.26,538,0,1-year historical district lag persistence,EVALUATED
+Chickpea,Historical District Mean,2010-2015,2016-2017,1576,538,274.42,410.14,0.1277,29.83,26.06,538,0,District historical mean (2010-2015),EVALUATED
+Chickpea,Historical Crop Mean,2010-2015,2016-2017,1576,538,332.69,469.75,-0.1444,38.24,31.12,538,0,National historical crop mean (2010-2015),EVALUATED
+Chickpea,Linear District Trend,2010-2015,2016-2017,1576,538,394.56,615.98,-0.9677,41.74,41.89,538,0,Ordinary least squares district temporal trend,EVALUATED
+Cotton,Naive Persistence (t-1),2010-2015,2016-2017,846,296,271.23,467.36,0.2192,1662.92,67.25,296,0,1-year historical district lag persistence,EVALUATED
+Cotton,Historical District Mean,2010-2015,2016-2017,846,296,262.14,519.96,0.0335,2847.52,58.04,296,0,District historical mean (2010-2015),EVALUATED
+Cotton,Historical Crop Mean,2010-2015,2016-2017,846,296,299.33,540.11,-0.0428,2528.84,67.78,296,0,National historical crop mean (2010-2015),EVALUATED
+Cotton,Linear District Trend,2010-2015,2016-2017,846,296,296.3,557.42,-0.1107,3278.93,67.81,296,0,Ordinary least squares district temporal trend,EVALUATED
+Finger Millet,Naive Persistence (t-1),2010-2015,2016-2017,583,190,384.01,639.32,0.3269,35.75,29.34,190,0,1-year historical district lag persistence,EVALUATED
+Finger Millet,Historical District Mean,2010-2015,2016-2017,583,190,315.39,486.59,0.6101,31.14,24.57,190,0,District historical mean (2010-2015),EVALUATED
+Finger Millet,Historical Crop Mean,2010-2015,2016-2017,583,190,548.34,780.3,-0.0027,64.4,43.77,190,0,National historical crop mean (2010-2015),EVALUATED
+Finger Millet,Linear District Trend,2010-2015,2016-2017,583,190,345.68,540.11,0.5196,36.7,26.76,190,0,Ordinary least squares district temporal trend,EVALUATED
+Fodder,All Baselines,2010-2015,2016-2017,0,0,,,,,,0,0,Insufficient train/test observations for out-of-time evaluation,INFEASIBLE
+Fruits,All Baselines,2010-2015,2016-2017,0,0,,,,,,0,0,Insufficient train/test observations for out-of-time evaluation,INFEASIBLE
+Fruits and Vegetables,All Baselines,2010-2015,2016-2017,0,0,,,,,,0,0,Insufficient train/test observations for out-of-time evaluation,INFEASIBLE
+Groundnut,Naive Persistence (t-1),2010-2015,2016-2017,1398,460,345.79,496.74,0.4895,29.02,26.54,460,0,1-year historical district lag persistence,EVALUATED
+Groundnut,Historical District Mean,2010-2015,2016-2017,1398,460,302.18,427.43,0.622,24.58,21.29,460,0,District historical mean (2010-2015),EVALUATED
+Groundnut,Historical Crop Mean,2010-2015,2016-2017,1398,460,543.98,706.29,-0.0321,48.26,35.91,460,0,National historical crop mean (2010-2015),EVALUATED
+Groundnut,Linear District Trend,2010-2015,2016-2017,1398,460,384.42,536.62,0.4042,32.37,28.87,460,0,Ordinary least squares district temporal trend,EVALUATED
+Kharif Sorghum,Naive Persistence (t-1),2010-2015,2016-2017,1148,366,358.55,544.23,0.2778,33.27,31.62,366,0,1-year historical district lag persistence,EVALUATED
+Kharif Sorghum,Historical District Mean,2010-2015,2016-2017,1148,366,331.18,474.88,0.4501,35.31,28.19,366,0,District historical mean (2010-2015),EVALUATED
+Kharif Sorghum,Historical Crop Mean,2010-2015,2016-2017,1148,366,493.76,644.46,-0.0127,62.61,42.54,366,0,National historical crop mean (2010-2015),EVALUATED
+Kharif Sorghum,Linear District Trend,2010-2015,2016-2017,1148,366,434.95,643.8,-0.0106,40.91,39.65,366,0,Ordinary least squares district temporal trend,EVALUATED
+Linseed,Naive Persistence (t-1),2010-2015,2016-2017,706,255,223.36,643.8,-0.3915,41.86,36.08,255,0,1-year historical district lag persistence,EVALUATED
+Linseed,Historical District Mean,2010-2015,2016-2017,706,255,183.15,484.6,0.2116,43.14,30.28,255,0,District historical mean (2010-2015),EVALUATED
+Linseed,Historical Crop Mean,2010-2015,2016-2017,706,255,267.1,547.62,-0.0068,82.42,42.17,255,0,National historical crop mean (2010-2015),EVALUATED
+Linseed,Linear District Trend,2010-2015,2016-2017,706,255,239.69,547.71,-0.0072,48.11,39.27,255,0,Ordinary least squares district temporal trend,EVALUATED
+Maize,Naive Persistence (t-1),2010-2015,2016-2017,1672,559,825.6,1675.67,0.1667,37.13,28.94,559,0,1-year historical district lag persistence,EVALUATED
+Maize,Historical District Mean,2010-2015,2016-2017,1672,559,763.91,1336.73,0.4697,35.67,28.2,559,0,District historical mean (2010-2015),EVALUATED
+Maize,Historical Crop Mean,2010-2015,2016-2017,1672,559,1151.16,1887.22,-0.057,57.18,39.37,559,0,National historical crop mean (2010-2015),EVALUATED
+Maize,Linear District Trend,2010-2015,2016-2017,1672,559,884.99,1577.69,0.2613,40.16,33.14,559,0,Ordinary least squares district temporal trend,EVALUATED
+Minor Pulses,Naive Persistence (t-1),2010-2015,2016-2017,1600,600,325.33,959.49,0.4923,36.81,32.55,600,0,1-year historical district lag persistence,EVALUATED
+Minor Pulses,Historical District Mean,2010-2015,2016-2017,1600,600,322.3,1208.09,0.1951,30.29,27.37,600,0,District historical mean (2010-2015),EVALUATED
+Minor Pulses,Historical Crop Mean,2010-2015,2016-2017,1600,600,413.02,1364.5,-0.0268,45.73,36.76,600,0,National historical crop mean (2010-2015),EVALUATED
+Minor Pulses,Linear District Trend,2010-2015,2016-2017,1600,600,366.4,1214.32,0.1868,38.47,34.79,600,0,Ordinary least squares district temporal trend,EVALUATED
+Oilseeds,Naive Persistence (t-1),2010-2015,2016-2017,1444,62,746.72,2041.8,0.7635,21.54,22.9,62,0,1-year historical district lag persistence,EVALUATED
+Oilseeds,Historical District Mean,2010-2015,2016-2017,1444,62,961.29,2559.87,0.6283,21.89,26.2,62,0,District historical mean (2010-2015),EVALUATED
+Oilseeds,Historical Crop Mean,2010-2015,2016-2017,1444,62,1886.65,4485.05,-0.141,54.41,57.62,62,0,National historical crop mean (2010-2015),EVALUATED
+Oilseeds,Linear District Trend,2010-2015,2016-2017,1444,62,875.7,2261.25,0.71,23.59,24.91,62,0,Ordinary least squares district temporal trend,EVALUATED
+Onion,All Baselines,2010-2015,2016-2017,0,0,,,,,,0,0,Insufficient train/test observations for out-of-time evaluation,INFEASIBLE
+Pearl Millet,Naive Persistence (t-1),2010-2015,2016-2017,1084,354,393.24,808.71,0.0826,209.45,31.13,354,0,1-year historical district lag persistence,EVALUATED
+Pearl Millet,Historical District Mean,2010-2015,2016-2017,1084,354,329.83,622.61,0.4563,318.08,26.01,354,0,District historical mean (2010-2015),EVALUATED
+Pearl Millet,Historical Crop Mean,2010-2015,2016-2017,1084,354,610.04,848.56,-0.01,502.72,47.01,354,0,National historical crop mean (2010-2015),EVALUATED
+Pearl Millet,Linear District Trend,2010-2015,2016-2017,1084,354,409.31,716.2,0.2805,238.3,35.57,354,0,Ordinary least squares district temporal trend,EVALUATED
+Pigeonpea,Naive Persistence (t-1),2010-2015,2016-2017,1528,504,299.15,447.47,-0.0525,31.31,33.75,504,0,1-year historical district lag persistence,EVALUATED
+Pigeonpea,Historical District Mean,2010-2015,2016-2017,1528,504,305.14,428.37,0.0355,29.81,32.78,504,0,District historical mean (2010-2015),EVALUATED
+Pigeonpea,Historical Crop Mean,2010-2015,2016-2017,1528,504,344.66,476.03,-0.1911,40.62,35.5,504,0,National historical crop mean (2010-2015),EVALUATED
+Pigeonpea,Linear District Trend,2010-2015,2016-2017,1528,504,359.01,508.51,-0.3592,37.53,41.68,504,0,Ordinary least squares district temporal trend,EVALUATED
+Potatoes,All Baselines,2010-2015,2016-2017,0,0,,,,,,0,0,Insufficient train/test observations for out-of-time evaluation,INFEASIBLE
+Rabi Sorghum,Naive Persistence (t-1),2010-2015,2016-2017,445,138,431.85,613.16,0.4129,75.74,48.34,138,0,1-year historical district lag persistence,EVALUATED
+Rabi Sorghum,Historical District Mean,2010-2015,2016-2017,445,138,379.55,551.01,0.5259,78.67,38.0,138,0,District historical mean (2010-2015),EVALUATED
+Rabi Sorghum,Historical Crop Mean,2010-2015,2016-2017,445,138,530.54,808.24,-0.0202,134.69,47.37,138,0,National historical crop mean (2010-2015),EVALUATED
+Rabi Sorghum,Linear District Trend,2010-2015,2016-2017,445,138,570.99,868.41,-0.1777,85.19,52.91,138,0,Ordinary least squares district temporal trend,EVALUATED
+Rapeseed and Mustard,Naive Persistence (t-1),2010-2015,2016-2017,1385,498,224.95,335.73,0.6039,43.75,28.06,498,0,1-year historical district lag persistence,EVALUATED
+Rapeseed and Mustard,Historical District Mean,2010-2015,2016-2017,1385,498,247.52,356.19,0.5542,48.62,30.11,498,0,District historical mean (2010-2015),EVALUATED
+Rapeseed and Mustard,Historical Crop Mean,2010-2015,2016-2017,1385,498,443.92,534.33,-0.0033,95.59,49.61,498,0,National historical crop mean (2010-2015),EVALUATED
+Rapeseed and Mustard,Linear District Trend,2010-2015,2016-2017,1385,498,326.49,443.83,0.3078,58.23,39.43,498,0,Ordinary least squares district temporal trend,EVALUATED
+Rice,Naive Persistence (t-1),2010-2015,2016-2017,1673,557,382.91,551.52,0.6206,19.95,19.9,557,0,1-year historical district lag persistence,EVALUATED
+Rice,Historical District Mean,2010-2015,2016-2017,1673,557,367.49,511.63,0.6735,17.56,17.94,557,0,District historical mean (2010-2015),EVALUATED
+Rice,Historical Crop Mean,2010-2015,2016-2017,1673,557,705.34,923.8,-0.0644,44.31,30.74,557,0,National historical crop mean (2010-2015),EVALUATED
+Rice,Linear District Trend,2010-2015,2016-2017,1673,557,388.42,554.5,0.6165,19.3,19.6,557,0,Ordinary least squares district temporal trend,EVALUATED
+Safflower,Naive Persistence (t-1),2010-2015,2016-2017,270,120,277.94,541.91,-0.6176,62.19,44.82,120,0,1-year historical district lag persistence,EVALUATED
+Safflower,Historical District Mean,2010-2015,2016-2017,270,120,221.92,389.35,0.165,56.74,36.36,120,0,District historical mean (2010-2015),EVALUATED
+Safflower,Historical Crop Mean,2010-2015,2016-2017,270,120,254.37,426.08,-0.0,70.39,40.57,120,0,National historical crop mean (2010-2015),EVALUATED
+Safflower,Linear District Trend,2010-2015,2016-2017,270,120,287.77,456.29,-0.1468,64.72,48.15,120,0,Ordinary least squares district temporal trend,EVALUATED
+Sesamum,Naive Persistence (t-1),2010-2015,2016-2017,1537,531,125.76,199.94,0.4193,69.39,32.96,531,0,1-year historical district lag persistence,EVALUATED
+Sesamum,Historical District Mean,2010-2015,2016-2017,1537,531,117.69,193.26,0.4574,73.53,28.4,531,0,District historical mean (2010-2015),EVALUATED
+Sesamum,Historical Crop Mean,2010-2015,2016-2017,1537,531,198.63,263.36,-0.0076,112.26,45.85,531,0,National historical crop mean (2010-2015),EVALUATED
+Sesamum,Linear District Trend,2010-2015,2016-2017,1537,531,147.88,233.38,0.2087,64.81,37.68,531,0,Ordinary least squares district temporal trend,EVALUATED
+Sorghum,Naive Persistence (t-1),2010-2015,2016-2017,1229,397,354.09,531.2,0.3698,34.86,32.05,397,0,1-year historical district lag persistence,EVALUATED
+Sorghum,Historical District Mean,2010-2015,2016-2017,1229,397,305.79,449.39,0.549,33.51,26.88,397,0,District historical mean (2010-2015),EVALUATED
+Sorghum,Historical Crop Mean,2010-2015,2016-2017,1229,397,485.95,672.18,-0.0091,63.27,42.13,397,0,National historical crop mean (2010-2015),EVALUATED
+Sorghum,Linear District Trend,2010-2015,2016-2017,1229,397,434.91,629.14,0.116,42.57,40.8,397,0,Ordinary least squares district temporal trend,EVALUATED
+Soyabean,Naive Persistence (t-1),2010-2015,2016-2017,770,264,356.89,465.44,-0.2328,41.16,38.67,264,0,1-year historical district lag persistence,EVALUATED
+Soyabean,Historical District Mean,2010-2015,2016-2017,770,264,287.57,375.92,0.1958,35.85,28.2,264,0,District historical mean (2010-2015),EVALUATED
+Soyabean,Historical Crop Mean,2010-2015,2016-2017,770,264,339.97,419.19,-0.0,42.94,32.35,264,0,National historical crop mean (2010-2015),EVALUATED
+Soyabean,Linear District Trend,2010-2015,2016-2017,770,264,420.52,543.32,-0.68,40.82,48.73,264,0,Ordinary least squares district temporal trend,EVALUATED
+Sugarcane,Naive Persistence (t-1),2010-2015,2016-2017,1457,467,1126.31,1741.99,0.5605,55.82,22.38,467,0,1-year historical district lag persistence,EVALUATED
+Sugarcane,Historical District Mean,2010-2015,2016-2017,1457,467,1434.51,2090.65,0.367,61.76,27.44,467,0,District historical mean (2010-2015),EVALUATED
+Sugarcane,Historical Crop Mean,2010-2015,2016-2017,1457,467,2026.79,2653.77,-0.02,178.44,36.78,467,0,National historical crop mean (2010-2015),EVALUATED
+Sugarcane,Linear District Trend,2010-2015,2016-2017,1457,467,1363.13,2079.46,0.3737,66.73,25.75,467,0,Ordinary least squares district temporal trend,EVALUATED
+Sunflower,Naive Persistence (t-1),2010-2015,2016-2017,774,276,287.57,373.8,0.3998,38.27,34.45,276,0,1-year historical district lag persistence,EVALUATED
+Sunflower,Historical District Mean,2010-2015,2016-2017,774,276,264.92,373.31,0.4014,39.03,28.72,276,0,District historical mean (2010-2015),EVALUATED
+Sunflower,Historical Crop Mean,2010-2015,2016-2017,774,276,389.63,482.56,-0.0002,77.44,39.87,276,0,National historical crop mean (2010-2015),EVALUATED
+Sunflower,Linear District Trend,2010-2015,2016-2017,774,276,322.25,434.07,0.1907,40.01,36.99,276,0,Ordinary least squares district temporal trend,EVALUATED
+Vegetables,All Baselines,2010-2015,2016-2017,0,0,,,,,,0,0,Insufficient train/test observations for out-of-time evaluation,INFEASIBLE
+Wheat,Naive Persistence (t-1),2010-2015,2016-2017,1575,516,396.55,569.12,0.7556,21.26,19.1,516,0,1-year historical district lag persistence,EVALUATED
+Wheat,Historical District Mean,2010-2015,2016-2017,1575,516,432.2,547.98,0.7734,19.39,18.24,516,0,District historical mean (2010-2015),EVALUATED
+Wheat,Historical Crop Mean,2010-2015,2016-2017,1575,516,1016.09,1197.24,-0.0817,49.68,39.7,516,0,National historical crop mean (2010-2015),EVALUATED
+Wheat,Linear District Trend,2010-2015,2016-2017,1575,516,653.17,827.33,0.4835,28.64,30.49,516,0,Ordinary least squares district temporal trend,EVALUATED

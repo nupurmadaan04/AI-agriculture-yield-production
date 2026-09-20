@@ -1,0 +1,312 @@
+raw_state,standard_state,raw_district,standard_district,source,mapping_status,notes
+Chhattisgarh,Chhattisgarh,Durg,Durg,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Chhattisgarh,Chhattisgarh,Bastar,Bastar,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Chhattisgarh,Chhattisgarh,Raipur,Raipur,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Chhattisgarh,Chhattisgarh,Bilaspur,Bilaspur,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Chhattisgarh,Chhattisgarh,Raigarh,Raigarh,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Chhattisgarh,Chhattisgarh,Surguja,Surguja,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Madhya Pradesh,Madhya Pradesh,Jabalpur,Jabalpur,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Madhya Pradesh,Madhya Pradesh,Balaghat,Balaghat,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Madhya Pradesh,Madhya Pradesh,Chhindwara,Chhindwara,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Madhya Pradesh,Madhya Pradesh,Narsinghpur,Narsinghpur,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Madhya Pradesh,Madhya Pradesh,Seoni / Shivani,Seoni / Shivani,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Madhya Pradesh,Madhya Pradesh,Mandla,Mandla,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Madhya Pradesh,Madhya Pradesh,Sagar,Sagar,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Madhya Pradesh,Madhya Pradesh,Damoh,Damoh,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Madhya Pradesh,Madhya Pradesh,Tikamgarh,Tikamgarh,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Madhya Pradesh,Madhya Pradesh,Chhatarpur,Chhatarpur,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Madhya Pradesh,Madhya Pradesh,Panna,Panna,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Madhya Pradesh,Madhya Pradesh,Rewa,Rewa,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Madhya Pradesh,Madhya Pradesh,Sidhi,Sidhi,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Madhya Pradesh,Madhya Pradesh,Satna,Satna,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Madhya Pradesh,Madhya Pradesh,Shahdol,Shahdol,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Madhya Pradesh,Madhya Pradesh,Gwalior,Gwalior,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Madhya Pradesh,Madhya Pradesh,Shivpuri,Shivpuri,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Madhya Pradesh,Madhya Pradesh,Guna,Guna,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Madhya Pradesh,Madhya Pradesh,Datia,Datia,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Madhya Pradesh,Madhya Pradesh,Morena,Morena,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Madhya Pradesh,Madhya Pradesh,Bhind,Bhind,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Madhya Pradesh,Madhya Pradesh,Indore,Indore,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Madhya Pradesh,Madhya Pradesh,Ratlam,Ratlam,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Madhya Pradesh,Madhya Pradesh,Ujjain,Ujjain,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Madhya Pradesh,Madhya Pradesh,Mandsaur,Mandsaur,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Madhya Pradesh,Madhya Pradesh,Dewas,Dewas,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Madhya Pradesh,Madhya Pradesh,Dhar,Dhar,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Madhya Pradesh,Madhya Pradesh,Jhabua,Jhabua,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Madhya Pradesh,Madhya Pradesh,Khargone / West Nimar,Khargone / West Nimar,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Madhya Pradesh,Madhya Pradesh,Khandwa / East Nimar,Khandwa / East Nimar,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Madhya Pradesh,Madhya Pradesh,Sehore,Sehore,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Madhya Pradesh,Madhya Pradesh,Raisen,Raisen,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Madhya Pradesh,Madhya Pradesh,Vidisha,Vidisha,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Madhya Pradesh,Madhya Pradesh,Betul,Betul,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Madhya Pradesh,Madhya Pradesh,Rajgarh,Rajgarh,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Madhya Pradesh,Madhya Pradesh,Shajapur,Shajapur,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Madhya Pradesh,Madhya Pradesh,Hoshangabad,Hoshangabad,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Andhra Pradesh,Andhra Pradesh,Srikakulam,Srikakulam,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Andhra Pradesh,Andhra Pradesh,Visakhapatnam,Visakhapatnam,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Andhra Pradesh,Andhra Pradesh,East Godavari,East Godavari,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Andhra Pradesh,Andhra Pradesh,West Godavari,West Godavari,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Andhra Pradesh,Andhra Pradesh,Krishna,Krishna,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Andhra Pradesh,Andhra Pradesh,Guntur,Guntur,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Andhra Pradesh,Andhra Pradesh,S.P.S. Nellore,S.P.S. Nellore,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Andhra Pradesh,Andhra Pradesh,Kurnool,Kurnool,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Andhra Pradesh,Andhra Pradesh,Ananthapur,Ananthapur,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Andhra Pradesh,Andhra Pradesh,Kadapa YSR,Kadapa Ysr,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Andhra Pradesh,Andhra Pradesh,Chittoor,Chittoor,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Telangana,Telangana,Hyderabad,Hyderabad,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Telangana,Telangana,Nizamabad,Nizamabad,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Telangana,Telangana,Medak,Medak,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Telangana,Telangana,Mahabubnagar,Mahabubnagar,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Telangana,Telangana,Nalgonda,Nalgonda,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Telangana,Telangana,Warangal,Warangal,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Telangana,Telangana,Khammam,Khammam,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Telangana,Telangana,Karimnagar,Karimnagar,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Telangana,Telangana,Adilabad,Adilabad,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Karnataka,Karnataka,Bangalore,Bangalore,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Karnataka,Karnataka,Kolar,Kolar,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Karnataka,Karnataka,Tumkur,Tumkur,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Karnataka,Karnataka,Mysore,Mysore,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Karnataka,Karnataka,Mandya,Mandya,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Karnataka,Karnataka,Hassan,Hassan,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Karnataka,Karnataka,Shimoge,Shimoge,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Karnataka,Karnataka,Chickmagalur,Chickmagalur,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Karnataka,Karnataka,Chitradurga,Chitradurga,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Karnataka,Karnataka,Bellary,Bellary,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Karnataka,Karnataka,Dharwad,Dharwad,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Karnataka,Karnataka,Belgaum,Belgaum,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Karnataka,Karnataka,Bijapur / Vijayapura,Bijapur / Vijayapura,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Karnataka,Karnataka,Bidar,Bidar,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Karnataka,Karnataka,Raichur,Raichur,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Karnataka,Karnataka,Gulbarga / Kalaburagi,Gulbarga / Kalaburagi,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Karnataka,Karnataka,Dakshina Kannada,Dakshina Kannada,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Karnataka,Karnataka,Uttara Kannada,Uttara Kannada,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Karnataka,Karnataka,Kodagu / Coorg,Kodagu / Coorg,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Tamil Nadu,Tamil Nadu,Chengalpattu MGR / Kanchipuram,Chengalpattu Mgr / Kanchipuram,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Tamil Nadu,Tamil Nadu,South Arcot / Cuddalore,South Arcot / Cuddalore,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Tamil Nadu,Tamil Nadu,North Arcot / Vellore,North Arcot / Vellore,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Tamil Nadu,Tamil Nadu,Salem,Salem,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Tamil Nadu,Tamil Nadu,Coimbatore,Coimbatore,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Tamil Nadu,Tamil Nadu,Tiruchirapalli / Trichy,Tiruchirapalli / Trichy,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Tamil Nadu,Tamil Nadu,Thanjavur,Thanjavur,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Tamil Nadu,Tamil Nadu,Madurai,Madurai,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Tamil Nadu,Tamil Nadu,Ramananthapuram,Ramananthapuram,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Tamil Nadu,Tamil Nadu,Thirunelveli,Thirunelveli,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Tamil Nadu,Tamil Nadu,The Nilgiris,The Nilgiris,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Tamil Nadu,Tamil Nadu,Kanyakumari,Kanyakumari,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Maharashtra,Maharashtra,Bombay,Bombay,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Maharashtra,Maharashtra,Thane,Thane,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Maharashtra,Maharashtra,Raigad,Raigad,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Maharashtra,Maharashtra,Ratnagiri,Ratnagiri,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Maharashtra,Maharashtra,Nasik,Nasik,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Maharashtra,Maharashtra,Dhule,Dhule,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Maharashtra,Maharashtra,Jalgaon,Jalgaon,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Maharashtra,Maharashtra,Ahmednagar,Ahmednagar,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Maharashtra,Maharashtra,Pune,Pune,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Maharashtra,Maharashtra,Satara,Satara,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Maharashtra,Maharashtra,Sangli,Sangli,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Maharashtra,Maharashtra,Solapur,Solapur,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Maharashtra,Maharashtra,Kolhapur,Kolhapur,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Maharashtra,Maharashtra,Aurangabad,Aurangabad,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Maharashtra,Maharashtra,Parbhani,Parbhani,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Maharashtra,Maharashtra,Beed,Beed,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Maharashtra,Maharashtra,Nanded,Nanded,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Maharashtra,Maharashtra,Osmanabad,Osmanabad,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Maharashtra,Maharashtra,Buldhana,Buldhana,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Maharashtra,Maharashtra,Akola,Akola,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Maharashtra,Maharashtra,Amarawati,Amarawati,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Maharashtra,Maharashtra,Yeotmal,Yeotmal,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Maharashtra,Maharashtra,Wardha,Wardha,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Maharashtra,Maharashtra,Nagpur,Nagpur,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Maharashtra,Maharashtra,Bhandara,Bhandara,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Maharashtra,Maharashtra,Chandrapur,Chandrapur,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Gujarat,Gujarat,Ahmedabad,Ahmedabad,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Gujarat,Gujarat,Amreli,Amreli,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Gujarat,Gujarat,Banaskantha,Banaskantha,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Gujarat,Gujarat,Bharuch,Bharuch,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Gujarat,Gujarat,Vadodara / Baroda,Vadodara / Baroda,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Gujarat,Gujarat,Bhavnagar,Bhavnagar,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Gujarat,Gujarat,Valsad,Valsad,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Gujarat,Gujarat,Dangs,Dangs,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Gujarat,Gujarat,Jamnagar,Jamnagar,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Gujarat,Gujarat,Junagadh,Junagadh,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Gujarat,Gujarat,Kheda,Kheda,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Gujarat,Gujarat,Kutch,Kutch,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Gujarat,Gujarat,Mehsana,Mehsana,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Gujarat,Gujarat,Panchmahal,Panchmahal,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Gujarat,Gujarat,Rajkot,Rajkot,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Gujarat,Gujarat,Sabarkantha,Sabarkantha,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Gujarat,Gujarat,Surat,Surat,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Gujarat,Gujarat,Surendranagar,Surendranagar,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Rajasthan,Rajasthan,Ajmer,Ajmer,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Rajasthan,Rajasthan,Alwar,Alwar,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Rajasthan,Rajasthan,Banswara,Banswara,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Rajasthan,Rajasthan,Barmer,Barmer,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Rajasthan,Rajasthan,Bharatpur,Bharatpur,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Rajasthan,Rajasthan,Bhilwara,Bhilwara,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Rajasthan,Rajasthan,Bikaner,Bikaner,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Rajasthan,Rajasthan,Bundi,Bundi,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Rajasthan,Rajasthan,Chittorgarh,Chittorgarh,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Rajasthan,Rajasthan,Churu,Churu,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Rajasthan,Rajasthan,Dungarpur,Dungarpur,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Rajasthan,Rajasthan,Ganganagar,Ganganagar,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Rajasthan,Rajasthan,Jaipur,Jaipur,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Rajasthan,Rajasthan,Jaisalmer,Jaisalmer,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Rajasthan,Rajasthan,Jalore,Jalore,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Rajasthan,Rajasthan,Jhalawar,Jhalawar,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Rajasthan,Rajasthan,Jhunjhunu,Jhunjhunu,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Rajasthan,Rajasthan,Jodhpur,Jodhpur,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Rajasthan,Rajasthan,Kota,Kota,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Rajasthan,Rajasthan,Nagaur,Nagaur,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Rajasthan,Rajasthan,Pali,Pali,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Rajasthan,Rajasthan,Swami Madhopur,Swami Madhopur,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Rajasthan,Rajasthan,Sikar,Sikar,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Rajasthan,Rajasthan,Sirohi,Sirohi,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Rajasthan,Rajasthan,Tonk,Tonk,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Rajasthan,Rajasthan,Udaipur,Udaipur,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Punjab,Punjab,Gurdaspur,Gurdaspur,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Punjab,Punjab,Amritsar,Amritsar,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Punjab,Punjab,Kapurthala,Kapurthala,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Punjab,Punjab,Jalandhar,Jalandhar,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Punjab,Punjab,Hoshiarpur,Hoshiarpur,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Punjab,Punjab,Roopnagar / Ropar,Roopnagar / Ropar,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Punjab,Punjab,Ludhiana,Ludhiana,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Punjab,Punjab,Ferozpur,Ferozpur,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Punjab,Punjab,Bhatinda,Bhatinda,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Punjab,Punjab,Sangrur,Sangrur,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Punjab,Punjab,Patiala,Patiala,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Haryana,Haryana,Hissar,Hissar,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Haryana,Haryana,Gurgaon,Gurgaon,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Haryana,Haryana,Jind,Jind,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Haryana,Haryana,Mahendragarh / Narnaul,Mahendragarh / Narnaul,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Haryana,Haryana,Ambala,Ambala,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Haryana,Haryana,Karnal,Karnal,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Haryana,Haryana,Rohtak,Rohtak,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Uttar Pradesh,Uttar Pradesh,Saharanpur,Saharanpur,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Uttar Pradesh,Uttar Pradesh,Muzaffarnagar,Muzaffarnagar,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Uttar Pradesh,Uttar Pradesh,Meerut,Meerut,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Uttar Pradesh,Uttar Pradesh,Buland Shahar,Buland Shahar,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Uttar Pradesh,Uttar Pradesh,Aligarh,Aligarh,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Uttar Pradesh,Uttar Pradesh,Mathura,Mathura,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Uttar Pradesh,Uttar Pradesh,Agra,Agra,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Uttar Pradesh,Uttar Pradesh,Mainpuri,Mainpuri,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Uttar Pradesh,Uttar Pradesh,Etah,Etah,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Uttar Pradesh,Uttar Pradesh,Bareilly,Bareilly,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Uttar Pradesh,Uttar Pradesh,Budaun,Budaun,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Uttar Pradesh,Uttar Pradesh,Moradabad,Moradabad,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Uttar Pradesh,Uttar Pradesh,Shahjahanpur,Shahjahanpur,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Uttar Pradesh,Uttar Pradesh,Pilibhit,Pilibhit,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Uttar Pradesh,Uttar Pradesh,Rampur,Rampur,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Uttar Pradesh,Uttar Pradesh,Bijnor,Bijnor,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Uttar Pradesh,Uttar Pradesh,Farrukhabad,Farrukhabad,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Uttar Pradesh,Uttar Pradesh,Etawah,Etawah,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Uttar Pradesh,Uttar Pradesh,Kanpur,Kanpur,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Uttar Pradesh,Uttar Pradesh,Fatehpur,Fatehpur,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Uttar Pradesh,Uttar Pradesh,Allahabad,Allahabad,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Uttar Pradesh,Uttar Pradesh,Jhansi,Jhansi,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Uttar Pradesh,Uttar Pradesh,Jalaun,Jalaun,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Uttar Pradesh,Uttar Pradesh,Hamirpur,Hamirpur,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Uttar Pradesh,Uttar Pradesh,Banda,Banda,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Uttar Pradesh,Uttar Pradesh,Varanasi,Varanasi,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Uttar Pradesh,Uttar Pradesh,Mirzpur,Mirzpur,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Uttar Pradesh,Uttar Pradesh,Jaunpur,Jaunpur,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Uttar Pradesh,Uttar Pradesh,Ghazipur,Ghazipur,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Uttar Pradesh,Uttar Pradesh,Ballia,Ballia,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Uttar Pradesh,Uttar Pradesh,Gorakhpur,Gorakhpur,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Uttar Pradesh,Uttar Pradesh,Deoria,Deoria,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Uttar Pradesh,Uttar Pradesh,Basti,Basti,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Uttar Pradesh,Uttar Pradesh,Azamgarh,Azamgarh,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Uttar Pradesh,Uttar Pradesh,Lucknow,Lucknow,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Uttar Pradesh,Uttar Pradesh,Unnao,Unnao,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Uttar Pradesh,Uttar Pradesh,Rae-Bareily,Rae-Bareily,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Uttar Pradesh,Uttar Pradesh,Sitapur,Sitapur,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Uttar Pradesh,Uttar Pradesh,Hardoi,Hardoi,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Uttar Pradesh,Uttar Pradesh,Kheri,Kheri,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Uttar Pradesh,Uttar Pradesh,Faizabad,Faizabad,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Uttar Pradesh,Uttar Pradesh,Gonda,Gonda,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Uttar Pradesh,Uttar Pradesh,Bahraich,Bahraich,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Uttar Pradesh,Uttar Pradesh,Sultanpur,Sultanpur,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Uttar Pradesh,Uttar Pradesh,Pratapgarh,Pratapgarh,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Uttar Pradesh,Uttar Pradesh,Barabanki,Barabanki,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Uttarakhand,Uttarakhand,Nainital,Nainital,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Uttarakhand,Uttarakhand,Almorah,Almorah,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Uttarakhand,Uttarakhand,Pithorgarh,Pithorgarh,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Uttarakhand,Uttarakhand,Chamoli,Chamoli,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Uttarakhand,Uttarakhand,Uttar Kashi,Uttar Kashi,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Uttarakhand,Uttarakhand,Tehri Garhwal,Tehri Garhwal,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Uttarakhand,Uttarakhand,Garhwal,Garhwal,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Uttarakhand,Uttarakhand,Dehradun,Dehradun,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Assam,Assam,Cachar,Cachar,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Assam,Assam,Darrang,Darrang,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Assam,Assam,Dibrugarh,Dibrugarh,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Assam,Assam,Goalpara,Goalpara,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Assam,Assam,Kamrup,Kamrup,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Assam,Assam,Karbi Anglong,Karbi Anglong,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Assam,Assam,Lakhimpur,Lakhimpur,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Assam,Assam,North Cachar Hil / Dima hasao,North Cachar Hil / Dima Hasao,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Assam,Assam,Nagaon,Nagaon,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Assam,Assam,Sibsagar,Sibsagar,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Himachal Pradesh,Himachal Pradesh,Bilashpur,Bilashpur,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Himachal Pradesh,Himachal Pradesh,Chamba,Chamba,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Himachal Pradesh,Himachal Pradesh,Kangra,Kangra,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Himachal Pradesh,Himachal Pradesh,Kinnaur,Kinnaur,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Himachal Pradesh,Himachal Pradesh,Kullu,Kullu,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Himachal Pradesh,Himachal Pradesh,Lahul & Spiti,Lahul & Spiti,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Himachal Pradesh,Himachal Pradesh,Solan,Solan,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Himachal Pradesh,Himachal Pradesh,Mandi,Mandi,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Himachal Pradesh,Himachal Pradesh,Shimla,Shimla,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Himachal Pradesh,Himachal Pradesh,Sirmaur,Sirmaur,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Kerala,Kerala,Alappuzha,Alappuzha,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Kerala,Kerala,Kannur,Kannur,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Kerala,Kerala,Eranakulam,Eranakulam,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Kerala,Kerala,Kottayam,Kottayam,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Kerala,Kerala,Kozhikode,Kozhikode,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Kerala,Kerala,Malappuram,Malappuram,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Kerala,Kerala,Palakkad,Palakkad,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Kerala,Kerala,Kollam,Kollam,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Kerala,Kerala,Thrissur,Thrissur,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Kerala,Kerala,Thiruvananthapuram,Thiruvananthapuram,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Orissa,Orissa,Balasore,Balasore,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Orissa,Orissa,Bolangir,Bolangir,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Orissa,Orissa,Cuttack,Cuttack,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Orissa,Orissa,Dhenkanal,Dhenkanal,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Orissa,Orissa,Ganjam,Ganjam,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Orissa,Orissa,Kalahandi,Kalahandi,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Orissa,Orissa,Keonjhar,Keonjhar,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Orissa,Orissa,Koraput,Koraput,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Orissa,Orissa,Mayurbhanja,Mayurbhanja,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Orissa,Orissa,Phulbani ( Kandhamal ),Phulbani ( Kandhamal ),ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Orissa,Orissa,Puri,Puri,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Orissa,Orissa,Sambalpur,Sambalpur,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Orissa,Orissa,Sundargarh,Sundargarh,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+West Bengal,West Bengal,24 Parganas,24 Parganas,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+West Bengal,West Bengal,Nadia,Nadia,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+West Bengal,West Bengal,Murshidabad,Murshidabad,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+West Bengal,West Bengal,Burdwan,Burdwan,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+West Bengal,West Bengal,Birbhum,Birbhum,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+West Bengal,West Bengal,Bankura,Bankura,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+West Bengal,West Bengal,Hooghly,Hooghly,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+West Bengal,West Bengal,Howrah,Howrah,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+West Bengal,West Bengal,Jalpaiguri,Jalpaiguri,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+West Bengal,West Bengal,Darjeeling,Darjeeling,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+West Bengal,West Bengal,Malda,Malda,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+West Bengal,West Bengal,Cooch Behar,Cooch Behar,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+West Bengal,West Bengal,Purulia,Purulia,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+West Bengal,West Bengal,Midnapur,Midnapur,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+West Bengal,West Bengal,West Dinajpur,West Dinajpur,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Bihar,Bihar,Champaran,Champaran,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Bihar,Bihar,Muzaffarpur,Muzaffarpur,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Bihar,Bihar,Darbhanga,Darbhanga,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Bihar,Bihar,Saharsa,Saharsa,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Bihar,Bihar,Purnea,Purnea,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Bihar,Bihar,Saran,Saran,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Bihar,Bihar,Patna,Patna,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Bihar,Bihar,Mungair,Mungair,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Bihar,Bihar,Bhagalpur,Bhagalpur,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Jharkhand,Jharkhand,Santhal Paragana / Dumka,Santhal Paragana / Dumka,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Bihar,Bihar,Shahabad (now part of Bhojpur district),Shahabad (Now Part Of Bhojpur District),ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Bihar,Bihar,Gaya,Gaya,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Jharkhand,Jharkhand,Hazaribagh,Hazaribagh,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Jharkhand,Jharkhand,Dhanbad,Dhanbad,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Jharkhand,Jharkhand,Palamau,Palamau,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Jharkhand,Jharkhand,Ranchi,Ranchi,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries
+Jharkhand,Jharkhand,Singhbhum,Singhbhum,ICRISAT_DLD_1966_2017,STANDARDIZED,Title-case sanitized standard name matching 1966 baseline boundaries

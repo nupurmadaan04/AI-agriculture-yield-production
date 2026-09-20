@@ -1,0 +1,149 @@
+{
+  "title": "AI Agriculture Intelligence Platform - Day 23 Reproducibility Certificate",
+  "version": "1.0.0",
+  "certification_date": "2026-09-03T13:25:04.106358+00:00",
+  "overall_status": "ALL_14_CROPS_REPRODUCIBLE",
+  "dataset_hash": "13f882d7d4617e77b6ded31c7febb55e599f3f6a13e981f23b94c4cecd47f13b",
+  "crop_certificates": {
+    "Oilseeds": {
+      "crop": "Oilseeds",
+      "audit_timestamp": "2026-09-03T13:21:52.690303+00:00",
+      "dataset_sha256": "13f882d7d4617e77b6ded31c7febb55e599f3f6a13e981f23b94c4cecd47f13b",
+      "feature_matrix_sha256": "2e87db02ba2a70372139a75b70117337fd62168a46e8f76c9764bfd72dfa0a42",
+      "model_artifact_sha256": "1cfa0d4901507db257be4e968e827d3f039fc1fc92cd0ad16ecea587cd9eb0c4",
+      "prediction_sha256": "3a2eaaa12b21f6bea4ab88b0863f2d2370565287a7d894fb35e74dbbf399a436",
+      "is_reproducible": true,
+      "reproducibility_status": "CERTIFIED_REPRODUCIBLE"
+    },
+    "Chickpea": {
+      "crop": "Chickpea",
+      "audit_timestamp": "2026-09-03T13:22:05.574169+00:00",
+      "dataset_sha256": "13f882d7d4617e77b6ded31c7febb55e599f3f6a13e981f23b94c4cecd47f13b",
+      "feature_matrix_sha256": "0b1cde69754bd3a4b8cda0fe1eccddddd2b9f3f424a2e1328370f1042963807e",
+      "model_artifact_sha256": "1cfa0d4901507db257be4e968e827d3f039fc1fc92cd0ad16ecea587cd9eb0c4",
+      "prediction_sha256": "d2f90b228384ed4cd79867d769e3ba73e37f944a402a703d16d3c6ceae33e1a7",
+      "is_reproducible": true,
+      "reproducibility_status": "CERTIFIED_REPRODUCIBLE"
+    },
+    "Kharif Sorghum": {
+      "crop": "Kharif Sorghum",
+      "audit_timestamp": "2026-09-03T13:22:20.749317+00:00",
+      "dataset_sha256": "13f882d7d4617e77b6ded31c7febb55e599f3f6a13e981f23b94c4cecd47f13b",
+      "feature_matrix_sha256": "b25c1bbab2ad39f48e2880f4026253cf16f136c5bd558c309738ef006f4f2ba0",
+      "model_artifact_sha256": "1cfa0d4901507db257be4e968e827d3f039fc1fc92cd0ad16ecea587cd9eb0c4",
+      "prediction_sha256": "2bf3cd69f0963b7f0c9baf6e09c722b92854787792451eb2a0551c360829bd6e",
+      "is_reproducible": true,
+      "reproducibility_status": "CERTIFIED_REPRODUCIBLE"
+    },
+    "Minor Pulses": {
+      "crop": "Minor Pulses",
+      "audit_timestamp": "2026-09-03T13:22:33.381689+00:00",
+      "dataset_sha256": "13f882d7d4617e77b6ded31c7febb55e599f3f6a13e981f23b94c4cecd47f13b",
+      "feature_matrix_sha256": "edcbc6f9cdd1bdc3f26bd623c574109f7f42112f6008558a7409197756335464",
+      "model_artifact_sha256": "1cfa0d4901507db257be4e968e827d3f039fc1fc92cd0ad16ecea587cd9eb0c4",
+      "prediction_sha256": "522fbcc1333fbbded464d5b033ad3c0cdf1c3faf9becdbbb13063e339af371c0",
+      "is_reproducible": true,
+      "reproducibility_status": "CERTIFIED_REPRODUCIBLE"
+    },
+    "Maize": {
+      "crop": "Maize",
+      "audit_timestamp": "2026-09-03T13:22:52.299391+00:00",
+      "dataset_sha256": "13f882d7d4617e77b6ded31c7febb55e599f3f6a13e981f23b94c4cecd47f13b",
+      "feature_matrix_sha256": "1bc7cd8cc4879d420d9f443d7dc75809a6bdeba974232b07c8d8bc4a99e5af90",
+      "model_artifact_sha256": "1cfa0d4901507db257be4e968e827d3f039fc1fc92cd0ad16ecea587cd9eb0c4",
+      "prediction_sha256": "7fdcfa065523571df09266809bc2b5218a7453f048bc493a5aade9287cc4a7c3",
+      "is_reproducible": true,
+      "reproducibility_status": "CERTIFIED_REPRODUCIBLE"
+    },
+    "Wheat": {
+      "crop": "Wheat",
+      "audit_timestamp": "2026-09-03T13:23:05.227757+00:00",
+      "dataset_sha256": "13f882d7d4617e77b6ded31c7febb55e599f3f6a13e981f23b94c4cecd47f13b",
+      "feature_matrix_sha256": "25f69ea23772ee50e97406a4f4dc78def2a6e94d7086db2433854b22cc384b55",
+      "model_artifact_sha256": "1cfa0d4901507db257be4e968e827d3f039fc1fc92cd0ad16ecea587cd9eb0c4",
+      "prediction_sha256": "90ca8faa5bcc5ce7e6fd518ff88d079fdccc753a9a08264fc57f852f0510d0b1",
+      "is_reproducible": true,
+      "reproducibility_status": "CERTIFIED_REPRODUCIBLE"
+    },
+    "Sugarcane": {
+      "crop": "Sugarcane",
+      "audit_timestamp": "2026-09-03T13:23:16.880300+00:00",
+      "dataset_sha256": "13f882d7d4617e77b6ded31c7febb55e599f3f6a13e981f23b94c4cecd47f13b",
+      "feature_matrix_sha256": "fba582d06f2c4c5b44c82c4c5325a464df55bf56ce7aa9d1d69ea08420c7f305",
+      "model_artifact_sha256": "1cfa0d4901507db257be4e968e827d3f039fc1fc92cd0ad16ecea587cd9eb0c4",
+      "prediction_sha256": "21aa1728b0e4f06322e531c9f8fa77471ceea01758d9211dbd260efa57e25529",
+      "is_reproducible": true,
+      "reproducibility_status": "CERTIFIED_REPRODUCIBLE"
+    },
+    "Rice": {
+      "crop": "Rice",
+      "audit_timestamp": "2026-09-03T13:23:36.416364+00:00",
+      "dataset_sha256": "13f882d7d4617e77b6ded31c7febb55e599f3f6a13e981f23b94c4cecd47f13b",
+      "feature_matrix_sha256": "041ba5dc60e2925b245c4fb26d9068de9f70f562ce95a7157c517019e41f667f",
+      "model_artifact_sha256": "1cfa0d4901507db257be4e968e827d3f039fc1fc92cd0ad16ecea587cd9eb0c4",
+      "prediction_sha256": "f729d0178a36215cdb41ca31a8922903cdbe7446ac8fd1e04c5d0bd1f441f509",
+      "is_reproducible": true,
+      "reproducibility_status": "CERTIFIED_REPRODUCIBLE"
+    },
+    "Sesamum": {
+      "crop": "Sesamum",
+      "audit_timestamp": "2026-09-03T13:23:54.644663+00:00",
+      "dataset_sha256": "13f882d7d4617e77b6ded31c7febb55e599f3f6a13e981f23b94c4cecd47f13b",
+      "feature_matrix_sha256": "1f9354bb629fcc2c90d4606cdce015a3836a3c65640c28a95564ffa0fe57ad18",
+      "model_artifact_sha256": "1cfa0d4901507db257be4e968e827d3f039fc1fc92cd0ad16ecea587cd9eb0c4",
+      "prediction_sha256": "fafd618736526876aaf1dba81006c9970a0fe552d0b28e0343ee8271354a0707",
+      "is_reproducible": true,
+      "reproducibility_status": "CERTIFIED_REPRODUCIBLE"
+    },
+    "Pigeonpea": {
+      "crop": "Pigeonpea",
+      "audit_timestamp": "2026-09-03T13:24:14.206885+00:00",
+      "dataset_sha256": "13f882d7d4617e77b6ded31c7febb55e599f3f6a13e981f23b94c4cecd47f13b",
+      "feature_matrix_sha256": "989eaac59cfd0dc0c72321ab75f34faf3378af1c24eb69c1e8230ffdab7821db",
+      "model_artifact_sha256": "1cfa0d4901507db257be4e968e827d3f039fc1fc92cd0ad16ecea587cd9eb0c4",
+      "prediction_sha256": "51ca8b4b18d2b4a995bfa978e568267af2826489a1997d371de6375e189fadee",
+      "is_reproducible": true,
+      "reproducibility_status": "CERTIFIED_REPRODUCIBLE"
+    },
+    "Rapeseed and Mustard": {
+      "crop": "Rapeseed and Mustard",
+      "audit_timestamp": "2026-09-03T13:24:33.574680+00:00",
+      "dataset_sha256": "13f882d7d4617e77b6ded31c7febb55e599f3f6a13e981f23b94c4cecd47f13b",
+      "feature_matrix_sha256": "4e4c4ec4dad000f55cfb65953de5b89f76a984dda86aca9416a3d4a11f547bcf",
+      "model_artifact_sha256": "1cfa0d4901507db257be4e968e827d3f039fc1fc92cd0ad16ecea587cd9eb0c4",
+      "prediction_sha256": "5f207ff089c37ddb285a640a1de7dd3350a31db3fcd89cb38879442ab1fbda92",
+      "is_reproducible": true,
+      "reproducibility_status": "CERTIFIED_REPRODUCIBLE"
+    },
+    "Groundnut": {
+      "crop": "Groundnut",
+      "audit_timestamp": "2026-09-03T13:24:45.968130+00:00",
+      "dataset_sha256": "13f882d7d4617e77b6ded31c7febb55e599f3f6a13e981f23b94c4cecd47f13b",
+      "feature_matrix_sha256": "4b9529f6d8fb4b9902c11c32b90feb0b1cac8072a2bbb0ff530a2e88cadbcfe1",
+      "model_artifact_sha256": "1cfa0d4901507db257be4e968e827d3f039fc1fc92cd0ad16ecea587cd9eb0c4",
+      "prediction_sha256": "1aa9ada5b3e8ba4c580e01582efe14c08b70f1c993e3a83d4ba35dcbb35d9588",
+      "is_reproducible": true,
+      "reproducibility_status": "CERTIFIED_REPRODUCIBLE"
+    },
+    "Sorghum": {
+      "crop": "Sorghum",
+      "audit_timestamp": "2026-09-03T13:24:55.193762+00:00",
+      "dataset_sha256": "13f882d7d4617e77b6ded31c7febb55e599f3f6a13e981f23b94c4cecd47f13b",
+      "feature_matrix_sha256": "f00725e0a03b0fce68b224447b81ae2faff9437583404e96e06e19c35cb7b022",
+      "model_artifact_sha256": "1cfa0d4901507db257be4e968e827d3f039fc1fc92cd0ad16ecea587cd9eb0c4",
+      "prediction_sha256": "29f42d2a0abcba17c9746220842f5685ec602ac332a244ffc62a2daa03fc3ddc",
+      "is_reproducible": true,
+      "reproducibility_status": "CERTIFIED_REPRODUCIBLE"
+    },
+    "Pearl Millet": {
+      "crop": "Pearl Millet",
+      "audit_timestamp": "2026-09-03T13:25:04.104231+00:00",
+      "dataset_sha256": "13f882d7d4617e77b6ded31c7febb55e599f3f6a13e981f23b94c4cecd47f13b",
+      "feature_matrix_sha256": "0c72a07adb1da65ae4fc2c24730893da7f005f8aa19bc51b1a346d718fd0a510",
+      "model_artifact_sha256": "1cfa0d4901507db257be4e968e827d3f039fc1fc92cd0ad16ecea587cd9eb0c4",
+      "prediction_sha256": "72210f43283f325fc8641760326de5c23a59b46ae9713494bf06660570f22051",
+      "is_reproducible": true,
+      "reproducibility_status": "CERTIFIED_REPRODUCIBLE"
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "model_id": "multicrop_sugarcane_forecaster",
+  "crop": "Sugarcane",
+  "algorithm": "GradientBoostingRegressor",
+  "version": "1.0.0",
+  "dataset_version": "AGRI_PANEL_1.0",
+  "feature_set_version": "PRE_SEASON_LAG_V1",
+  "training_period": "2011\u20132015",
+  "evaluation_period": "2016\u20132017",
+  "train_records": 1206,
+  "test_records": 467,
+  "metrics": {
+    "mae": 1121.27,
+    "rmse": 1672.88,
+    "r2": 0.5947,
+    "mape": 79.27,
+    "smape": 24.42
+  },
+  "baseline_comparison": {
+    "baseline_model": "Naive Persistence (t-1)",
+    "baseline_mae": 1126.31,
+    "baseline_rmse": 1741.99,
+    "baseline_r2": 0.5605,
+    "mae_improvement_abs": 5.04,
+    "mae_improvement_pct": 0.45
+  },
+  "status": "ACCEPTED",
+  "feature_importance_native": {
+    "yield_lag_1": 0.6766,
+    "yield_lag_2": 0.2122,
+    "yield_rolling_3yr_mean": 0.0278,
+    "area_lag_1": 0.0233,
+    "state_encoded": 0.0407,
+    "year": 0.0194
+  },
+  "feature_importance_permutation": {
+    "yield_lag_1": 0.5106,
+    "yield_lag_2": 0.2572,
+    "yield_rolling_3yr_mean": 0.0069,
+    "area_lag_1": 0.0042,
+    "state_encoded": 0.1092,
+    "year": 0.0
+  },
+  "error_analysis": {
+    "p25": 319.9,
+    "p50_median": 715.13,
+    "p75": 1390.57,
+    "p90": 2795.03,
+    "low_error_pct": 65.3,
+    "moderate_error_pct": 17.1,
+    "high_error_pct": 17.6
+  },
+  "uncertainty_spread_p10_p90": null,
+  "artifact_path": "Models/multicrop/sugarcane/model_pipeline.pkl",
+  "sha256": "8394c5d9b6927f3ad372154f1a0be7806aeb8634c0513fa7dd1c5fe0e2e3cfc6",
+  "created_at": "2026-09-02T17:29:14.288219Z"
+}

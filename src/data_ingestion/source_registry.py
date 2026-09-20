@@ -1,0 +1,100 @@
+"""
+Authoritative Agricultural Data Source Registry.
+
+Maintains metadata, licensing, geographic/temporal coverage, and variable definitions
+for authoritative agricultural data sources.
+"""
+
+from __future__ import annotations
+
+from typing import Dict, Any, List
+
+
+SOURCES: List[Dict[str, Any]] = [
+    {
+        "source_id": "ICRISAT_DLD_1966_2017",
+        "source_name": "ICRISAT District Level Database (DLD)",
+        "provider": "International Crops Research Institute for the Semi-Arid Tropics (ICRISAT)",
+        "source_url": "http://data.icrisat.org/dld/",
+        "access_method": "LOCAL_ARCHIVE_INGESTION",
+        "download_date": "2026-09-02",
+        "license_terms": "Open Access for Academic & Research Use",
+        "geographic_level": "DISTRICT",
+        "temporal_coverage": "1966-2017 (51 continuous agricultural seasons)",
+        "crop_coverage": [
+            "Rice", "Wheat", "Kharif Sorghum", "Rabi Sorghum", "Sorghum",
+            "Pearl Millet", "Maize", "Finger Millet", "Barley", "Chickpea",
+            "Pigeonpea", "Minor Pulses", "Groundnut", "Sesamum",
+            "Rapeseed and Mustard", "Safflower", "Castor", "Linseed",
+            "Sunflower", "Soyabean", "Oilseeds", "Sugarcane", "Cotton",
+            "Fruits", "Vegetables", "Fruits and Vegetables", "Potatoes", "Onion", "Fodder"
+        ],
+        "variables": [
+            "AREA (1000 ha)", "PRODUCTION (1000 tons)", "YIELD (Kg per ha)"
+        ],
+        "units": {
+            "area": "1000 ha -> Standardized to ha",
+            "production": "1000 tons -> Standardized to metric tonnes",
+            "yield": "Kg per ha"
+        },
+        "season_information": "Annual summary with seasonal breakdowns for Sorghum (Kharif/Rabi)",
+        "known_limitations": "Historical district boundaries (1966 baseline) used to ensure panel continuity across bifurcations."
+    },
+    {
+        "source_id": "GOVT_INDIA_OGD_DES",
+        "source_name": "Open Government Data (OGD) - Directorate of Economics and Statistics (DES)",
+        "provider": "Ministry of Agriculture and Farmers Welfare, Government of India",
+        "source_url": "https://data.gov.in/",
+        "access_method": "LOCAL_REGISTRY_CATALOG",
+        "download_date": "2026-09-02",
+        "license_terms": "National Data Sharing and Accessibility Policy (NDSAP) - Government Open Data License India (GODL)",
+        "geographic_level": "STATE_AND_DISTRICT",
+        "temporal_coverage": "1997-2020",
+        "crop_coverage": [
+            "Rice", "Wheat", "Maize", "Cotton", "Sugarcane", "Gram", "Groundnut", "Arhar/Tur"
+        ],
+        "variables": [
+            "Area (Hectares)", "Production (Tonnes)", "Yield (Kg/Hectare)"
+        ],
+        "units": {
+            "area": "Hectares",
+            "production": "Tonnes",
+            "yield": "Kg/Hectare"
+        },
+        "season_information": "Kharif, Rabi, Summer, Whole Year",
+        "known_limitations": "State reporting variations across seasons; requires district standardization."
+    },
+    {
+        "source_id": "FAOSTAT_CROP_PRODUCTION",
+        "source_name": "FAOSTAT Crop and Livestock Products",
+        "provider": "Food and Agriculture Organization of the United Nations (FAO)",
+        "source_url": "https://www.fao.org/faostat/en/#data/QCL",
+        "access_method": "API_CLIENT_SPECIFICATION",
+        "download_date": "2026-09-02",
+        "license_terms": "Creative Commons Attribution-NonCommercial-ShareAlike 3.0 IGO (CC BY-NC-SA 3.0 IGO)",
+        "geographic_level": "COUNTRY",
+        "temporal_coverage": "1961-2022",
+        "crop_coverage": [
+            "Rice, paddy", "Wheat", "Maize", "Sorghum", "Millet", "Chickpeas", "Soybeans"
+        ],
+        "variables": [
+            "Area harvested", "Production", "Yield"
+        ],
+        "units": {
+            "area": "ha",
+            "production": "tonnes",
+            "yield": "hg/ha (converted to kg/ha by /10)"
+        },
+        "season_information": "Annual national aggregates",
+        "known_limitations": "National level aggregates only; does not provide sub-national district granularity."
+    }
+]
+
+
+def get_source_registry() -> Dict[str, Any]:
+    """Returns the complete source registry dictionary."""
+    return {
+        "version": "1.0.0",
+        "sources_count": len(SOURCES),
+        "sources": SOURCES
+    }

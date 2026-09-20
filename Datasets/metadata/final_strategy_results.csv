@@ -1,0 +1,15 @@
+crop,primary_model,fallback_model,policy_type,strategy_mean_mae,ml_mean_mae,baseline_mean_mae,strategy_gain_vs_baseline_pct,strategy_gain_vs_ml_pct,operating_rule
+Oilseeds,Historical ML (RandomForest),Historical District Mean,PRIMARY_ML_WITH_FALLBACK,549.67,548.92,616.6,10.85,-0.14,Use ML predictions for all districts with >=3 historical observations; fallback to district mean for sparse districts.
+Chickpea,Historical District Mean,GradientBoosting (Shadow / Normal Regime),BASELINE_PRIMARY_CONDITIONAL_ML,260.35,271.43,263.7,1.27,4.08,Use Historical District Mean as primary baseline; ML used conditionally in normal yield regimes (Q25-Q75).
+Kharif Sorghum,Historical District Mean,RandomForest (Shadow / Normal Regime),BASELINE_PRIMARY_CONDITIONAL_ML,294.65,303.12,296.69,0.69,2.8,Use Historical District Mean as primary baseline; ML used conditionally in normal yield regimes (Q25-Q75).
+Minor Pulses,Historical District Mean,GradientBoosting (Research Shadow),BASELINE_PRIMARY_RESEARCH_SHADOW,345.16,347.38,345.16,0.0,0.64,Use Historical District Mean as primary; ML maintained in research shadow mode.
+Maize,Historical District Mean,RandomForest (Research Shadow),BASELINE_PRIMARY_RESEARCH_SHADOW,638.38,653.79,638.38,0.0,2.36,Use Historical District Mean as primary; ML maintained in research shadow mode.
+Wheat,Historical District Mean,GradientBoosting (Research Shadow),BASELINE_PRIMARY_RESEARCH_SHADOW,381.65,405.01,381.65,0.0,5.77,Use Historical District Mean as primary; ML maintained in research shadow mode.
+Sugarcane,Historical ML (GradientBoosting),Historical District Mean,PRIMARY_ML_WITH_FALLBACK,1467.97,1457.23,1485.7,1.19,-0.74,Use ML predictions with state-level mean fallback where district variance exceeds 3 sigma.
+Rice,Historical District Mean / Persistence,District 3-Year Rolling Mean,STATISTICAL_BASELINE_PRIMARY,310.28,325.25,310.28,0.0,4.6,Use Historical District Mean as robust pre-season forecast baseline.
+Sesamum,Historical District Mean,State Baseline Mean,STATISTICAL_BASELINE_PRIMARY,137.44,139.4,137.44,0.0,1.41,Use Historical District Mean as robust pre-season forecast baseline.
+Pigeonpea,Historical District Mean,State Baseline Mean,STATISTICAL_BASELINE_PRIMARY,282.35,290.37,282.35,0.0,2.76,Use Historical District Mean as robust pre-season forecast baseline.
+Rapeseed and Mustard,Historical District Mean,State Baseline Mean,STATISTICAL_BASELINE_PRIMARY,193.33,199.43,193.33,0.0,3.06,Use Historical District Mean as robust pre-season forecast baseline.
+Groundnut,Historical District Mean,State Baseline Mean,STATISTICAL_BASELINE_PRIMARY,287.4,306.51,287.4,0.0,6.24,Use Historical District Mean as robust pre-season forecast baseline.
+Sorghum,Historical District Mean,State Baseline Mean,STATISTICAL_BASELINE_PRIMARY,264.02,273.38,264.02,0.0,3.42,Use Historical District Mean as robust pre-season forecast baseline.
+Pearl Millet,Historical District Mean,State Baseline Mean,STATISTICAL_BASELINE_PRIMARY,260.24,280.1,260.24,0.0,7.09,Use Historical District Mean as robust pre-season forecast baseline.

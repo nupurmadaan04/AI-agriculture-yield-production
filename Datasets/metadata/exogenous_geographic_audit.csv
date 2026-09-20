@@ -1,0 +1,21 @@
+state,panel_districts_count,weather_matched_districts,match_percentage,spatial_alignment_status,alignment_method,notes
+Andhra Pradesh,11,11,100.0,FULL_MATCH,STANDARDIZED_DISTRICT_KEY_JOIN,Exact match against 1966 standardized historical boundary mapping.
+Assam,10,10,100.0,FULL_MATCH,STANDARDIZED_DISTRICT_KEY_JOIN,Exact match against 1966 standardized historical boundary mapping.
+Bihar,11,11,100.0,FULL_MATCH,STANDARDIZED_DISTRICT_KEY_JOIN,Exact match against 1966 standardized historical boundary mapping.
+Chhattisgarh,6,6,100.0,FULL_MATCH,STANDARDIZED_DISTRICT_KEY_JOIN,Exact match against 1966 standardized historical boundary mapping.
+Gujarat,18,18,100.0,FULL_MATCH,STANDARDIZED_DISTRICT_KEY_JOIN,Exact match against 1966 standardized historical boundary mapping.
+Haryana,7,7,100.0,FULL_MATCH,STANDARDIZED_DISTRICT_KEY_JOIN,Exact match against 1966 standardized historical boundary mapping.
+Himachal Pradesh,10,10,100.0,FULL_MATCH,STANDARDIZED_DISTRICT_KEY_JOIN,Exact match against 1966 standardized historical boundary mapping.
+Jharkhand,6,6,100.0,FULL_MATCH,STANDARDIZED_DISTRICT_KEY_JOIN,Exact match against 1966 standardized historical boundary mapping.
+Karnataka,19,19,100.0,FULL_MATCH,STANDARDIZED_DISTRICT_KEY_JOIN,Exact match against 1966 standardized historical boundary mapping.
+Kerala,10,10,100.0,FULL_MATCH,STANDARDIZED_DISTRICT_KEY_JOIN,Exact match against 1966 standardized historical boundary mapping.
+Madhya Pradesh,37,37,100.0,FULL_MATCH,STANDARDIZED_DISTRICT_KEY_JOIN,Exact match against 1966 standardized historical boundary mapping.
+Maharashtra,26,26,100.0,FULL_MATCH,STANDARDIZED_DISTRICT_KEY_JOIN,Exact match against 1966 standardized historical boundary mapping.
+Orissa,13,13,100.0,FULL_MATCH,STANDARDIZED_DISTRICT_KEY_JOIN,Exact match against 1966 standardized historical boundary mapping.
+Punjab,11,11,100.0,FULL_MATCH,STANDARDIZED_DISTRICT_KEY_JOIN,Exact match against 1966 standardized historical boundary mapping.
+Rajasthan,26,26,100.0,FULL_MATCH,STANDARDIZED_DISTRICT_KEY_JOIN,Exact match against 1966 standardized historical boundary mapping.
+Tamil Nadu,12,12,100.0,FULL_MATCH,STANDARDIZED_DISTRICT_KEY_JOIN,Exact match against 1966 standardized historical boundary mapping.
+Telangana,9,9,100.0,FULL_MATCH,STANDARDIZED_DISTRICT_KEY_JOIN,Exact match against 1966 standardized historical boundary mapping.
+Uttar Pradesh,46,46,100.0,FULL_MATCH,STANDARDIZED_DISTRICT_KEY_JOIN,Exact match against 1966 standardized historical boundary mapping.
+Uttarakhand,8,8,100.0,FULL_MATCH,STANDARDIZED_DISTRICT_KEY_JOIN,Exact match against 1966 standardized historical boundary mapping.
+West Bengal,15,15,100.0,FULL_MATCH,STANDARDIZED_DISTRICT_KEY_JOIN,Exact match against 1966 standardized historical boundary mapping.

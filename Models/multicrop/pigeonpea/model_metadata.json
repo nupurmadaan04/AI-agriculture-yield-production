@@ -1,0 +1,57 @@
+{
+  "model_id": "multicrop_pigeonpea_forecaster",
+  "crop": "Pigeonpea",
+  "algorithm": "GradientBoostingRegressor",
+  "version": "1.0.0",
+  "dataset_version": "AGRI_PANEL_1.0",
+  "feature_set_version": "PRE_SEASON_LAG_V1",
+  "training_period": "2011\u20132015",
+  "evaluation_period": "2016\u20132017",
+  "train_records": 1273,
+  "test_records": 504,
+  "metrics": {
+    "mae": 295.41,
+    "rmse": 426.61,
+    "r2": 0.0434,
+    "mape": 29.99,
+    "smape": 32.16
+  },
+  "baseline_comparison": {
+    "baseline_model": "Naive Persistence (t-1)",
+    "baseline_mae": 299.15,
+    "baseline_rmse": 447.47,
+    "baseline_r2": -0.0525,
+    "mae_improvement_abs": 3.74,
+    "mae_improvement_pct": 1.25
+  },
+  "status": "ACCEPTED",
+  "feature_importance_native": {
+    "yield_lag_1": 0.6329,
+    "yield_lag_2": 0.1348,
+    "yield_rolling_3yr_mean": 0.0365,
+    "area_lag_1": 0.0343,
+    "state_encoded": 0.12,
+    "year": 0.0414
+  },
+  "feature_importance_permutation": {
+    "yield_lag_1": 0.2969,
+    "yield_lag_2": 0.0329,
+    "yield_rolling_3yr_mean": -0.0058,
+    "area_lag_1": -0.0117,
+    "state_encoded": 0.0313,
+    "year": 0.0
+  },
+  "error_analysis": {
+    "p25": 92.55,
+    "p50_median": 192.88,
+    "p75": 411.42,
+    "p90": 655.17,
+    "low_error_pct": 34.3,
+    "moderate_error_pct": 24.6,
+    "high_error_pct": 41.1
+  },
+  "uncertainty_spread_p10_p90": null,
+  "artifact_path": "Models/multicrop/pigeonpea/model_pipeline.pkl",
+  "sha256": "6572946c494d4f4e00ee13638d06738cc68ebd8f85f92e1b0244235703eceec0",
+  "created_at": "2026-09-02T17:28:40.247828Z"
+}

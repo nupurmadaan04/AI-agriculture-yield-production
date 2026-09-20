@@ -1,0 +1,115 @@
+{
+  "algorithm": "KMeans (n_clusters=4, StandardScaler)",
+  "clustering_features": [
+    "average_yield_kg_ha",
+    "yield_volatility_pct",
+    "average_area_k_ha",
+    "trend_theil_sen_slope",
+    "state_relative_yield_ratio",
+    "anomaly_rate_pct"
+  ],
+  "benchmark_evaluations": [
+    {
+      "k_clusters": 3,
+      "silhouette_score": 0.3098,
+      "calinski_harabasz_score": 127.06,
+      "davies_bouldin_index": 1.0355
+    },
+    {
+      "k_clusters": 4,
+      "silhouette_score": 0.2712,
+      "calinski_harabasz_score": 120.78,
+      "davies_bouldin_index": 1.2358
+    },
+    {
+      "k_clusters": 5,
+      "silhouette_score": 0.2997,
+      "calinski_harabasz_score": 128.06,
+      "davies_bouldin_index": 1.0539
+    },
+    {
+      "k_clusters": 6,
+      "silhouette_score": 0.3214,
+      "calinski_harabasz_score": 130.93,
+      "davies_bouldin_index": 0.9878
+    }
+  ],
+  "selected_k": 4,
+  "cluster_profiles": [
+    {
+      "cluster_id": 0,
+      "cluster_name": "High Productivity & Low Volatility",
+      "archetype": "Intensive irrigated grain bowl with high baseline yield and positive multi-year trend.",
+      "risk_profile": "LOW / STABLE",
+      "district_count": 168,
+      "avg_yield_kg_ha": 2404.2,
+      "avg_volatility_pct": 12.6,
+      "avg_theil_sen_slope": 19.6,
+      "avg_anomaly_rate_pct": 2.2,
+      "dominant_states": {
+        "Uttar Pradesh": 39,
+        "Karnataka": 16,
+        "Rajasthan": 13,
+        "Gujarat": 11,
+        "Kerala": 10
+      }
+    },
+    {
+      "cluster_id": 1,
+      "cluster_name": "Moderate Yield & High Cropland Concentration",
+      "archetype": "Extensive deltaic and coastal rice production with moderate yield stability.",
+      "risk_profile": "MODERATE",
+      "district_count": 89,
+      "avg_yield_kg_ha": 2432.8,
+      "avg_volatility_pct": 21.7,
+      "avg_theil_sen_slope": 93.99,
+      "avg_anomaly_rate_pct": 10.2,
+      "dominant_states": {
+        "Madhya Pradesh": 13,
+        "West Bengal": 12,
+        "Orissa": 11,
+        "Andhra Pradesh": 8,
+        "Bihar": 8
+      }
+    },
+    {
+      "cluster_id": 2,
+      "cluster_name": "Low-to-Moderate Yield & Moderate Volatility",
+      "archetype": "Central and eastern plateau regions with moderate baseline productivity and variable rainfall.",
+      "risk_profile": "MODERATE / ELEVATED",
+      "district_count": 43,
+      "avg_yield_kg_ha": 494.1,
+      "avg_volatility_pct": 34.9,
+      "avg_theil_sen_slope": -9.75,
+      "avg_anomaly_rate_pct": 23.0,
+      "dominant_states": {
+        "Madhya Pradesh": 13,
+        "Rajasthan": 11,
+        "Maharashtra": 8,
+        "Gujarat": 5,
+        "Himachal Pradesh": 2
+      }
+    },
+    {
+      "cluster_id": 3,
+      "cluster_name": "High Volatility & Outlier Concentration",
+      "archetype": "Districts exhibiting elevated annual yield variance and sensitivity to extreme localized weather departures.",
+      "risk_profile": "HIGH",
+      "district_count": 11,
+      "avg_yield_kg_ha": 238.8,
+      "avg_volatility_pct": 257.0,
+      "avg_theil_sen_slope": 0.0,
+      "avg_anomaly_rate_pct": 97.7,
+      "dominant_states": {
+        "Maharashtra": 5,
+        "Madhya Pradesh": 3,
+        "Gujarat": 2,
+        "Rajasthan": 1
+      }
+    }
+  ],
+  "scientific_safeguards": [
+    "Clustering is based on scale-standardized empirical features (yield, volatility, slope, anomaly rate).",
+    "Cluster labels describe multi-dimensional similarity and do not imply causal determinism."
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "model_id": "multicrop_groundnut_forecaster",
+  "crop": "Groundnut",
+  "algorithm": "RandomForestRegressor",
+  "version": "1.0.0",
+  "dataset_version": "AGRI_PANEL_1.0",
+  "feature_set_version": "PRE_SEASON_LAG_V1",
+  "training_period": "2011\u20132015",
+  "evaluation_period": "2016\u20132017",
+  "train_records": 1158,
+  "test_records": 460,
+  "metrics": {
+    "mae": 320.45,
+    "rmse": 456.55,
+    "r2": 0.5687,
+    "mape": 27.3,
+    "smape": 23.69
+  },
+  "baseline_comparison": {
+    "baseline_model": "Historical District Mean",
+    "baseline_mae": 302.18,
+    "baseline_rmse": 427.43,
+    "baseline_r2": 0.622,
+    "mae_improvement_abs": -18.27,
+    "mae_improvement_pct": -6.05
+  },
+  "status": "BASELINE_PREFERRED",
+  "feature_importance_native": {
+    "yield_lag_1": 0.5019,
+    "yield_lag_2": 0.2404,
+    "yield_rolling_3yr_mean": 0.1528,
+    "area_lag_1": 0.0595,
+    "state_encoded": 0.0284,
+    "year": 0.017
+  },
+  "feature_importance_permutation": {
+    "yield_lag_1": 0.2078,
+    "yield_lag_2": 0.1272,
+    "yield_rolling_3yr_mean": 0.0751,
+    "area_lag_1": -0.0071,
+    "state_encoded": -0.0023,
+    "year": 0.0
+  },
+  "error_analysis": {
+    "p25": 100.16,
+    "p50_median": 240.64,
+    "p75": 426.99,
+    "p90": 710.73,
+    "low_error_pct": 45.4,
+    "moderate_error_pct": 29.3,
+    "high_error_pct": 25.2
+  },
+  "uncertainty_spread_p10_p90": 681.27,
+  "artifact_path": "Models/multicrop/groundnut/model_pipeline.pkl",
+  "sha256": "431f2164e22b1c72a7ee4504074a3fa7f0cb11bad313dbd53e4415c66815a07b",
+  "created_at": "2026-09-02T17:29:37.045997Z"
+}

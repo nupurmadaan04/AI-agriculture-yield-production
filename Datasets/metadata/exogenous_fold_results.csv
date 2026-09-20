@@ -1,0 +1,281 @@
+crop,fold_id,test_year,experiment_id,experiment_name,feature_group,n_features,algorithm,test_records,mae,rmse,r2,mape,smape,baseline_mae,historical_mae,improvement_vs_baseline_pct,improvement_vs_historical_pct,win_vs_baseline,win_vs_historical
+Oilseeds,1,2014,EXP-22A,Historical Only (Model A),HISTORICAL,7,RandomForestRegressor,303,469.93,797.92,0.5983,41.01,67.58,459.45,469.93,-2.28,0.0,False,False
+Oilseeds,1,2014,EXP-22B,Historical + Rainfall,HIST_PLUS_RAINFALL,10,RandomForestRegressor,303,448.47,758.59,0.6369,39.34,64.1,459.45,469.93,2.39,4.57,True,True
+Oilseeds,1,2014,EXP-22C,Historical + Temperature,HIST_PLUS_TEMP,10,RandomForestRegressor,303,458.7,796.59,0.5996,42.28,62.81,459.45,469.93,0.16,2.39,True,True
+Oilseeds,1,2014,EXP-22D,Historical + Rainfall + Temperature,HIST_PLUS_WEATHER,13,RandomForestRegressor,303,455.28,792.22,0.604,40.46,63.56,459.45,469.93,0.91,3.12,True,True
+Oilseeds,1,2014,EXP-22E,Historical + All Exogenous (Model B),HIST_PLUS_ALL_EXO,17,RandomForestRegressor,303,481.89,811.32,0.5847,43.75,69.18,459.45,469.93,-4.88,-2.54,False,False
+Oilseeds,2,2015,EXP-22A,Historical Only (Model A),HISTORICAL,7,RandomForestRegressor,307,521.48,698.76,0.6346,58.81,94.12,491.14,521.48,-6.18,0.0,False,False
+Oilseeds,2,2015,EXP-22B,Historical + Rainfall,HIST_PLUS_RAINFALL,10,RandomForestRegressor,307,502.35,669.78,0.6643,49.17,93.35,491.14,521.48,-2.28,3.67,False,True
+Oilseeds,2,2015,EXP-22C,Historical + Temperature,HIST_PLUS_TEMP,10,RandomForestRegressor,307,492.37,637.56,0.6958,54.15,97.05,491.14,521.48,-0.25,5.58,False,True
+Oilseeds,2,2015,EXP-22D,Historical + Rainfall + Temperature,HIST_PLUS_WEATHER,13,RandomForestRegressor,307,489.67,639.88,0.6936,49.72,96.0,491.14,521.48,0.3,6.1,True,True
+Oilseeds,2,2015,EXP-22E,Historical + All Exogenous (Model B),HIST_PLUS_ALL_EXO,17,RandomForestRegressor,307,466.86,611.2,0.7204,49.92,95.53,491.14,521.48,4.94,10.47,True,True
+Oilseeds,3,2016,EXP-22A,Historical Only (Model A),HISTORICAL,7,RandomForestRegressor,309,732.97,1058.45,0.2835,30.8,182.42,778.92,732.97,5.9,0.0,True,False
+Oilseeds,3,2016,EXP-22B,Historical + Rainfall,HIST_PLUS_RAINFALL,10,RandomForestRegressor,309,926.17,1192.67,0.0903,36.76,182.89,778.92,732.97,-18.9,-26.36,False,False
+Oilseeds,3,2016,EXP-22C,Historical + Temperature,HIST_PLUS_TEMP,10,RandomForestRegressor,309,695.36,1064.26,0.2756,29.63,182.63,778.92,732.97,10.73,5.13,True,True
+Oilseeds,3,2016,EXP-22D,Historical + Rainfall + Temperature,HIST_PLUS_WEATHER,13,RandomForestRegressor,309,839.7,1148.92,0.1558,28.4,182.28,778.92,732.97,-7.8,-14.56,False,False
+Oilseeds,3,2016,EXP-22E,Historical + All Exogenous (Model B),HIST_PLUS_ALL_EXO,17,RandomForestRegressor,309,822.76,1121.04,0.1963,27.86,182.25,778.92,732.97,-5.63,-12.25,False,False
+Oilseeds,4,2017,EXP-22A,Historical Only (Model A),HISTORICAL,7,RandomForestRegressor,307,471.31,1059.88,0.6649,33.32,184.23,736.88,471.31,36.04,0.0,True,False
+Oilseeds,4,2017,EXP-22B,Historical + Rainfall,HIST_PLUS_RAINFALL,10,RandomForestRegressor,307,589.51,1113.63,0.6301,26.31,183.18,736.88,471.31,20.0,-25.08,True,False
+Oilseeds,4,2017,EXP-22C,Historical + Temperature,HIST_PLUS_TEMP,10,RandomForestRegressor,307,556.81,1059.97,0.6649,31.04,183.85,736.88,471.31,24.44,-18.14,True,False
+Oilseeds,4,2017,EXP-22D,Historical + Rainfall + Temperature,HIST_PLUS_WEATHER,13,RandomForestRegressor,307,560.81,1050.26,0.671,26.93,183.24,736.88,471.31,23.89,-18.99,True,False
+Oilseeds,4,2017,EXP-22E,Historical + All Exogenous (Model B),HIST_PLUS_ALL_EXO,17,RandomForestRegressor,307,568.35,1048.07,0.6724,26.91,183.26,736.88,471.31,22.87,-20.59,True,False
+Chickpea,1,2014,EXP-22A,Historical Only (Model A),HISTORICAL,7,GradientBoostingRegressor,303,269.44,395.85,0.2976,44.28,60.51,280.39,269.44,3.91,0.0,True,False
+Chickpea,1,2014,EXP-22B,Historical + Rainfall,HIST_PLUS_RAINFALL,10,GradientBoostingRegressor,303,313.69,426.59,0.1842,51.23,61.92,280.39,269.44,-11.87,-16.42,False,False
+Chickpea,1,2014,EXP-22C,Historical + Temperature,HIST_PLUS_TEMP,10,GradientBoostingRegressor,303,293.47,405.2,0.264,49.07,62.14,280.39,269.44,-4.67,-8.92,False,False
+Chickpea,1,2014,EXP-22D,Historical + Rainfall + Temperature,HIST_PLUS_WEATHER,13,GradientBoostingRegressor,303,326.1,438.31,0.1388,54.37,63.25,280.39,269.44,-16.3,-21.03,False,False
+Chickpea,1,2014,EXP-22E,Historical + All Exogenous (Model B),HIST_PLUS_ALL_EXO,17,GradientBoostingRegressor,303,320.67,433.4,0.158,53.33,63.03,280.39,269.44,-14.36,-19.02,False,False
+Chickpea,2,2015,EXP-22A,Historical Only (Model A),HISTORICAL,7,GradientBoostingRegressor,310,235.21,347.69,0.3975,37.38,57.42,230.01,235.21,-2.26,0.0,False,False
+Chickpea,2,2015,EXP-22B,Historical + Rainfall,HIST_PLUS_RAINFALL,10,GradientBoostingRegressor,310,236.59,352.84,0.3795,36.85,57.38,230.01,235.21,-2.86,-0.59,False,False
+Chickpea,2,2015,EXP-22C,Historical + Temperature,HIST_PLUS_TEMP,10,GradientBoostingRegressor,310,242.44,356.46,0.3667,37.38,56.76,230.01,235.21,-5.4,-3.07,False,False
+Chickpea,2,2015,EXP-22D,Historical + Rainfall + Temperature,HIST_PLUS_WEATHER,13,GradientBoostingRegressor,310,236.49,352.02,0.3824,36.22,56.58,230.01,235.21,-2.82,-0.54,False,False
+Chickpea,2,2015,EXP-22E,Historical + All Exogenous (Model B),HIST_PLUS_ALL_EXO,17,GradientBoostingRegressor,310,235.97,350.2,0.3887,36.92,56.93,230.01,235.21,-2.59,-0.32,False,False
+Chickpea,3,2016,EXP-22A,Historical Only (Model A),HISTORICAL,7,GradientBoostingRegressor,310,325.24,466.5,0.2517,45.39,57.27,271.51,325.24,-19.79,0.0,False,False
+Chickpea,3,2016,EXP-22B,Historical + Rainfall,HIST_PLUS_RAINFALL,10,GradientBoostingRegressor,310,357.38,496.97,0.1507,48.33,59.87,271.51,325.24,-31.63,-9.88,False,False
+Chickpea,3,2016,EXP-22C,Historical + Temperature,HIST_PLUS_TEMP,10,GradientBoostingRegressor,310,321.3,470.25,0.2396,44.53,56.12,271.51,325.24,-18.34,1.21,False,True
+Chickpea,3,2016,EXP-22D,Historical + Rainfall + Temperature,HIST_PLUS_WEATHER,13,GradientBoostingRegressor,310,350.09,492.05,0.1675,46.84,58.96,271.51,325.24,-28.94,-7.64,False,False
+Chickpea,3,2016,EXP-22E,Historical + All Exogenous (Model B),HIST_PLUS_ALL_EXO,17,GradientBoostingRegressor,310,331.53,469.85,0.2409,45.78,56.22,271.51,325.24,-22.11,-1.94,False,False
+Chickpea,4,2017,EXP-22A,Historical Only (Model A),HISTORICAL,7,GradientBoostingRegressor,306,255.83,444.28,0.3073,21.49,43.01,272.87,255.83,6.24,0.0,True,False
+Chickpea,4,2017,EXP-22B,Historical + Rainfall,HIST_PLUS_RAINFALL,10,GradientBoostingRegressor,306,262.03,447.2,0.2981,21.76,43.56,272.87,255.83,3.97,-2.42,True,False
+Chickpea,4,2017,EXP-22C,Historical + Temperature,HIST_PLUS_TEMP,10,GradientBoostingRegressor,306,246.75,432.18,0.3445,20.86,42.1,272.87,255.83,9.57,3.55,True,True
+Chickpea,4,2017,EXP-22D,Historical + Rainfall + Temperature,HIST_PLUS_WEATHER,13,GradientBoostingRegressor,306,259.46,440.93,0.3177,21.73,43.34,272.87,255.83,4.91,-1.42,True,False
+Chickpea,4,2017,EXP-22E,Historical + All Exogenous (Model B),HIST_PLUS_ALL_EXO,17,GradientBoostingRegressor,306,249.79,432.37,0.3439,20.8,42.28,272.87,255.83,8.46,2.36,True,True
+Kharif Sorghum,1,2014,EXP-22A,Historical Only (Model A),HISTORICAL,7,RandomForestRegressor,304,292.36,485.99,0.5426,44.86,102.62,283.1,292.36,-3.27,0.0,False,False
+Kharif Sorghum,1,2014,EXP-22B,Historical + Rainfall,HIST_PLUS_RAINFALL,10,RandomForestRegressor,304,336.76,504.26,0.5075,44.81,102.09,283.1,292.36,-18.96,-15.19,False,False
+Kharif Sorghum,1,2014,EXP-22C,Historical + Temperature,HIST_PLUS_TEMP,10,RandomForestRegressor,304,335.76,523.13,0.47,47.79,102.92,283.1,292.36,-18.6,-14.85,False,False
+Kharif Sorghum,1,2014,EXP-22D,Historical + Rainfall + Temperature,HIST_PLUS_WEATHER,13,RandomForestRegressor,304,356.78,521.4,0.4735,46.65,101.88,283.1,292.36,-26.02,-22.03,False,False
+Kharif Sorghum,1,2014,EXP-22E,Historical + All Exogenous (Model B),HIST_PLUS_ALL_EXO,17,RandomForestRegressor,304,356.47,521.23,0.4739,47.2,101.67,283.1,292.36,-25.92,-21.93,False,False
+Kharif Sorghum,2,2015,EXP-22A,Historical Only (Model A),HISTORICAL,7,RandomForestRegressor,309,272.86,457.47,0.4992,50.6,101.97,303.73,272.86,10.16,0.0,True,False
+Kharif Sorghum,2,2015,EXP-22B,Historical + Rainfall,HIST_PLUS_RAINFALL,10,RandomForestRegressor,309,284.92,462.79,0.4874,52.93,102.65,303.73,272.86,6.19,-4.42,True,False
+Kharif Sorghum,2,2015,EXP-22C,Historical + Temperature,HIST_PLUS_TEMP,10,RandomForestRegressor,309,288.9,461.59,0.4901,53.68,101.05,303.73,272.86,4.88,-5.88,True,False
+Kharif Sorghum,2,2015,EXP-22D,Historical + Rainfall + Temperature,HIST_PLUS_WEATHER,13,RandomForestRegressor,309,285.97,455.78,0.5028,53.2,102.55,303.73,272.86,5.85,-4.81,True,False
+Kharif Sorghum,2,2015,EXP-22E,Historical + All Exogenous (Model B),HIST_PLUS_ALL_EXO,17,RandomForestRegressor,309,283.2,451.61,0.5119,52.48,102.69,303.73,272.86,6.76,-3.79,True,False
+Kharif Sorghum,3,2016,EXP-22A,Historical Only (Model A),HISTORICAL,7,RandomForestRegressor,310,275.52,444.96,0.5774,43.24,104.17,264.56,275.52,-4.14,0.0,False,False
+Kharif Sorghum,3,2016,EXP-22B,Historical + Rainfall,HIST_PLUS_RAINFALL,10,RandomForestRegressor,310,364.47,472.39,0.5237,40.19,100.97,264.56,275.52,-37.76,-32.28,False,False
+Kharif Sorghum,3,2016,EXP-22C,Historical + Temperature,HIST_PLUS_TEMP,10,RandomForestRegressor,310,279.21,445.02,0.5773,43.24,104.26,264.56,275.52,-5.54,-1.34,False,False
+Kharif Sorghum,3,2016,EXP-22D,Historical + Rainfall + Temperature,HIST_PLUS_WEATHER,13,RandomForestRegressor,310,358.47,474.77,0.5189,41.67,101.15,264.56,275.52,-35.49,-30.1,False,False
+Kharif Sorghum,3,2016,EXP-22E,Historical + All Exogenous (Model B),HIST_PLUS_ALL_EXO,17,RandomForestRegressor,310,363.69,483.59,0.5008,40.72,100.82,264.56,275.52,-37.47,-32.0,False,False
+Kharif Sorghum,4,2017,EXP-22A,Historical Only (Model A),HISTORICAL,7,RandomForestRegressor,307,371.74,619.56,0.4406,38.49,106.09,335.39,371.74,-10.84,0.0,False,False
+Kharif Sorghum,4,2017,EXP-22B,Historical + Rainfall,HIST_PLUS_RAINFALL,10,RandomForestRegressor,307,357.75,611.65,0.4548,36.82,103.89,335.39,371.74,-6.67,3.76,False,True
+Kharif Sorghum,4,2017,EXP-22C,Historical + Temperature,HIST_PLUS_TEMP,10,RandomForestRegressor,307,364.41,609.4,0.4588,37.47,103.82,335.39,371.74,-8.65,1.97,False,True
+Kharif Sorghum,4,2017,EXP-22D,Historical + Rainfall + Temperature,HIST_PLUS_WEATHER,13,RandomForestRegressor,307,359.51,612.65,0.453,37.17,103.77,335.39,371.74,-7.19,3.29,False,True
+Kharif Sorghum,4,2017,EXP-22E,Historical + All Exogenous (Model B),HIST_PLUS_ALL_EXO,17,RandomForestRegressor,307,353.78,605.72,0.4654,36.43,103.29,335.39,371.74,-5.48,4.83,False,True
+Minor Pulses,1,2014,EXP-22A,Historical Only (Model A),HISTORICAL,7,GradientBoostingRegressor,304,346.28,599.04,-0.0784,41.89,68.48,348.9,346.28,0.75,0.0,True,False
+Minor Pulses,1,2014,EXP-22B,Historical + Rainfall,HIST_PLUS_RAINFALL,10,GradientBoostingRegressor,304,357.4,608.88,-0.1141,47.34,79.33,348.9,346.28,-2.44,-3.21,False,False
+Minor Pulses,1,2014,EXP-22C,Historical + Temperature,HIST_PLUS_TEMP,10,GradientBoostingRegressor,304,354.82,594.56,-0.0623,40.71,69.73,348.9,346.28,-1.7,-2.47,False,False
+Minor Pulses,1,2014,EXP-22D,Historical + Rainfall + Temperature,HIST_PLUS_WEATHER,13,GradientBoostingRegressor,304,362.24,581.12,-0.0148,44.27,76.11,348.9,346.28,-3.82,-4.61,False,False
+Minor Pulses,1,2014,EXP-22E,Historical + All Exogenous (Model B),HIST_PLUS_ALL_EXO,17,GradientBoostingRegressor,304,447.79,885.42,-1.3559,54.84,71.97,348.9,346.28,-28.34,-29.31,False,False
+Minor Pulses,2,2015,EXP-22A,Historical Only (Model A),HISTORICAL,7,GradientBoostingRegressor,310,265.87,425.73,-0.227,48.09,41.37,280.63,265.87,5.26,0.0,True,False
+Minor Pulses,2,2015,EXP-22B,Historical + Rainfall,HIST_PLUS_RAINFALL,10,GradientBoostingRegressor,310,292.13,469.29,-0.4909,45.43,48.61,280.63,265.87,-4.1,-9.88,False,False
+Minor Pulses,2,2015,EXP-22C,Historical + Temperature,HIST_PLUS_TEMP,10,GradientBoostingRegressor,310,261.08,449.34,-0.3668,40.97,41.5,280.63,265.87,6.97,1.8,True,True
+Minor Pulses,2,2015,EXP-22D,Historical + Rainfall + Temperature,HIST_PLUS_WEATHER,13,GradientBoostingRegressor,310,301.16,483.94,-0.5854,46.55,49.54,280.63,265.87,-7.32,-13.27,False,False
+Minor Pulses,2,2015,EXP-22E,Historical + All Exogenous (Model B),HIST_PLUS_ALL_EXO,17,GradientBoostingRegressor,310,300.95,519.23,-0.825,50.14,44.86,280.63,265.87,-7.24,-13.19,False,False
+Minor Pulses,3,2016,EXP-22A,Historical Only (Model A),HISTORICAL,7,GradientBoostingRegressor,311,372.3,1089.22,-0.0931,34.79,38.98,353.34,372.3,-5.37,0.0,False,False
+Minor Pulses,3,2016,EXP-22B,Historical + Rainfall,HIST_PLUS_RAINFALL,10,GradientBoostingRegressor,311,366.09,1045.98,-0.0081,35.32,40.62,353.34,372.3,-3.61,1.67,False,True
+Minor Pulses,3,2016,EXP-22C,Historical + Temperature,HIST_PLUS_TEMP,10,GradientBoostingRegressor,311,399.33,1097.72,-0.1103,39.98,42.23,353.34,372.3,-13.02,-7.26,False,False
+Minor Pulses,3,2016,EXP-22D,Historical + Rainfall + Temperature,HIST_PLUS_WEATHER,13,GradientBoostingRegressor,311,363.11,1066.71,-0.0484,33.01,38.77,353.34,372.3,-2.77,2.47,False,True
+Minor Pulses,3,2016,EXP-22E,Historical + All Exogenous (Model B),HIST_PLUS_ALL_EXO,17,GradientBoostingRegressor,311,371.1,1081.72,-0.0781,33.49,40.3,353.34,372.3,-5.03,0.32,False,True
+Minor Pulses,4,2017,EXP-22A,Historical Only (Model A),HISTORICAL,7,GradientBoostingRegressor,307,405.08,1479.09,0.1174,37.2,35.5,397.8,405.08,-1.83,0.0,False,False
+Minor Pulses,4,2017,EXP-22B,Historical + Rainfall,HIST_PLUS_RAINFALL,10,GradientBoostingRegressor,307,432.41,1573.67,0.0009,37.97,37.79,397.8,405.08,-8.7,-6.75,False,False
+Minor Pulses,4,2017,EXP-22C,Historical + Temperature,HIST_PLUS_TEMP,10,GradientBoostingRegressor,307,421.84,1527.49,0.0586,36.14,36.47,397.8,405.08,-6.04,-4.14,False,False
+Minor Pulses,4,2017,EXP-22D,Historical + Rainfall + Temperature,HIST_PLUS_WEATHER,13,GradientBoostingRegressor,307,422.71,1541.48,0.0413,35.41,37.1,397.8,405.08,-6.26,-4.35,False,False
+Minor Pulses,4,2017,EXP-22E,Historical + All Exogenous (Model B),HIST_PLUS_ALL_EXO,17,GradientBoostingRegressor,307,396.44,1594.49,-0.0257,32.75,34.14,397.8,405.08,0.34,2.13,True,True
+Maize,1,2014,EXP-22A,Historical Only (Model A),HISTORICAL,7,RandomForestRegressor,301,553.81,843.42,0.7103,28.55,33.14,537.63,553.81,-3.01,0.0,False,False
+Maize,1,2014,EXP-22B,Historical + Rainfall,HIST_PLUS_RAINFALL,10,RandomForestRegressor,301,573.9,886.96,0.6796,28.13,38.54,537.63,553.81,-6.75,-3.63,False,False
+Maize,1,2014,EXP-22C,Historical + Temperature,HIST_PLUS_TEMP,10,RandomForestRegressor,301,531.16,805.61,0.7357,27.3,34.9,537.63,553.81,1.2,4.09,True,True
+Maize,1,2014,EXP-22D,Historical + Rainfall + Temperature,HIST_PLUS_WEATHER,13,RandomForestRegressor,301,560.51,859.27,0.6993,27.55,36.28,537.63,553.81,-4.26,-1.21,False,False
+Maize,1,2014,EXP-22E,Historical + All Exogenous (Model B),HIST_PLUS_ALL_EXO,17,RandomForestRegressor,301,564.49,877.02,0.6867,27.02,37.89,537.63,553.81,-5.0,-1.93,False,False
+Maize,2,2015,EXP-22A,Historical Only (Model A),HISTORICAL,7,RandomForestRegressor,306,618.09,1011.97,0.6508,37.39,38.48,554.0,618.09,-11.57,0.0,False,False
+Maize,2,2015,EXP-22B,Historical + Rainfall,HIST_PLUS_RAINFALL,10,RandomForestRegressor,306,632.82,1024.66,0.642,36.67,41.63,554.0,618.09,-14.23,-2.38,False,False
+Maize,2,2015,EXP-22C,Historical + Temperature,HIST_PLUS_TEMP,10,RandomForestRegressor,306,622.51,1011.54,0.6511,36.07,40.74,554.0,618.09,-12.37,-0.72,False,False
+Maize,2,2015,EXP-22D,Historical + Rainfall + Temperature,HIST_PLUS_WEATHER,13,RandomForestRegressor,306,626.69,1018.69,0.6462,35.29,40.9,554.0,618.09,-13.12,-1.39,False,False
+Maize,2,2015,EXP-22E,Historical + All Exogenous (Model B),HIST_PLUS_ALL_EXO,17,RandomForestRegressor,306,623.2,1007.88,0.6536,34.76,40.69,554.0,618.09,-12.49,-0.83,False,False
+Maize,3,2016,EXP-22A,Historical Only (Model A),HISTORICAL,7,RandomForestRegressor,305,721.95,1568.22,0.3079,35.61,39.49,713.22,721.95,-1.22,0.0,False,False
+Maize,3,2016,EXP-22B,Historical + Rainfall,HIST_PLUS_RAINFALL,10,RandomForestRegressor,305,760.81,1575.12,0.3018,38.91,40.76,713.22,721.95,-6.67,-5.38,False,False
+Maize,3,2016,EXP-22C,Historical + Temperature,HIST_PLUS_TEMP,10,RandomForestRegressor,305,727.78,1557.29,0.3175,35.76,40.43,713.22,721.95,-2.04,-0.81,False,False
+Maize,3,2016,EXP-22D,Historical + Rainfall + Temperature,HIST_PLUS_WEATHER,13,RandomForestRegressor,305,748.93,1564.26,0.3114,38.12,40.63,713.22,721.95,-5.01,-3.74,False,False
+Maize,3,2016,EXP-22E,Historical + All Exogenous (Model B),HIST_PLUS_ALL_EXO,17,RandomForestRegressor,305,744.36,1551.09,0.323,38.02,40.45,713.22,721.95,-4.37,-3.1,False,False
+Maize,4,2017,EXP-22A,Historical Only (Model A),HISTORICAL,7,RandomForestRegressor,299,721.33,1127.11,0.6589,38.02,39.92,748.67,721.33,3.65,0.0,True,False
+Maize,4,2017,EXP-22B,Historical + Rainfall,HIST_PLUS_RAINFALL,10,RandomForestRegressor,299,727.39,1108.24,0.6703,37.78,39.94,748.67,721.33,2.84,-0.84,True,False
+Maize,4,2017,EXP-22C,Historical + Temperature,HIST_PLUS_TEMP,10,RandomForestRegressor,299,722.87,1099.26,0.6756,37.43,39.67,748.67,721.33,3.45,-0.21,True,False
+Maize,4,2017,EXP-22D,Historical + Rainfall + Temperature,HIST_PLUS_WEATHER,13,RandomForestRegressor,299,728.09,1106.89,0.6711,37.77,39.75,748.67,721.33,2.75,-0.94,True,False
+Maize,4,2017,EXP-22E,Historical + All Exogenous (Model B),HIST_PLUS_ALL_EXO,17,RandomForestRegressor,299,728.76,1102.44,0.6737,37.74,39.93,748.67,721.33,2.66,-1.03,True,False
+Wheat,1,2014,EXP-22A,Historical Only (Model A),HISTORICAL,7,GradientBoostingRegressor,304,469.89,676.14,0.6586,30.29,49.99,493.91,469.89,4.86,0.0,True,False
+Wheat,1,2014,EXP-22B,Historical + Rainfall,HIST_PLUS_RAINFALL,10,GradientBoostingRegressor,304,498.64,706.97,0.6268,32.45,51.08,493.91,469.89,-0.96,-6.12,False,False
+Wheat,1,2014,EXP-22C,Historical + Temperature,HIST_PLUS_TEMP,10,GradientBoostingRegressor,304,459.64,664.1,0.6707,29.81,49.51,493.91,469.89,6.94,2.18,True,True
+Wheat,1,2014,EXP-22D,Historical + Rainfall + Temperature,HIST_PLUS_WEATHER,13,GradientBoostingRegressor,304,479.79,690.76,0.6437,31.98,50.4,493.91,469.89,2.86,-2.11,True,False
+Wheat,1,2014,EXP-22E,Historical + All Exogenous (Model B),HIST_PLUS_ALL_EXO,17,GradientBoostingRegressor,304,496.78,693.37,0.641,32.18,50.25,493.91,469.89,-0.58,-5.72,False,False
+Wheat,2,2015,EXP-22A,Historical Only (Model A),HISTORICAL,7,GradientBoostingRegressor,310,339.92,512.32,0.8497,22.0,48.73,282.2,339.92,-20.45,0.0,False,False
+Wheat,2,2015,EXP-22B,Historical + Rainfall,HIST_PLUS_RAINFALL,10,GradientBoostingRegressor,310,354.6,537.06,0.8348,22.85,49.46,282.2,339.92,-25.66,-4.32,False,False
+Wheat,2,2015,EXP-22C,Historical + Temperature,HIST_PLUS_TEMP,10,GradientBoostingRegressor,310,385.55,570.95,0.8133,23.39,50.52,282.2,339.92,-36.62,-13.42,False,False
+Wheat,2,2015,EXP-22D,Historical + Rainfall + Temperature,HIST_PLUS_WEATHER,13,GradientBoostingRegressor,310,380.41,560.1,0.8204,23.68,50.55,282.2,339.92,-34.8,-11.91,False,False
+Wheat,2,2015,EXP-22E,Historical + All Exogenous (Model B),HIST_PLUS_ALL_EXO,17,GradientBoostingRegressor,310,386.01,564.43,0.8176,23.78,50.69,282.2,339.92,-36.78,-13.56,False,False
+Wheat,3,2016,EXP-22A,Historical Only (Model A),HISTORICAL,7,GradientBoostingRegressor,311,489.45,658.72,0.789,28.97,53.27,368.86,489.45,-32.69,0.0,False,False
+Wheat,3,2016,EXP-22B,Historical + Rainfall,HIST_PLUS_RAINFALL,10,GradientBoostingRegressor,311,498.73,663.68,0.7858,28.79,53.99,368.86,489.45,-35.21,-1.89,False,False
+Wheat,3,2016,EXP-22C,Historical + Temperature,HIST_PLUS_TEMP,10,GradientBoostingRegressor,311,455.34,619.11,0.8136,28.2,52.51,368.86,489.45,-23.45,6.97,False,True
+Wheat,3,2016,EXP-22D,Historical + Rainfall + Temperature,HIST_PLUS_WEATHER,13,GradientBoostingRegressor,311,469.64,633.79,0.8046,27.55,52.91,368.86,489.45,-27.32,4.05,False,True
+Wheat,3,2016,EXP-22E,Historical + All Exogenous (Model B),HIST_PLUS_ALL_EXO,17,GradientBoostingRegressor,311,463.73,620.46,0.8128,27.96,53.03,368.86,489.45,-25.72,5.26,False,True
+Wheat,4,2017,EXP-22A,Historical Only (Model A),HISTORICAL,7,GradientBoostingRegressor,307,320.78,484.89,0.8887,15.56,44.66,381.63,320.78,15.95,0.0,True,False
+Wheat,4,2017,EXP-22B,Historical + Rainfall,HIST_PLUS_RAINFALL,10,GradientBoostingRegressor,307,334.45,505.41,0.879,16.13,45.46,381.63,320.78,12.36,-4.26,True,False
+Wheat,4,2017,EXP-22C,Historical + Temperature,HIST_PLUS_TEMP,10,GradientBoostingRegressor,307,313.16,490.96,0.8859,15.44,44.34,381.63,320.78,17.94,2.38,True,True
+Wheat,4,2017,EXP-22D,Historical + Rainfall + Temperature,HIST_PLUS_WEATHER,13,GradientBoostingRegressor,307,319.28,505.14,0.8792,15.76,45.0,381.63,320.78,16.34,0.47,True,True
+Wheat,4,2017,EXP-22E,Historical + All Exogenous (Model B),HIST_PLUS_ALL_EXO,17,GradientBoostingRegressor,307,305.76,486.65,0.8879,14.91,44.27,381.63,320.78,19.88,4.68,True,True
+Sugarcane,1,2014,EXP-22A,Historical Only (Model A),HISTORICAL,7,GradientBoostingRegressor,293,1287.04,1990.84,0.677,23.81,51.75,1145.07,1287.04,-12.4,0.0,False,False
+Sugarcane,1,2014,EXP-22B,Historical + Rainfall,HIST_PLUS_RAINFALL,10,GradientBoostingRegressor,293,1311.69,1875.08,0.7135,25.47,51.95,1145.07,1287.04,-14.55,-1.91,False,False
+Sugarcane,1,2014,EXP-22C,Historical + Temperature,HIST_PLUS_TEMP,10,GradientBoostingRegressor,293,1361.43,1972.35,0.683,26.23,53.41,1145.07,1287.04,-18.9,-5.78,False,False
+Sugarcane,1,2014,EXP-22D,Historical + Rainfall + Temperature,HIST_PLUS_WEATHER,13,GradientBoostingRegressor,293,1489.25,2201.45,0.605,37.5,54.2,1145.07,1287.04,-30.06,-15.71,False,False
+Sugarcane,1,2014,EXP-22E,Historical + All Exogenous (Model B),HIST_PLUS_ALL_EXO,17,GradientBoostingRegressor,293,1347.02,2075.96,0.6488,24.88,55.25,1145.07,1287.04,-17.64,-4.66,False,False
+Sugarcane,2,2015,EXP-22A,Historical Only (Model A),HISTORICAL,7,GradientBoostingRegressor,299,1753.1,2897.31,0.3612,26.72,68.93,1692.22,1753.1,-3.6,0.0,False,False
+Sugarcane,2,2015,EXP-22B,Historical + Rainfall,HIST_PLUS_RAINFALL,10,GradientBoostingRegressor,299,1778.11,2873.93,0.3715,29.57,70.29,1692.22,1753.1,-5.08,-1.43,False,False
+Sugarcane,2,2015,EXP-22C,Historical + Temperature,HIST_PLUS_TEMP,10,GradientBoostingRegressor,299,1729.1,2780.97,0.4115,29.61,68.99,1692.22,1753.1,-2.18,1.37,False,True
+Sugarcane,2,2015,EXP-22D,Historical + Rainfall + Temperature,HIST_PLUS_WEATHER,13,GradientBoostingRegressor,299,1715.5,2797.88,0.4043,29.48,69.24,1692.22,1753.1,-1.38,2.14,False,True
+Sugarcane,2,2015,EXP-22E,Historical + All Exogenous (Model B),HIST_PLUS_ALL_EXO,17,GradientBoostingRegressor,299,1724.55,2773.26,0.4147,30.08,70.11,1692.22,1753.1,-1.91,1.63,False,True
+Sugarcane,3,2016,EXP-22A,Historical Only (Model A),HISTORICAL,7,GradientBoostingRegressor,304,1347.74,1974.79,0.6621,27.42,62.67,1537.89,1347.74,12.36,0.0,True,False
+Sugarcane,3,2016,EXP-22B,Historical + Rainfall,HIST_PLUS_RAINFALL,10,GradientBoostingRegressor,304,1506.89,2106.85,0.6153,34.31,64.47,1537.89,1347.74,2.02,-11.81,True,False
+Sugarcane,3,2016,EXP-22C,Historical + Temperature,HIST_PLUS_TEMP,10,GradientBoostingRegressor,304,1436.69,2023.83,0.6451,30.14,63.98,1537.89,1347.74,6.58,-6.6,True,False
+Sugarcane,3,2016,EXP-22D,Historical + Rainfall + Temperature,HIST_PLUS_WEATHER,13,GradientBoostingRegressor,304,1726.03,2407.38,0.4978,37.67,65.42,1537.89,1347.74,-12.23,-28.07,False,False
+Sugarcane,3,2016,EXP-22E,Historical + All Exogenous (Model B),HIST_PLUS_ALL_EXO,17,GradientBoostingRegressor,304,1679.67,2256.31,0.5588,37.44,65.5,1537.89,1347.74,-9.22,-24.63,False,False
+Sugarcane,4,2017,EXP-22A,Historical Only (Model A),HISTORICAL,7,GradientBoostingRegressor,297,1441.05,2143.96,0.6775,68.34,68.3,1567.62,1441.05,8.07,0.0,True,False
+Sugarcane,4,2017,EXP-22B,Historical + Rainfall,HIST_PLUS_RAINFALL,10,GradientBoostingRegressor,297,1412.56,2061.16,0.7019,69.95,68.47,1567.62,1441.05,9.89,1.98,True,True
+Sugarcane,4,2017,EXP-22C,Historical + Temperature,HIST_PLUS_TEMP,10,GradientBoostingRegressor,297,1397.25,2055.79,0.7034,58.89,67.56,1567.62,1441.05,10.87,3.04,True,True
+Sugarcane,4,2017,EXP-22D,Historical + Rainfall + Temperature,HIST_PLUS_WEATHER,13,GradientBoostingRegressor,297,1384.58,2006.96,0.7174,64.87,67.58,1567.62,1441.05,11.68,3.92,True,True
+Sugarcane,4,2017,EXP-22E,Historical + All Exogenous (Model B),HIST_PLUS_ALL_EXO,17,GradientBoostingRegressor,297,1396.41,2030.54,0.7107,69.78,67.81,1567.62,1441.05,10.92,3.1,True,True
+Rice,1,2014,EXP-22A,Historical Only (Model A),HISTORICAL,7,RandomForestRegressor,304,273.07,426.88,0.8496,20.3,29.96,253.44,273.07,-7.75,0.0,False,False
+Rice,1,2014,EXP-22B,Historical + Rainfall,HIST_PLUS_RAINFALL,10,RandomForestRegressor,304,290.55,440.36,0.84,23.18,31.15,253.44,273.07,-14.64,-6.4,False,False
+Rice,1,2014,EXP-22C,Historical + Temperature,HIST_PLUS_TEMP,10,RandomForestRegressor,304,277.4,429.15,0.848,20.1,31.12,253.44,273.07,-9.46,-1.59,False,False
+Rice,1,2014,EXP-22D,Historical + Rainfall + Temperature,HIST_PLUS_WEATHER,13,RandomForestRegressor,304,297.88,445.56,0.8362,22.36,35.66,253.44,273.07,-17.54,-9.09,False,False
+Rice,1,2014,EXP-22E,Historical + All Exogenous (Model B),HIST_PLUS_ALL_EXO,17,RandomForestRegressor,304,299.27,445.81,0.836,22.74,33.95,253.44,273.07,-18.08,-9.59,False,False
+Rice,2,2015,EXP-22A,Historical Only (Model A),HISTORICAL,7,RandomForestRegressor,310,359.61,525.26,0.7951,31.45,37.63,321.48,359.61,-11.86,0.0,False,False
+Rice,2,2015,EXP-22B,Historical + Rainfall,HIST_PLUS_RAINFALL,10,RandomForestRegressor,310,356.64,523.26,0.7966,31.07,35.36,321.48,359.61,-10.94,0.83,False,True
+Rice,2,2015,EXP-22C,Historical + Temperature,HIST_PLUS_TEMP,10,RandomForestRegressor,310,357.36,518.23,0.8005,30.82,38.21,321.48,359.61,-11.16,0.63,False,True
+Rice,2,2015,EXP-22D,Historical + Rainfall + Temperature,HIST_PLUS_WEATHER,13,RandomForestRegressor,310,355.17,520.02,0.7991,30.75,36.57,321.48,359.61,-10.48,1.24,False,True
+Rice,2,2015,EXP-22E,Historical + All Exogenous (Model B),HIST_PLUS_ALL_EXO,17,RandomForestRegressor,310,356.75,521.27,0.7982,31.22,36.13,321.48,359.61,-10.97,0.8,False,True
+Rice,3,2016,EXP-22A,Historical Only (Model A),HISTORICAL,7,RandomForestRegressor,311,336.1,486.35,0.8054,16.95,32.77,341.21,336.1,1.5,0.0,True,False
+Rice,3,2016,EXP-22B,Historical + Rainfall,HIST_PLUS_RAINFALL,10,RandomForestRegressor,311,345.22,493.71,0.7994,17.51,36.35,341.21,336.1,-1.18,-2.71,False,False
+Rice,3,2016,EXP-22C,Historical + Temperature,HIST_PLUS_TEMP,10,RandomForestRegressor,311,342.65,501.31,0.7932,16.91,36.91,341.21,336.1,-0.42,-1.95,False,False
+Rice,3,2016,EXP-22D,Historical + Rainfall + Temperature,HIST_PLUS_WEATHER,13,RandomForestRegressor,311,350.85,501.25,0.7933,16.78,35.11,341.21,336.1,-2.83,-4.39,False,False
+Rice,3,2016,EXP-22E,Historical + All Exogenous (Model B),HIST_PLUS_ALL_EXO,17,RandomForestRegressor,311,346.01,501.9,0.7927,16.49,35.09,341.21,336.1,-1.41,-2.95,False,False
+Rice,4,2017,EXP-22A,Historical Only (Model A),HISTORICAL,7,RandomForestRegressor,307,332.23,513.36,0.7895,19.5,35.5,324.99,332.23,-2.23,0.0,False,False
+Rice,4,2017,EXP-22B,Historical + Rainfall,HIST_PLUS_RAINFALL,10,RandomForestRegressor,307,317.51,496.68,0.803,17.74,34.84,324.99,332.23,2.3,4.43,True,True
+Rice,4,2017,EXP-22C,Historical + Temperature,HIST_PLUS_TEMP,10,RandomForestRegressor,307,322.29,500.82,0.7997,18.92,35.02,324.99,332.23,0.83,2.99,True,True
+Rice,4,2017,EXP-22D,Historical + Rainfall + Temperature,HIST_PLUS_WEATHER,13,RandomForestRegressor,307,316.89,491.91,0.8068,17.69,34.69,324.99,332.23,2.49,4.62,True,True
+Rice,4,2017,EXP-22E,Historical + All Exogenous (Model B),HIST_PLUS_ALL_EXO,17,RandomForestRegressor,307,314.96,491.87,0.8068,17.72,34.7,324.99,332.23,3.09,5.2,True,True
+Sesamum,1,2014,EXP-22A,Historical Only (Model A),HISTORICAL,7,RandomForestRegressor,304,147.04,223.43,0.3583,34.33,65.95,132.35,147.04,-11.1,0.0,False,False
+Sesamum,1,2014,EXP-22B,Historical + Rainfall,HIST_PLUS_RAINFALL,10,RandomForestRegressor,304,146.25,211.51,0.425,33.74,70.01,132.35,147.04,-10.5,0.53,False,True
+Sesamum,1,2014,EXP-22C,Historical + Temperature,HIST_PLUS_TEMP,10,RandomForestRegressor,304,156.58,228.97,0.3261,34.81,70.88,132.35,147.04,-18.3,-6.49,False,False
+Sesamum,1,2014,EXP-22D,Historical + Rainfall + Temperature,HIST_PLUS_WEATHER,13,RandomForestRegressor,304,155.5,221.81,0.3676,34.61,70.16,132.35,147.04,-17.49,-5.76,False,False
+Sesamum,1,2014,EXP-22E,Historical + All Exogenous (Model B),HIST_PLUS_ALL_EXO,17,RandomForestRegressor,304,161.74,231.91,0.3087,36.91,70.57,132.35,147.04,-22.2,-10.0,False,False
+Sesamum,2,2015,EXP-22A,Historical Only (Model A),HISTORICAL,7,RandomForestRegressor,309,124.36,189.69,0.5122,47.26,61.05,133.66,124.36,6.96,0.0,True,False
+Sesamum,2,2015,EXP-22B,Historical + Rainfall,HIST_PLUS_RAINFALL,10,RandomForestRegressor,309,123.38,187.98,0.521,46.47,66.81,133.66,124.36,7.69,0.79,True,True
+Sesamum,2,2015,EXP-22C,Historical + Temperature,HIST_PLUS_TEMP,10,RandomForestRegressor,309,128.05,193.79,0.4909,47.71,68.94,133.66,124.36,4.2,-2.97,True,False
+Sesamum,2,2015,EXP-22D,Historical + Rainfall + Temperature,HIST_PLUS_WEATHER,13,RandomForestRegressor,309,125.94,191.95,0.5005,47.65,66.9,133.66,124.36,5.78,-1.27,True,False
+Sesamum,2,2015,EXP-22E,Historical + All Exogenous (Model B),HIST_PLUS_ALL_EXO,17,RandomForestRegressor,309,128.67,190.22,0.5095,48.79,68.61,133.66,124.36,3.74,-3.46,True,False
+Sesamum,3,2016,EXP-22A,Historical Only (Model A),HISTORICAL,7,RandomForestRegressor,310,131.13,208.76,0.4478,48.09,52.82,125.35,131.13,-4.61,0.0,False,False
+Sesamum,3,2016,EXP-22B,Historical + Rainfall,HIST_PLUS_RAINFALL,10,RandomForestRegressor,310,126.1,202.48,0.4805,48.1,52.85,125.35,131.13,-0.6,3.84,False,True
+Sesamum,3,2016,EXP-22C,Historical + Temperature,HIST_PLUS_TEMP,10,RandomForestRegressor,310,128.49,207.49,0.4545,48.65,49.97,125.35,131.13,-2.5,2.02,False,True
+Sesamum,3,2016,EXP-22D,Historical + Rainfall + Temperature,HIST_PLUS_WEATHER,13,RandomForestRegressor,310,127.75,202.54,0.4803,47.81,55.49,125.35,131.13,-1.92,2.58,False,True
+Sesamum,3,2016,EXP-22E,Historical + All Exogenous (Model B),HIST_PLUS_ALL_EXO,17,RandomForestRegressor,310,133.81,211.93,0.4309,53.12,57.41,125.35,131.13,-6.75,-2.04,False,False
+Sesamum,4,2017,EXP-22A,Historical Only (Model A),HISTORICAL,7,RandomForestRegressor,306,155.08,421.66,0.1559,86.35,49.51,158.4,155.08,2.1,0.0,True,False
+Sesamum,4,2017,EXP-22B,Historical + Rainfall,HIST_PLUS_RAINFALL,10,RandomForestRegressor,306,154.99,424.34,0.1451,88.06,52.11,158.4,155.08,2.15,0.06,True,True
+Sesamum,4,2017,EXP-22C,Historical + Temperature,HIST_PLUS_TEMP,10,RandomForestRegressor,306,155.08,423.89,0.1469,87.43,51.9,158.4,155.08,2.1,0.0,True,True
+Sesamum,4,2017,EXP-22D,Historical + Rainfall + Temperature,HIST_PLUS_WEATHER,13,RandomForestRegressor,306,153.83,423.67,0.1478,89.0,52.18,158.4,155.08,2.88,0.8,True,True
+Sesamum,4,2017,EXP-22E,Historical + All Exogenous (Model B),HIST_PLUS_ALL_EXO,17,RandomForestRegressor,306,152.45,422.6,0.1521,88.55,51.64,158.4,155.08,3.76,1.7,True,True
+Pigeonpea,1,2014,EXP-22A,Historical Only (Model A),HISTORICAL,7,RandomForestRegressor,304,296.5,424.52,0.3004,52.47,67.62,272.65,296.5,-8.74,0.0,False,False
+Pigeonpea,1,2014,EXP-22B,Historical + Rainfall,HIST_PLUS_RAINFALL,10,RandomForestRegressor,304,364.73,508.18,-0.0026,55.93,67.77,272.65,296.5,-33.77,-23.01,False,False
+Pigeonpea,1,2014,EXP-22C,Historical + Temperature,HIST_PLUS_TEMP,10,RandomForestRegressor,304,303.91,430.07,0.2819,51.54,67.21,272.65,296.5,-11.46,-2.5,False,False
+Pigeonpea,1,2014,EXP-22D,Historical + Rainfall + Temperature,HIST_PLUS_WEATHER,13,RandomForestRegressor,304,366.37,509.33,-0.0071,55.5,67.77,272.65,296.5,-34.37,-23.57,False,False
+Pigeonpea,1,2014,EXP-22E,Historical + All Exogenous (Model B),HIST_PLUS_ALL_EXO,17,RandomForestRegressor,304,349.67,488.43,0.0738,54.79,67.67,272.65,296.5,-28.25,-17.94,False,False
+Pigeonpea,2,2015,EXP-22A,Historical Only (Model A),HISTORICAL,7,RandomForestRegressor,310,263.32,368.57,0.4745,52.34,71.77,247.16,263.32,-6.54,0.0,False,False
+Pigeonpea,2,2015,EXP-22B,Historical + Rainfall,HIST_PLUS_RAINFALL,10,RandomForestRegressor,310,269.36,368.01,0.4761,50.93,72.13,247.16,263.32,-8.99,-2.3,False,False
+Pigeonpea,2,2015,EXP-22C,Historical + Temperature,HIST_PLUS_TEMP,10,RandomForestRegressor,310,267.93,362.02,0.493,50.34,71.87,247.16,263.32,-8.4,-1.75,False,False
+Pigeonpea,2,2015,EXP-22D,Historical + Rainfall + Temperature,HIST_PLUS_WEATHER,13,RandomForestRegressor,310,266.5,361.78,0.4937,49.58,71.62,247.16,263.32,-7.83,-1.21,False,False
+Pigeonpea,2,2015,EXP-22E,Historical + All Exogenous (Model B),HIST_PLUS_ALL_EXO,17,RandomForestRegressor,310,264.46,363.15,0.4898,47.89,70.84,247.16,263.32,-7.0,-0.43,False,False
+Pigeonpea,3,2016,EXP-22A,Historical Only (Model A),HISTORICAL,7,RandomForestRegressor,311,330.37,480.19,0.2515,37.16,70.16,305.05,330.37,-8.3,0.0,False,False
+Pigeonpea,3,2016,EXP-22B,Historical + Rainfall,HIST_PLUS_RAINFALL,10,RandomForestRegressor,311,319.32,466.8,0.2926,35.97,68.21,305.05,330.37,-4.68,3.35,False,True
+Pigeonpea,3,2016,EXP-22C,Historical + Temperature,HIST_PLUS_TEMP,10,RandomForestRegressor,311,338.75,484.38,0.2384,37.68,71.51,305.05,330.37,-11.05,-2.54,False,False
+Pigeonpea,3,2016,EXP-22D,Historical + Rainfall + Temperature,HIST_PLUS_WEATHER,13,RandomForestRegressor,311,324.33,465.92,0.2953,36.14,68.11,305.05,330.37,-6.32,1.83,False,True
+Pigeonpea,3,2016,EXP-22E,Historical + All Exogenous (Model B),HIST_PLUS_ALL_EXO,17,RandomForestRegressor,311,314.98,460.28,0.3123,35.52,67.63,305.05,330.37,-3.26,4.66,False,True
+Pigeonpea,4,2017,EXP-22A,Historical Only (Model A),HISTORICAL,7,RandomForestRegressor,307,271.29,388.43,0.4775,27.89,58.45,304.54,271.29,10.92,0.0,True,False
+Pigeonpea,4,2017,EXP-22B,Historical + Rainfall,HIST_PLUS_RAINFALL,10,RandomForestRegressor,307,281.8,404.12,0.4344,27.88,58.2,304.54,271.29,7.47,-3.88,True,False
+Pigeonpea,4,2017,EXP-22C,Historical + Temperature,HIST_PLUS_TEMP,10,RandomForestRegressor,307,257.78,373.62,0.5166,26.88,57.35,304.54,271.29,15.35,4.98,True,True
+Pigeonpea,4,2017,EXP-22D,Historical + Rainfall + Temperature,HIST_PLUS_WEATHER,13,RandomForestRegressor,307,278.05,400.65,0.4441,27.95,58.25,304.54,271.29,8.7,-2.49,True,False
+Pigeonpea,4,2017,EXP-22E,Historical + All Exogenous (Model B),HIST_PLUS_ALL_EXO,17,RandomForestRegressor,307,274.62,391.19,0.47,27.35,57.13,304.54,271.29,9.82,-1.23,True,False
+Rapeseed and Mustard,1,2014,EXP-22A,Historical Only (Model A),HISTORICAL,7,RandomForestRegressor,304,212.73,351.15,0.5838,40.32,54.7,204.63,212.73,-3.96,0.0,False,False
+Rapeseed and Mustard,1,2014,EXP-22B,Historical + Rainfall,HIST_PLUS_RAINFALL,10,RandomForestRegressor,304,251.85,379.76,0.5132,44.45,73.24,204.63,212.73,-23.08,-18.39,False,False
+Rapeseed and Mustard,1,2014,EXP-22C,Historical + Temperature,HIST_PLUS_TEMP,10,RandomForestRegressor,304,226.2,361.85,0.558,43.67,71.12,204.63,212.73,-10.54,-6.33,False,False
+Rapeseed and Mustard,1,2014,EXP-22D,Historical + Rainfall + Temperature,HIST_PLUS_WEATHER,13,RandomForestRegressor,304,269.66,382.45,0.5063,46.09,72.79,204.63,212.73,-31.78,-26.76,False,False
+Rapeseed and Mustard,1,2014,EXP-22E,Historical + All Exogenous (Model B),HIST_PLUS_ALL_EXO,17,RandomForestRegressor,304,283.05,388.85,0.4896,45.44,73.07,204.63,212.73,-38.32,-33.05,False,False
+Rapeseed and Mustard,2,2015,EXP-22A,Historical Only (Model A),HISTORICAL,7,RandomForestRegressor,310,149.68,248.78,0.7808,21.58,47.89,133.91,149.68,-11.78,0.0,False,False
+Rapeseed and Mustard,2,2015,EXP-22B,Historical + Rainfall,HIST_PLUS_RAINFALL,10,RandomForestRegressor,310,156.96,257.28,0.7655,21.64,68.02,133.91,149.68,-17.21,-4.86,False,False
+Rapeseed and Mustard,2,2015,EXP-22C,Historical + Temperature,HIST_PLUS_TEMP,10,RandomForestRegressor,310,159.88,259.49,0.7615,22.62,67.35,133.91,149.68,-19.39,-6.81,False,False
+Rapeseed and Mustard,2,2015,EXP-22D,Historical + Rainfall + Temperature,HIST_PLUS_WEATHER,13,RandomForestRegressor,310,162.55,257.49,0.7651,22.35,69.07,133.91,149.68,-21.38,-8.6,False,False
+Rapeseed and Mustard,2,2015,EXP-22E,Historical + All Exogenous (Model B),HIST_PLUS_ALL_EXO,17,RandomForestRegressor,310,159.48,253.66,0.7721,22.25,69.1,133.91,149.68,-19.09,-6.54,False,False
+Rapeseed and Mustard,3,2016,EXP-22A,Historical Only (Model A),HISTORICAL,7,RandomForestRegressor,311,226.14,352.15,0.6678,44.2,61.41,213.68,226.14,-5.83,0.0,False,False
+Rapeseed and Mustard,3,2016,EXP-22B,Historical + Rainfall,HIST_PLUS_RAINFALL,10,RandomForestRegressor,311,230.62,349.8,0.6722,44.28,72.73,213.68,226.14,-7.93,-1.98,False,False
+Rapeseed and Mustard,3,2016,EXP-22C,Historical + Temperature,HIST_PLUS_TEMP,10,RandomForestRegressor,311,231.03,357.83,0.657,44.13,74.65,213.68,226.14,-8.12,-2.16,False,False
+Rapeseed and Mustard,3,2016,EXP-22D,Historical + Rainfall + Temperature,HIST_PLUS_WEATHER,13,RandomForestRegressor,311,233.03,351.46,0.669,45.18,72.94,213.68,226.14,-9.05,-3.05,False,False
+Rapeseed and Mustard,3,2016,EXP-22E,Historical + All Exogenous (Model B),HIST_PLUS_ALL_EXO,17,RandomForestRegressor,311,237.12,356.49,0.6595,44.72,73.5,213.68,226.14,-10.97,-4.85,False,False
+Rapeseed and Mustard,4,2017,EXP-22A,Historical Only (Model A),HISTORICAL,7,RandomForestRegressor,307,209.18,309.96,0.7493,28.68,59.37,221.08,209.18,5.38,0.0,True,False
+Rapeseed and Mustard,4,2017,EXP-22B,Historical + Rainfall,HIST_PLUS_RAINFALL,10,RandomForestRegressor,307,207.06,306.28,0.7552,29.17,59.97,221.08,209.18,6.34,1.01,True,True
+Rapeseed and Mustard,4,2017,EXP-22C,Historical + Temperature,HIST_PLUS_TEMP,10,RandomForestRegressor,307,208.11,304.09,0.7587,29.01,59.57,221.08,209.18,5.86,0.51,True,True
+Rapeseed and Mustard,4,2017,EXP-22D,Historical + Rainfall + Temperature,HIST_PLUS_WEATHER,13,RandomForestRegressor,307,208.15,308.82,0.7511,29.21,60.2,221.08,209.18,5.85,0.49,True,True
+Rapeseed and Mustard,4,2017,EXP-22E,Historical + All Exogenous (Model B),HIST_PLUS_ALL_EXO,17,RandomForestRegressor,307,206.73,308.45,0.7517,28.88,60.27,221.08,209.18,6.49,1.17,True,True
+Groundnut,1,2014,EXP-22A,Historical Only (Model A),HISTORICAL,7,RandomForestRegressor,304,313.07,511.33,0.6738,24.43,72.56,268.96,313.07,-16.4,0.0,False,False
+Groundnut,1,2014,EXP-22B,Historical + Rainfall,HIST_PLUS_RAINFALL,10,RandomForestRegressor,304,415.12,579.43,0.5811,22.38,71.22,268.96,313.07,-54.34,-32.6,False,False
+Groundnut,1,2014,EXP-22C,Historical + Temperature,HIST_PLUS_TEMP,10,RandomForestRegressor,304,307.43,495.94,0.6931,22.72,64.96,268.96,313.07,-14.3,1.8,False,True
+Groundnut,1,2014,EXP-22D,Historical + Rainfall + Temperature,HIST_PLUS_WEATHER,13,RandomForestRegressor,304,425.25,612.14,0.5325,22.94,69.26,268.96,313.07,-58.11,-35.83,False,False
+Groundnut,1,2014,EXP-22E,Historical + All Exogenous (Model B),HIST_PLUS_ALL_EXO,17,RandomForestRegressor,304,432.61,646.58,0.4784,24.14,71.48,268.96,313.07,-60.84,-38.18,False,False
+Groundnut,2,2015,EXP-22A,Historical Only (Model A),HISTORICAL,7,RandomForestRegressor,309,285.71,460.33,0.7341,36.48,74.26,294.78,285.71,3.08,0.0,True,False
+Groundnut,2,2015,EXP-22B,Historical + Rainfall,HIST_PLUS_RAINFALL,10,RandomForestRegressor,309,289.39,449.5,0.7465,35.45,69.67,294.78,285.71,1.83,-1.29,True,False
+Groundnut,2,2015,EXP-22C,Historical + Temperature,HIST_PLUS_TEMP,10,RandomForestRegressor,309,315.63,487.89,0.7014,40.1,71.07,294.78,285.71,-7.07,-10.47,False,False
+Groundnut,2,2015,EXP-22D,Historical + Rainfall + Temperature,HIST_PLUS_WEATHER,13,RandomForestRegressor,309,315.77,480.85,0.7099,37.1,74.52,294.78,285.71,-7.12,-10.52,False,False
+Groundnut,2,2015,EXP-22E,Historical + All Exogenous (Model B),HIST_PLUS_ALL_EXO,17,RandomForestRegressor,309,322.23,479.98,0.711,37.07,74.77,294.78,285.71,-9.31,-12.79,False,False
+Groundnut,3,2016,EXP-22A,Historical Only (Model A),HISTORICAL,7,RandomForestRegressor,310,269.43,412.3,0.7748,35.34,72.75,276.34,269.43,2.5,0.0,True,False
+Groundnut,3,2016,EXP-22B,Historical + Rainfall,HIST_PLUS_RAINFALL,10,RandomForestRegressor,310,265.96,403.91,0.7839,35.7,62.74,276.34,269.43,3.76,1.29,True,True
+Groundnut,3,2016,EXP-22C,Historical + Temperature,HIST_PLUS_TEMP,10,RandomForestRegressor,310,276.41,424.79,0.7609,34.76,67.11,276.34,269.43,-0.02,-2.59,False,False
+Groundnut,3,2016,EXP-22D,Historical + Rainfall + Temperature,HIST_PLUS_WEATHER,13,RandomForestRegressor,310,270.95,413.68,0.7733,35.03,71.19,276.34,269.43,1.95,-0.57,True,False
+Groundnut,3,2016,EXP-22E,Historical + All Exogenous (Model B),HIST_PLUS_ALL_EXO,17,RandomForestRegressor,310,268.75,406.33,0.7813,35.48,66.47,276.34,269.43,2.75,0.25,True,True
+Groundnut,4,2017,EXP-22A,Historical Only (Model A),HISTORICAL,7,RandomForestRegressor,306,357.85,555.91,0.6079,27.9,69.56,309.52,357.85,-15.61,0.0,False,False
+Groundnut,4,2017,EXP-22B,Historical + Rainfall,HIST_PLUS_RAINFALL,10,RandomForestRegressor,306,338.68,517.42,0.6603,26.49,67.48,309.52,357.85,-9.42,5.36,False,True
+Groundnut,4,2017,EXP-22C,Historical + Temperature,HIST_PLUS_TEMP,10,RandomForestRegressor,306,339.37,521.03,0.6556,26.17,66.85,309.52,357.85,-9.64,5.17,False,True
+Groundnut,4,2017,EXP-22D,Historical + Rainfall + Temperature,HIST_PLUS_WEATHER,13,RandomForestRegressor,306,329.56,500.82,0.6818,25.09,65.33,309.52,357.85,-6.47,7.91,False,True
+Groundnut,4,2017,EXP-22E,Historical + All Exogenous (Model B),HIST_PLUS_ALL_EXO,17,RandomForestRegressor,306,326.47,498.24,0.685,25.06,65.44,309.52,357.85,-5.48,8.77,False,True
+Sorghum,1,2014,EXP-22A,Historical Only (Model A),HISTORICAL,7,RandomForestRegressor,303,239.51,413.96,0.7195,34.58,86.45,234.52,239.51,-2.13,0.0,False,False
+Sorghum,1,2014,EXP-22B,Historical + Rainfall,HIST_PLUS_RAINFALL,10,RandomForestRegressor,303,276.99,443.06,0.6787,35.11,86.59,234.52,239.51,-18.11,-15.65,False,False
+Sorghum,1,2014,EXP-22C,Historical + Temperature,HIST_PLUS_TEMP,10,RandomForestRegressor,303,277.14,444.59,0.6765,36.82,85.57,234.52,239.51,-18.18,-15.71,False,False
+Sorghum,1,2014,EXP-22D,Historical + Rainfall + Temperature,HIST_PLUS_WEATHER,13,RandomForestRegressor,303,313.42,457.65,0.6572,36.17,86.58,234.52,239.51,-33.65,-30.86,False,False
+Sorghum,1,2014,EXP-22E,Historical + All Exogenous (Model B),HIST_PLUS_ALL_EXO,17,RandomForestRegressor,303,315.32,458.67,0.6557,36.41,86.49,234.52,239.51,-34.46,-31.65,False,False
+Sorghum,2,2015,EXP-22A,Historical Only (Model A),HISTORICAL,7,RandomForestRegressor,309,264.96,445.68,0.6166,51.29,93.0,272.37,264.96,2.72,0.0,True,False
+Sorghum,2,2015,EXP-22B,Historical + Rainfall,HIST_PLUS_RAINFALL,10,RandomForestRegressor,309,267.28,451.64,0.6063,51.6,92.93,272.37,264.96,1.87,-0.87,True,False
+Sorghum,2,2015,EXP-22C,Historical + Temperature,HIST_PLUS_TEMP,10,RandomForestRegressor,309,270.48,448.31,0.6121,52.33,92.92,272.37,264.96,0.69,-2.08,True,False
+Sorghum,2,2015,EXP-22D,Historical + Rainfall + Temperature,HIST_PLUS_WEATHER,13,RandomForestRegressor,309,273.25,449.77,0.6096,52.23,93.27,272.37,264.96,-0.32,-3.13,False,False
+Sorghum,2,2015,EXP-22E,Historical + All Exogenous (Model B),HIST_PLUS_ALL_EXO,17,RandomForestRegressor,309,271.76,452.72,0.6044,51.5,92.9,272.37,264.96,0.22,-2.57,True,False
+Sorghum,3,2016,EXP-22A,Historical Only (Model A),HISTORICAL,7,RandomForestRegressor,310,257.1,458.0,0.5806,43.16,93.14,260.94,257.1,1.47,0.0,True,False
+Sorghum,3,2016,EXP-22B,Historical + Rainfall,HIST_PLUS_RAINFALL,10,RandomForestRegressor,310,337.16,481.97,0.5356,43.58,91.98,260.94,257.1,-29.21,-31.14,False,False
+Sorghum,3,2016,EXP-22C,Historical + Temperature,HIST_PLUS_TEMP,10,RandomForestRegressor,310,260.2,458.19,0.5803,43.82,93.34,260.94,257.1,0.28,-1.21,True,False
+Sorghum,3,2016,EXP-22D,Historical + Rainfall + Temperature,HIST_PLUS_WEATHER,13,RandomForestRegressor,310,338.65,492.92,0.5142,44.35,92.19,260.94,257.1,-29.78,-31.72,False,False
+Sorghum,3,2016,EXP-22E,Historical + All Exogenous (Model B),HIST_PLUS_ALL_EXO,17,RandomForestRegressor,310,342.32,493.67,0.5128,44.79,92.2,260.94,257.1,-31.19,-33.14,False,False
+Sorghum,4,2017,EXP-22A,Historical Only (Model A),HISTORICAL,7,RandomForestRegressor,307,331.94,577.49,0.5121,33.66,92.96,288.26,331.94,-15.15,0.0,False,False
+Sorghum,4,2017,EXP-22B,Historical + Rainfall,HIST_PLUS_RAINFALL,10,RandomForestRegressor,307,327.46,585.4,0.4987,33.03,92.39,288.26,331.94,-13.6,1.35,False,True
+Sorghum,4,2017,EXP-22C,Historical + Temperature,HIST_PLUS_TEMP,10,RandomForestRegressor,307,323.19,572.05,0.5213,33.13,92.12,288.26,331.94,-12.11,2.64,False,True
+Sorghum,4,2017,EXP-22D,Historical + Rainfall + Temperature,HIST_PLUS_WEATHER,13,RandomForestRegressor,307,323.58,580.36,0.5072,33.19,92.49,288.26,331.94,-12.25,2.52,False,True
+Sorghum,4,2017,EXP-22E,Historical + All Exogenous (Model B),HIST_PLUS_ALL_EXO,17,RandomForestRegressor,307,319.96,576.17,0.5143,32.57,91.91,288.26,331.94,-10.99,3.61,False,True
+Pearl Millet,1,2014,EXP-22A,Historical Only (Model A),HISTORICAL,7,RandomForestRegressor,301,289.58,525.94,0.6322,36.89,100.74,260.02,289.58,-11.37,0.0,False,False
+Pearl Millet,1,2014,EXP-22B,Historical + Rainfall,HIST_PLUS_RAINFALL,10,RandomForestRegressor,301,342.08,524.65,0.634,37.85,100.72,260.02,289.58,-31.56,-18.13,False,False
+Pearl Millet,1,2014,EXP-22C,Historical + Temperature,HIST_PLUS_TEMP,10,RandomForestRegressor,301,323.25,510.19,0.6539,38.28,100.82,260.02,289.58,-24.32,-11.63,False,False
+Pearl Millet,1,2014,EXP-22D,Historical + Rainfall + Temperature,HIST_PLUS_WEATHER,13,RandomForestRegressor,301,363.75,528.19,0.6291,39.35,101.1,260.02,289.58,-39.89,-25.61,False,False
+Pearl Millet,1,2014,EXP-22E,Historical + All Exogenous (Model B),HIST_PLUS_ALL_EXO,17,RandomForestRegressor,301,353.41,519.65,0.641,37.77,100.75,260.02,289.58,-35.91,-22.04,False,False
+Pearl Millet,2,2015,EXP-22A,Historical Only (Model A),HISTORICAL,7,RandomForestRegressor,307,274.29,469.98,0.6829,36.64,108.3,250.79,274.29,-9.37,0.0,False,False
+Pearl Millet,2,2015,EXP-22B,Historical + Rainfall,HIST_PLUS_RAINFALL,10,RandomForestRegressor,307,287.6,468.01,0.6856,37.49,107.91,250.79,274.29,-14.68,-4.85,False,False
+Pearl Millet,2,2015,EXP-22C,Historical + Temperature,HIST_PLUS_TEMP,10,RandomForestRegressor,307,286.44,460.89,0.6951,36.23,108.65,250.79,274.29,-14.21,-4.43,False,False
+Pearl Millet,2,2015,EXP-22D,Historical + Rainfall + Temperature,HIST_PLUS_WEATHER,13,RandomForestRegressor,307,288.52,461.27,0.6946,37.19,108.65,250.79,274.29,-15.05,-5.19,False,False
+Pearl Millet,2,2015,EXP-22E,Historical + All Exogenous (Model B),HIST_PLUS_ALL_EXO,17,RandomForestRegressor,307,276.17,443.35,0.7178,35.48,107.72,250.79,274.29,-10.12,-0.69,False,False
+Pearl Millet,3,2016,EXP-22A,Historical Only (Model A),HISTORICAL,7,RandomForestRegressor,310,277.68,623.72,0.6023,34.64,106.05,268.43,277.68,-3.44,0.0,False,False
+Pearl Millet,3,2016,EXP-22B,Historical + Rainfall,HIST_PLUS_RAINFALL,10,RandomForestRegressor,310,287.78,607.62,0.6225,35.14,105.52,268.43,277.68,-7.21,-3.64,False,False
+Pearl Millet,3,2016,EXP-22C,Historical + Temperature,HIST_PLUS_TEMP,10,RandomForestRegressor,310,277.37,618.34,0.6091,36.1,107.01,268.43,277.68,-3.33,0.11,False,True
+Pearl Millet,3,2016,EXP-22D,Historical + Rainfall + Temperature,HIST_PLUS_WEATHER,13,RandomForestRegressor,310,306.33,621.5,0.6051,34.72,105.66,268.43,277.68,-14.12,-10.32,False,False
+Pearl Millet,3,2016,EXP-22E,Historical + All Exogenous (Model B),HIST_PLUS_ALL_EXO,17,RandomForestRegressor,310,303.53,616.45,0.6115,35.4,105.69,268.43,277.68,-13.08,-9.31,False,False
+Pearl Millet,4,2017,EXP-22A,Historical Only (Model A),HISTORICAL,7,RandomForestRegressor,306,278.85,471.95,0.7014,481.46,102.87,261.73,278.85,-6.54,0.0,False,False
+Pearl Millet,4,2017,EXP-22B,Historical + Rainfall,HIST_PLUS_RAINFALL,10,RandomForestRegressor,306,274.84,471.4,0.7021,460.79,102.24,261.73,278.85,-5.01,1.44,False,True
+Pearl Millet,4,2017,EXP-22C,Historical + Temperature,HIST_PLUS_TEMP,10,RandomForestRegressor,306,281.8,479.74,0.6915,538.33,102.58,261.73,278.85,-7.67,-1.06,False,False
+Pearl Millet,4,2017,EXP-22D,Historical + Rainfall + Temperature,HIST_PLUS_WEATHER,13,RandomForestRegressor,306,282.75,474.25,0.6985,473.68,102.44,261.73,278.85,-8.03,-1.4,False,False
+Pearl Millet,4,2017,EXP-22E,Historical + All Exogenous (Model B),HIST_PLUS_ALL_EXO,17,RandomForestRegressor,306,278.81,472.05,0.7013,502.69,102.11,261.73,278.85,-6.53,0.01,False,True

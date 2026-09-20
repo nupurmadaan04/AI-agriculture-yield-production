@@ -1,0 +1,57 @@
+{
+  "model_id": "multicrop_rice_forecaster",
+  "crop": "Rice",
+  "algorithm": "RandomForestRegressor",
+  "version": "1.0.0",
+  "dataset_version": "AGRI_PANEL_1.0",
+  "feature_set_version": "PRE_SEASON_LAG_V1",
+  "training_period": "2011\u20132015",
+  "evaluation_period": "2016\u20132017",
+  "train_records": 1392,
+  "test_records": 557,
+  "metrics": {
+    "mae": 379.09,
+    "rmse": 510.8,
+    "r2": 0.6746,
+    "mape": 18.13,
+    "smape": 18.42
+  },
+  "baseline_comparison": {
+    "baseline_model": "Historical District Mean",
+    "baseline_mae": 367.49,
+    "baseline_rmse": 511.63,
+    "baseline_r2": 0.6735,
+    "mae_improvement_abs": -11.6,
+    "mae_improvement_pct": -3.16
+  },
+  "status": "BASELINE_PREFERRED",
+  "feature_importance_native": {
+    "yield_lag_1": 0.5884,
+    "yield_lag_2": 0.2747,
+    "yield_rolling_3yr_mean": 0.0631,
+    "area_lag_1": 0.0402,
+    "state_encoded": 0.0147,
+    "year": 0.019
+  },
+  "feature_importance_permutation": {
+    "yield_lag_1": 0.3336,
+    "yield_lag_2": 0.1257,
+    "yield_rolling_3yr_mean": 0.0087,
+    "area_lag_1": 0.0231,
+    "state_encoded": -0.0006,
+    "year": 0.0
+  },
+  "error_analysis": {
+    "p25": 130.68,
+    "p50_median": 281.46,
+    "p75": 517.03,
+    "p90": 782.04,
+    "low_error_pct": 57.3,
+    "moderate_error_pct": 27.6,
+    "high_error_pct": 15.1
+  },
+  "uncertainty_spread_p10_p90": 810.46,
+  "artifact_path": "Models/multicrop/rice/model_pipeline.pkl",
+  "sha256": "b6dc4b131bbb41699bcc219c1a4b7c7bbb5e1f301abb485ddeddf50092f8688c",
+  "created_at": "2026-09-02T17:28:02.640512Z"
+}

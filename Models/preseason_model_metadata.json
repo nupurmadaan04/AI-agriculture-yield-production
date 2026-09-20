@@ -1,0 +1,128 @@
+{
+    "model_name": "RandomForest (Advanced Exogenous Pre-Season)",
+    "model_id": "rf-pre-season-exogenous",
+    "model_type": "ml",
+    "training_timestamp": "2026-09-01 11:52:14 UTC",
+    "features": [
+        "Year",
+        "State Code",
+        "RICE AREA (1000 ha)",
+        "TOTAL_CROPPED_AREA",
+        "RICE_AREA_SHARE",
+        "WHEAT AREA (1000 ha)",
+        "COTTON AREA (1000 ha)",
+        "SUGARCANE AREA (1000 ha)",
+        "RICE_YIELD_LAG1",
+        "RICE_YIELD_ROLL3"
+    ],
+    "features_count": 10,
+    "target": "RICE YIELD (Kg per ha)",
+    "dataset_version": "Datasets/rice_data_outlier_removed.csv",
+    "leakage_exclusions": [
+        "RICE PRODUCTION (1000 tons)",
+        "All concurrent year-t harvest outputs",
+        "Target-derived ratios"
+    ],
+    "validation_metrics": {
+        "random_split": {
+            "r2": 0.8575,
+            "mae": 268.83,
+            "rmse": 418.12
+        },
+        "temporal_holdout_2016_2017": {
+            "r2": 0.7785,
+            "mae": 357.01,
+            "rmse": 522.75
+        },
+        "group_kfold_state_holdout": {
+            "r2_mean": 0.7407,
+            "r2_std": 0.0417,
+            "mae_mean": 379.93,
+            "rmse_mean": 530.12
+        }
+    },
+    "seed_stability": {
+        "seeds_tested": [
+            42,
+            52,
+            62,
+            72,
+            82
+        ],
+        "random_r2_mean": 0.8406,
+        "random_r2_std": 0.0096,
+        "random_mae_mean": 287.38,
+        "random_mae_std": 10.02,
+        "temporal_r2_mean": 0.7815,
+        "temporal_r2_std": 0.0027,
+        "temporal_mae_mean": 354.89,
+        "temporal_mae_std": 2.05
+    },
+    "feature_importances": {
+        "native_mdi": {
+            "Year": 0.0169,
+            "State Code": 0.0093,
+            "RICE AREA (1000 ha)": 0.0733,
+            "TOTAL_CROPPED_AREA": 0.0179,
+            "RICE_AREA_SHARE": 0.0927,
+            "WHEAT AREA (1000 ha)": 0.0193,
+            "COTTON AREA (1000 ha)": 0.0115,
+            "SUGARCANE AREA (1000 ha)": 0.015,
+            "RICE_YIELD_LAG1": 0.608,
+            "RICE_YIELD_ROLL3": 0.1361
+        },
+        "permutation_temporal": {
+            "Year": {
+                "mean_delta_r2": 0.0,
+                "std_delta_r2": 0.0
+            },
+            "State Code": {
+                "mean_delta_r2": 0.0042,
+                "std_delta_r2": 0.0006
+            },
+            "RICE AREA (1000 ha)": {
+                "mean_delta_r2": 0.0816,
+                "std_delta_r2": 0.0042
+            },
+            "TOTAL_CROPPED_AREA": {
+                "mean_delta_r2": 0.0214,
+                "std_delta_r2": 0.0015
+            },
+            "RICE_AREA_SHARE": {
+                "mean_delta_r2": 0.0442,
+                "std_delta_r2": 0.0079
+            },
+            "WHEAT AREA (1000 ha)": {
+                "mean_delta_r2": 0.0159,
+                "std_delta_r2": 0.0021
+            },
+            "COTTON AREA (1000 ha)": {
+                "mean_delta_r2": 0.0231,
+                "std_delta_r2": 0.0037
+            },
+            "SUGARCANE AREA (1000 ha)": {
+                "mean_delta_r2": 0.0058,
+                "std_delta_r2": 0.0017
+            },
+            "RICE_YIELD_LAG1": {
+                "mean_delta_r2": 0.6064,
+                "std_delta_r2": 0.0279
+            },
+            "RICE_YIELD_ROLL3": {
+                "mean_delta_r2": 0.2299,
+                "std_delta_r2": 0.0089
+            }
+        }
+    },
+    "comparison_with_baseline": {
+        "baseline_temporal_r2": 0.6479,
+        "exogenous_temporal_r2": 0.7785,
+        "temporal_r2_improvement": "+0.1306 (+20.1%)",
+        "baseline_temporal_mae": 468.05,
+        "exogenous_temporal_mae": 357.01,
+        "temporal_mae_reduction_kg_ha": "-111.04 kg/ha (-23.7%)",
+        "baseline_group_kfold_r2": -0.0038,
+        "exogenous_group_kfold_r2": 0.7407,
+        "scientific_conclusion": "Exogenous land allocation and historical baseline lags provide substantial and statistically robust predictive value over Area+State+Year alone."
+    }
+}

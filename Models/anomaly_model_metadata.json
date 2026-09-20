@@ -1,0 +1,36 @@
+{
+    "model_name": "IsolationForest (Agricultural Anomaly Detector)",
+    "model_id": "iforest-agri-anomaly",
+    "model_type": "unsupervised_anomaly_detection",
+    "algorithm": "IsolationForest",
+    "n_estimators": 150,
+    "contamination": 0.05,
+    "training_timestamp": "2026-09-01 12:03:17 UTC",
+    "features": [
+        "RICE AREA (1000 ha)",
+        "RICE PRODUCTION (1000 tons)",
+        "RICE YIELD (Kg per ha)",
+        "TOTAL_CROPPED_AREA",
+        "RICE_AREA_SHARE",
+        "RICE_YIELD_LAG1",
+        "RICE_YIELD_ROLL3"
+    ],
+    "features_count": 7,
+    "excluded_identifiers": [
+        "Dist Code",
+        "State Code",
+        "Year",
+        "State Name",
+        "Dist Name"
+    ],
+    "dataset_statistics": {
+        "total_records": 2469,
+        "anomalies_detected": 124,
+        "anomaly_percentage": 5.02,
+        "score_min": -0.117,
+        "score_max": 0.1853,
+        "score_mean": 0.1136,
+        "score_std": 0.0549
+    },
+    "scientific_interpretation": "Anomalies represent multi-dimensional statistical outliers across crop area, production volume, yield levels, land allocation shares, and historical performance lags. They highlight severe local distress, data recording anomalies, or sudden regional land reallocation."
+}

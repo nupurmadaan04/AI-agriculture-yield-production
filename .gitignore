@@ -1,62 +1,55 @@
-
 # System files
 .DS_Store
 Thumbs.db
 
-# Python
+# Python & Caches
 __pycache__/
 *.py[cod]
+*$py.class
 *.so
 *.egg
 *.egg-info/
 dist/
 build/
 .eggs/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage/
+htmlcov/
 
 # Jupyter Notebooks
 .ipynb_checkpoints/
 
-# VS Code
+# IDE & Editor files
 .vscode/
+.idea/
+*.swp
+*.swo
 
-# Data and models
-*.csv
-*.pkl
-*.h5
-*.joblib
-*.npy
-*.npz
-*.sav
-
-# Environment
+# Environment & Credentials
 .env
+.env.*
 .venv/
 venv/
 ENV/
 
-# Logs
+# Logs & Temporary Files
 *.log
-
-# Plots and images
-*.png
-*.jpg
-*.jpeg
-*.svg
-*.pdf
-
-# Misc
-*.bak
 *.tmp
+*.bak
 
-# Ignore Plots and Datasets folders except for versioned files
-!Plots/
+# Frontend Artifacts
+frontend/dist/
+frontend/node_modules/
+frontend/.vite/
+
+# Generated Reports
+reports/*
+!reports/.gitkeep
+
+# Versioned Assets Preserved
 !Datasets/
 !Models/
 
-# But ignore all files inside Plots, Datasets, and Models except for README.md
-Plots/*
-!Plots/README.md
-Datasets/*
-!Datasets/README.md
-Models/*
-!Models/README.md

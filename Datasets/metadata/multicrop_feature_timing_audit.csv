@@ -1,0 +1,9 @@
+feature,observation_time,available_before_forecast,fold_safe,timing_status,timing_notes
+yield_lag_1,Previous agricultural season (t-1),True,True,SAFE,Target variable strictly shifted by 1 season within district. Zero same-year lookahead.
+yield_lag_2,Two agricultural seasons prior (t-2),True,True,SAFE,Target variable shifted by 2 seasons within district.
+yield_rolling_3yr_mean,Previous 3 historical seasons (t-3 to t-1),True,True,SAFE,Rolling mean computed strictly on lagged yield values prior to current season.
+area_lag_1,Previous agricultural season (t-1),True,True,SAFE,Crop area shifted by 1 season within district to eliminate current-year planting lookahead.
+state_encoded,Static regional identifier,True,True,SAFE,Categorical state mapping fitted strictly on training partition of each fold.
+year,Deterministic calendar year,True,True,SAFE,Represents secular national technological / agro-climatic trend.
+district_coordinates,Static spatial centroid,True,True,SAFE,Static spatial coordinates invariant over time.
+spatial_cluster_id,Multi-year clustering embedding,False,False,UNSAFE,Clustering algorithm fitted on entire longitudinal dataset. EXCLUDED from pre-season models.

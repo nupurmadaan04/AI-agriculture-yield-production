@@ -1,0 +1,57 @@
+crop,year,fold_id,ml_model,ml_mae,ml_rmse,baseline_model,baseline_mae,baseline_rmse,ml_improvement_pct,ml_win,temporal_regime
+Minor Pulses,2014,1,GradientBoostingRegressor,313.91,592.38,Naive Persistence,343.54,517.17,8.63,True,ml_advantage
+Minor Pulses,2015,2,GradientBoostingRegressor,253.73,401.94,Naive Persistence,219.6,458.06,-15.54,False,baseline_advantage
+Minor Pulses,2016,3,GradientBoostingRegressor,352.79,1056.94,Historical District Mean,353.34,977.02,0.16,True,stable_year
+Minor Pulses,2017,4,GradientBoostingRegressor,399.41,1243.79,Naive Persistence,343.52,1094.63,-16.27,False,baseline_advantage
+Maize,2014,1,RandomForestRegressor,563.64,903.58,Historical District Mean,540.62,829.45,-4.26,False,stable_year
+Maize,2015,2,RandomForestRegressor,592.28,957.67,Historical District Mean,552.29,913.34,-7.24,False,baseline_advantage
+Maize,2016,3,RandomForestRegressor,730.35,1574.03,Historical District Mean,717.06,1470.39,-1.85,False,stable_year
+Maize,2017,4,RandomForestRegressor,728.42,1121.49,Historical District Mean,749.69,1110.51,2.84,True,stable_year
+Rice,2014,1,RandomForestRegressor,276.3,427.85,Historical District Mean,253.44,391.06,-9.02,False,baseline_advantage
+Rice,2015,2,RandomForestRegressor,361.66,515.77,Historical District Mean,321.48,448.85,-12.5,False,baseline_advantage
+Rice,2016,3,RandomForestRegressor,384.7,537.15,Historical District Mean,341.21,501.94,-12.75,False,baseline_advantage
+Rice,2017,4,RandomForestRegressor,322.74,494.53,Historical District Mean,324.99,498.96,0.69,True,stable_year
+Sesamum,2014,1,RandomForestRegressor,135.54,207.38,Historical District Mean,132.35,215.22,-2.41,False,stable_year
+Sesamum,2015,2,RandomForestRegressor,128.47,195.08,Historical District Mean,133.66,210.84,3.88,True,stable_year
+Sesamum,2016,3,RandomForestRegressor,130.59,205.19,Historical District Mean,125.35,207.07,-4.18,False,stable_year
+Sesamum,2017,4,RandomForestRegressor,161.38,428.79,Historical District Mean,158.17,435.43,-2.03,False,stable_year
+Chickpea,2014,1,GradientBoostingRegressor,255.41,377.61,Historical District Mean,280.84,413.35,9.06,True,ml_advantage
+Chickpea,2015,2,GradientBoostingRegressor,222.3,320.77,Historical District Mean,229.56,342.49,3.16,True,stable_year
+Chickpea,2016,3,GradientBoostingRegressor,331.7,474.86,Historical District Mean,271.23,421.57,-22.3,False,2016 high-error regime
+Chickpea,2017,4,GradientBoostingRegressor,220.91,397.7,Historical District Mean,273.87,446.41,19.34,True,ml_advantage
+Pigeonpea,2014,1,GradientBoostingRegressor,284.51,397.01,Historical District Mean,272.65,388.3,-4.35,False,stable_year
+Pigeonpea,2015,2,GradientBoostingRegressor,246.19,340.04,Historical District Mean,247.16,349.36,0.39,True,stable_year
+Pigeonpea,2016,3,GradientBoostingRegressor,354.23,494.61,Historical District Mean,305.05,449.73,-16.12,False,2016 high-error regime
+Pigeonpea,2017,4,GradientBoostingRegressor,287.65,386.63,Linear District Trend,280.79,438.17,-2.44,False,stable_year
+Wheat,2014,1,GradientBoostingRegressor,451.88,650.65,Historical District Mean,493.91,703.68,8.51,True,ml_advantage
+Wheat,2015,2,GradientBoostingRegressor,423.68,620.62,Historical District Mean,282.2,455.14,-50.13,False,baseline_advantage
+Wheat,2016,3,GradientBoostingRegressor,558.25,742.53,Historical District Mean,368.86,500.96,-51.35,False,2016 high-error regime
+Wheat,2017,4,GradientBoostingRegressor,307.11,486.68,Historical District Mean,381.63,551.32,19.53,True,ml_advantage
+Oilseeds,2014,1,RandomForestRegressor,470.22,748.28,Historical District Mean,459.45,735.48,-2.34,False,stable_year
+Oilseeds,2015,2,RandomForestRegressor,453.53,660.42,Linear District Trend,469.55,740.31,3.41,True,stable_year
+Oilseeds,2016,3,RandomForestRegressor,718.59,1054.13,Linear District Trend,772.24,1270.46,6.95,True,2016 high-error regime
+Oilseeds,2017,4,RandomForestRegressor,218.59,1044.05,Linear District Trend,384.38,1015.39,43.13,True,ml_advantage
+Sugarcane,2014,1,GradientBoostingRegressor,1306.28,2058.88,Historical District Mean,1209.4,2043.32,-8.01,False,baseline_advantage
+Sugarcane,2015,2,GradientBoostingRegressor,1665.64,2633.07,Historical District Mean,1681.41,2732.82,0.94,True,stable_year
+Sugarcane,2016,3,GradientBoostingRegressor,1346.32,1898.22,Historical District Mean,1509.97,2195.98,10.84,True,ml_advantage
+Sugarcane,2017,4,GradientBoostingRegressor,1458.08,2188.76,Linear District Trend,1323.29,2117.49,-10.19,False,baseline_advantage
+Rapeseed and Mustard,2014,1,GradientBoostingRegressor,213.31,352.17,Historical District Mean,204.63,335.6,-4.24,False,stable_year
+Rapeseed and Mustard,2015,2,GradientBoostingRegressor,183.98,287.0,Historical District Mean,133.91,231.77,-37.39,False,baseline_advantage
+Rapeseed and Mustard,2016,3,GradientBoostingRegressor,234.83,353.26,Historical District Mean,213.68,329.14,-9.9,False,baseline_advantage
+Rapeseed and Mustard,2017,4,GradientBoostingRegressor,197.62,294.51,Linear District Trend,215.59,323.64,8.34,True,ml_advantage
+Groundnut,2014,1,RandomForestRegressor,318.98,533.02,Historical District Mean,269.13,474.55,-18.52,False,baseline_advantage
+Groundnut,2015,2,RandomForestRegressor,294.71,467.71,Historical District Mean,295.55,469.06,0.28,True,stable_year
+Groundnut,2016,3,RandomForestRegressor,290.84,434.69,Historical District Mean,277.11,438.49,-4.96,False,stable_year
+Groundnut,2017,4,RandomForestRegressor,343.16,526.12,Historical District Mean,316.91,496.53,-8.28,False,baseline_advantage
+Sorghum,2014,1,RandomForestRegressor,241.89,411.75,Historical District Mean,237.03,416.96,-2.05,False,stable_year
+Sorghum,2015,2,RandomForestRegressor,265.52,451.65,Historical District Mean,271.29,457.62,2.13,True,stable_year
+Sorghum,2016,3,RandomForestRegressor,261.76,455.97,Historical District Mean,259.56,459.5,-0.85,False,stable_year
+Sorghum,2017,4,RandomForestRegressor,326.98,559.52,Historical District Mean,288.75,476.52,-13.24,False,baseline_advantage
+Kharif Sorghum,2014,1,RandomForestRegressor,266.4,464.37,Historical District Mean,283.1,474.24,5.9,True,ml_advantage
+Kharif Sorghum,2015,2,RandomForestRegressor,286.05,461.17,Linear District Trend,293.04,544.98,2.39,True,stable_year
+Kharif Sorghum,2016,3,RandomForestRegressor,265.84,422.37,Historical District Mean,263.71,436.53,-0.81,False,stable_year
+Kharif Sorghum,2017,4,RandomForestRegressor,343.22,583.96,Historical District Mean,335.55,525.49,-2.28,False,stable_year
+Pearl Millet,2014,1,RandomForestRegressor,281.77,533.5,Historical District Mean,260.82,490.44,-8.03,False,baseline_advantage
+Pearl Millet,2015,2,RandomForestRegressor,265.08,450.44,Historical District Mean,249.43,396.56,-6.27,False,baseline_advantage
+Pearl Millet,2016,3,RandomForestRegressor,280.53,624.92,Historical District Mean,269.82,623.2,-3.97,False,stable_year
+Pearl Millet,2017,4,RandomForestRegressor,271.93,480.48,Historical District Mean,256.84,446.86,-5.88,False,baseline_advantage

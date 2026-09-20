@@ -1,0 +1,30 @@
+crop,district_count,continuous_district_count,partial_district_count,fragmented_district_count,median_continuity,min_continuity,max_continuity
+Barley,311,303,3,5,1.0,0.2857,1.0
+Castor,311,303,3,5,1.0,0.2857,1.0
+Chickpea,311,303,3,5,1.0,0.2857,1.0
+Cotton,311,303,3,5,1.0,0.2857,1.0
+Finger Millet,311,303,3,5,1.0,0.2857,1.0
+Fodder,311,303,3,5,1.0,0.2857,1.0
+Fruits,311,303,3,5,1.0,0.2857,1.0
+Fruits and Vegetables,311,303,3,5,1.0,0.2857,1.0
+Groundnut,311,303,3,5,1.0,0.2857,1.0
+Kharif Sorghum,311,303,3,5,1.0,0.2857,1.0
+Linseed,311,303,3,5,1.0,0.2857,1.0
+Maize,311,303,3,5,1.0,0.2857,1.0
+Minor Pulses,311,303,3,5,1.0,0.2857,1.0
+Oilseeds,311,303,3,5,1.0,0.2857,1.0
+Onion,311,303,3,5,1.0,0.2857,1.0
+Pearl Millet,311,303,3,5,1.0,0.2857,1.0
+Pigeonpea,311,303,3,5,1.0,0.2857,1.0
+Potatoes,311,303,3,5,1.0,0.2857,1.0
+Rabi Sorghum,311,303,3,5,1.0,0.2857,1.0
+Rapeseed and Mustard,311,303,3,5,1.0,0.2857,1.0
+Rice,311,303,3,5,1.0,0.2857,1.0
+Safflower,311,303,3,5,1.0,0.2857,1.0
+Sesamum,311,303,3,5,1.0,0.2857,1.0
+Sorghum,311,303,3,5,1.0,0.2857,1.0
+Soyabean,311,303,3,5,1.0,0.2857,1.0
+Sugarcane,311,303,3,5,1.0,0.2857,1.0
+Sunflower,311,303,3,5,1.0,0.2857,1.0
+Vegetables,311,303,3,5,1.0,0.2857,1.0
+Wheat,311,303,3,5,1.0,0.2857,1.0

@@ -5,12 +5,12 @@ This module contains all the preprocessing functions extracted from the notebook
 to make them testable and reusable.
 """
 
+import os
 import pandas as pd
 import numpy as np
+from typing import Tuple, Optional, Union, Dict, Any
 from sklearn.preprocessing import LabelEncoder, StandardScaler
 from sklearn.model_selection import train_test_split
-from typing import Tuple, Optional
-import os
 
 
 def load_crop_data(file_path: str) -> pd.DataFrame:
@@ -330,16 +330,21 @@ def save_processed_data(df: pd.DataFrame, output_path: str) -> None:
         raise ValueError(f"Error saving file: {str(e)}")
 
 
-def complete_preprocessing_pipeline(input_file: str, output_file: str) -> dict:
+def complete_preprocessing_pipeline(
+    input_file: str,
+    output_file: Optional[str] = None,
+    output_dir: Optional[str] = None
+) -> Union[dict, Tuple[pd.DataFrame, dict]]:
     """
     Complete preprocessing pipeline that combines all steps.
     
     Args:
         input_file (str): Path to input CSV file
-        output_file (str): Path to save processed data
+        output_file (Optional[str]): Path to save processed data file
+        output_dir (Optional[str]): Directory path to save processed data
         
     Returns:
-        dict: Summary of processing steps
+        Union[dict, Tuple[pd.DataFrame, dict]]: Summary dict or (DataFrame, summary)
     """
     # Step 1: Load data
     df = load_crop_data(input_file)
@@ -360,8 +365,14 @@ def complete_preprocessing_pipeline(input_file: str, output_file: str) -> dict:
     # Step 6: Validate final data
     validation_summary = validate_data_format(df_final)
     
-    # Step 7: Save processed data
-    save_processed_data(df_final, output_file)
+    # Determine destination file
+    save_path = output_file
+    if save_path is None and output_dir is not None:
+        save_path = os.path.join(output_dir, 'rice_data_processed.csv')
+    
+    # Step 7: Save processed data if destination provided
+    if save_path:
+        save_processed_data(df_final, save_path)
     
     # Return processing summary
     summary = {
@@ -370,7 +381,9 @@ def complete_preprocessing_pipeline(input_file: str, output_file: str) -> dict:
         'rows_removed': original_shape[0] - df_final.shape[0],
         'columns_added': df_final.shape[1] - df_rice.shape[1],
         'validation_summary': validation_summary,
-        'output_file': output_file
+        'output_file': save_path
     }
     
+    if output_dir is not None and output_file is None:
+        return df_final, summary
     return summary

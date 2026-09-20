@@ -1,0 +1,281 @@
+crop,fold_id,train_start_year,train_end_year,test_year,train_samples,test_samples,model,mae,rmse,r2,mape,smape,best_baseline_model,best_baseline_mae,win_vs_baseline,mae_improvement_pct,mean_residual,std_residual
+Minor Pulses,1,2011,2013,2014,926,304,Historical District Mean,348.9,541.83,0.1178,40.09,67.83,Naive Persistence,343.54,False,0.0,-69.37,537.37
+Minor Pulses,1,2011,2013,2014,926,304,Naive Persistence,343.54,517.17,0.1962,37.58,68.43,Naive Persistence,343.54,False,0.0,-158.48,492.29
+Minor Pulses,1,2011,2013,2014,926,304,Linear District Trend,404.34,694.17,-0.4481,59.81,70.45,Naive Persistence,343.54,False,0.0,-195.78,665.99
+Minor Pulses,1,2011,2013,2014,926,304,RandomForestRegressor,298.72,522.88,0.1784,31.48,65.5,Naive Persistence,343.54,True,13.05,-79.56,516.79
+Minor Pulses,1,2011,2013,2014,926,304,GradientBoostingRegressor,313.91,592.38,-0.0546,31.3,66.63,Naive Persistence,343.54,True,8.62,-67.71,588.5
+Minor Pulses,2,2011,2014,2015,1230,310,Historical District Mean,280.63,500.97,-0.699,50.74,43.05,Naive Persistence,219.6,False,0.0,77.33,494.97
+Minor Pulses,2,2011,2014,2015,1230,310,Naive Persistence,219.6,458.06,-0.4204,36.11,30.9,Naive Persistence,219.6,False,0.0,-3.14,458.05
+Minor Pulses,2,2011,2014,2015,1230,310,Linear District Trend,384.35,573.89,-1.2296,65.4,72.85,Naive Persistence,219.6,False,0.0,44.97,572.13
+Minor Pulses,2,2011,2014,2015,1230,310,RandomForestRegressor,272.4,430.79,-0.2563,45.74,44.55,Naive Persistence,219.6,False,-24.04,113.92,415.45
+Minor Pulses,2,2011,2014,2015,1230,310,GradientBoostingRegressor,253.73,401.94,-0.0937,43.07,41.57,Naive Persistence,219.6,False,-15.54,117.37,384.42
+Minor Pulses,3,2011,2015,2016,1540,311,Historical District Mean,353.34,977.02,0.1205,32.86,38.67,Historical District Mean,353.34,False,0.0,238.85,947.37
+Minor Pulses,3,2011,2015,2016,1540,311,Naive Persistence,378.74,1066.0,-0.047,40.19,39.87,Historical District Mean,353.34,False,0.0,162.48,1053.55
+Minor Pulses,3,2011,2015,2016,1540,311,Linear District Trend,487.57,1169.2,-0.2596,53.81,55.84,Historical District Mean,353.34,False,0.0,185.24,1154.43
+Minor Pulses,3,2011,2015,2016,1540,311,RandomForestRegressor,376.08,1059.93,-0.0351,37.54,38.64,Historical District Mean,353.34,False,-6.44,195.1,1041.82
+Minor Pulses,3,2011,2015,2016,1540,311,GradientBoostingRegressor,352.79,1056.94,-0.0293,34.24,34.97,Historical District Mean,353.34,True,0.16,174.2,1042.49
+Minor Pulses,4,2011,2016,2017,1851,307,Historical District Mean,397.8,1383.85,0.2274,31.66,37.26,Naive Persistence,343.52,False,0.0,287.7,1353.61
+Minor Pulses,4,2011,2016,2017,1851,307,Naive Persistence,343.52,1094.63,0.5166,32.96,32.98,Naive Persistence,343.52,False,0.0,79.88,1091.71
+Minor Pulses,4,2011,2016,2017,1851,307,Linear District Trend,398.97,1234.44,0.3852,35.51,37.64,Naive Persistence,343.52,False,0.0,137.05,1226.81
+Minor Pulses,4,2011,2016,2017,1851,307,RandomForestRegressor,407.54,1445.96,0.1565,43.11,34.14,Naive Persistence,343.52,False,-18.64,106.49,1442.04
+Minor Pulses,4,2011,2016,2017,1851,307,GradientBoostingRegressor,399.41,1243.79,0.3758,44.7,35.72,Naive Persistence,343.52,False,-16.27,75.7,1241.49
+Maize,1,2011,2013,2014,923,301,Historical District Mean,540.62,829.45,0.7198,25.87,29.65,Historical District Mean,540.62,False,0.0,144.5,816.76
+Maize,1,2011,2013,2014,923,301,Naive Persistence,692.58,990.89,0.6001,29.78,39.71,Historical District Mean,540.62,False,0.0,-164.47,977.15
+Maize,1,2011,2013,2014,923,301,Linear District Trend,751.87,1141.22,0.4695,38.4,35.17,Historical District Mean,540.62,False,0.0,-166.81,1128.96
+Maize,1,2011,2013,2014,923,301,RandomForestRegressor,563.64,903.58,0.6675,26.69,30.18,Historical District Mean,540.62,False,-4.26,-5.83,903.56
+Maize,1,2011,2013,2014,923,301,GradientBoostingRegressor,588.71,938.82,0.641,28.0,38.57,Historical District Mean,540.62,False,-8.9,-24.51,938.5
+Maize,2,2011,2014,2015,1224,308,Historical District Mean,552.29,913.34,0.7147,29.9,29.94,Historical District Mean,552.29,False,0.0,37.24,912.58
+Maize,2,2011,2014,2015,1224,308,Naive Persistence,690.31,1065.34,0.6119,31.65,37.86,Historical District Mean,552.29,False,0.0,-216.97,1043.01
+Maize,2,2011,2014,2015,1224,308,Linear District Trend,688.37,1124.96,0.5672,40.04,34.67,Historical District Mean,552.29,False,0.0,-218.2,1103.6
+Maize,2,2011,2014,2015,1224,308,RandomForestRegressor,592.28,957.67,0.6864,35.02,34.56,Historical District Mean,552.29,False,-7.24,-107.99,951.56
+Maize,2,2011,2014,2015,1224,308,GradientBoostingRegressor,600.5,940.55,0.6975,35.78,40.88,Historical District Mean,552.29,False,-8.73,-138.41,930.31
+Maize,3,2011,2015,2016,1532,307,Historical District Mean,717.06,1470.39,0.388,34.17,33.53,Historical District Mean,717.06,False,0.0,225.77,1452.95
+Maize,3,2011,2015,2016,1532,307,Naive Persistence,918.12,1730.54,0.1523,37.15,43.03,Historical District Mean,717.06,False,0.0,48.4,1729.86
+Maize,3,2011,2015,2016,1532,307,Linear District Trend,842.41,1758.02,0.1252,40.1,37.17,Historical District Mean,717.06,False,0.0,61.99,1756.93
+Maize,3,2011,2015,2016,1532,307,RandomForestRegressor,730.35,1574.03,0.2987,34.91,40.08,Historical District Mean,717.06,False,-1.85,158.1,1566.07
+Maize,3,2011,2015,2016,1532,307,GradientBoostingRegressor,767.83,1644.82,0.2342,36.93,41.2,Historical District Mean,717.06,False,-7.08,183.22,1634.58
+Maize,4,2011,2016,2017,1839,303,Historical District Mean,749.69,1110.51,0.6652,36.88,34.12,Historical District Mean,749.69,False,0.0,569.34,953.46
+Maize,4,2011,2016,2017,1839,303,Naive Persistence,917.15,1682.01,0.2318,37.8,41.16,Historical District Mean,749.69,False,0.0,254.09,1662.7
+Maize,4,2011,2016,2017,1839,303,Linear District Trend,783.42,1294.93,0.5447,39.05,34.76,Historical District Mean,749.69,False,0.0,364.95,1242.44
+Maize,4,2011,2016,2017,1839,303,RandomForestRegressor,728.42,1121.49,0.6585,38.51,34.09,Historical District Mean,749.69,True,2.84,427.65,1036.75
+Maize,4,2011,2016,2017,1839,303,GradientBoostingRegressor,726.46,1133.76,0.651,38.55,39.34,Historical District Mean,749.69,True,3.1,349.36,1078.6
+Rice,1,2011,2013,2014,926,304,Historical District Mean,253.44,391.06,0.8738,15.97,20.37,Historical District Mean,253.44,False,0.0,56.4,386.97
+Rice,1,2011,2013,2014,926,304,Naive Persistence,427.39,730.05,0.5602,18.88,35.08,Historical District Mean,253.44,False,0.0,-139.21,716.65
+Rice,1,2011,2013,2014,926,304,Linear District Trend,350.76,582.58,0.7199,24.42,24.79,Historical District Mean,253.44,False,0.0,-16.62,582.34
+Rice,1,2011,2013,2014,926,304,RandomForestRegressor,276.3,427.85,0.849,18.03,21.79,Historical District Mean,253.44,False,-9.02,-40.41,425.94
+Rice,1,2011,2013,2014,926,304,GradientBoostingRegressor,284.43,423.16,0.8522,18.2,35.36,Historical District Mean,253.44,False,-12.23,-24.43,422.46
+Rice,2,2011,2014,2015,1230,310,Historical District Mean,321.48,448.85,0.8504,25.95,28.79,Historical District Mean,321.48,False,0.0,-100.36,437.48
+Rice,2,2011,2014,2015,1230,310,Naive Persistence,490.74,753.01,0.5788,28.42,40.33,Historical District Mean,321.48,False,0.0,-309.19,686.6
+Rice,2,2011,2014,2015,1230,310,Linear District Trend,386.98,595.43,0.7367,30.86,29.3,Historical District Mean,321.48,False,0.0,-184.28,566.19
+Rice,2,2011,2014,2015,1230,310,RandomForestRegressor,361.66,515.77,0.8024,30.92,31.13,Historical District Mean,321.48,False,-12.5,-187.58,480.45
+Rice,2,2011,2014,2015,1230,310,GradientBoostingRegressor,358.79,507.57,0.8087,30.41,42.47,Historical District Mean,321.48,False,-11.61,-169.0,478.6
+Rice,3,2011,2015,2016,1540,311,Historical District Mean,341.21,501.94,0.7927,16.31,25.19,Historical District Mean,341.21,False,0.0,162.81,474.8
+Rice,3,2011,2015,2016,1540,311,Naive Persistence,550.43,794.25,0.481,22.21,41.37,Historical District Mean,341.21,False,0.0,80.39,790.17
+Rice,3,2011,2015,2016,1540,311,Linear District Trend,393.44,566.98,0.7355,20.91,28.01,Historical District Mean,341.21,False,0.0,168.76,541.28
+Rice,3,2011,2015,2016,1540,311,RandomForestRegressor,384.7,537.15,0.7626,19.12,33.18,Historical District Mean,341.21,False,-12.75,210.47,494.2
+Rice,3,2011,2015,2016,1540,311,GradientBoostingRegressor,419.24,570.91,0.7318,20.48,41.24,Historical District Mean,341.21,False,-22.87,260.06,508.24
+Rice,4,2011,2016,2017,1851,307,Historical District Mean,324.99,498.96,0.8012,15.88,24.36,Historical District Mean,324.99,False,0.0,147.81,476.57
+Rice,4,2011,2016,2017,1851,307,Naive Persistence,441.43,704.57,0.6036,17.72,32.87,Historical District Mean,324.99,False,0.0,-127.56,692.93
+Rice,4,2011,2016,2017,1851,307,Linear District Trend,347.24,538.1,0.7688,18.13,24.27,Historical District Mean,324.99,False,0.0,71.74,533.29
+Rice,4,2011,2016,2017,1851,307,RandomForestRegressor,322.74,494.53,0.8047,17.97,25.01,Historical District Mean,324.99,True,0.69,48.57,492.14
+Rice,4,2011,2016,2017,1851,307,GradientBoostingRegressor,342.58,500.7,0.7998,19.48,35.02,Historical District Mean,324.99,False,-5.41,1.95,500.7
+Sesamum,1,2011,2013,2014,926,304,Historical District Mean,132.35,215.22,0.4046,32.28,56.51,Historical District Mean,132.35,False,0.0,-33.12,212.66
+Sesamum,1,2011,2013,2014,926,304,Naive Persistence,168.44,243.54,0.2376,30.18,70.97,Historical District Mean,132.35,False,0.0,-59.32,236.2
+Sesamum,1,2011,2013,2014,926,304,Linear District Trend,160.01,250.35,0.1944,41.05,67.49,Historical District Mean,132.35,False,0.0,-11.56,250.08
+Sesamum,1,2011,2013,2014,926,304,RandomForestRegressor,135.54,207.38,0.4472,32.12,64.58,Historical District Mean,132.35,False,-2.41,-18.57,206.54
+Sesamum,1,2011,2013,2014,926,304,GradientBoostingRegressor,138.13,209.36,0.4366,33.48,71.37,Historical District Mean,132.35,False,-4.37,-18.9,208.5
+Sesamum,2,2011,2014,2015,1230,309,Historical District Mean,133.66,210.84,0.3973,45.93,53.73,Historical District Mean,133.66,False,0.0,-20.52,209.84
+Sesamum,2,2011,2014,2015,1230,309,Naive Persistence,170.92,237.63,0.2345,47.6,68.23,Historical District Mean,133.66,False,0.0,-72.82,226.19
+Sesamum,2,2011,2014,2015,1230,309,Linear District Trend,147.3,225.78,0.3089,55.7,63.91,Historical District Mean,133.66,False,0.0,1.73,225.77
+Sesamum,2,2011,2014,2015,1230,309,RandomForestRegressor,128.47,195.08,0.4841,44.0,54.71,Historical District Mean,133.66,True,3.88,-12.33,194.69
+Sesamum,2,2011,2014,2015,1230,309,GradientBoostingRegressor,129.71,192.88,0.4957,46.03,68.88,Historical District Mean,133.66,True,2.96,-6.48,192.77
+Sesamum,3,2011,2015,2016,1539,310,Historical District Mean,125.35,207.07,0.4567,39.26,44.06,Historical District Mean,125.35,False,0.0,20.65,206.04
+Sesamum,3,2011,2015,2016,1539,310,Naive Persistence,176.22,251.48,0.1987,59.11,63.39,Historical District Mean,125.35,False,0.0,-25.7,250.17
+Sesamum,3,2011,2015,2016,1539,310,Linear District Trend,153.38,248.03,0.2205,63.68,62.1,Historical District Mean,125.35,False,0.0,39.67,244.84
+Sesamum,3,2011,2015,2016,1539,310,RandomForestRegressor,130.59,205.19,0.4665,45.33,47.62,Historical District Mean,125.35,False,-4.18,26.53,203.47
+Sesamum,3,2011,2015,2016,1539,310,GradientBoostingRegressor,130.9,203.53,0.4752,42.41,58.87,Historical District Mean,125.35,False,-4.43,32.26,200.95
+Sesamum,4,2011,2016,2017,1849,307,Historical District Mean,158.17,435.43,0.0997,94.83,46.38,Historical District Mean,158.17,False,0.0,91.28,425.75
+Sesamum,4,2011,2016,2017,1849,307,Naive Persistence,160.83,399.87,0.2407,78.0,45.39,Historical District Mean,158.17,False,0.0,24.55,399.12
+Sesamum,4,2011,2016,2017,1849,307,Linear District Trend,173.89,428.27,0.129,83.33,56.53,Historical District Mean,158.17,False,0.0,95.47,417.5
+Sesamum,4,2011,2016,2017,1849,307,RandomForestRegressor,161.38,428.79,0.1269,90.07,46.28,Historical District Mean,158.17,False,-2.03,83.58,420.56
+Sesamum,4,2011,2016,2017,1849,307,GradientBoostingRegressor,160.06,423.26,0.1493,93.15,51.55,Historical District Mean,158.17,False,-1.19,78.9,415.84
+Chickpea,1,2011,2013,2014,925,304,Historical District Mean,280.84,413.35,0.2365,46.52,44.94,Historical District Mean,280.84,False,0.0,-112.75,397.68
+Chickpea,1,2011,2013,2014,925,304,Naive Persistence,326.16,451.72,0.0882,31.9,55.14,Historical District Mean,280.84,False,0.0,-168.56,419.09
+Chickpea,1,2011,2013,2014,925,304,Linear District Trend,305.38,455.29,0.0737,41.3,50.15,Historical District Mean,280.84,False,0.0,-71.96,449.56
+Chickpea,1,2011,2013,2014,925,304,RandomForestRegressor,267.07,388.89,0.3242,42.84,44.46,Historical District Mean,280.84,True,4.9,-72.35,382.1
+Chickpea,1,2011,2013,2014,925,304,GradientBoostingRegressor,255.41,377.61,0.3628,38.59,58.49,Historical District Mean,280.84,True,9.05,-51.32,374.11
+Chickpea,2,2011,2014,2015,1229,310,Historical District Mean,229.56,342.49,0.4154,36.74,38.09,Historical District Mean,229.56,False,0.0,-79.28,333.19
+Chickpea,2,2011,2014,2015,1229,310,Naive Persistence,323.12,447.73,0.0009,36.39,56.11,Historical District Mean,229.56,False,0.0,-119.21,431.57
+Chickpea,2,2011,2014,2015,1229,310,Linear District Trend,328.87,493.67,-0.2147,52.74,61.58,Historical District Mean,229.56,False,0.0,10.92,493.55
+Chickpea,2,2011,2014,2015,1229,310,RandomForestRegressor,218.42,321.63,0.4844,34.59,41.19,Historical District Mean,229.56,True,4.85,2.45,321.62
+Chickpea,2,2011,2014,2015,1229,310,GradientBoostingRegressor,222.3,320.77,0.4872,34.1,54.92,Historical District Mean,229.56,True,3.16,9.28,320.63
+Chickpea,3,2011,2015,2016,1539,310,Historical District Mean,271.23,421.57,0.3889,39.14,36.04,Historical District Mean,271.23,False,0.0,139.73,397.74
+Chickpea,3,2011,2015,2016,1539,310,Naive Persistence,394.25,531.55,0.0285,46.15,56.49,Historical District Mean,271.23,False,0.0,95.59,522.88
+Chickpea,3,2011,2015,2016,1539,310,Linear District Trend,407.35,592.86,-0.2086,57.17,59.35,Historical District Mean,271.23,False,0.0,249.18,537.95
+Chickpea,3,2011,2015,2016,1539,310,RandomForestRegressor,329.03,474.67,0.2252,45.29,45.49,Historical District Mean,271.23,False,-21.31,204.67,428.28
+Chickpea,3,2011,2015,2016,1539,310,GradientBoostingRegressor,331.7,474.86,0.2246,45.04,56.99,Historical District Mean,271.23,False,-22.29,213.02,424.4
+Chickpea,4,2011,2016,2017,1849,307,Historical District Mean,273.87,446.41,0.2996,23.97,32.77,Historical District Mean,273.87,False,0.0,204.95,396.59
+Chickpea,4,2011,2016,2017,1849,307,Naive Persistence,311.4,500.06,0.1211,22.23,42.96,Historical District Mean,273.87,False,0.0,3.05,500.05
+Chickpea,4,2011,2016,2017,1849,307,Linear District Trend,314.44,502.99,0.1108,28.03,38.01,Historical District Mean,273.87,False,0.0,203.76,459.87
+Chickpea,4,2011,2016,2017,1849,307,RandomForestRegressor,239.62,417.05,0.3887,21.76,26.83,Historical District Mean,273.87,True,12.51,43.97,414.72
+Chickpea,4,2011,2016,2017,1849,307,GradientBoostingRegressor,220.91,397.7,0.4441,19.99,39.68,Historical District Mean,273.87,True,19.34,51.23,394.39
+Pigeonpea,1,2011,2013,2014,926,304,Historical District Mean,272.65,388.3,0.4147,46.56,52.47,Historical District Mean,272.65,False,0.0,-63.66,383.04
+Pigeonpea,1,2011,2013,2014,926,304,Naive Persistence,351.83,485.42,0.0852,47.35,66.61,Historical District Mean,272.65,False,0.0,-180.36,450.67
+Pigeonpea,1,2011,2013,2014,926,304,Linear District Trend,359.16,565.79,-0.2427,55.91,56.88,Historical District Mean,272.65,False,0.0,-180.62,536.18
+Pigeonpea,1,2011,2013,2014,926,304,RandomForestRegressor,282.97,403.61,0.3676,50.0,52.96,Historical District Mean,272.65,False,-3.79,-118.71,385.76
+Pigeonpea,1,2011,2013,2014,926,304,GradientBoostingRegressor,284.51,397.01,0.3881,49.87,67.61,Historical District Mean,272.65,False,-4.35,-106.79,382.38
+Pigeonpea,2,2011,2014,2015,1230,310,Historical District Mean,247.16,349.36,0.5279,41.42,54.96,Historical District Mean,247.16,False,0.0,-78.24,340.49
+Pigeonpea,2,2011,2014,2015,1230,310,Naive Persistence,325.74,431.2,0.2807,38.84,68.28,Historical District Mean,247.16,False,0.0,-146.48,405.56
+Pigeonpea,2,2011,2014,2015,1230,310,Linear District Trend,305.04,456.72,0.1931,51.46,58.76,Historical District Mean,247.16,False,0.0,-90.27,447.71
+Pigeonpea,2,2011,2014,2015,1230,310,RandomForestRegressor,249.23,344.57,0.5407,46.23,59.29,Historical District Mean,247.16,False,-0.84,-44.02,341.75
+Pigeonpea,2,2011,2014,2015,1230,310,GradientBoostingRegressor,246.19,340.04,0.5527,43.31,70.4,Historical District Mean,247.16,True,0.39,-24.56,339.15
+Pigeonpea,3,2011,2015,2016,1540,311,Historical District Mean,305.05,449.73,0.3434,31.73,51.98,Historical District Mean,305.05,False,0.0,144.5,425.88
+Pigeonpea,3,2011,2015,2016,1540,311,Naive Persistence,386.83,530.13,0.0877,35.38,68.45,Historical District Mean,305.05,False,0.0,91.88,522.11
+Pigeonpea,3,2011,2015,2016,1540,311,Linear District Trend,362.96,543.28,0.0418,42.54,65.96,Historical District Mean,305.05,False,0.0,177.8,513.37
+Pigeonpea,3,2011,2015,2016,1540,311,RandomForestRegressor,350.38,494.1,0.2075,37.91,61.64,Historical District Mean,305.05,False,-14.86,201.11,451.32
+Pigeonpea,3,2011,2015,2016,1540,311,GradientBoostingRegressor,354.23,494.61,0.2059,38.95,72.73,Historical District Mean,305.05,False,-16.12,205.53,449.88
+Pigeonpea,4,2011,2016,2017,1851,307,Historical District Mean,304.54,433.24,0.35,29.77,49.86,Linear District Trend,280.79,False,0.0,131.88,412.68
+Pigeonpea,4,2011,2016,2017,1851,307,Naive Persistence,326.54,462.84,0.2581,29.05,56.36,Linear District Trend,280.79,False,0.0,-78.94,456.06
+Pigeonpea,4,2011,2016,2017,1851,307,Linear District Trend,280.79,438.17,0.3351,31.17,43.72,Linear District Trend,280.79,False,0.0,82.97,430.24
+Pigeonpea,4,2011,2016,2017,1851,307,RandomForestRegressor,289.89,404.76,0.4326,32.69,46.81,Linear District Trend,280.79,False,-3.24,-12.65,404.56
+Pigeonpea,4,2011,2016,2017,1851,307,GradientBoostingRegressor,287.65,386.63,0.4823,32.85,57.66,Linear District Trend,280.79,False,-2.44,-30.59,385.41
+Wheat,1,2011,2013,2014,926,304,Historical District Mean,493.91,703.68,0.6302,30.79,27.98,Historical District Mean,493.91,False,0.0,-294.17,639.25
+Wheat,1,2011,2013,2014,926,304,Naive Persistence,795.74,1062.97,0.1562,31.81,51.82,Historical District Mean,493.91,False,0.0,-538.96,916.2
+Wheat,1,2011,2013,2014,926,304,Linear District Trend,531.96,747.67,0.5825,32.69,30.18,Historical District Mean,493.91,False,0.0,-255.33,702.72
+Wheat,1,2011,2013,2014,926,304,RandomForestRegressor,453.89,658.03,0.6766,29.33,26.77,Historical District Mean,493.91,True,8.1,-271.95,599.2
+Wheat,1,2011,2013,2014,926,304,GradientBoostingRegressor,451.88,650.65,0.6839,29.19,49.18,Historical District Mean,493.91,True,8.51,-258.99,596.89
+Wheat,2,2011,2014,2015,1230,310,Historical District Mean,282.2,455.14,0.8814,19.82,20.99,Historical District Mean,282.2,False,0.0,-63.69,450.66
+Wheat,2,2011,2014,2015,1230,310,Naive Persistence,698.07,990.71,0.4379,22.96,50.3,Historical District Mean,282.2,False,0.0,-158.8,977.9
+Wheat,2,2011,2014,2015,1230,310,Linear District Trend,457.91,667.99,0.7445,25.96,28.26,Historical District Mean,282.2,False,0.0,169.69,646.07
+Wheat,2,2011,2014,2015,1230,310,RandomForestRegressor,395.6,602.52,0.7921,22.94,26.24,Historical District Mean,282.2,False,-40.18,178.41,575.5
+Wheat,2,2011,2014,2015,1230,310,GradientBoostingRegressor,423.68,620.62,0.7794,24.01,51.18,Historical District Mean,282.2,False,-50.13,208.83,584.43
+Wheat,3,2011,2015,2016,1540,311,Historical District Mean,368.86,500.96,0.8779,21.74,24.33,Historical District Mean,368.86,False,0.0,258.18,429.31
+Wheat,3,2011,2015,2016,1540,311,Naive Persistence,730.89,992.96,0.5205,29.27,50.83,Historical District Mean,368.86,False,0.0,2.04,992.95
+Wheat,3,2011,2015,2016,1540,311,Linear District Trend,603.97,820.38,0.6727,35.18,37.92,Historical District Mean,368.86,False,0.0,435.17,695.46
+Wheat,3,2011,2015,2016,1540,311,RandomForestRegressor,526.77,693.05,0.7664,28.58,32.43,Historical District Mean,368.86,False,-42.81,423.58,548.54
+Wheat,3,2011,2015,2016,1540,311,GradientBoostingRegressor,558.25,742.53,0.7319,29.72,55.64,Historical District Mean,368.86,False,-51.34,444.85,594.53
+Wheat,4,2011,2016,2017,1851,307,Historical District Mean,381.63,551.32,0.8561,17.06,27.44,Historical District Mean,381.63,False,0.0,238.79,496.93
+Wheat,4,2011,2016,2017,1851,307,Naive Persistence,534.81,883.64,0.6303,15.1,42.09,Historical District Mean,381.63,False,0.0,-248.98,847.83
+Wheat,4,2011,2016,2017,1851,307,Linear District Trend,430.26,601.79,0.8285,19.3,28.59,Historical District Mean,381.63,False,0.0,230.4,555.94
+Wheat,4,2011,2016,2017,1851,307,RandomForestRegressor,297.55,472.06,0.8945,15.07,24.4,Historical District Mean,381.63,True,22.03,-60.01,468.23
+Wheat,4,2011,2016,2017,1851,307,GradientBoostingRegressor,307.11,486.68,0.8878,14.54,42.73,Historical District Mean,381.63,True,19.53,-95.21,477.28
+Oilseeds,1,2011,2013,2014,925,303,Historical District Mean,459.45,735.48,0.6587,40.46,65.67,Historical District Mean,459.45,False,0.0,13.18,735.36
+Oilseeds,1,2011,2013,2014,925,303,Naive Persistence,484.16,797.39,0.5988,38.2,67.91,Historical District Mean,459.45,False,0.0,-195.66,773.01
+Oilseeds,1,2011,2013,2014,925,303,Linear District Trend,547.18,864.51,0.5284,51.27,70.59,Historical District Mean,459.45,False,0.0,-216.03,837.08
+Oilseeds,1,2011,2013,2014,925,303,RandomForestRegressor,470.22,748.28,0.6467,49.97,69.02,Historical District Mean,459.45,False,-2.34,-182.07,725.79
+Oilseeds,1,2011,2013,2014,925,303,GradientBoostingRegressor,473.12,763.9,0.6318,49.0,69.9,Historical District Mean,459.45,False,-2.98,-192.51,739.25
+Oilseeds,2,2011,2014,2015,1228,308,Historical District Mean,489.54,679.75,0.6536,45.77,91.49,Linear District Trend,469.55,False,0.0,-160.23,660.6
+Oilseeds,2,2011,2014,2015,1228,308,Naive Persistence,476.69,646.78,0.6864,36.95,85.39,Linear District Trend,469.55,False,0.0,-344.1,547.65
+Oilseeds,2,2011,2014,2015,1228,308,Linear District Trend,469.55,740.31,0.5891,49.84,79.94,Linear District Trend,469.55,False,0.0,-303.75,675.13
+Oilseeds,2,2011,2014,2015,1228,308,RandomForestRegressor,453.53,660.42,0.673,45.97,93.53,Linear District Trend,469.55,True,3.41,-177.65,636.08
+Oilseeds,2,2011,2014,2015,1228,308,GradientBoostingRegressor,431.0,674.51,0.6589,48.31,93.6,Linear District Trend,469.55,True,8.21,-179.39,650.22
+Oilseeds,3,2011,2015,2016,1536,311,Historical District Mean,773.91,1015.71,0.3361,16.19,180.91,Linear District Trend,772.24,False,0.0,-679.4,755.03
+Oilseeds,3,2011,2015,2016,1536,311,Naive Persistence,850.03,1150.18,0.1487,20.95,181.86,Linear District Trend,772.24,False,0.0,-770.13,854.29
+Oilseeds,3,2011,2015,2016,1536,311,Linear District Trend,772.24,1270.46,-0.0387,22.04,177.38,Linear District Trend,772.24,False,0.0,-709.29,1054.03
+Oilseeds,3,2011,2015,2016,1536,311,RandomForestRegressor,718.59,1054.13,0.2849,22.17,182.18,Linear District Trend,772.24,True,6.95,-625.35,848.6
+Oilseeds,3,2011,2015,2016,1536,311,GradientBoostingRegressor,692.0,1066.0,0.2687,23.76,182.38,Linear District Trend,772.24,True,10.39,-592.65,886.07
+Oilseeds,4,2011,2016,2017,1847,307,Historical District Mean,736.88,1297.12,0.4981,25.23,182.32,Linear District Trend,384.38,False,0.0,-474.13,1207.37
+Oilseeds,4,2011,2016,2017,1847,307,Naive Persistence,738.21,1165.3,0.595,22.14,182.61,Linear District Trend,384.38,False,0.0,-545.29,1029.84
+Oilseeds,4,2011,2016,2017,1847,307,Linear District Trend,384.38,1015.39,0.6925,21.68,172.35,Linear District Trend,384.38,False,0.0,-192.93,996.89
+Oilseeds,4,2011,2016,2017,1847,307,RandomForestRegressor,218.59,1044.05,0.6749,43.97,171.73,Linear District Trend,384.38,True,43.13,85.41,1040.55
+Oilseeds,4,2011,2016,2017,1847,307,GradientBoostingRegressor,273.56,1009.8,0.6958,58.94,188.48,Linear District Trend,384.38,True,28.83,77.56,1006.82
+Sugarcane,1,2011,2013,2014,897,299,Historical District Mean,1209.4,2043.32,0.6615,23.3,35.82,Historical District Mean,1209.4,False,0.0,398.83,2004.02
+Sugarcane,1,2011,2013,2014,897,299,Naive Persistence,1659.59,2583.96,0.4587,21.39,50.68,Historical District Mean,1209.4,False,0.0,-673.35,2494.69
+Sugarcane,1,2011,2013,2014,897,299,Linear District Trend,1746.18,2872.41,0.3311,34.24,48.82,Historical District Mean,1209.4,False,0.0,-162.69,2867.8
+Sugarcane,1,2011,2013,2014,897,299,RandomForestRegressor,1179.02,1963.03,0.6876,23.04,35.41,Historical District Mean,1209.4,True,2.51,101.67,1960.4
+Sugarcane,1,2011,2013,2014,897,299,GradientBoostingRegressor,1306.28,2058.88,0.6563,25.41,54.05,Historical District Mean,1209.4,False,-8.01,158.86,2052.75
+Sugarcane,2,2011,2014,2015,1196,304,Historical District Mean,1681.41,2732.82,0.4303,23.41,55.83,Historical District Mean,1681.41,False,0.0,-278.54,2718.59
+Sugarcane,2,2011,2014,2015,1196,304,Naive Persistence,2207.91,3330.77,0.1537,26.19,68.19,Historical District Mean,1681.41,False,0.0,-1223.87,3097.77
+Sugarcane,2,2011,2014,2015,1196,304,Linear District Trend,1911.51,2988.14,0.3188,30.93,58.35,Historical District Mean,1681.41,False,0.0,-819.62,2873.53
+Sugarcane,2,2011,2014,2015,1196,304,RandomForestRegressor,1717.36,2791.92,0.4054,27.37,56.11,Historical District Mean,1681.41,False,-2.14,-525.22,2742.07
+Sugarcane,2,2011,2014,2015,1196,304,GradientBoostingRegressor,1665.64,2633.07,0.4711,30.74,71.25,Historical District Mean,1681.41,True,0.94,-451.8,2594.02
+Sugarcane,3,2011,2015,2016,1500,306,Historical District Mean,1509.97,2195.98,0.5825,30.12,49.9,Historical District Mean,1509.97,False,0.0,14.5,2195.93
+Sugarcane,3,2011,2015,2016,1500,306,Naive Persistence,1813.4,2528.54,0.4465,24.89,61.4,Historical District Mean,1509.97,False,0.0,-806.36,2396.52
+Sugarcane,3,2011,2015,2016,1500,306,Linear District Trend,1693.42,2622.84,0.4044,36.79,55.04,Historical District Mean,1509.97,False,0.0,-146.69,2618.73
+Sugarcane,3,2011,2015,2016,1500,306,RandomForestRegressor,1274.7,1887.75,0.6915,26.33,45.54,Historical District Mean,1509.97,True,15.58,-128.71,1883.35
+Sugarcane,3,2011,2015,2016,1500,306,GradientBoostingRegressor,1346.32,1898.22,0.688,31.16,63.48,Historical District Mean,1509.97,True,10.84,-61.41,1897.23
+Sugarcane,4,2011,2016,2017,1806,299,Historical District Mean,1563.36,2246.87,0.6456,79.39,54.65,Linear District Trend,1323.29,False,0.0,47.46,2246.37
+Sugarcane,4,2011,2016,2017,1806,299,Naive Persistence,1884.74,2751.74,0.4685,72.47,65.11,Linear District Trend,1323.29,False,0.0,-759.0,2644.99
+Sugarcane,4,2011,2016,2017,1806,299,Linear District Trend,1323.29,2117.49,0.6853,53.92,46.06,Linear District Trend,1323.29,False,0.0,-118.86,2114.15
+Sugarcane,4,2011,2016,2017,1806,299,RandomForestRegressor,1472.32,2231.89,0.6503,68.87,56.24,Linear District Trend,1323.29,False,-11.26,304.9,2210.97
+Sugarcane,4,2011,2016,2017,1806,299,GradientBoostingRegressor,1458.08,2188.76,0.6637,69.68,71.56,Linear District Trend,1323.29,False,-10.19,358.54,2159.2
+Rapeseed and Mustard,1,2011,2013,2014,926,304,Historical District Mean,204.63,335.6,0.6198,40.44,37.4,Historical District Mean,204.63,False,0.0,-87.67,323.95
+Rapeseed and Mustard,1,2011,2013,2014,926,304,Naive Persistence,332.67,449.72,0.3173,33.58,68.0,Historical District Mean,204.63,False,0.0,-235.17,383.33
+Rapeseed and Mustard,1,2011,2013,2014,926,304,Linear District Trend,219.09,367.69,0.5437,33.74,41.51,Historical District Mean,204.63,False,0.0,-78.46,359.22
+Rapeseed and Mustard,1,2011,2013,2014,926,304,RandomForestRegressor,205.11,334.92,0.6214,38.43,38.3,Historical District Mean,204.63,False,-0.23,-73.08,326.85
+Rapeseed and Mustard,1,2011,2013,2014,926,304,GradientBoostingRegressor,213.31,352.17,0.5814,39.03,71.69,Historical District Mean,204.63,False,-4.24,-64.46,346.22
+Rapeseed and Mustard,2,2011,2014,2015,1230,310,Historical District Mean,133.91,231.77,0.8097,20.8,29.93,Historical District Mean,133.91,False,0.0,-42.16,227.9
+Rapeseed and Mustard,2,2011,2014,2015,1230,310,Naive Persistence,325.51,447.14,0.2918,23.18,69.65,Historical District Mean,133.91,False,0.0,-154.24,419.7
+Rapeseed and Mustard,2,2011,2014,2015,1230,310,Linear District Trend,209.75,362.71,0.534,29.07,40.57,Historical District Mean,133.91,False,0.0,21.81,362.05
+Rapeseed and Mustard,2,2011,2014,2015,1230,310,RandomForestRegressor,162.29,261.91,0.757,21.69,33.64,Historical District Mean,133.91,False,-21.19,31.44,260.02
+Rapeseed and Mustard,2,2011,2014,2015,1230,310,GradientBoostingRegressor,183.98,287.0,0.7082,25.71,70.94,Historical District Mean,133.91,False,-37.39,30.91,285.33
+Rapeseed and Mustard,3,2011,2015,2016,1540,311,Historical District Mean,213.68,329.14,0.7097,39.53,50.07,Historical District Mean,213.68,False,0.0,61.81,323.29
+Rapeseed and Mustard,3,2011,2015,2016,1540,311,Naive Persistence,328.28,449.48,0.4587,49.89,64.37,Historical District Mean,213.68,False,0.0,-76.29,442.96
+Rapeseed and Mustard,3,2011,2015,2016,1540,311,Linear District Trend,268.22,408.13,0.5537,58.16,61.37,Historical District Mean,213.68,False,0.0,122.81,389.21
+Rapeseed and Mustard,3,2011,2015,2016,1540,311,RandomForestRegressor,232.07,349.39,0.6729,43.49,51.73,Historical District Mean,213.68,False,-8.61,103.13,333.83
+Rapeseed and Mustard,3,2011,2015,2016,1540,311,GradientBoostingRegressor,234.83,353.26,0.6657,45.03,72.71,Historical District Mean,213.68,False,-9.9,99.29,339.02
+Rapeseed and Mustard,4,2011,2016,2017,1851,307,Historical District Mean,221.08,336.47,0.7046,31.49,48.2,Linear District Trend,215.59,False,0.0,102.61,320.44
+Rapeseed and Mustard,4,2011,2016,2017,1851,307,Naive Persistence,273.86,389.74,0.6037,27.1,55.4,Linear District Trend,215.59,False,0.0,-87.15,379.87
+Rapeseed and Mustard,4,2011,2016,2017,1851,307,Linear District Trend,215.59,323.64,0.7267,29.73,46.59,Linear District Trend,215.59,False,0.0,113.15,303.21
+Rapeseed and Mustard,4,2011,2016,2017,1851,307,RandomForestRegressor,199.34,306.25,0.7553,26.75,46.91,Linear District Trend,215.59,True,7.54,37.97,303.89
+Rapeseed and Mustard,4,2011,2016,2017,1851,307,GradientBoostingRegressor,197.62,294.51,0.7737,28.95,58.44,Linear District Trend,215.59,True,8.34,19.68,293.85
+Groundnut,1,2011,2013,2014,924,304,Historical District Mean,269.13,474.55,0.719,19.81,38.85,Historical District Mean,269.13,False,0.0,-34.34,473.31
+Groundnut,1,2011,2013,2014,924,304,Naive Persistence,498.15,698.8,0.3908,22.75,70.44,Historical District Mean,269.13,False,0.0,-316.5,623.01
+Groundnut,1,2011,2013,2014,924,304,Linear District Trend,354.65,609.0,0.5373,29.14,44.21,Historical District Mean,269.13,False,0.0,-134.26,594.02
+Groundnut,1,2011,2013,2014,924,304,RandomForestRegressor,318.98,533.02,0.6455,24.14,41.94,Historical District Mean,269.13,False,-18.52,-83.81,526.39
+Groundnut,1,2011,2013,2014,924,304,GradientBoostingRegressor,322.37,533.62,0.6447,25.04,72.55,Historical District Mean,269.13,False,-19.78,-72.27,528.7
+Groundnut,2,2011,2014,2015,1228,309,Historical District Mean,295.55,469.06,0.724,34.52,42.81,Historical District Mean,295.55,False,0.0,-77.47,462.62
+Groundnut,2,2011,2014,2015,1228,309,Naive Persistence,498.41,684.95,0.4114,30.8,71.72,Historical District Mean,295.55,False,0.0,-322.02,604.53
+Groundnut,2,2011,2014,2015,1228,309,Linear District Trend,297.41,522.13,0.658,36.09,38.06,Historical District Mean,295.55,False,0.0,-103.92,511.69
+Groundnut,2,2011,2014,2015,1228,309,RandomForestRegressor,294.71,467.71,0.7256,38.8,44.08,Historical District Mean,295.55,True,0.28,-89.79,459.01
+Groundnut,2,2011,2014,2015,1228,309,GradientBoostingRegressor,289.63,450.62,0.7453,35.62,74.22,Historical District Mean,295.55,True,2.0,-70.01,445.14
+Groundnut,3,2011,2015,2016,1537,310,Historical District Mean,277.11,438.49,0.7453,29.31,40.84,Historical District Mean,277.11,False,0.0,-4.87,438.46
+Groundnut,3,2011,2015,2016,1537,310,Naive Persistence,503.3,655.37,0.4309,35.51,72.81,Historical District Mean,277.11,False,0.0,-200.5,623.95
+Groundnut,3,2011,2015,2016,1537,310,Linear District Trend,287.98,434.37,0.75,39.86,40.13,Historical District Mean,277.11,False,0.0,15.93,434.08
+Groundnut,3,2011,2015,2016,1537,310,RandomForestRegressor,290.84,434.69,0.7497,32.11,43.25,Historical District Mean,277.11,False,-4.95,3.19,434.68
+Groundnut,3,2011,2015,2016,1537,310,GradientBoostingRegressor,289.99,414.57,0.7723,33.09,73.07,Historical District Mean,277.11,False,-4.65,43.0,412.33
+Groundnut,4,2011,2016,2017,1847,307,Historical District Mean,316.91,496.53,0.6894,23.85,40.67,Historical District Mean,316.91,False,0.0,182.39,461.82
+Groundnut,4,2011,2016,2017,1847,307,Naive Persistence,477.2,657.23,0.4558,22.15,60.15,Historical District Mean,316.91,False,0.0,-62.72,654.23
+Groundnut,4,2011,2016,2017,1847,307,Linear District Trend,373.33,590.04,0.5614,31.12,46.7,Historical District Mean,316.91,False,0.0,180.68,561.7
+Groundnut,4,2011,2016,2017,1847,307,RandomForestRegressor,343.16,526.12,0.6513,25.47,41.91,Historical District Mean,316.91,False,-8.28,182.27,493.54
+Groundnut,4,2011,2016,2017,1847,307,GradientBoostingRegressor,351.34,536.47,0.6374,26.75,67.4,Historical District Mean,316.91,False,-10.86,206.18,495.26
+Sorghum,1,2011,2013,2014,924,304,Historical District Mean,237.03,416.96,0.7154,34.51,40.69,Historical District Mean,237.03,False,0.0,2.58,416.96
+Sorghum,1,2011,2013,2014,924,304,Naive Persistence,470.79,598.52,0.4137,30.7,87.3,Historical District Mean,237.03,False,0.0,-204.69,562.43
+Sorghum,1,2011,2013,2014,924,304,Linear District Trend,307.47,525.6,0.5478,36.56,50.19,Historical District Mean,237.03,False,0.0,13.95,525.41
+Sorghum,1,2011,2013,2014,924,304,RandomForestRegressor,241.89,411.75,0.7225,35.18,41.99,Historical District Mean,237.03,False,-2.05,10.81,411.61
+Sorghum,1,2011,2013,2014,924,304,GradientBoostingRegressor,259.29,435.12,0.6901,34.79,88.09,Historical District Mean,237.03,False,-9.39,11.91,434.96
+Sorghum,2,2011,2014,2015,1228,309,Historical District Mean,271.29,457.62,0.5958,49.31,51.27,Historical District Mean,271.29,False,0.0,-105.81,445.22
+Sorghum,2,2011,2014,2015,1228,309,Naive Persistence,483.22,630.53,0.2327,46.15,91.13,Historical District Mean,271.29,False,0.0,-354.18,521.65
+Sorghum,2,2011,2014,2015,1228,309,Linear District Trend,276.78,505.59,0.5066,50.35,48.85,Historical District Mean,271.29,False,0.0,-108.79,493.75
+Sorghum,2,2011,2014,2015,1228,309,RandomForestRegressor,265.52,451.65,0.6063,49.84,52.94,Historical District Mean,271.29,True,2.13,-101.59,440.07
+Sorghum,2,2011,2014,2015,1228,309,GradientBoostingRegressor,265.46,455.33,0.5999,47.24,92.23,Historical District Mean,271.29,True,2.15,-97.12,444.85
+Sorghum,3,2011,2015,2016,1537,311,Historical District Mean,259.56,459.5,0.5778,40.81,50.0,Historical District Mean,259.56,False,0.0,-51.7,456.58
+Sorghum,3,2011,2015,2016,1537,311,Naive Persistence,515.58,659.52,0.1303,43.5,96.46,Historical District Mean,259.56,False,0.0,-223.66,620.43
+Sorghum,3,2011,2015,2016,1537,311,Linear District Trend,331.23,578.94,0.3298,54.08,60.72,Historical District Mean,259.56,False,0.0,3.42,578.93
+Sorghum,3,2011,2015,2016,1537,311,RandomForestRegressor,261.76,455.97,0.5843,41.44,51.31,Historical District Mean,259.56,False,-0.85,1.9,455.96
+Sorghum,3,2011,2015,2016,1537,311,GradientBoostingRegressor,266.36,446.65,0.6011,42.25,94.09,Historical District Mean,259.56,False,-2.62,11.85,446.49
+Sorghum,4,2011,2016,2017,1848,307,Historical District Mean,288.75,476.52,0.6678,30.13,49.18,Historical District Mean,288.75,False,0.0,127.24,459.22
+Sorghum,4,2011,2016,2017,1848,307,Naive Persistence,473.23,616.67,0.4437,27.37,84.46,Historical District Mean,288.75,False,0.0,-89.2,610.18
+Sorghum,4,2011,2016,2017,1848,307,Linear District Trend,354.2,598.33,0.4763,37.14,57.79,Historical District Mean,288.75,False,0.0,185.25,568.92
+Sorghum,4,2011,2016,2017,1848,307,RandomForestRegressor,326.98,559.52,0.542,32.62,53.85,Historical District Mean,288.75,False,-13.24,188.41,526.84
+Sorghum,4,2011,2016,2017,1848,307,GradientBoostingRegressor,340.46,574.04,0.5179,33.22,92.21,Historical District Mean,288.75,False,-17.91,202.83,537.01
+Kharif Sorghum,1,2011,2013,2014,925,304,Historical District Mean,283.1,474.24,0.5644,42.86,56.84,Historical District Mean,283.1,False,0.0,-23.37,473.66
+Kharif Sorghum,1,2011,2013,2014,925,304,Naive Persistence,515.13,642.89,0.1996,38.41,100.56,Historical District Mean,283.1,False,0.0,-214.36,606.1
+Kharif Sorghum,1,2011,2013,2014,925,304,Linear District Trend,358.76,606.56,0.2875,47.04,67.53,Historical District Mean,283.1,False,0.0,18.63,606.28
+Kharif Sorghum,1,2011,2013,2014,925,304,RandomForestRegressor,266.4,464.37,0.5824,38.33,51.4,Historical District Mean,283.1,True,5.9,7.23,464.31
+Kharif Sorghum,1,2011,2013,2014,925,304,GradientBoostingRegressor,279.56,477.5,0.5584,39.16,98.31,Historical District Mean,283.1,True,1.25,30.15,476.55
+Kharif Sorghum,2,2011,2014,2015,1229,309,Historical District Mean,303.73,488.15,0.4297,55.27,65.12,Linear District Trend,293.04,False,0.0,-124.25,472.07
+Kharif Sorghum,2,2011,2014,2015,1229,309,Naive Persistence,499.65,657.12,-0.0334,48.27,100.21,Linear District Trend,293.04,False,0.0,-364.64,546.67
+Kharif Sorghum,2,2011,2014,2015,1229,309,Linear District Trend,293.04,544.98,0.2892,53.62,57.65,Linear District Trend,293.04,False,0.0,-91.82,537.19
+Kharif Sorghum,2,2011,2014,2015,1229,309,RandomForestRegressor,286.05,461.17,0.491,50.45,62.72,Linear District Trend,293.04,True,2.39,-115.04,446.59
+Kharif Sorghum,2,2011,2014,2015,1229,309,GradientBoostingRegressor,263.61,430.46,0.5566,44.95,100.32,Linear District Trend,293.04,True,10.04,-77.64,423.4
+Kharif Sorghum,3,2011,2015,2016,1538,311,Historical District Mean,263.71,436.53,0.5931,42.25,62.6,Historical District Mean,263.71,False,0.0,-45.04,434.2
+Kharif Sorghum,3,2011,2015,2016,1538,311,Naive Persistence,483.62,620.83,0.177,38.05,101.55,Historical District Mean,263.71,False,0.0,-205.97,585.67
+Kharif Sorghum,3,2011,2015,2016,1538,311,Linear District Trend,315.62,557.36,0.3367,51.41,68.31,Historical District Mean,263.71,False,0.0,36.87,556.14
+Kharif Sorghum,3,2011,2015,2016,1538,311,RandomForestRegressor,265.84,422.37,0.6191,38.37,64.74,Historical District Mean,263.71,False,-0.81,35.46,420.88
+Kharif Sorghum,3,2011,2015,2016,1538,311,GradientBoostingRegressor,278.74,427.02,0.6107,40.64,103.86,Historical District Mean,263.71,False,-5.7,43.54,424.8
+Kharif Sorghum,4,2011,2016,2017,1849,307,Historical District Mean,335.55,525.49,0.5976,35.39,66.07,Historical District Mean,335.55,False,0.0,130.39,509.05
+Kharif Sorghum,4,2011,2016,2017,1849,307,Naive Persistence,481.5,633.48,0.4152,27.88,93.88,Historical District Mean,335.55,False,0.0,-88.28,627.3
+Kharif Sorghum,4,2011,2016,2017,1849,307,Linear District Trend,373.32,633.66,0.4149,40.05,67.58,Historical District Mean,335.55,False,0.0,203.49,600.1
+Kharif Sorghum,4,2011,2016,2017,1849,307,RandomForestRegressor,343.22,583.96,0.5031,34.59,67.88,Historical District Mean,335.55,False,-2.29,201.79,547.98
+Kharif Sorghum,4,2011,2016,2017,1849,307,GradientBoostingRegressor,360.85,587.51,0.497,36.06,102.62,Historical District Mean,335.55,False,-7.54,202.23,551.61
+Pearl Millet,1,2011,2013,2014,921,302,Historical District Mean,260.82,490.44,0.6801,33.76,54.32,Historical District Mean,260.82,False,0.0,28.83,489.59
+Pearl Millet,1,2011,2013,2014,921,302,Naive Persistence,506.26,635.42,0.4629,30.53,98.06,Historical District Mean,260.82,False,0.0,-261.39,579.17
+Pearl Millet,1,2011,2013,2014,921,302,Linear District Trend,366.24,650.99,0.4363,42.69,64.34,Historical District Mean,260.82,False,0.0,-0.58,650.99
+Pearl Millet,1,2011,2013,2014,921,302,RandomForestRegressor,281.77,533.5,0.6214,36.17,58.61,Historical District Mean,260.82,False,-8.03,31.66,532.56
+Pearl Millet,1,2011,2013,2014,921,302,GradientBoostingRegressor,294.69,524.41,0.6342,36.83,101.53,Historical District Mean,260.82,False,-12.99,32.31,523.41
+Pearl Millet,2,2011,2014,2015,1223,309,Historical District Mean,249.43,396.56,0.774,39.4,65.08,Historical District Mean,249.43,False,0.0,-105.53,382.26
+Pearl Millet,2,2011,2014,2015,1223,309,Naive Persistence,531.3,697.12,0.3016,30.52,106.5,Historical District Mean,249.43,False,0.0,-414.34,560.62
+Pearl Millet,2,2011,2014,2015,1223,309,Linear District Trend,271.13,537.26,0.5852,33.38,56.51,Historical District Mean,249.43,False,0.0,-145.79,517.1
+Pearl Millet,2,2011,2014,2015,1223,309,RandomForestRegressor,265.08,450.44,0.7084,35.96,65.16,Historical District Mean,249.43,False,-6.27,-119.97,434.18
+Pearl Millet,2,2011,2014,2015,1223,309,GradientBoostingRegressor,269.43,455.17,0.7022,35.17,107.24,Historical District Mean,249.43,False,-8.02,-135.22,434.61
+Pearl Millet,3,2011,2015,2016,1532,311,Historical District Mean,269.82,623.2,0.6028,35.51,61.62,Historical District Mean,269.82,False,0.0,-8.14,623.14
+Pearl Millet,3,2011,2015,2016,1532,311,Naive Persistence,523.64,779.44,0.3787,38.17,106.29,Historical District Mean,269.82,False,0.0,-239.01,741.89
+Pearl Millet,3,2011,2015,2016,1532,311,Linear District Trend,296.52,683.62,0.5221,43.16,63.25,Historical District Mean,269.82,False,0.0,20.78,683.31
+Pearl Millet,3,2011,2015,2016,1532,311,RandomForestRegressor,280.53,624.92,0.6006,37.95,65.65,Historical District Mean,269.82,False,-3.97,41.21,623.56
+Pearl Millet,3,2011,2015,2016,1532,311,GradientBoostingRegressor,281.28,637.66,0.5842,42.59,109.37,Historical District Mean,269.82,False,-4.25,77.81,632.9
+Pearl Millet,4,2011,2016,2017,1843,306,Historical District Mean,256.84,446.86,0.7323,504.14,59.2,Historical District Mean,256.84,False,0.0,81.11,439.44
+Pearl Millet,4,2011,2016,2017,1843,306,Naive Persistence,518.53,784.63,0.1747,356.8,96.55,Historical District Mean,256.84,False,0.0,-209.34,756.19
+Pearl Millet,4,2011,2016,2017,1843,306,Linear District Trend,295.36,587.26,0.5377,396.04,62.81,Historical District Mean,256.84,False,0.0,98.71,578.91
+Pearl Millet,4,2011,2016,2017,1843,306,RandomForestRegressor,271.93,480.48,0.6905,525.17,63.54,Historical District Mean,256.84,False,-5.88,94.32,471.13
+Pearl Millet,4,2011,2016,2017,1843,306,GradientBoostingRegressor,288.93,498.5,0.6669,520.92,101.87,Historical District Mean,256.84,False,-12.49,55.58,495.39

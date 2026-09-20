@@ -1,0 +1,33 @@
+{
+    "model_type": "RandomForestRegressor",
+    "native_feature_importance": {
+        "Year": 0.004206803770466377,
+        "RICE AREA (1000 ha)": 0.2346655791306655,
+        "RICE PRODUCTION (1000 tons)": 0.7063029555693889,
+        "State Code": 0.054824661529479145
+    },
+    "permutation_feature_importance": {
+        "Year": {
+            "mean_importance": 0.0005387236124884231,
+            "std_importance": 0.0006985801562848073
+        },
+        "RICE AREA (1000 ha)": {
+            "mean_importance": 1.4463375469976871,
+            "std_importance": 0.054344890739130555
+        },
+        "RICE PRODUCTION (1000 tons)": {
+            "mean_importance": 3.860991211658232,
+            "std_importance": 0.08301675982040028
+        },
+        "State Code": {
+            "mean_importance": 0.018293471947648365,
+            "std_importance": 0.0028321709599824487
+        }
+    },
+    "explanation_notes": [
+        "Feature importance indicates how heavily the model relies on specific input features to make predictions.",
+        "Higher importance reflects significant contribution to reducing variance in yield predictions.",
+        "RICE PRODUCTION and RICE AREA are the primary drivers as they approximate the biological production/area relationship.",
+        "State Code captures regional agro-climatic baseline variations."
+    ]
+}

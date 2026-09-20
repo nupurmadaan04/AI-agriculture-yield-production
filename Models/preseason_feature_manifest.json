@@ -1,0 +1,40 @@
+{
+    "dataset_name": "ICRISAT District-Level Rice Panel",
+    "total_records": 2469,
+    "temporal_range": [
+        2010,
+        2017
+    ],
+    "states_count": 20,
+    "districts_count": 311,
+    "target_variable": "RICE YIELD (Kg per ha)",
+    "preseason_features": [
+        "Year",
+        "State Code",
+        "RICE AREA (1000 ha)",
+        "TOTAL_CROPPED_AREA",
+        "RICE_AREA_SHARE",
+        "WHEAT AREA (1000 ha)",
+        "COTTON AREA (1000 ha)",
+        "SUGARCANE AREA (1000 ha)",
+        "RICE_YIELD_LAG1",
+        "RICE_YIELD_ROLL3"
+    ],
+    "feature_descriptions": {
+        "Year": "Agricultural survey year (multi-year technological trend)",
+        "State Code": "State categorical identifier (1-20)",
+        "RICE AREA (1000 ha)": "District rice cultivated area in thousand hectares",
+        "TOTAL_CROPPED_AREA": "Total cultivated area across all crops in district",
+        "RICE_AREA_SHARE": "Proportion of district cropland allocated to rice cultivation",
+        "WHEAT AREA (1000 ha)": "District wheat cropped area (Rabi cropping intensity indicator)",
+        "COTTON AREA (1000 ha)": "District cotton cropped area (cash crop competition indicator)",
+        "SUGARCANE AREA (1000 ha)": "District sugarcane cropped area (high irrigation access indicator)",
+        "RICE_YIELD_LAG1": "Reported rice yield in previous agricultural year (t-1)",
+        "RICE_YIELD_ROLL3": "3-year historical rolling average rice yield up to t-1"
+    },
+    "excluded_leakage_features": [
+        "RICE PRODUCTION (1000 tons)",
+        "All concurrent non-rice production variables (23 columns)",
+        "All concurrent non-rice yield variables (22 columns)"
+    ]
+}

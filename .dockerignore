@@ -1,0 +1,40 @@
+# Version control
+.git
+.gitignore
+.github
+
+# Python caches and virtual environments
+__pycache__
+*.py[cod]
+*$py.class
+.venv
+venv
+ENV
+.pytest_cache
+.coverage
+htmlcov
+.mypy_cache
+.ruff_cache
+
+# Frontend build and dependencies
+frontend/node_modules
+frontend/dist
+frontend/.vite
+
+# Environment and sensitive files
+.env
+.env.*
+!.env.example
+
+# IDE and local editor files
+.vscode
+.idea
+*.swp
+*.swo
+
+# Temporary logs and test artifacts
+*.log
+*.tmp
+*.bak
+reports/*
+!reports/.gitkeep

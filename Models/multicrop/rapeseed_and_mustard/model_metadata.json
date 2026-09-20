@@ -1,0 +1,57 @@
+{
+  "model_id": "multicrop_rapeseed_and_mustard_forecaster",
+  "crop": "Rapeseed and Mustard",
+  "algorithm": "GradientBoostingRegressor",
+  "version": "1.0.0",
+  "dataset_version": "AGRI_PANEL_1.0",
+  "feature_set_version": "PRE_SEASON_LAG_V1",
+  "training_period": "2011\u20132015",
+  "evaluation_period": "2016\u20132017",
+  "train_records": 1152,
+  "test_records": 498,
+  "metrics": {
+    "mae": 256.48,
+    "rmse": 342.97,
+    "r2": 0.5867,
+    "mape": 48.54,
+    "smape": 30.8
+  },
+  "baseline_comparison": {
+    "baseline_model": "Naive Persistence (t-1)",
+    "baseline_mae": 224.95,
+    "baseline_rmse": 335.73,
+    "baseline_r2": 0.6039,
+    "mae_improvement_abs": -31.53,
+    "mae_improvement_pct": -14.02
+  },
+  "status": "BASELINE_PREFERRED",
+  "feature_importance_native": {
+    "yield_lag_1": 0.5812,
+    "yield_lag_2": 0.209,
+    "yield_rolling_3yr_mean": 0.1122,
+    "area_lag_1": 0.0266,
+    "state_encoded": 0.05,
+    "year": 0.0209
+  },
+  "feature_importance_permutation": {
+    "yield_lag_1": 0.3304,
+    "yield_lag_2": 0.1442,
+    "yield_rolling_3yr_mean": 0.0872,
+    "area_lag_1": 0.0124,
+    "state_encoded": 0.019,
+    "year": 0.0
+  },
+  "error_analysis": {
+    "p25": 85.65,
+    "p50_median": 193.7,
+    "p75": 361.99,
+    "p90": 551.37,
+    "low_error_pct": 37.6,
+    "moderate_error_pct": 30.9,
+    "high_error_pct": 31.5
+  },
+  "uncertainty_spread_p10_p90": null,
+  "artifact_path": "Models/multicrop/rapeseed_and_mustard/model_pipeline.pkl",
+  "sha256": "4a6f4c235fd6331e41d9c7a17d411b63ed1f4aebd38a44aa75774a8e9a52f547",
+  "created_at": "2026-09-02T17:29:24.524715Z"
+}

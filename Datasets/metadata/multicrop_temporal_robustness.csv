@@ -1,0 +1,15 @@
+crop,model,fold_count,mean_mae,median_mae,std_mae,mean_rmse,std_rmse,mean_r2,std_r2,baseline_mae,mean_mae_improvement,median_mae_improvement,win_rate,status
+Minor Pulses,GradientBoostingRegressor,4,329.96,333.35,53.42,823.76,339.95,0.0496,0.1898,315.0,-5.76,-7.69,50.0,SPLIT_SENSITIVE
+Maize,RandomForestRegressor,4,653.67,660.35,76.39,1139.19,263.56,0.5778,0.1614,639.91,-2.63,-3.05,25.0,SPLIT_SENSITIVE
+Rice,RandomForestRegressor,4,336.35,342.2,41.14,493.82,40.96,0.8047,0.0306,310.28,-8.39,-10.76,25.0,SPLIT_SENSITIVE
+Sesamum,RandomForestRegressor,4,139.0,133.06,13.18,259.11,98.07,0.3812,0.1474,137.38,-1.19,-2.22,25.0,SPLIT_SENSITIVE
+Chickpea,GradientBoostingRegressor,4,257.58,238.86,44.97,392.74,55.17,0.3797,0.1001,263.88,2.32,6.11,75.0,ROBUST_ACCEPTED
+Pigeonpea,RandomForestRegressor,4,293.12,286.43,36.46,411.76,53.41,0.3871,0.1207,276.41,-5.68,-3.52,0.0,BASELINE_PREFERRED
+Wheat,RandomForestRegressor,4,418.45,424.75,83.86,606.41,84.02,0.7824,0.0776,381.65,-13.21,-16.04,50.0,SPLIT_SENSITIVE
+Oilseeds,RandomForestRegressor,4,465.23,461.88,176.91,876.72,175.18,0.5699,0.1649,521.4,12.79,5.18,75.0,ROBUST_ACCEPTED
+Sugarcane,RandomForestRegressor,4,1410.85,1373.51,206.16,2218.65,354.84,0.6087,0.1185,1431.02,1.17,0.18,50.0,SPLIT_SENSITIVE
+Rapeseed and Mustard,RandomForestRegressor,4,199.7,202.23,24.88,313.12,33.39,0.7017,0.0575,191.95,-5.62,-4.42,25.0,SPLIT_SENSITIVE
+Groundnut,RandomForestRegressor,4,311.92,306.85,21.01,490.38,40.96,0.693,0.0455,289.68,-7.87,-6.62,25.0,SPLIT_SENSITIVE
+Sorghum,RandomForestRegressor,4,274.04,263.64,31.86,469.72,54.64,0.6138,0.0669,264.16,-3.5,-1.45,25.0,SPLIT_SENSITIVE
+Kharif Sorghum,RandomForestRegressor,4,290.38,276.23,31.58,482.97,60.61,0.5489,0.0536,293.85,1.3,0.79,50.0,SPLIT_SENSITIVE
+Pearl Millet,RandomForestRegressor,4,274.83,276.23,6.78,522.34,66.27,0.6552,0.0453,259.23,-6.04,-6.07,0.0,BASELINE_PREFERRED

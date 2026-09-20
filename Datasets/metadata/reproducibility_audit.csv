@@ -1,0 +1,15 @@
+crop,dataset_sha256,feature_matrix_sha256,model_artifact_sha256,run1_prediction_hash,run2_prediction_hash,max_absolute_prediction_diff,bitwise_reproducible,status
+Oilseeds,13f882d7d4617e77...,2e87db02ba2a7037...,1cfa0d4901507db2...,3a2eaaa12b21f6be...,3a2eaaa12b21f6be...,0.0,True,VERIFIED_BITWISE
+Chickpea,13f882d7d4617e77...,0b1cde69754bd3a4...,1cfa0d4901507db2...,d2f90b228384ed4c...,d2f90b228384ed4c...,0.0,True,VERIFIED_BITWISE
+Kharif Sorghum,13f882d7d4617e77...,b25c1bbab2ad39f4...,1cfa0d4901507db2...,2bf3cd69f0963b7f...,2bf3cd69f0963b7f...,0.0,True,VERIFIED_BITWISE
+Minor Pulses,13f882d7d4617e77...,edcbc6f9cdd1bdc3...,1cfa0d4901507db2...,522fbcc1333fbbde...,522fbcc1333fbbde...,0.0,True,VERIFIED_BITWISE
+Maize,13f882d7d4617e77...,1bc7cd8cc4879d42...,1cfa0d4901507db2...,7fdcfa065523571d...,7fdcfa065523571d...,0.0,True,VERIFIED_BITWISE
+Wheat,13f882d7d4617e77...,25f69ea23772ee50...,1cfa0d4901507db2...,90ca8faa5bcc5ce7...,90ca8faa5bcc5ce7...,0.0,True,VERIFIED_BITWISE
+Sugarcane,13f882d7d4617e77...,fba582d06f2c4c5b...,1cfa0d4901507db2...,21aa1728b0e4f063...,21aa1728b0e4f063...,0.0,True,VERIFIED_BITWISE
+Rice,13f882d7d4617e77...,041ba5dc60e2925b...,1cfa0d4901507db2...,f729d0178a36215c...,f729d0178a36215c...,0.0,True,VERIFIED_BITWISE
+Sesamum,13f882d7d4617e77...,1f9354bb629fcc2c...,1cfa0d4901507db2...,fafd618736526876...,fafd618736526876...,0.0,True,VERIFIED_BITWISE
+Pigeonpea,13f882d7d4617e77...,989eaac59cfd0dc0...,1cfa0d4901507db2...,51ca8b4b18d2b4a9...,51ca8b4b18d2b4a9...,0.0,True,VERIFIED_BITWISE
+Rapeseed and Mustard,13f882d7d4617e77...,4e4c4ec4dad000f5...,1cfa0d4901507db2...,5f207ff089c37ddb...,5f207ff089c37ddb...,0.0,True,VERIFIED_BITWISE
+Groundnut,13f882d7d4617e77...,4b9529f6d8fb4b99...,1cfa0d4901507db2...,1aa9ada5b3e8ba4c...,1aa9ada5b3e8ba4c...,0.0,True,VERIFIED_BITWISE
+Sorghum,13f882d7d4617e77...,f00725e0a03b0fce...,1cfa0d4901507db2...,29f42d2a0abcba17...,29f42d2a0abcba17...,0.0,True,VERIFIED_BITWISE
+Pearl Millet,13f882d7d4617e77...,0c72a07adb1da65a...,1cfa0d4901507db2...,72210f43283f325f...,72210f43283f325f...,0.0,True,VERIFIED_BITWISE

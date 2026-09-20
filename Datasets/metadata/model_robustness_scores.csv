@@ -1,0 +1,15 @@
+crop,robustness_score,robustness_status,best_model,win_rate,mean_mae_improvement,std_mae,recommendation
+Minor Pulses,56.0,SPLIT_SENSITIVE,Historical District Mean,50.0,-5.76,53.42,ML model (GradientBoostingRegressor) is split-sensitive; outperformed baseline in 2/4 folds but lacks uniform multi-origin stability.
+Maize,47.1,SPLIT_SENSITIVE,Historical District Mean,25.0,-2.63,76.39,ML model (RandomForestRegressor) is split-sensitive; outperformed baseline in 1/4 folds but lacks uniform multi-origin stability.
+Rice,46.9,SPLIT_SENSITIVE,Historical District Mean,25.0,-8.39,41.14,ML model (RandomForestRegressor) is split-sensitive; outperformed baseline in 1/4 folds but lacks uniform multi-origin stability.
+Sesamum,47.6,SPLIT_SENSITIVE,Historical District Mean,25.0,-1.19,13.18,ML model (RandomForestRegressor) is split-sensitive; outperformed baseline in 1/4 folds but lacks uniform multi-origin stability.
+Chickpea,70.3,ROBUST_ACCEPTED,GradientBoostingRegressor,75.0,2.32,44.97,ML model (GradientBoostingRegressor) demonstrates consistent temporal superiority across 3/4 walk-forward folds with mean MAE improvement of +2.32%.
+Pigeonpea,36.9,BASELINE_PREFERRED,Historical District Mean,0.0,-5.68,36.46,Statistical baseline (276.41 kg/ha MAE) is superior to ML across 4/4 temporal forecasting folds.
+Wheat,55.0,SPLIT_SENSITIVE,Historical District Mean,50.0,-13.21,83.86,ML model (RandomForestRegressor) is split-sensitive; outperformed baseline in 2/4 folds but lacks uniform multi-origin stability.
+Oilseeds,80.5,ROBUST_ACCEPTED,RandomForestRegressor,75.0,12.79,176.91,ML model (RandomForestRegressor) demonstrates consistent temporal superiority across 3/4 walk-forward folds with mean MAE improvement of +12.79%.
+Sugarcane,58.7,SPLIT_SENSITIVE,Historical District Mean,50.0,1.17,206.16,ML model (RandomForestRegressor) is split-sensitive; outperformed baseline in 2/4 folds but lacks uniform multi-origin stability.
+Rapeseed and Mustard,46.9,SPLIT_SENSITIVE,Historical District Mean,25.0,-5.62,24.88,ML model (RandomForestRegressor) is split-sensitive; outperformed baseline in 1/4 folds but lacks uniform multi-origin stability.
+Groundnut,48.3,SPLIT_SENSITIVE,Historical District Mean,25.0,-7.87,21.01,ML model (RandomForestRegressor) is split-sensitive; outperformed baseline in 1/4 folds but lacks uniform multi-origin stability.
+Sorghum,47.1,SPLIT_SENSITIVE,Historical District Mean,25.0,-3.5,31.86,ML model (RandomForestRegressor) is split-sensitive; outperformed baseline in 1/4 folds but lacks uniform multi-origin stability.
+Kharif Sorghum,59.9,SPLIT_SENSITIVE,Historical District Mean,50.0,1.3,31.58,ML model (RandomForestRegressor) is split-sensitive; outperformed baseline in 2/4 folds but lacks uniform multi-origin stability.
+Pearl Millet,39.4,BASELINE_PREFERRED,Historical District Mean,0.0,-6.04,6.78,Statistical baseline (259.23 kg/ha MAE) is superior to ML across 4/4 temporal forecasting folds.

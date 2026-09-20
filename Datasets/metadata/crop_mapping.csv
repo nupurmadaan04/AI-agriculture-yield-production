@@ -1,0 +1,30 @@
+raw_crop,standard_crop,source,mapping_type,confidence,notes
+RICE,Rice,ICRISAT_DLD_1966_2017,EXACT,1.0,Direct prefix mapping from ICRISAT survey schema
+WHEAT,Wheat,ICRISAT_DLD_1966_2017,EXACT,1.0,Direct prefix mapping from ICRISAT survey schema
+KHARIF SORGHUM,Kharif Sorghum,ICRISAT_DLD_1966_2017,EXACT,1.0,Direct prefix mapping from ICRISAT survey schema
+RABI SORGHUM,Rabi Sorghum,ICRISAT_DLD_1966_2017,EXACT,1.0,Direct prefix mapping from ICRISAT survey schema
+SORGHUM,Sorghum,ICRISAT_DLD_1966_2017,EXACT,1.0,Direct prefix mapping from ICRISAT survey schema
+PEARL MILLET,Pearl Millet,ICRISAT_DLD_1966_2017,EXACT,1.0,Direct prefix mapping from ICRISAT survey schema
+MAIZE,Maize,ICRISAT_DLD_1966_2017,EXACT,1.0,Direct prefix mapping from ICRISAT survey schema
+FINGER MILLET,Finger Millet,ICRISAT_DLD_1966_2017,EXACT,1.0,Direct prefix mapping from ICRISAT survey schema
+BARLEY,Barley,ICRISAT_DLD_1966_2017,EXACT,1.0,Direct prefix mapping from ICRISAT survey schema
+CHICKPEA,Chickpea,ICRISAT_DLD_1966_2017,EXACT,1.0,Direct prefix mapping from ICRISAT survey schema
+PIGEONPEA,Pigeonpea,ICRISAT_DLD_1966_2017,EXACT,1.0,Direct prefix mapping from ICRISAT survey schema
+MINOR PULSES,Minor Pulses,ICRISAT_DLD_1966_2017,EXACT,1.0,Direct prefix mapping from ICRISAT survey schema
+GROUNDNUT,Groundnut,ICRISAT_DLD_1966_2017,EXACT,1.0,Direct prefix mapping from ICRISAT survey schema
+SESAMUM,Sesamum,ICRISAT_DLD_1966_2017,EXACT,1.0,Direct prefix mapping from ICRISAT survey schema
+RAPESEED AND MUSTARD,Rapeseed and Mustard,ICRISAT_DLD_1966_2017,EXACT,1.0,Direct prefix mapping from ICRISAT survey schema
+SAFFLOWER,Safflower,ICRISAT_DLD_1966_2017,EXACT,1.0,Direct prefix mapping from ICRISAT survey schema
+CASTOR,Castor,ICRISAT_DLD_1966_2017,EXACT,1.0,Direct prefix mapping from ICRISAT survey schema
+LINSEED,Linseed,ICRISAT_DLD_1966_2017,EXACT,1.0,Direct prefix mapping from ICRISAT survey schema
+SUNFLOWER,Sunflower,ICRISAT_DLD_1966_2017,EXACT,1.0,Direct prefix mapping from ICRISAT survey schema
+SOYABEAN,Soyabean,ICRISAT_DLD_1966_2017,EXACT,1.0,Direct prefix mapping from ICRISAT survey schema
+OILSEEDS,Oilseeds,ICRISAT_DLD_1966_2017,EXACT,1.0,Direct prefix mapping from ICRISAT survey schema
+SUGARCANE,Sugarcane,ICRISAT_DLD_1966_2017,EXACT,1.0,Direct prefix mapping from ICRISAT survey schema
+COTTON,Cotton,ICRISAT_DLD_1966_2017,EXACT,1.0,Direct prefix mapping from ICRISAT survey schema
+FRUITS,Fruits,ICRISAT_DLD_1966_2017,EXACT,1.0,Direct prefix mapping from ICRISAT survey schema
+VEGETABLES,Vegetables,ICRISAT_DLD_1966_2017,EXACT,1.0,Direct prefix mapping from ICRISAT survey schema
+FRUITS AND VEGETABLES,Fruits and Vegetables,ICRISAT_DLD_1966_2017,EXACT,1.0,Direct prefix mapping from ICRISAT survey schema
+POTATOES,Potatoes,ICRISAT_DLD_1966_2017,EXACT,1.0,Direct prefix mapping from ICRISAT survey schema
+ONION,Onion,ICRISAT_DLD_1966_2017,EXACT,1.0,Direct prefix mapping from ICRISAT survey schema
+FODDER,Fodder,ICRISAT_DLD_1966_2017,EXACT,1.0,Direct prefix mapping from ICRISAT survey schema

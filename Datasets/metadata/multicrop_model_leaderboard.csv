@@ -1,0 +1,15 @@
+crop,best_model,best_mae,best_rmse,best_r2,baseline_model,baseline_mae,mae_improvement_pct,model_status
+Sesamum,RandomForestRegressor,114.62,185.98,0.4975,Historical District Mean,117.69,2.61,ACCEPTED
+Maize,RandomForestRegressor,744.73,1401.15,0.4174,Historical District Mean,763.91,2.51,ACCEPTED
+Pigeonpea,GradientBoostingRegressor,295.41,426.61,0.0434,Naive Persistence (t-1),299.15,1.25,ACCEPTED
+Sugarcane,GradientBoostingRegressor,1121.27,1672.88,0.5947,Naive Persistence (t-1),1126.31,0.45,ACCEPTED
+Rice,Historical District Mean,367.49,511.63,0.6735,Historical District Mean,367.49,-3.16,BASELINE_PREFERRED
+Pearl Millet,Historical District Mean,329.83,622.61,0.4563,Historical District Mean,329.83,-4.86,BASELINE_PREFERRED
+Groundnut,Historical District Mean,302.18,427.43,0.622,Historical District Mean,302.18,-6.05,BASELINE_PREFERRED
+Kharif Sorghum,Historical District Mean,331.18,474.88,0.4501,Historical District Mean,331.18,-6.21,BASELINE_PREFERRED
+Sorghum,Historical District Mean,305.79,449.39,0.549,Historical District Mean,305.79,-7.01,BASELINE_PREFERRED
+Minor Pulses,Historical District Mean,322.3,1208.09,0.1951,Historical District Mean,322.3,-9.71,BASELINE_PREFERRED
+Chickpea,Historical District Mean,274.42,410.14,0.1277,Historical District Mean,274.42,-12.93,BASELINE_PREFERRED
+Rapeseed and Mustard,Naive Persistence (t-1),224.95,335.73,0.6039,Naive Persistence (t-1),224.95,-14.02,BASELINE_PREFERRED
+Oilseeds,Naive Persistence (t-1),746.72,2041.8,0.7635,Naive Persistence (t-1),746.72,-14.16,BASELINE_PREFERRED
+Wheat,Naive Persistence (t-1),396.55,569.12,0.7556,Naive Persistence (t-1),396.55,-33.54,BASELINE_PREFERRED

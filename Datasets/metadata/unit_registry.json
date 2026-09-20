@@ -1,0 +1,29 @@
+{
+  "version": "1.0.0",
+  "units": [
+    {
+      "source": "ICRISAT_DLD_1966_2017",
+      "variable": "Area",
+      "original_unit": "1000 ha",
+      "standard_unit": "ha",
+      "conversion": "x * 1000",
+      "conversion_reference": "ICRISAT DLD Documentation"
+    },
+    {
+      "source": "ICRISAT_DLD_1966_2017",
+      "variable": "Production",
+      "original_unit": "1000 tons",
+      "standard_unit": "tonnes",
+      "conversion": "x * 1000",
+      "conversion_reference": "ICRISAT DLD Documentation"
+    },
+    {
+      "source": "ICRISAT_DLD_1966_2017",
+      "variable": "Yield",
+      "original_unit": "Kg per ha",
+      "standard_unit": "kg/ha",
+      "conversion": "1:1",
+      "conversion_reference": "ICRISAT DLD Documentation"
+    }
+  ]
+}

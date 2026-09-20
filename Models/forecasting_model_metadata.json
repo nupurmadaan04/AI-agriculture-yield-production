@@ -1,0 +1,83 @@
+{
+  "model_name": "Temporal Exogenous Random Forest Forecaster",
+  "algorithm": "RandomForestRegressor (n_estimators=150, max_depth=14)",
+  "target": "RICE YIELD (Kg per ha)",
+  "chronological_split": {
+    "train_years": "2010\u20132015",
+    "test_years": "2016\u20132017",
+    "train_records": 1851,
+    "test_records": 618
+  },
+  "supported_horizons": [
+    1,
+    2,
+    3
+  ],
+  "features": [
+    "Year",
+    "State Code",
+    "RICE AREA (1000 ha)",
+    "TOTAL_CROPPED_AREA",
+    "RICE_AREA_SHARE",
+    "WHEAT AREA (1000 ha)",
+    "COTTON AREA (1000 ha)",
+    "SUGARCANE AREA (1000 ha)",
+    "RICE_YIELD_LAG1",
+    "RICE_YIELD_ROLL3"
+  ],
+  "benchmark_results": [
+    {
+      "model": "Naive (Last Observation yt-1)",
+      "mae": 377.57,
+      "rmse": 575.09,
+      "r2": 0.7319,
+      "mape": 20.48
+    },
+    {
+      "model": "Historical District Mean",
+      "mae": 360.58,
+      "rmse": 530.57,
+      "r2": 0.7718,
+      "mape": 17.02
+    },
+    {
+      "model": "Linear Trend Regression",
+      "mae": 371.61,
+      "rmse": 538.23,
+      "r2": 0.7652,
+      "mape": 19.08
+    },
+    {
+      "model": "HistGradientBoosting",
+      "mae": 366.78,
+      "rmse": 524.63,
+      "r2": 0.7769,
+      "mape": 18.53
+    },
+    {
+      "model": "Gradient Boosting Regressor",
+      "mae": 374.35,
+      "rmse": 532.66,
+      "r2": 0.77,
+      "mape": 19.2
+    },
+    {
+      "model": "Random Forest Regressor (Selected)",
+      "mae": 353.01,
+      "rmse": 513.11,
+      "r2": 0.7866,
+      "mape": 18.04
+    }
+  ],
+  "selected_model_metrics": {
+    "mae_kg_ha": 353.01,
+    "rmse_kg_ha": 513.11,
+    "r2_score": 0.7866,
+    "mape_percent": 18.04
+  },
+  "scientific_safeguards": [
+    "Production strictly excluded from all training and forecasting features.",
+    "Lags computed with shift(1) strictly excluding future data.",
+    "Validation performed out-of-time (2016\u20132017) without random shuffling."
+  ]
+}

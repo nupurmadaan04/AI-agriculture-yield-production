@@ -1,0 +1,11 @@
+feature,source,spatial_level,temporal_resolution,observation_period,availability_date,forecast_origin,lag,unit,transformation,leakage_status
+preseason_rainfall_total,IMD_DISTRICT_MET_SERIES,district,seasonal_sum (Jan–May),Jan–May of year t,May 31 of year t,pre-season,0,mm,seasonal_sum,SAFE
+preseason_rainfall_anomaly,IMD_DISTRICT_MET_SERIES,district,seasonal_pct_departure,Jan–May of year t,May 31 of year t,pre-season,0,%,pct_departure_from_30yr_normal,SAFE
+preseason_temp_mean,IMD_DISTRICT_MET_SERIES,district,seasonal_mean (Mar–May),Mar–May of year t,May 31 of year t,pre-season,0,°C,seasonal_mean,SAFE
+preseason_temp_max,IMD_DISTRICT_MET_SERIES,district,seasonal_max (Mar–May),Mar–May of year t,May 31 of year t,pre-season,0,°C,seasonal_maximum,SAFE
+preseason_temp_anomaly,IMD_DISTRICT_MET_SERIES,district,seasonal_departure,Mar–May of year t,May 31 of year t,pre-season,0,°C,mean_temp_minus_historical_baseline,SAFE
+preseason_soil_moisture,NASA_POWER_ERA5_AGROCLIM,district,monthly_mean (May),May 1–25 of year t,May 25 of year t,pre-season,0,index [0-1],near_real_time_satellite_saturation_index,SAFE
+preseason_dry_spell_days,IMD_DISTRICT_MET_SERIES,district,seasonal_count,Jan–May of year t,May 31 of year t,pre-season,0,days,consecutive_dry_days_count,SAFE
+preseason_aridity_index,NASA_POWER_ERA5_AGROCLIM,district,seasonal_spei_proxy,Jan–May of year t,May 31 of year t,pre-season,0,z-score,standardized_precipitation_minus_pet,SAFE
+rainfall_lag1_total,ICRISAT_AGROCLIMATIC_MESONET,district,annual_sum (t-1),Full year t-1,Dec 31 of year t-1,pre-season,1,mm,previous_year_annual_precipitation,SAFE
+irrigation_ratio_lag1,ICRISAT_AGROCLIMATIC_MESONET,district,annual_ratio (t-1),Full year t-1,Dec 31 of year t-1,pre-season,1,ratio [0-1],irrigated_area_divided_by_total_cropped_area,SAFE

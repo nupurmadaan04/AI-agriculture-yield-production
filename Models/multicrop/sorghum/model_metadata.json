@@ -1,0 +1,57 @@
+{
+  "model_id": "multicrop_sorghum_forecaster",
+  "crop": "Sorghum",
+  "algorithm": "RandomForestRegressor",
+  "version": "1.0.0",
+  "dataset_version": "AGRI_PANEL_1.0",
+  "feature_set_version": "PRE_SEASON_LAG_V1",
+  "training_period": "2011\u20132015",
+  "evaluation_period": "2016\u20132017",
+  "train_records": 1021,
+  "test_records": 397,
+  "metrics": {
+    "mae": 327.23,
+    "rmse": 493.87,
+    "r2": 0.4553,
+    "mape": 33.34,
+    "smape": 28.89
+  },
+  "baseline_comparison": {
+    "baseline_model": "Historical District Mean",
+    "baseline_mae": 305.79,
+    "baseline_rmse": 449.39,
+    "baseline_r2": 0.549,
+    "mae_improvement_abs": -21.44,
+    "mae_improvement_pct": -7.01
+  },
+  "status": "BASELINE_PREFERRED",
+  "feature_importance_native": {
+    "yield_lag_1": 0.3895,
+    "yield_lag_2": 0.2144,
+    "yield_rolling_3yr_mean": 0.2763,
+    "area_lag_1": 0.0586,
+    "state_encoded": 0.035,
+    "year": 0.0262
+  },
+  "feature_importance_permutation": {
+    "yield_lag_1": 0.2237,
+    "yield_lag_2": 0.0649,
+    "yield_rolling_3yr_mean": 0.0177,
+    "area_lag_1": 0.0003,
+    "state_encoded": 0.0127,
+    "year": 0.0
+  },
+  "error_analysis": {
+    "p25": 81.24,
+    "p50_median": 199.7,
+    "p75": 439.72,
+    "p90": 773.22,
+    "low_error_pct": 40.1,
+    "moderate_error_pct": 26.2,
+    "high_error_pct": 33.8
+  },
+  "uncertainty_spread_p10_p90": 782.96,
+  "artifact_path": "Models/multicrop/sorghum/model_pipeline.pkl",
+  "sha256": "84a33a0f8c764f75157c7dd8d3de2af03a8d9f6dc8a376cd9d30376298523bb4",
+  "created_at": "2026-09-02T17:29:54.174314Z"
+}

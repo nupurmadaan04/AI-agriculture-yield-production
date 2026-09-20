@@ -1,0 +1,10 @@
+feature,observation_period,availability_date,forecast_origin,lag,is_preseason_available,is_fold_safe,timing_status,rationale
+preseason_rainfall_mm,January 1 – May 31 (Pre-Monsoon Window),May 31 of harvest year t,Pre-Season (June 1),0,True,True,SAFE,Pre-monsoon rainfall is fully observed prior to Kharif sowing.
+preseason_rainfall_anomaly_pct,January 1 – May 31 (Pre-Monsoon Window),May 31 of harvest year t,Pre-Season (June 1),0,True,True,SAFE,Normalized against 30-year historical baseline strictly computed prior to test fold.
+preseason_temp_mean_c,March 1 – May 31 (Pre-Sowing Window),May 31 of harvest year t,Pre-Season (June 1),0,True,True,SAFE,Mean pre-sowing thermal regime fully observable before planting.
+preseason_temp_max_c,March 1 – May 31 (Pre-Sowing Heat Wave Window),May 31 of harvest year t,Pre-Season (June 1),0,True,True,SAFE,Maximum pre-sowing temperature indicator for early thermal stress.
+preseason_soil_moisture_index,May 1 – May 25 (Pre-Sowing Saturated Layer),May 25 of harvest year t,Pre-Season (June 1),0,True,True,SAFE,Top-soil moisture available from near-real-time satellite/reanalysis products.
+preseason_dry_spell_days,January 1 – May 31 (Pre-Monsoon Dry Span),May 31 of harvest year t,Pre-Season (June 1),0,True,True,SAFE,Consecutive rainless days prior to planting date.
+rainfall_lag1_annual_mm,Previous Agricultural Year (t-1),December 31 of year t-1,Pre-Season (June 1),1,True,True,SAFE,Trailing year hydrological carryover.
+monsoon_rainfall_june_sept_mm,June 1 – September 30 of year t,September 30 of year t (Post-Sowing),Pre-Season (June 1),0,False,False,UNSAFE,Concurrent monsoon rainfall is NOT available prior to June planting. Forbidden in pre-season forecasting.
+harvest_ndvi_max,August 1 – October 31 of year t,October 31 of year t (Harvest Window),Pre-Season (June 1),0,False,False,UNSAFE,Peak crop vegetative vigor is observed months after pre-season forecast point. Forbidden.

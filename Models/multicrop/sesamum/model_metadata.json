@@ -1,0 +1,57 @@
+{
+  "model_id": "multicrop_sesamum_forecaster",
+  "crop": "Sesamum",
+  "algorithm": "RandomForestRegressor",
+  "version": "1.0.0",
+  "dataset_version": "AGRI_PANEL_1.0",
+  "feature_set_version": "PRE_SEASON_LAG_V1",
+  "training_period": "2011\u20132015",
+  "evaluation_period": "2016\u20132017",
+  "train_records": 1268,
+  "test_records": 531,
+  "metrics": {
+    "mae": 114.62,
+    "rmse": 185.98,
+    "r2": 0.4975,
+    "mape": 64.06,
+    "smape": 27.96
+  },
+  "baseline_comparison": {
+    "baseline_model": "Historical District Mean",
+    "baseline_mae": 117.69,
+    "baseline_rmse": 193.26,
+    "baseline_r2": 0.4574,
+    "mae_improvement_abs": 3.07,
+    "mae_improvement_pct": 2.61
+  },
+  "status": "ACCEPTED",
+  "feature_importance_native": {
+    "yield_lag_1": 0.5458,
+    "yield_lag_2": 0.2522,
+    "yield_rolling_3yr_mean": 0.0676,
+    "area_lag_1": 0.053,
+    "state_encoded": 0.0647,
+    "year": 0.0167
+  },
+  "feature_importance_permutation": {
+    "yield_lag_1": 0.2653,
+    "yield_lag_2": 0.1168,
+    "yield_rolling_3yr_mean": 0.0161,
+    "area_lag_1": 0.0018,
+    "state_encoded": 0.0615,
+    "year": 0.0
+  },
+  "error_analysis": {
+    "p25": 26.84,
+    "p50_median": 64.64,
+    "p75": 145.08,
+    "p90": 268.84,
+    "low_error_pct": 44.8,
+    "moderate_error_pct": 21.1,
+    "high_error_pct": 34.1
+  },
+  "uncertainty_spread_p10_p90": 246.36,
+  "artifact_path": "Models/multicrop/sesamum/model_pipeline.pkl",
+  "sha256": "671f9e490bb2145f225b7e8bd7ee1c6b50751247fe3ccae2f9d0816ae9e6acdb",
+  "created_at": "2026-09-02T17:28:17.568834Z"
+}

@@ -1,0 +1,57 @@
+{
+  "model_id": "multicrop_chickpea_forecaster",
+  "crop": "Chickpea",
+  "algorithm": "GradientBoostingRegressor",
+  "version": "1.0.0",
+  "dataset_version": "AGRI_PANEL_1.0",
+  "feature_set_version": "PRE_SEASON_LAG_V1",
+  "training_period": "2011\u20132015",
+  "evaluation_period": "2016\u20132017",
+  "train_records": 1306,
+  "test_records": 538,
+  "metrics": {
+    "mae": 309.91,
+    "rmse": 450.34,
+    "r2": -0.0517,
+    "mape": 32.71,
+    "smape": 29.24
+  },
+  "baseline_comparison": {
+    "baseline_model": "Historical District Mean",
+    "baseline_mae": 274.42,
+    "baseline_rmse": 410.14,
+    "baseline_r2": 0.1277,
+    "mae_improvement_abs": -35.49,
+    "mae_improvement_pct": -12.93
+  },
+  "status": "BASELINE_PREFERRED",
+  "feature_importance_native": {
+    "yield_lag_1": 0.4897,
+    "yield_lag_2": 0.0777,
+    "yield_rolling_3yr_mean": 0.2284,
+    "area_lag_1": 0.0289,
+    "state_encoded": 0.1009,
+    "year": 0.0745
+  },
+  "feature_importance_permutation": {
+    "yield_lag_1": 0.1502,
+    "yield_lag_2": 0.0228,
+    "yield_rolling_3yr_mean": 0.0671,
+    "area_lag_1": 0.0114,
+    "state_encoded": 0.0093,
+    "year": 0.0
+  },
+  "error_analysis": {
+    "p25": 98.1,
+    "p50_median": 237.67,
+    "p75": 427.3,
+    "p90": 653.71,
+    "low_error_pct": 31.4,
+    "moderate_error_pct": 36.2,
+    "high_error_pct": 32.3
+  },
+  "uncertainty_spread_p10_p90": null,
+  "artifact_path": "Models/multicrop/chickpea/model_pipeline.pkl",
+  "sha256": "bb1ab2adcf68e706e32086f72afb0ee7ba26cfc08fb74831a00ed1e53904bd65",
+  "created_at": "2026-09-02T17:28:29.738353Z"
+}

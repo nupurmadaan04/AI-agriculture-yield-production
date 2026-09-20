@@ -1,0 +1,7 @@
+check_id,description,scope,tested_condition,leakage_risk,audit_result,status
+CHK_PRESEASON_TIMING,Pre-Season Cutoff Enforcement (Jan–May observations only for Kharif),All Weather & Thermal Features,Observation period terminates <= May 31 of harvest year t,HIGH (Simultaneity / Lookahead),PASS,SAFE
+CHK_NO_CONCURRENT_MONSOON,Monsoon Rainfall Rejection (June–September rainfall excluded),Pre-Season Feature Set,No June–September precipitation allowed in pre-season model,CRITICAL (Target Contamination),PASS,SAFE
+CHK_NO_HARVEST_NDVI,Peak Harvest Remote Sensing Rejection (August–October NDVI excluded),Pre-Season Feature Set,No post-sowing vegetation indices allowed in pre-season model,CRITICAL (Post-Sowing Optical Contamination),PASS,SAFE
+CHK_LAG_DISCIPLINE,Strict Lag Indexing for Agricultural Variables (t-1 shift verified),Yield Lags & Annual Inputs,shift(1) applied within groupby(district_id),CRITICAL (Direct Target Leakage),PASS,SAFE
+CHK_FOLD_ISOLATED_SCALING,Fold-Safe Transformation (Imputation/Scaling fitted on train folds only),Walk-Forward Pipeline,StandardScaler / SimpleImputer fitted strictly on train partition <= fold-1,MODERATE (Cross-Fold Distribution Leakage),PASS,SAFE
+CHK_SPATIAL_CLUSTER_ISOLATION,Global Spatial Cluster Rejection,Spatial Feature Engine,Global K-Means cluster IDs across test years prohibited,HIGH (Unsupervised Lookahead),PASS,SAFE

@@ -1,0 +1,15 @@
+crop,algorithm,model_a_hist_mae,model_a_hist_rmse,model_a_hist_r2,model_b_exo_mae,model_b_exo_rmse,model_b_exo_r2,model_c_base_mae,model_c_base_rmse,exogenous_gain_vs_historical_pct,exogenous_gain_vs_baseline_pct,artifact_path
+Oilseeds,RandomForestRegressor,471.31,1059.88,0.6649,568.35,1048.07,0.6724,736.88,1297.12,-20.59,22.87,Models/exogenous/oilseeds_exogenous_model.pkl
+Chickpea,GradientBoostingRegressor,255.83,444.28,0.3073,249.79,432.37,0.3439,272.87,445.79,2.36,8.46,Models/exogenous/chickpea_exogenous_model.pkl
+Kharif Sorghum,RandomForestRegressor,371.74,619.56,0.4406,353.78,605.72,0.4654,335.39,525.25,4.83,-5.48,Models/exogenous/kharif_sorghum_exogenous_model.pkl
+Minor Pulses,GradientBoostingRegressor,405.08,1479.09,0.1174,396.44,1594.49,-0.0257,397.8,1383.85,2.13,0.34,Models/exogenous/minor_pulses_exogenous_model.pkl
+Maize,RandomForestRegressor,721.33,1127.11,0.6589,728.76,1102.44,0.6737,748.67,1111.78,-1.03,2.66,Models/exogenous/maize_exogenous_model.pkl
+Wheat,GradientBoostingRegressor,320.78,484.89,0.8887,305.76,486.65,0.8879,381.63,551.32,4.68,19.88,Models/exogenous/wheat_exogenous_model.pkl
+Sugarcane,GradientBoostingRegressor,1441.05,2143.96,0.6775,1396.41,2030.54,0.7107,1567.62,2255.08,3.1,10.92,Models/exogenous/sugarcane_exogenous_model.pkl
+Rice,RandomForestRegressor,332.23,513.36,0.7895,314.96,491.87,0.8068,324.99,498.96,5.2,3.09,Models/exogenous/rice_exogenous_model.pkl
+Sesamum,RandomForestRegressor,155.08,421.66,0.1559,152.45,422.6,0.1521,158.4,436.11,1.7,3.76,Models/exogenous/sesamum_exogenous_model.pkl
+Pigeonpea,RandomForestRegressor,271.29,388.43,0.4775,274.62,391.19,0.47,304.54,433.24,-1.23,9.82,Models/exogenous/pigeonpea_exogenous_model.pkl
+Rapeseed and Mustard,RandomForestRegressor,209.18,309.96,0.7493,206.73,308.45,0.7517,221.08,336.47,1.17,6.49,Models/exogenous/rapeseed_and_mustard_exogenous_model.pkl
+Groundnut,RandomForestRegressor,357.85,555.91,0.6079,326.47,498.24,0.685,309.52,470.85,8.77,-5.48,Models/exogenous/groundnut_exogenous_model.pkl
+Sorghum,RandomForestRegressor,331.94,577.49,0.5121,319.96,576.17,0.5143,288.26,475.88,3.61,-10.99,Models/exogenous/sorghum_exogenous_model.pkl
+Pearl Millet,RandomForestRegressor,278.85,471.95,0.7014,278.81,472.05,0.7013,261.73,461.0,0.01,-6.53,Models/exogenous/pearl_millet_exogenous_model.pkl

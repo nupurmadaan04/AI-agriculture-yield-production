@@ -1,0 +1,57 @@
+{
+  "model_id": "multicrop_wheat_forecaster",
+  "crop": "Wheat",
+  "algorithm": "GradientBoostingRegressor",
+  "version": "1.0.0",
+  "dataset_version": "AGRI_PANEL_1.0",
+  "feature_set_version": "PRE_SEASON_LAG_V1",
+  "training_period": "2011\u20132015",
+  "evaluation_period": "2016\u20132017",
+  "train_records": 1308,
+  "test_records": 516,
+  "metrics": {
+    "mae": 529.54,
+    "rmse": 662.26,
+    "r2": 0.669,
+    "mape": 22.88,
+    "smape": 22.25
+  },
+  "baseline_comparison": {
+    "baseline_model": "Naive Persistence (t-1)",
+    "baseline_mae": 396.55,
+    "baseline_rmse": 569.12,
+    "baseline_r2": 0.7556,
+    "mae_improvement_abs": -132.99,
+    "mae_improvement_pct": -33.54
+  },
+  "status": "BASELINE_PREFERRED",
+  "feature_importance_native": {
+    "yield_lag_1": 0.3652,
+    "yield_lag_2": 0.4844,
+    "yield_rolling_3yr_mean": 0.0346,
+    "area_lag_1": 0.0444,
+    "state_encoded": 0.0243,
+    "year": 0.047
+  },
+  "feature_importance_permutation": {
+    "yield_lag_1": 0.2426,
+    "yield_lag_2": 0.2285,
+    "yield_rolling_3yr_mean": 0.0063,
+    "area_lag_1": 0.0852,
+    "state_encoded": 0.0233,
+    "year": 0.0
+  },
+  "error_analysis": {
+    "p25": 190.13,
+    "p50_median": 471.63,
+    "p75": 824.21,
+    "p90": 1062.92,
+    "low_error_pct": 45.9,
+    "moderate_error_pct": 33.5,
+    "high_error_pct": 20.5
+  },
+  "uncertainty_spread_p10_p90": null,
+  "artifact_path": "Models/multicrop/wheat/model_pipeline.pkl",
+  "sha256": "e19fcfb1e47ade8752fcf99f684d0a2faf337b0b223f143ee218c7abd63af2d9",
+  "created_at": "2026-09-02T17:28:51.732187Z"
+}

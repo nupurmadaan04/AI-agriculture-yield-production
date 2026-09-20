@@ -1,0 +1,57 @@
+{
+  "model_id": "multicrop_maize_forecaster",
+  "crop": "Maize",
+  "algorithm": "RandomForestRegressor",
+  "version": "1.0.0",
+  "dataset_version": "AGRI_PANEL_1.0",
+  "feature_set_version": "PRE_SEASON_LAG_V1",
+  "training_period": "2011\u20132015",
+  "evaluation_period": "2016\u20132017",
+  "train_records": 1394,
+  "test_records": 559,
+  "metrics": {
+    "mae": 744.73,
+    "rmse": 1401.15,
+    "r2": 0.4174,
+    "mape": 36.24,
+    "smape": 25.93
+  },
+  "baseline_comparison": {
+    "baseline_model": "Historical District Mean",
+    "baseline_mae": 763.91,
+    "baseline_rmse": 1336.73,
+    "baseline_r2": 0.4697,
+    "mae_improvement_abs": 19.18,
+    "mae_improvement_pct": 2.51
+  },
+  "status": "ACCEPTED",
+  "feature_importance_native": {
+    "yield_lag_1": 0.6173,
+    "yield_lag_2": 0.22,
+    "yield_rolling_3yr_mean": 0.0828,
+    "area_lag_1": 0.0263,
+    "state_encoded": 0.0316,
+    "year": 0.022
+  },
+  "feature_importance_permutation": {
+    "yield_lag_1": 0.2766,
+    "yield_lag_2": 0.0672,
+    "yield_rolling_3yr_mean": 0.038,
+    "area_lag_1": 0.0046,
+    "state_encoded": 0.0086,
+    "year": 0.0
+  },
+  "error_analysis": {
+    "p25": 187.35,
+    "p50_median": 455.9,
+    "p75": 834.95,
+    "p90": 1581.69,
+    "low_error_pct": 43.3,
+    "moderate_error_pct": 28.1,
+    "high_error_pct": 28.6
+  },
+  "uncertainty_spread_p10_p90": 1115.45,
+  "artifact_path": "Models/multicrop/maize/model_pipeline.pkl",
+  "sha256": "cbef4b2efb8401b39082cc9d223879ec4748a4438faeecf1d67f6ad0007621b1",
+  "created_at": "2026-09-02T17:27:45.807186Z"
+}

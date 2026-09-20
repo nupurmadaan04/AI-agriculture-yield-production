@@ -1,0 +1,57 @@
+{
+  "model_id": "multicrop_minor_pulses_forecaster",
+  "crop": "Minor Pulses",
+  "algorithm": "GradientBoostingRegressor",
+  "version": "1.0.0",
+  "dataset_version": "AGRI_PANEL_1.0",
+  "feature_set_version": "PRE_SEASON_LAG_V1",
+  "training_period": "2011\u20132015",
+  "evaluation_period": "2016\u20132017",
+  "train_records": 1330,
+  "test_records": 600,
+  "metrics": {
+    "mae": 353.59,
+    "rmse": 1263.63,
+    "r2": 0.1194,
+    "mape": 34.88,
+    "smape": 29.94
+  },
+  "baseline_comparison": {
+    "baseline_model": "Historical District Mean",
+    "baseline_mae": 322.3,
+    "baseline_rmse": 1208.09,
+    "baseline_r2": 0.1951,
+    "mae_improvement_abs": -31.29,
+    "mae_improvement_pct": -9.71
+  },
+  "status": "BASELINE_PREFERRED",
+  "feature_importance_native": {
+    "yield_lag_1": 0.531,
+    "yield_lag_2": 0.0636,
+    "yield_rolling_3yr_mean": 0.0855,
+    "area_lag_1": 0.0551,
+    "state_encoded": 0.0197,
+    "year": 0.2451
+  },
+  "feature_importance_permutation": {
+    "yield_lag_1": 0.1555,
+    "yield_lag_2": 0.0074,
+    "yield_rolling_3yr_mean": -0.0291,
+    "area_lag_1": 0.0197,
+    "state_encoded": -0.0144,
+    "year": 0.0
+  },
+  "error_analysis": {
+    "p25": 55.44,
+    "p50_median": 139.67,
+    "p75": 259.97,
+    "p90": 478.66,
+    "low_error_pct": 41.8,
+    "moderate_error_pct": 28.3,
+    "high_error_pct": 29.8
+  },
+  "uncertainty_spread_p10_p90": null,
+  "artifact_path": "Models/multicrop/minor_pulses/model_pipeline.pkl",
+  "sha256": "ccdaad9f5d447682bc9b6d2f5faf243b2bc041e66f24b544c100a313234cd9ed",
+  "created_at": "2026-09-02T17:27:30.483034Z"
+}

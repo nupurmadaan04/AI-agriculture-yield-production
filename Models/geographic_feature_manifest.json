@@ -1,0 +1,263 @@
+{
+  "geographic_system": "India Agricultural District Panel GIS Abstraction",
+  "coverage": {
+    "total_states": 20,
+    "total_districts": 311,
+    "total_observations": 2469,
+    "years_range": "2010\u20132017"
+  },
+  "spatial_granularity": [
+    "National",
+    "State",
+    "District"
+  ],
+  "coordinate_system": "WGS 84 (EPSG:4326)",
+  "data_source": "ICRISAT Meso-Level Agricultural Database (2010\u20132017) & Survey of India State Centroids",
+  "state_geographic_registry": [
+    {
+      "state_name": "Andhra Pradesh",
+      "state_code": 1,
+      "centroid_lat": 15.9129,
+      "centroid_lon": 79.74,
+      "region": "Southern Coastal",
+      "agro_zone": "Coastal Andhra & Rayalaseema",
+      "district_count": 11,
+      "records_count": 88,
+      "average_rice_yield_kg_ha": 3223.6,
+      "average_rice_area_k_ha": 213.5
+    },
+    {
+      "state_name": "Assam",
+      "state_code": 17,
+      "centroid_lat": 26.2006,
+      "centroid_lon": 92.9376,
+      "region": "North Eastern",
+      "agro_zone": "Brahmaputra Valley",
+      "district_count": 10,
+      "records_count": 80,
+      "average_rice_yield_kg_ha": 2013.5,
+      "average_rice_area_k_ha": 247.5
+    },
+    {
+      "state_name": "Bihar",
+      "state_code": 2,
+      "centroid_lat": 25.0961,
+      "centroid_lon": 85.3131,
+      "region": "Eastern Gangetic",
+      "agro_zone": "Middle Gangetic Plain",
+      "district_count": 11,
+      "records_count": 88,
+      "average_rice_yield_kg_ha": 2196.1,
+      "average_rice_area_k_ha": 293.1
+    },
+    {
+      "state_name": "Chhattisgarh",
+      "state_code": 14,
+      "centroid_lat": 21.2787,
+      "centroid_lon": 81.8661,
+      "region": "Central Plateau",
+      "agro_zone": "Eastern Plateau & Hills",
+      "district_count": 6,
+      "records_count": 48,
+      "average_rice_yield_kg_ha": 1696.7,
+      "average_rice_area_k_ha": 661.7
+    },
+    {
+      "state_name": "Gujarat",
+      "state_code": 3,
+      "centroid_lat": 22.2587,
+      "centroid_lon": 71.1924,
+      "region": "Western Coastal",
+      "agro_zone": "Gujarat Plains & Hills",
+      "district_count": 18,
+      "records_count": 144,
+      "average_rice_yield_kg_ha": 1243.1,
+      "average_rice_area_k_ha": 44.7
+    },
+    {
+      "state_name": "Haryana",
+      "state_code": 4,
+      "centroid_lat": 29.0588,
+      "centroid_lon": 76.0856,
+      "region": "Northern Plains",
+      "agro_zone": "Trans-Gangetic Plain",
+      "district_count": 7,
+      "records_count": 56,
+      "average_rice_yield_kg_ha": 2940.5,
+      "average_rice_area_k_ha": 185.1
+    },
+    {
+      "state_name": "Himachal Pradesh",
+      "state_code": 18,
+      "centroid_lat": 31.1048,
+      "centroid_lon": 77.1734,
+      "region": "Northern Hills",
+      "agro_zone": "Western Himalayan",
+      "district_count": 10,
+      "records_count": 80,
+      "average_rice_yield_kg_ha": 1373.9,
+      "average_rice_area_k_ha": 7.3
+    },
+    {
+      "state_name": "Jharkhand",
+      "state_code": 15,
+      "centroid_lat": 23.6102,
+      "centroid_lon": 85.2799,
+      "region": "Eastern Plateau",
+      "agro_zone": "Eastern Plateau & Hills",
+      "district_count": 6,
+      "records_count": 48,
+      "average_rice_yield_kg_ha": 1772.3,
+      "average_rice_area_k_ha": 192.2
+    },
+    {
+      "state_name": "Karnataka",
+      "state_code": 5,
+      "centroid_lat": 15.3173,
+      "centroid_lon": 75.7139,
+      "region": "Southern Peninsula",
+      "agro_zone": "Southern Plateau & Hills",
+      "district_count": 19,
+      "records_count": 152,
+      "average_rice_yield_kg_ha": 2610.7,
+      "average_rice_area_k_ha": 66.0
+    },
+    {
+      "state_name": "Kerala",
+      "state_code": 19,
+      "centroid_lat": 10.8505,
+      "centroid_lon": 76.2711,
+      "region": "Southern Coastal",
+      "agro_zone": "West Coast Plains & Ghats",
+      "district_count": 10,
+      "records_count": 80,
+      "average_rice_yield_kg_ha": 2593.2,
+      "average_rice_area_k_ha": 19.7
+    },
+    {
+      "state_name": "Madhya Pradesh",
+      "state_code": 6,
+      "centroid_lat": 22.9734,
+      "centroid_lon": 78.6569,
+      "region": "Central Plateau",
+      "agro_zone": "Central Plateau & Hills",
+      "district_count": 37,
+      "records_count": 295,
+      "average_rice_yield_kg_ha": 1423.1,
+      "average_rice_area_k_ha": 51.5
+    },
+    {
+      "state_name": "Maharashtra",
+      "state_code": 7,
+      "centroid_lat": 19.7515,
+      "centroid_lon": 75.7139,
+      "region": "Western Peninsula",
+      "agro_zone": "Western Plateau & Hills",
+      "district_count": 26,
+      "records_count": 204,
+      "average_rice_yield_kg_ha": 1091.0,
+      "average_rice_area_k_ha": 60.1
+    },
+    {
+      "state_name": "Orissa",
+      "state_code": 8,
+      "centroid_lat": 20.9517,
+      "centroid_lon": 85.0985,
+      "region": "Eastern Coastal",
+      "agro_zone": "East Coast Plains & Hills",
+      "district_count": 13,
+      "records_count": 104,
+      "average_rice_yield_kg_ha": 1879.6,
+      "average_rice_area_k_ha": 310.3
+    },
+    {
+      "state_name": "Punjab",
+      "state_code": 9,
+      "centroid_lat": 31.1471,
+      "centroid_lon": 75.3412,
+      "region": "Northern Plains",
+      "agro_zone": "Trans-Gangetic Plain",
+      "district_count": 11,
+      "records_count": 87,
+      "average_rice_yield_kg_ha": 3911.1,
+      "average_rice_area_k_ha": 263.1
+    },
+    {
+      "state_name": "Rajasthan",
+      "state_code": 10,
+      "centroid_lat": 27.0238,
+      "centroid_lon": 74.2179,
+      "region": "Western Dry",
+      "agro_zone": "Western Dry Region",
+      "district_count": 26,
+      "records_count": 208,
+      "average_rice_yield_kg_ha": 1072.7,
+      "average_rice_area_k_ha": 6.1
+    },
+    {
+      "state_name": "Tamil Nadu",
+      "state_code": 11,
+      "centroid_lat": 11.1271,
+      "centroid_lon": 78.6569,
+      "region": "Southern Coastal",
+      "agro_zone": "East Coast Plains & Hills",
+      "district_count": 12,
+      "records_count": 83,
+      "average_rice_yield_kg_ha": 3765.9,
+      "average_rice_area_k_ha": 162.1
+    },
+    {
+      "state_name": "Telangana",
+      "state_code": 20,
+      "centroid_lat": 18.1124,
+      "centroid_lon": 79.0193,
+      "region": "Southern Peninsula",
+      "agro_zone": "Southern Plateau & Hills",
+      "district_count": 9,
+      "records_count": 72,
+      "average_rice_yield_kg_ha": 3089.2,
+      "average_rice_area_k_ha": 186.0
+    },
+    {
+      "state_name": "Uttar Pradesh",
+      "state_code": 12,
+      "centroid_lat": 26.8467,
+      "centroid_lon": 80.9462,
+      "region": "Northern Gangetic",
+      "agro_zone": "Upper/Middle Gangetic Plain",
+      "district_count": 46,
+      "records_count": 368,
+      "average_rice_yield_kg_ha": 2317.3,
+      "average_rice_area_k_ha": 127.2
+    },
+    {
+      "state_name": "Uttarakhand",
+      "state_code": 16,
+      "centroid_lat": 30.0668,
+      "centroid_lon": 79.0193,
+      "region": "Northern Hills",
+      "agro_zone": "Western Himalayan",
+      "district_count": 8,
+      "records_count": 64,
+      "average_rice_yield_kg_ha": 1713.7,
+      "average_rice_area_k_ha": 31.7
+    },
+    {
+      "state_name": "West Bengal",
+      "state_code": 13,
+      "centroid_lat": 22.9868,
+      "centroid_lon": 87.855,
+      "region": "Eastern Deltaic",
+      "agro_zone": "Lower Gangetic Plain",
+      "district_count": 15,
+      "records_count": 120,
+      "average_rice_yield_kg_ha": 2766.7,
+      "average_rice_area_k_ha": 357.6
+    }
+  ],
+  "scientific_safeguards": [
+    "State centroids are grounded on official geographical reference coordinates.",
+    "District attributes represent verified empirical aggregates; micro-polygon boundaries are abstracted into topological cards and point coordinates to prevent fictitious boundary artifacts.",
+    "Spatial analyses represent geographic distributions and statistical associations, not physical causality."
+  ]
+}

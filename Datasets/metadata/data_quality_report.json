@@ -1,0 +1,110 @@
+{
+  "overall_status": "PASS",
+  "passed_checks": 14,
+  "total_checks": 14,
+  "total_records": 71601,
+  "crop_count": 29,
+  "state_count": 20,
+  "district_count": 311,
+  "year_range": "2010-2017",
+  "checks": [
+    {
+      "check": "1. Completeness",
+      "status": "PASS",
+      "count": 0,
+      "threshold": "0 null keys",
+      "details": "All core keys complete"
+    },
+    {
+      "check": "2. Validity",
+      "status": "PASS",
+      "count": 71601,
+      "threshold": "71601 valid years",
+      "details": "Years between 2010 and 2017"
+    },
+    {
+      "check": "3. Uniqueness",
+      "status": "PASS",
+      "count": 0,
+      "threshold": "0 duplicates",
+      "details": "0 duplicate key records found"
+    },
+    {
+      "check": "4. Temporal Integrity",
+      "status": "PASS",
+      "count": 8,
+      "threshold": "8 continuous years",
+      "details": "8 distinct agricultural years (2010-2017)"
+    },
+    {
+      "check": "5. Geographic Integrity",
+      "status": "PASS",
+      "count": 311,
+      "threshold": ">= 200 districts",
+      "details": "311 districts across 20 states"
+    },
+    {
+      "check": "6. Crop Integrity",
+      "status": "PASS",
+      "count": 29,
+      "threshold": ">= 20 crops",
+      "details": "29 distinct verified crop classifications"
+    },
+    {
+      "check": "7. Unit Integrity",
+      "status": "PASS",
+      "count": 56622,
+      "threshold": "> 0 yield observations",
+      "details": "Standardized to ha, metric tonnes, kg/ha"
+    },
+    {
+      "check": "8. Numeric Range Validation",
+      "status": "PASS",
+      "count": 0,
+      "threshold": "0 negative values",
+      "details": "All numeric values within valid biological domains"
+    },
+    {
+      "check": "9. Negative Area",
+      "status": "PASS",
+      "count": 0,
+      "threshold": "0 negative area",
+      "details": "0 negative area records"
+    },
+    {
+      "check": "10. Negative Production",
+      "status": "PASS",
+      "count": 0,
+      "threshold": "0 negative production",
+      "details": "0 negative production records"
+    },
+    {
+      "check": "11. Negative Yield",
+      "status": "PASS",
+      "count": 0,
+      "threshold": "0 negative yield",
+      "details": "0 negative yield records"
+    },
+    {
+      "check": "12. Impossible Zero Combinations",
+      "status": "PASS",
+      "count": 0,
+      "threshold": "0 anomalies",
+      "details": "0 anomalous zero-area/positive-production pairs"
+    },
+    {
+      "check": "13. Duplicate Records",
+      "status": "PASS",
+      "count": 0,
+      "threshold": "0 duplicate rows",
+      "details": "Duplicate check across canonical composite key"
+    },
+    {
+      "check": "14. Source Conflicts",
+      "status": "PASS",
+      "count": 0,
+      "threshold": "0 unresolved conflicts",
+      "details": "Source provenance mapped without unflagged collisions"
+    }
+  ]
+}
