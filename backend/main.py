@@ -2853,6 +2853,14 @@ from backend.routers.observability import router as observability_router
 app.include_router(observability_router)
 
 
+# ---------------------------------------------------------------------------
+# Day 30 Forecast Monitoring, Drift Detection & Outcome Intelligence Endpoints
+# ---------------------------------------------------------------------------
+from backend.routers.monitoring import router as monitoring_router
+app.include_router(monitoring_router)
+
+
+
 
 
 

@@ -179,6 +179,16 @@ This index organizes all research, architecture, methodology, operational, and d
 - [DAY29_SCIENTIFIC_VALIDATION.md](DAY29_SCIENTIFIC_VALIDATION.md) — Dual-run bitwise invariance, temporal correctness enforcement, and cryptographic provenance integrity.
 - [DAY29_FINAL_STATUS.md](DAY29_FINAL_STATUS.md) — Day 29 final compliance matrix and release scorecard.
 
+---
+
+## 15. Forecast Monitoring, Drift Detection & Outcome Intelligence (Day 30)
+- [DAY30_FORECAST_MONITORING.md](DAY30_FORECAST_MONITORING.md) — Operational monitoring architecture, request telemetry tracking, prediction distribution moments, and semantic classifications.
+- [DAY30_OUTCOME_EVALUATION.md](DAY30_OUTCOME_EVALUATION.md) — Leak-free post-outcome evaluation methodology, temporal isolation boundaries, and stratified error decomposition.
+- [DAY30_DRIFT_AND_BIAS.md](DAY30_DRIFT_AND_BIAS.md) — Population Stability Index (PSI) drift calculation, covariate stability thresholds, and directional bias diagnostics.
+- [DAY30_SCIENTIFIC_VALIDATION.md](DAY30_SCIENTIFIC_VALIDATION.md) — Scientific integrity audit, determinism invariance, and 4-golden-case validation scorecard.
+- [DAY30_FINAL_STATUS.md](DAY30_FINAL_STATUS.md) — Day 30 final compliance scorecard, operational statistics, and sign-off report.
+
+
 
 
 

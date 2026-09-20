@@ -58,6 +58,13 @@ const navGroups: NavGroup[] = [
         icon: LineChart,
       },
       {
+        name: 'Forecast Monitoring',
+        path: '/forecast-monitoring',
+        description: 'Post-outcome evaluation, prediction distributions, covariate drift & bias diagnostics.',
+        badge: 'Monitor',
+        icon: Activity,
+      },
+      {
         name: 'Operational Intelligence',
         path: '/observability',
         description: 'Runtime telemetry, forecast tracing, model integrity, and alert logs.',

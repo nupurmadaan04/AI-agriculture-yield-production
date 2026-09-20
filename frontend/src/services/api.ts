@@ -178,6 +178,17 @@ import {
   MonitoringHealth,
   BacktestRequest,
 } from '../types/monitoring'
+import {
+  MonitoringSummaryResponse as ForecastMonitoringSummaryResponse,
+  ForecastOperationsResponse,
+  PredictionDistributionResponse,
+  DriftMonitoringResponse as ForecastDriftMonitoringResponse,
+  OutcomeEvaluationResponse,
+  ErrorDecompositionResponse,
+  BiasAnalysisResponse,
+  MonitoringAlertsResponse as ForecastMonitoringAlertsResponse,
+  MonitoringHealthResponse as ForecastMonitoringHealthResponse,
+} from '../types/forecastMonitoring'
 
 const API_BASE_URL =
   import.meta.env.VITE_API_BASE_URL !== undefined
@@ -845,6 +856,46 @@ export const api = {
 
   getObservabilityDrift: (): Promise<DriftMonitoringResponse> =>
     fetchJson<DriftMonitoringResponse>('/observability/drift'),
+
+  // Day 30: Forecast Monitoring, Drift Detection & Outcome Intelligence Endpoints
+  getForecastMonitoringSummary: (): Promise<ForecastMonitoringSummaryResponse> =>
+    fetchJson<ForecastMonitoringSummaryResponse>('/monitoring/summary'),
+
+  getForecastOperations: (crop?: string): Promise<ForecastOperationsResponse> =>
+    fetchJson<ForecastOperationsResponse>(`/monitoring/operations${crop ? `?crop=${encodeURIComponent(crop)}` : ''}`),
+
+  getPredictionDistributions: (crop?: string): Promise<PredictionDistributionResponse> =>
+    fetchJson<PredictionDistributionResponse>(`/monitoring/distributions${crop ? `?crop=${encodeURIComponent(crop)}` : ''}`),
+
+  getForecastDrift: (crop?: string): Promise<ForecastDriftMonitoringResponse> =>
+    fetchJson<ForecastDriftMonitoringResponse>(`/monitoring/drift${crop ? `?crop=${encodeURIComponent(crop)}` : ''}`),
+
+  getOutcomeEvaluations: (params?: {
+    crop?: string
+    state?: string
+    district?: string
+    forecast_year?: number
+  }): Promise<OutcomeEvaluationResponse> => {
+    const q = new URLSearchParams()
+    if (params?.crop) q.append('crop', params.crop)
+    if (params?.state) q.append('state', params.state)
+    if (params?.district) q.append('district', params.district)
+    if (params?.forecast_year) q.append('forecast_year', String(params.forecast_year))
+    const qs = q.toString()
+    return fetchJson<OutcomeEvaluationResponse>(`/monitoring/outcomes${qs ? `?${qs}` : ''}`)
+  },
+
+  getErrorDecomposition: (crop: string): Promise<ErrorDecompositionResponse> =>
+    fetchJson<ErrorDecompositionResponse>(`/monitoring/errors?crop=${encodeURIComponent(crop)}`),
+
+  getBiasDiagnostics: (crop?: string): Promise<BiasAnalysisResponse> =>
+    fetchJson<BiasAnalysisResponse>(`/monitoring/bias${crop ? `?crop=${encodeURIComponent(crop)}` : ''}`),
+
+  getForecastMonitoringAlerts: (): Promise<ForecastMonitoringAlertsResponse> =>
+    fetchJson<ForecastMonitoringAlertsResponse>('/monitoring/forecast-alerts'),
+
+  getForecastMonitoringHealth: (): Promise<ForecastMonitoringHealthResponse> =>
+    fetchJson<ForecastMonitoringHealthResponse>('/monitoring/forecast-health'),
 }
 
 // TanStack Query Custom Hooks
@@ -1989,6 +2040,91 @@ export function useForecastEvidence(crop?: string) {
     staleTime: 1000 * 60 * 10,
   })
 }
+
+// ---------------------------------------------------------------------------
+// Day 30 Forecast Monitoring Hooks
+// ---------------------------------------------------------------------------
+
+export function useForecastMonitoringSummary() {
+  return useQuery({
+    queryKey: ['forecast-monitoring-summary'],
+    queryFn: api.getForecastMonitoringSummary,
+    staleTime: 1000 * 30,
+    refetchInterval: 1000 * 30,
+  })
+}
+
+export function useForecastOperations(crop?: string) {
+  return useQuery({
+    queryKey: ['forecast-operations', crop],
+    queryFn: () => api.getForecastOperations(crop),
+    staleTime: 1000 * 30,
+  })
+}
+
+export function usePredictionDistributions(crop?: string) {
+  return useQuery({
+    queryKey: ['prediction-distributions', crop],
+    queryFn: () => api.getPredictionDistributions(crop),
+    staleTime: 1000 * 60 * 2,
+  })
+}
+
+export function useForecastDrift(crop?: string) {
+  return useQuery({
+    queryKey: ['forecast-drift', crop],
+    queryFn: () => api.getForecastDrift(crop),
+    staleTime: 1000 * 60 * 5,
+  })
+}
+
+export function useOutcomeEvaluations(params?: {
+  crop?: string
+  state?: string
+  district?: string
+  forecast_year?: number
+}) {
+  return useQuery({
+    queryKey: ['outcome-evaluations', params],
+    queryFn: () => api.getOutcomeEvaluations(params),
+    staleTime: 1000 * 60 * 5,
+  })
+}
+
+export function useErrorDecomposition(crop?: string) {
+  return useQuery({
+    queryKey: ['error-decomposition', crop],
+    queryFn: () => api.getErrorDecomposition(crop || 'Oilseeds'),
+    enabled: Boolean(crop),
+    staleTime: 1000 * 60 * 10,
+  })
+}
+
+export function useBiasDiagnostics(crop?: string) {
+  return useQuery({
+    queryKey: ['bias-diagnostics', crop],
+    queryFn: () => api.getBiasDiagnostics(crop),
+    staleTime: 1000 * 60 * 10,
+  })
+}
+
+export function useForecastMonitoringAlerts() {
+  return useQuery({
+    queryKey: ['forecast-monitoring-alerts'],
+    queryFn: api.getForecastMonitoringAlerts,
+    staleTime: 1000 * 30,
+    refetchInterval: 1000 * 30,
+  })
+}
+
+export function useForecastMonitoringHealth() {
+  return useQuery({
+    queryKey: ['forecast-monitoring-health'],
+    queryFn: api.getForecastMonitoringHealth,
+    staleTime: 1000 * 30,
+  })
+}
+
 
 
 

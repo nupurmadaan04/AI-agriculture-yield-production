@@ -20,6 +20,7 @@ import { ModelingReadiness } from '../pages/ModelingReadiness'
 import { ForecastIntelligence } from '../pages/ForecastIntelligence'
 import { ObservabilityCenter } from '../pages/ObservabilityCenter'
 import { PredictionExplorer } from '../pages/PredictionExplorer'
+import { ForecastMonitoring } from '../pages/ForecastMonitoring'
 import { Pricing } from '../pages/Pricing'
 import { Contact } from '../pages/Contact'
 import { NotFound } from '../pages/NotFound'
@@ -29,13 +30,14 @@ export const AppRoutes: React.FC = () => {
     <Routes>
       <Route element={<WebShell />}>
         <Route path="/" element={<Home />} />
+        <Route path="/forecast-monitoring" element={<ForecastMonitoring />} />
         <Route path="/prediction-explorer" element={<PredictionExplorer />} />
         <Route path="/forecast" element={<ForecastIntelligence />} />
         <Route path="/forecast-intelligence" element={<ForecastIntelligence />} />
         <Route path="/observability" element={<ObservabilityCenter />} />
         <Route path="/decision-intelligence" element={<DecisionIntelligence />} />
         <Route path="/modeling-readiness" element={<ModelingReadiness />} />
-        <Route path="/monitoring" element={<AgriculturalMonitoring />} />
+        <Route path="/monitoring" element={<ForecastMonitoring />} />
         <Route path="/explainability" element={<Explainability />} />
         <Route path="/calculator" element={<YieldCalculator />} />
         <Route path="/intelligence" element={<AgriculturalIntelligence />} />
