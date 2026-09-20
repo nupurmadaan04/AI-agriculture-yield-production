@@ -116,6 +116,8 @@ from backend.schemas.modeling import (
     ForecastCertificationSummaryResponse,
     ForecastAuditResponse,
     ForecastHealthResponse,
+    ForecastContextResponse,
+    ForecastEvidenceResponse,
 )
 
 modeling_service = ModelingReadinessService()
@@ -2807,6 +2809,41 @@ async def get_forecast_health():
     except Exception as e:
         logger.error(f"Error fetching forecast health: {e}", exc_info=True)
         raise HTTPException(status_code=500, detail=f"Failed to retrieve forecast health: {str(e)}")
+
+
+@app.get("/api/forecast/context", response_model=ForecastContextResponse, tags=["Production Forecast Serving & Governance"])
+async def get_forecast_context(
+    crop: str = Query(..., description="Crop identifier"),
+    state: str = Query(..., description="State name"),
+    district: str = Query(..., description="District name"),
+    forecast_year: int = Query(2018, description="Target forecast year")
+):
+    """
+    Retrieves empirical historical observations, district mean, previous year yield,
+    and 3-year rolling mean from AGRI_PANEL_1.0 prior to the forecast horizon.
+    """
+    try:
+        return modeling_service.get_forecast_context(crop=crop, state=state, district=district, forecast_year=forecast_year)
+    except HTTPException:
+        raise
+    except Exception as e:
+        logger.error(f"Error fetching forecast context: {e}", exc_info=True)
+        raise HTTPException(status_code=500, detail=f"Failed to retrieve forecast context: {str(e)}")
+
+
+@app.get("/api/forecast/evidence/{crop}", response_model=ForecastEvidenceResponse, tags=["Production Forecast Serving & Governance"])
+async def get_forecast_evidence(crop: str):
+    """
+    Retrieves verified scientific evidence, walk-forward validation results,
+    and registered feature importance for the governed forecasting strategy.
+    """
+    try:
+        return modeling_service.get_forecast_evidence(crop=crop)
+    except HTTPException:
+        raise
+    except Exception as e:
+        logger.error(f"Error fetching forecast evidence for {crop}: {e}", exc_info=True)
+        raise HTTPException(status_code=500, detail=f"Failed to retrieve forecast evidence: {str(e)}")
 
 
 # ---------------------------------------------------------------------------

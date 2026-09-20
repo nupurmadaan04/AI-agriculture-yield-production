@@ -171,6 +171,15 @@ This index organizes all research, architecture, methodology, operational, and d
 - [DAY28_FORECAST_TRACE.md](DAY28_FORECAST_TRACE.md) — Step-by-step 6-stage prediction trace pipeline, microsecond latency capture, and audit fallback.
 - [DAY28_FINAL_STATUS.md](DAY28_FINAL_STATUS.md) — Day 28 final operational intelligence compliance scorecard.
 
+---
+
+## 14. Prediction Explorer & Forecast Explainability (Day 29)
+- [DAY29_PREDICTION_EXPLORER.md](DAY29_PREDICTION_EXPLORER.md) — Traceable agricultural yield prediction explorer architecture, user flow, and semantic labels.
+- [DAY29_FORECAST_EXPLAINABILITY.md](DAY29_FORECAST_EXPLAINABILITY.md) — Strategy resolution, model evidence, feature importance attribution, and empirical uncertainty limits.
+- [DAY29_SCIENTIFIC_VALIDATION.md](DAY29_SCIENTIFIC_VALIDATION.md) — Dual-run bitwise invariance, temporal correctness enforcement, and cryptographic provenance integrity.
+- [DAY29_FINAL_STATUS.md](DAY29_FINAL_STATUS.md) — Day 29 final compliance matrix and release scorecard.
+
+
 
 
 

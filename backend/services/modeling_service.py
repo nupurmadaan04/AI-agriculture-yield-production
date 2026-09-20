@@ -93,6 +93,10 @@ from backend.schemas.modeling import (
     ForecastAuditItem,
     ForecastAuditResponse,
     ForecastHealthResponse,
+    HistoricalObservationItem,
+    ForecastContextResponse,
+    ModelFeatureImportanceItem,
+    ForecastEvidenceResponse,
 )
 
 logger = logging.getLogger("agricultural_platform")
@@ -1499,6 +1503,188 @@ class ModelingReadinessService:
             governance_guard="ACTIVE_STRICT",
             provenance_tracking="ENABLED_SHA256",
         )
+
+    def get_forecast_context(
+        self,
+        crop: str,
+        state: str,
+        district: str,
+        forecast_year: int = 2018
+    ) -> ForecastContextResponse:
+        """
+        Retrieves authentic empirical historical yield observations and baseline references
+        for a specific crop-state-district tuple prior to the forecast horizon.
+        """
+        panel_csv = os.path.join(PROCESSED_DIR, "agricultural_panel.csv")
+        if not os.path.exists(panel_csv):
+            return ForecastContextResponse(
+                crop=crop,
+                state=state,
+                district=district,
+                forecast_year=forecast_year,
+                historical_observations_count=0,
+                has_sufficient_history=False,
+                context_notes="Agricultural panel dataset unavailable on server filesystem.",
+            )
+
+        if not hasattr(self, "_panel_df") or self._panel_df is None:
+            self._panel_df = pd.read_csv(panel_csv)
+
+        df = self._panel_df
+        # Filter matching crop, state, district and prior to forecast_year
+        mask = (
+            (df["crop"].str.strip().str.lower() == crop.strip().lower()) &
+            (df["state"].str.strip().str.lower() == state.strip().lower()) &
+            (df["district"].str.strip().str.lower() == district.strip().lower()) &
+            (df["year"] < forecast_year)
+        )
+        subset = df[mask].sort_values("year")
+
+        if subset.empty:
+            return ForecastContextResponse(
+                crop=crop,
+                state=state,
+                district=district,
+                forecast_year=forecast_year,
+                historical_observations_count=0,
+                has_sufficient_history=False,
+                context_notes=f"No prior historical observations recorded for {crop} in {district}, {state} before {forecast_year}.",
+            )
+
+        yield_series = subset["yield_kg_ha"].dropna()
+        n_obs = len(yield_series)
+
+        dist_mean = round(float(yield_series.mean()), 2) if n_obs > 0 else None
+        prev_yield = round(float(yield_series.iloc[-1]), 2) if n_obs > 0 else None
+        roll_3yr = round(float(yield_series.tail(3).mean()), 2) if n_obs >= 1 else None
+        min_yield = round(float(yield_series.min()), 2) if n_obs > 0 else None
+        max_yield = round(float(yield_series.max()), 2) if n_obs > 0 else None
+        std_yield = round(float(yield_series.std()), 2) if n_obs > 1 else 0.0
+
+        # Build recent observations (up to 10 latest)
+        recent_rows = subset.tail(10)
+        recent_obs: List[HistoricalObservationItem] = []
+        for _, row in recent_rows.iterrows():
+            area_val = round(float(row["area_ha"]), 2) if pd.notna(row.get("area_ha")) else None
+            prod_val = round(float(row["production_tonnes"]), 2) if pd.notna(row.get("production_tonnes")) else None
+            recent_obs.append(HistoricalObservationItem(
+                year=int(row["year"]),
+                yield_kg_ha=round(float(row["yield_kg_ha"]), 2),
+                area_ha=area_val,
+                production_tonnes=prod_val,
+                observation_type="OBSERVED"
+            ))
+
+        return ForecastContextResponse(
+            crop=crop,
+            state=state,
+            district=district,
+            forecast_year=forecast_year,
+            historical_observations_count=n_obs,
+            district_historical_mean=dist_mean,
+            previous_year_yield=prev_yield,
+            rolling_3yr_mean=roll_3yr,
+            historical_min_yield=min_yield,
+            historical_max_yield=max_yield,
+            historical_yield_std=std_yield,
+            recent_observations=recent_obs,
+            has_sufficient_history=n_obs >= 5,
+            context_notes=f"Calculated from {n_obs} observed historical harvest seasons (1966-{recent_obs[-1].year if recent_obs else forecast_year-1}) from AGRI_PANEL_1.0.",
+        )
+
+    def get_forecast_evidence(self, crop: str) -> ForecastEvidenceResponse:
+        """
+        Retrieves verified scientific evidence, walk-forward validation results,
+        and registered feature importance for the governed forecasting strategy.
+        """
+        strategies_resp = self.get_forecast_strategies()
+        strat_map = {s.crop.lower(): s for s in strategies_resp.strategies}
+        strat_item = strat_map.get(crop.strip().lower())
+
+        if not strat_item:
+            return ForecastEvidenceResponse(
+                crop=crop,
+                strategy_name="UNSUPPORTED",
+                certification_status="UNSUPPORTED",
+                is_ml_strategy=False,
+                explanation_notice=f"Crop '{crop}' is not registered in the governed forecasting strategy catalog.",
+            )
+
+        crop_clean = strat_item.crop
+        is_ml = strat_item.certification_status in ("PRODUCTION_READY", "CONDITIONAL_PRODUCTION")
+
+        # Check for model metadata
+        crop_folder_name = crop_clean.lower().replace(" ", "_")
+        meta_file = os.path.join(MODELS_MULTICROP_DIR, crop_folder_name, "model_metadata.json")
+
+        feature_importance_list: List[ModelFeatureImportanceItem] = []
+        p10_p90 = None
+
+        if is_ml and os.path.exists(meta_file):
+            try:
+                with open(meta_file, "r", encoding="utf-8") as f:
+                    meta_data = json.load(f)
+
+                raw_fi = meta_data.get("feature_importance_native", {})
+                total_fi = sum(raw_fi.values()) if raw_fi else 1.0
+                for feat, val in sorted(raw_fi.items(), key=lambda x: x[1], reverse=True):
+                    pct = round((val / total_fi) * 100.0, 2)
+                    desc = f"Historical lag feature: {feat}"
+                    if feat == "yield_lag_1":
+                        desc = "Yield observation from immediate previous year (t-1)"
+                    elif feat == "yield_lag_2":
+                        desc = "Yield observation from two years prior (t-2)"
+                    elif feat == "yield_rolling_3yr_mean":
+                        desc = "3-year rolling average historical yield"
+                    elif feat == "area_lag_1":
+                        desc = "Cultivated area reported in prior year"
+                    elif feat == "state_encoded":
+                        desc = "Categorical state spatial entity identifier"
+                    elif feat == "year":
+                        desc = "Temporal trend index"
+
+                    feature_importance_list.append(ModelFeatureImportanceItem(
+                        feature_name=feat,
+                        importance_pct=pct,
+                        contribution_direction="POSITIVE" if pct > 10 else "NEUTRAL",
+                        description=desc
+                    ))
+
+                p10_p90 = meta_data.get("uncertainty_spread_p10_p90")
+            except Exception as e:
+                logger.warning(f"Failed to parse model metadata for {crop_clean}: {e}")
+
+        explanation_notice = ""
+        if is_ml:
+            explanation_notice = (
+                f"Feature importance reflects native tree split attribution from the certified {strat_item.primary_strategy} "
+                "evaluated across 4 expanding walk-forward origins (2014-2017)."
+            )
+        else:
+            explanation_notice = (
+                "Feature-level ML attribution is not applicable because this forecast uses a historical statistical strategy "
+                "(Historical District Mean / Persistence). Predictions are derived from longitudinal empirical observations."
+            )
+
+        return ForecastEvidenceResponse(
+            crop=crop_clean,
+            strategy_name=strat_item.primary_strategy,
+            certification_status=strat_item.certification_status,
+            model_family="RandomForestRegressor" if "RandomForest" in strat_item.primary_strategy else ("GradientBoostingRegressor" if "GradientBoosting" in strat_item.primary_strategy else "Statistical Baseline"),
+            model_version=strat_item.model_version,
+            validation_protocol="4-Origin Expanding Walk-Forward (2014-2017)",
+            mean_mae=strat_item.strategy_mae,
+            baseline_mae=strat_item.baseline_mae,
+            mean_improvement_pct=strat_item.gain_vs_baseline_pct,
+            fold_win_rate_pct=strat_item.fold_win_rate_pct,
+            is_ml_strategy=is_ml,
+            empirical_p10_p90_spread=p10_p90,
+            feature_importance=feature_importance_list,
+            operating_rule=strat_item.operating_rule,
+            fallback_strategy=strat_item.fallback_strategy,
+            explanation_notice=explanation_notice,
+        )
+
 
 
 

@@ -44,6 +44,13 @@ const navGroups: NavGroup[] = [
     name: 'Forecast',
     items: [
       {
+        name: 'Prediction Explorer',
+        path: '/prediction-explorer',
+        description: 'Traceable pre-season predictions with empirical baseline comparisons & XAI.',
+        badge: 'Explorer',
+        icon: Sparkles,
+      },
+      {
         name: 'Forecast Service',
         path: '/forecast',
         description: 'Governed pre-season multi-crop yield prediction engine.',

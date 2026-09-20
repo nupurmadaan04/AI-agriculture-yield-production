@@ -89,6 +89,10 @@ import {
   ForecastHealthResponse,
 } from '../types/modeling'
 import {
+  ForecastContextResponse,
+  ForecastEvidenceResponse,
+} from '../types/predictionExplorer'
+import {
   SystemHealthItem,
   RuntimeMetricsResponse,
   ForecastOperationsMetrics,
@@ -790,6 +794,20 @@ export const api = {
 
   getForecastHealth: (): Promise<ForecastHealthResponse> =>
     fetchJson<ForecastHealthResponse>('/forecast/health'),
+
+  // Day 29: Prediction Explorer & Forecast Explainability Endpoints
+  getForecastContext: (params: { crop: string; state: string; district: string; forecast_year?: number }): Promise<ForecastContextResponse> => {
+    const q = new URLSearchParams({
+      crop: params.crop,
+      state: params.state,
+      district: params.district,
+      forecast_year: String(params.forecast_year || 2018),
+    })
+    return fetchJson<ForecastContextResponse>(`/forecast/context?${q.toString()}`)
+  },
+
+  getForecastEvidence: (crop: string): Promise<ForecastEvidenceResponse> =>
+    fetchJson<ForecastEvidenceResponse>(`/forecast/evidence/${encodeURIComponent(crop)}`),
 
   // Day 28: Production Observability & Operations Endpoints
   getObservabilitySummary: (): Promise<ObservabilitySummaryResponse> =>
@@ -1819,11 +1837,11 @@ export function useForecastPredict() {
   })
 }
 
-export function useForecastProvenance(requestId: string) {
+export function useForecastProvenance(requestId?: string) {
   return useQuery({
     queryKey: ['forecast-provenance', requestId],
-    queryFn: () => api.getForecastProvenance(requestId),
-    enabled: Boolean(requestId),
+    queryFn: () => api.getForecastProvenance(requestId!),
+    enabled: Boolean(requestId && requestId.trim().length > 0),
     staleTime: 1000 * 60 * 30,
   })
 }
@@ -1949,6 +1967,30 @@ export function useObservabilityDrift() {
     staleTime: 1000 * 60 * 5,
   })
 }
+
+// ---------------------------------------------------------------------------
+// Day 29 Prediction Explorer Hooks
+// ---------------------------------------------------------------------------
+
+export function useForecastContext(crop?: string, state?: string, district?: string, forecastYear = 2018) {
+  return useQuery({
+    queryKey: ['forecast-context', crop, state, district, forecastYear],
+    queryFn: () => api.getForecastContext({ crop: crop!, state: state!, district: district!, forecast_year: forecastYear }),
+    enabled: Boolean(crop && state && district),
+    staleTime: 1000 * 60 * 5,
+  })
+}
+
+export function useForecastEvidence(crop?: string) {
+  return useQuery({
+    queryKey: ['forecast-evidence', crop],
+    queryFn: () => api.getForecastEvidence(crop!),
+    enabled: Boolean(crop),
+    staleTime: 1000 * 60 * 10,
+  })
+}
+
+
 
 
 

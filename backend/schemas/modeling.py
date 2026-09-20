@@ -949,5 +949,60 @@ class ForecastHealthResponse(BaseModel):
     provenance_tracking: str
 
 
+# ---------------------------------------------------------------------------
+# Day 29 Prediction Explorer & Forecast Explainability Schemas
+# ---------------------------------------------------------------------------
+
+class HistoricalObservationItem(BaseModel):
+    year: int
+    yield_kg_ha: float
+    area_ha: Optional[float] = None
+    production_tonnes: Optional[float] = None
+    observation_type: str = "OBSERVED"
+
+
+class ForecastContextResponse(BaseModel):
+    crop: str
+    state: str
+    district: str
+    forecast_year: int
+    historical_observations_count: int
+    district_historical_mean: Optional[float] = None
+    previous_year_yield: Optional[float] = None
+    rolling_3yr_mean: Optional[float] = None
+    historical_min_yield: Optional[float] = None
+    historical_max_yield: Optional[float] = None
+    historical_yield_std: Optional[float] = None
+    recent_observations: List[HistoricalObservationItem] = Field(default_factory=list)
+    has_sufficient_history: bool = True
+    context_notes: str = ""
+
+
+class ModelFeatureImportanceItem(BaseModel):
+    feature_name: str
+    importance_pct: float
+    contribution_direction: Optional[str] = None
+    description: Optional[str] = None
+
+
+class ForecastEvidenceResponse(BaseModel):
+    crop: str
+    strategy_name: str
+    certification_status: str
+    model_family: Optional[str] = None
+    model_version: Optional[str] = None
+    validation_protocol: str = "4-Origin Expanding Walk-Forward (2014-2017)"
+    mean_mae: Optional[float] = None
+    baseline_mae: Optional[float] = None
+    mean_improvement_pct: Optional[float] = None
+    fold_win_rate_pct: Optional[float] = None
+    is_ml_strategy: bool = False
+    empirical_p10_p90_spread: Optional[float] = None
+    feature_importance: List[ModelFeatureImportanceItem] = Field(default_factory=list)
+    operating_rule: str = ""
+    fallback_strategy: str = ""
+    explanation_notice: str = ""
+
+
 
 

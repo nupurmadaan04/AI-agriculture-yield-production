@@ -19,6 +19,7 @@ import { DecisionIntelligence } from '../pages/DecisionIntelligence'
 import { ModelingReadiness } from '../pages/ModelingReadiness'
 import { ForecastIntelligence } from '../pages/ForecastIntelligence'
 import { ObservabilityCenter } from '../pages/ObservabilityCenter'
+import { PredictionExplorer } from '../pages/PredictionExplorer'
 import { Pricing } from '../pages/Pricing'
 import { Contact } from '../pages/Contact'
 import { NotFound } from '../pages/NotFound'
@@ -28,6 +29,7 @@ export const AppRoutes: React.FC = () => {
     <Routes>
       <Route element={<WebShell />}>
         <Route path="/" element={<Home />} />
+        <Route path="/prediction-explorer" element={<PredictionExplorer />} />
         <Route path="/forecast" element={<ForecastIntelligence />} />
         <Route path="/forecast-intelligence" element={<ForecastIntelligence />} />
         <Route path="/observability" element={<ObservabilityCenter />} />
@@ -50,6 +52,8 @@ export const AppRoutes: React.FC = () => {
         <Route path="/contact" element={<Contact />} />
         
         {/* Convenience Redirects */}
+        <Route path="/explorer" element={<Navigate to="/prediction-explorer" replace />} />
+        <Route path="/explain" element={<Navigate to="/prediction-explorer" replace />} />
         <Route path="/ops" element={<Navigate to="/observability" replace />} />
         <Route path="/telemetry" element={<Navigate to="/observability" replace />} />
         <Route path="/readiness" element={<Navigate to="/modeling-readiness" replace />} />
