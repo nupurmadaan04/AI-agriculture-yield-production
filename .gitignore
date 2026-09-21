@@ -31,6 +31,8 @@ htmlcov/
 # Environment & Credentials
 .env
 .env.*
+!.env.example
+!**/.env.example
 .venv/
 venv/
 ENV/

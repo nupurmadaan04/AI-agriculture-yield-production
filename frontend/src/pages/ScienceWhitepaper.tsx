@@ -73,11 +73,17 @@ export const ScienceWhitepaper: React.FC = () => {
         </div>
 
         <Button
-          onClick={() => alert("Accessing complete documentation: docs/ML_METHODOLOGY.md, docs/DATA_METHODOLOGY.md, and docs/MODEL_VALIDATION.md.")}
+          asChild
           className="gap-2 text-xs font-bold shadow-md"
         >
-          <Download className="w-3.5 h-3.5" />
-          <span>Download Scientific Report</span>
+          <a
+            href="https://github.com/nupurmadaan04/AI-agriculture-yield-production/blob/main/docs/research_paper/paper.md"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Download className="w-3.5 h-3.5" />
+            <span>View Scientific Report</span>
+          </a>
         </Button>
       </div>
 
