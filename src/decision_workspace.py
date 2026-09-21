@@ -53,6 +53,11 @@ class DecisionWorkspaceEngine:
         year = int(forecast_year)
         workspace_id = f"WS-{uuid.uuid4().hex[:10].upper()}"
 
+        # Validate commodity scope
+        supported = [c.lower() for c in self.prediction_service.guard.strategy_registry.keys()]
+        if crop_clean.lower() not in supported:
+            raise ValueError(f"UNSUPPORTED_CROP: Commodity '{crop_clean}' is not supported. Supported: {list(self.prediction_service.guard.strategy_registry.keys())}")
+
         # ---------------------------------------------------------------------
         # 1. Historical Reference Context (Strictly Year < forecast_year)
         # ---------------------------------------------------------------------
@@ -70,33 +75,36 @@ class DecisionWorkspaceEngine:
         if self.panel_path.exists():
             try:
                 df = pd.read_csv(self.panel_path, low_memory=False)
-                df_crop = df[df["Crop"].str.lower() == crop_clean.lower()]
-                df_geo = df_crop[df_crop["State"].str.lower() == state_clean.lower()]
+                df.columns = [c.lower().strip() for c in df.columns]
+                yield_col = "yield_kg_ha" if "yield_kg_ha" in df.columns else "yield_kg_per_ha"
+
+                df_crop = df[df["crop"].astype(str).str.lower() == crop_clean.lower()]
+                df_geo = df_crop[df_crop["state"].astype(str).str.lower() == state_clean.lower()]
                 if dist_clean and dist_clean.lower() != "all":
-                    sub_d = df_geo[df_geo["District"].str.lower() == dist_clean.lower()]
+                    sub_d = df_geo[df_geo["district"].astype(str).str.lower() == dist_clean.lower()]
                     if not sub_d.empty:
                         df_geo = sub_d
 
                 # Strict temporal isolation: Year < forecast_year
-                df_hist = df_geo[df_geo["Year"] < year].dropna(subset=["Yield_kg_per_ha"])
+                df_hist = df_geo[df_geo["year"] < year].dropna(subset=[yield_col])
 
                 if not df_hist.empty:
                     sample_count = len(df_hist)
-                    yields = df_hist["Yield_kg_per_ha"].values
+                    yields = df_hist[yield_col].values
                     hist_avg_yield = float(np.mean(yields))
                     hist_median_yield = float(np.median(yields))
                     hist_min_yield = float(np.min(yields))
                     hist_max_yield = float(np.max(yields))
                     hist_std_yield = float(np.std(yields)) if len(yields) > 1 else 0.0
-                    start_year = int(df_hist["Year"].min())
-                    end_year = int(df_hist["Year"].max())
+                    start_year = int(df_hist["year"].min())
+                    end_year = int(df_hist["year"].max())
 
                     # Recent observations (up to last 5)
-                    tail_df = df_hist.sort_values("Year").tail(5)
+                    tail_df = df_hist.sort_values("year").tail(5)
                     recent_points = [
                         {
-                            "year": int(r["Year"]),
-                            "observed_yield_kg_ha": round(float(r["Yield_kg_per_ha"]), 1),
+                            "year": int(r["year"]),
+                            "observed_yield_kg_ha": round(float(r[yield_col]), 1),
                             "source": "AGRI_PANEL_1.0 (ICRISAT/DES)",
                             "semantic_classification": "OBSERVED"
                         }

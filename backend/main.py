@@ -272,6 +272,9 @@ async def request_context_middleware(request: Request, call_next):
         duration_ms = round((time.perf_counter() - start_time) * 1000, 2)
         response.headers["X-Request-ID"] = request_id
         response.headers["X-Response-Time-Ms"] = str(duration_ms)
+        response.headers["X-Content-Type-Options"] = "nosniff"
+        response.headers["X-Frame-Options"] = "DENY"
+        response.headers["Referrer-Policy"] = "strict-origin-when-cross-origin"
 
         if request.url.path not in ("/health", "/ready"):
             logger.info(
@@ -334,7 +337,12 @@ async def platform_error_handler(request: Request, exc: BasePlatformError):
             },
             "detail": exc.message
         },
-        headers={"X-Request-ID": req_id}
+        headers={
+            "X-Request-ID": req_id,
+            "X-Content-Type-Options": "nosniff",
+            "X-Frame-Options": "DENY",
+            "Referrer-Policy": "strict-origin-when-cross-origin"
+        }
     )
 
 @app.exception_handler(HTTPException)
@@ -352,7 +360,35 @@ async def http_exception_handler(request: Request, exc: HTTPException):
             },
             "detail": exc.detail
         },
-        headers={"X-Request-ID": req_id}
+        headers={
+            "X-Request-ID": req_id,
+            "X-Content-Type-Options": "nosniff",
+            "X-Frame-Options": "DENY",
+            "Referrer-Policy": "strict-origin-when-cross-origin"
+        }
+    )
+
+@app.exception_handler(Exception)
+async def unhandled_exception_handler(request: Request, exc: Exception):
+    req_id = getattr(request.state, "request_id", "unknown")
+    logger.error(f"Unhandled internal exception [req_id={req_id}]: {exc}", exc_info=True)
+    return JSONResponse(
+        status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+        content={
+            "error": {
+                "code": "INTERNAL_SERVER_ERROR",
+                "message": "An internal server error occurred. Please reference the request ID for operational diagnostics.",
+                "details": {},
+                "request_id": req_id
+            },
+            "detail": "An internal server error occurred."
+        },
+        headers={
+            "X-Request-ID": req_id,
+            "X-Content-Type-Options": "nosniff",
+            "X-Frame-Options": "DENY",
+            "Referrer-Policy": "strict-origin-when-cross-origin"
+        }
     )
 
 # Root Health / Liveness Endpoint

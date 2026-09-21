@@ -52,8 +52,8 @@ DECISION BRIEF (9-Dimension Structured Brief)
 - **Prediction Explorer**: Filterable historical archive connecting predictions to local SHAP attributions, fallback traces, and raw JSON export.
 - **Production Observability Center**: Live CPU/RSS telemetry, stage latency breakdowns ($P_{50}..P_{99}$), cryptographic dataset/model integrity checks, and FIFO event rings.
 - **Forecast Monitoring & Outcome Intelligence**: Post-harvest evaluation against ground truth, Population Stability Index (PSI) drift tracking, directional signed bias diagnostics ($\text{predicted} - \text{observed}$), and evidence-first alerts.
-- **Evidence-Based Decision Intelligence (Day 31)**: Structured 9-dimension executive forecast briefs, rule-based evidence completeness scoring, transparent scenario simulations, 11-rule automated scientific validation suite, and a non-causal language guard.
 - **Decision Workspace & Scenario Comparison (Day 32)**: Interactive `/decision-workspace` with governed baseline synthesis, historical context trajectories, walk-forward validation panels, side-by-side what-if scenario comparison matrix, strict non-autonomous quantitative presentation (zero ranking tags), Tree SHAP and PSI drift monitoring, and bitwise deterministic analysis.
+- **End-to-End Production Acceptance, Security & Failure Resilience (Day 33)**: 64-test automated acceptance suite across 4 commodities, OWASP security hardening (path traversal, arbitrary file access, SQL/XSS/Command injection, DoS string limits, security headers `X-Content-Type-Options`, `X-Frame-Options`, `Referrer-Policy`, exception containment), fault injection resilience (graceful degradation on monitoring/explainability failures, non-blocking audit logging, explicit baseline uncertainty state), cryptographic SHA-256 provenance chains, concurrency safety up to 10 workers, and verified 100% scientific freeze.
 
 
 ---

@@ -206,6 +206,18 @@ This index organizes all research, architecture, methodology, operational, and d
 - [DAY32_SCIENTIFIC_VALIDATION.md](DAY32_SCIENTIFIC_VALIDATION.md) — Scientific freeze verification, 4-golden-case validation, edge-case audit, and analytical determinism report.
 - [DAY32_FINAL_STATUS.md](DAY32_FINAL_STATUS.md) — Day 32 final compliance scorecard, test verification summary, and real discovered limitations.
 
+---
+
+## 18. Production Acceptance, Security & Failure Resilience (Day 33)
+- [DAY33_PRODUCTION_ACCEPTANCE.md](DAY33_PRODUCTION_ACCEPTANCE.md) — Executive acceptance summary, 100% test pass confirmation, signoff criteria, and environment validation.
+- [DAY33_SECURITY_AUDIT.md](DAY33_SECURITY_AUDIT.md) — Security test results, path traversal results, injection testing, input bounds, security headers, exception containment, and OWASP alignment.
+- [DAY33_FAILURE_RESILIENCE.md](DAY33_FAILURE_RESILIENCE.md) — Failure isolation testing, graceful degradation, missing service fallback, audit error containment, and boundary behaviors.
+- [DAY33_END_TO_END_WORKFLOWS.md](DAY33_END_TO_END_WORKFLOWS.md) — Golden journeys for all 4 commodities (Oilseeds, Sugarcane, Rice, Wheat) + complete negative/edge cases matrix.
+- [DAY33_API_CONTRACT_VALIDATION.md](DAY33_API_CONTRACT_VALIDATION.md) — Full schema contract validation across all 12 key endpoints, status codes, payload shapes, and backward compatibility.
+- [DAY33_SCIENTIFIC_REGRESSION.md](DAY33_SCIENTIFIC_REGRESSION.md) — Verification of zero scientific drift, frozen models, preserved walk-forward validation metrics, and reproducible baseline comparisons.
+- [DAY33_FINAL_STATUS.md](DAY33_FINAL_STATUS.md) — Day 33 final acceptance report and executive release signoff.
+
+
 
 
 

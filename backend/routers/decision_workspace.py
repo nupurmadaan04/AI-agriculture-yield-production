@@ -31,6 +31,8 @@ async def analyze_workspace(body: WorkspaceAnalyzeRequest):
             custom_modifications=body.custom_modifications
         )
         return DecisionWorkspaceResponse(**res)
+    except ValueError as e:
+        raise HTTPException(status_code=400, detail=str(e))
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Failed to build decision workspace: {str(e)}")
 
@@ -53,6 +55,8 @@ async def analyze_workspace_get(
             forecast_year=forecast_year
         )
         return DecisionWorkspaceResponse(**res)
+    except ValueError as e:
+        raise HTTPException(status_code=400, detail=str(e))
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Failed to build decision workspace: {str(e)}")
 
