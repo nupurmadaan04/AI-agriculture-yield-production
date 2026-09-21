@@ -129,3 +129,18 @@ Welcome to the comprehensive documentation index for the **AI Agriculture Yield 
 ### 2.6 Demonstration Assets & Screenshots (`docs/assets/screenshots/`)
 - [Screenshot Package & Golden Demo Checklist](file:///docs/assets/screenshots/README.md)
 
+### 2.7 Technical Demonstration & Viva Defense Package (`docs/demo/`)
+- [Live Technical Demonstration Script (0:00–7:00)](file:///docs/demo/DAY39_DEMO_SCRIPT.md)
+- [60-Second Executive Pitch](file:///docs/demo/DAY39_60_SECOND_PITCH.md)
+- [2-Minute Comprehensive Technical Explanation](file:///docs/demo/DAY39_2_MINUTE_EXPLANATION.md)
+- [Layer-by-Layer Architecture & Data Flow Defense](file:///docs/demo/DAY39_ARCHITECTURE_DEFENSE.md)
+- [Machine Learning & Data Science Viva Defense (36 Q&A)](file:///docs/demo/DAY39_ML_VIVA.md)
+- [Agricultural Science & Agronomy Viva Defense (14 Q&A)](file:///docs/demo/DAY39_AGRICULTURE_VIVA.md)
+- [Explainable AI (XAI) Viva Defense (10 Q&A)](file:///docs/demo/DAY39_XAI_VIVA.md)
+- [System Design & Production Engineering Viva Defense (14 Q&A)](file:///docs/demo/DAY39_SYSTEM_DESIGN_VIVA.md)
+- [Tough Skeptical Questions & Viva Defense (13 Q&A)](file:///docs/demo/DAY39_HARD_QUESTIONS.md)
+- [Certified Scientific Results & Benchmark Audit](file:///docs/demo/DAY39_RESULTS.md)
+- [12-Slide Technical Presentation & Speaker Notes](file:///docs/demo/DAY39_PRESENTATION.md)
+- [Demo Preparation, Failover & Disaster Recovery Checklist](file:///docs/demo/DAY39_DEMO_CHECKLIST.md)
+- [Day 39 Final Demonstration Audit & Status Report](file:///docs/DAY39_FINAL_DEMO_STATUS.md)
+

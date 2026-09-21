@@ -53,3 +53,6 @@ reports/*
 !Datasets/
 !Models/
 
+# Scratch & Temporary Scripts
+scratch/
+
