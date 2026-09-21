@@ -83,6 +83,13 @@ const navGroups: NavGroup[] = [
     name: 'Decision Intelligence',
     items: [
       {
+        name: 'Decision Workspace',
+        path: '/decision-workspace',
+        description: 'Multi-scenario comparison workspace with baseline forecasts & evidence inspection.',
+        badge: 'Workspace',
+        icon: Layers,
+      },
+      {
         name: 'Decision Brief',
         path: '/decision-intelligence',
         description: 'Auditable policy recommendations, agronomic trade-offs, and supply shocks.',

@@ -197,6 +197,16 @@ This index organizes all research, architecture, methodology, operational, and d
 - [DAY31_SCIENTIFIC_VALIDATION.md](DAY31_SCIENTIFIC_VALIDATION.md) — 11-rule automated validation suite, non-causal language guard, and test suite verification.
 - [DAY31_FINAL_STATUS.md](DAY31_FINAL_STATUS.md) — Day 31 final compliance matrix, deliverables checklist, and release sign-off.
 
+---
+
+## 17. Decision Workspace & Scenario Comparison (Day 32)
+- [DAY32_DECISION_WORKSPACE.md](DAY32_DECISION_WORKSPACE.md) — Decision workspace architecture, evidence-first synthesis layer, card specifications, and non-autonomous governance.
+- [DAY32_SCENARIO_INTEGRATION.md](DAY32_SCENARIO_INTEGRATION.md) — Governed scenario engine integration, simulation vs forecast distinction, and side-by-side comparison matrix.
+- [DAY32_EVIDENCE_TRACEABILITY.md](DAY32_EVIDENCE_TRACEABILITY.md) — Strict semantic taxonomy (`OBSERVED`, `PREDICTED`, `SCENARIO`, etc.), SHA-256 provenance fingerprinting, and temporal boundary enforcement.
+- [DAY32_SCIENTIFIC_VALIDATION.md](DAY32_SCIENTIFIC_VALIDATION.md) — Scientific freeze verification, 4-golden-case validation, edge-case audit, and analytical determinism report.
+- [DAY32_FINAL_STATUS.md](DAY32_FINAL_STATUS.md) — Day 32 final compliance scorecard, test verification summary, and real discovered limitations.
+
+
 
 
 

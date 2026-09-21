@@ -53,6 +53,7 @@ DECISION BRIEF (9-Dimension Structured Brief)
 - **Production Observability Center**: Live CPU/RSS telemetry, stage latency breakdowns ($P_{50}..P_{99}$), cryptographic dataset/model integrity checks, and FIFO event rings.
 - **Forecast Monitoring & Outcome Intelligence**: Post-harvest evaluation against ground truth, Population Stability Index (PSI) drift tracking, directional signed bias diagnostics ($\text{predicted} - \text{observed}$), and evidence-first alerts.
 - **Evidence-Based Decision Intelligence (Day 31)**: Structured 9-dimension executive forecast briefs, rule-based evidence completeness scoring, transparent scenario simulations, 11-rule automated scientific validation suite, and a non-causal language guard.
+- **Decision Workspace & Scenario Comparison (Day 32)**: Interactive `/decision-workspace` with governed baseline synthesis, historical context trajectories, walk-forward validation panels, side-by-side what-if scenario comparison matrix, strict non-autonomous quantitative presentation (zero ranking tags), Tree SHAP and PSI drift monitoring, and bitwise deterministic analysis.
 
 
 ---

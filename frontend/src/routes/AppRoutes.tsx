@@ -21,6 +21,7 @@ import { ForecastIntelligence } from '../pages/ForecastIntelligence'
 import { ObservabilityCenter } from '../pages/ObservabilityCenter'
 import { PredictionExplorer } from '../pages/PredictionExplorer'
 import { ForecastMonitoring } from '../pages/ForecastMonitoring'
+import { DecisionWorkspace } from '../pages/DecisionWorkspace'
 import { Pricing } from '../pages/Pricing'
 import { Contact } from '../pages/Contact'
 import { NotFound } from '../pages/NotFound'
@@ -30,6 +31,7 @@ export const AppRoutes: React.FC = () => {
     <Routes>
       <Route element={<WebShell />}>
         <Route path="/" element={<Home />} />
+        <Route path="/decision-workspace" element={<DecisionWorkspace />} />
         <Route path="/forecast-monitoring" element={<ForecastMonitoring />} />
         <Route path="/prediction-explorer" element={<PredictionExplorer />} />
         <Route path="/forecast" element={<ForecastIntelligence />} />
@@ -54,6 +56,7 @@ export const AppRoutes: React.FC = () => {
         <Route path="/contact" element={<Contact />} />
         
         {/* Convenience Redirects */}
+        <Route path="/workspace" element={<Navigate to="/decision-workspace" replace />} />
         <Route path="/explorer" element={<Navigate to="/prediction-explorer" replace />} />
         <Route path="/explain" element={<Navigate to="/prediction-explorer" replace />} />
         <Route path="/ops" element={<Navigate to="/observability" replace />} />

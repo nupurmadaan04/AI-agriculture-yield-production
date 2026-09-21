@@ -2944,6 +2944,13 @@ from backend.routers.monitoring import router as monitoring_router
 app.include_router(monitoring_router)
 
 
+# ---------------------------------------------------------------------------
+# Day 32 Decision Workspace & Scenario Comparison Endpoints
+# ---------------------------------------------------------------------------
+from backend.routers.decision_workspace import router as decision_workspace_router
+app.include_router(decision_workspace_router)
+
+
 
 
 
