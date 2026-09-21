@@ -22,21 +22,19 @@ Unlike traditional black-box platforms that apply complex machine learning model
 ```
 DATA
   ↓
-GOVERNED FORECAST
+FORECAST
   ↓
 EXPLAINABILITY (Tree SHAP)
   ↓
 PROVENANCE (SHA-256 Lineage)
   ↓
-MONITORING
+MONITORING (Operational Health & PSI Drift)
   ↓
-OBSERVED OUTCOME (Post-Harvest)
+OBSERVED OUTCOMES (Post-Harvest Folds)
   ↓
-OUTCOME EVALUATION
+EVIDENCE SYNTHESIS (11-Rule Scientific Harmonization)
   ↓
-ERROR / BIAS / DRIFT DIAGNOSIS
-  ↓
-MONITORING STATUS & EVIDENCE ALERTS
+DECISION BRIEF (9-Dimension Structured Brief)
 ```
 
 ---
@@ -54,6 +52,8 @@ MONITORING STATUS & EVIDENCE ALERTS
 - **Prediction Explorer**: Filterable historical archive connecting predictions to local SHAP attributions, fallback traces, and raw JSON export.
 - **Production Observability Center**: Live CPU/RSS telemetry, stage latency breakdowns ($P_{50}..P_{99}$), cryptographic dataset/model integrity checks, and FIFO event rings.
 - **Forecast Monitoring & Outcome Intelligence**: Post-harvest evaluation against ground truth, Population Stability Index (PSI) drift tracking, directional signed bias diagnostics ($\text{predicted} - \text{observed}$), and evidence-first alerts.
+- **Evidence-Based Decision Intelligence (Day 31)**: Structured 9-dimension executive forecast briefs, rule-based evidence completeness scoring, transparent scenario simulations, 11-rule automated scientific validation suite, and a non-causal language guard.
+
 
 ---
 

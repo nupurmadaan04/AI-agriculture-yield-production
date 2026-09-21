@@ -1,5 +1,5 @@
 """
-Agricultural Decision Intelligence Service.
+Agricultural Decision Intelligence Service (Day 31).
 
 Orchestrates multi-layer evidence collection, signal fusion, priority ranking,
 scenario options, robustness evaluation, executive brief generation, DAG provenance,
@@ -23,7 +23,7 @@ from src.decision_validation import decision_validator
 
 class DecisionIntelligenceService:
     """
-    Service coordinating Day 14 Decision Intelligence operations.
+    Service coordinating Day 31 Decision Intelligence & Evidence-Based Brief operations.
     """
 
     _instance: Optional['DecisionIntelligenceService'] = None
@@ -56,6 +56,12 @@ class DecisionIntelligenceService:
         evidence_items = evidence_bundle["evidence_items"]
         metrics = evidence_bundle["metrics"]
         raw = evidence_bundle["raw_modules"]
+        forecast_summary = evidence_bundle.get("forecast_summary")
+        historical_context = evidence_bundle.get("historical_context")
+        validation_evidence = evidence_bundle.get("validation_evidence")
+        uncertainty_evidence = evidence_bundle.get("uncertainty_evidence")
+        monitoring_evidence = evidence_bundle.get("monitoring_evidence")
+        attribution_evidence = evidence_bundle.get("attribution_evidence")
 
         # 2. Decision Signal Fusion
         signals = decision_signal_fusion_engine.fuse_signals(
@@ -87,8 +93,8 @@ class DecisionIntelligenceService:
         )
 
         # 4. Decision Options from Day 10 Scenarios & Optimization
-        scenario_list = raw["scenarios"].get("comparison_matrix", raw["scenarios"].get("scenarios", []))
-        opt_res = raw["optimization"]
+        scenario_list = raw["scenarios"].get("comparison_matrix", raw["scenarios"].get("scenarios", [])) if isinstance(raw.get("scenarios"), dict) else []
+        opt_res = raw.get("optimization", {})
         options = decision_options_engine.build_decision_options(
             base_yield_kg_ha=metrics.get("forecast_yield_kg_ha", 2140.0),
             base_area_1000_ha=context.get("target_area_1000_ha", 250.0),
@@ -100,7 +106,7 @@ class DecisionIntelligenceService:
         # 5. Robustness Analysis across Sensitivity Sweeps
         robustness = decision_robustness_engine.evaluate_all_options(
             options=options,
-            sensitivity_matrix=raw["sensitivity"]
+            sensitivity_matrix=raw.get("sensitivity", {})
         )
 
         # 6. Build Decision Statements for Provenance
@@ -133,6 +139,8 @@ class DecisionIntelligenceService:
             evidence_items=evidence_items,
             statements=statements
         )
+        if forecast_summary and "provenance_hash" in forecast_summary:
+            provenance["provenance_hash"] = forecast_summary["provenance_hash"]
 
         # 8. Create Cryptographic SHA-256 Decision Audit Record
         evidence_ids = [e["evidence_id"] for e in evidence_items]
@@ -142,7 +150,7 @@ class DecisionIntelligenceService:
         audit_record = decision_audit_logger.create_audit_record(
             context=context,
             dataset_version=decision_intelligence_engine.dataset_version,
-            model_version=decision_intelligence_engine.model_version,
+            model_version=forecast_summary.get("model_version", "1.0.0") if forecast_summary else "1.0.0",
             evidence_ids=evidence_ids,
             scenario_ids=scenario_ids,
             explanation_ids=explanation_ids,
@@ -153,11 +161,11 @@ class DecisionIntelligenceService:
             },
             limitations=[
                 "Decision-support artifact; does not establish biological causality.",
-                "Simulations describe mathematical models within ICRISAT historical distributions (1966–2017)."
+                "Simulations describe mathematical models within AGRI_PANEL_1.0 historical distributions (1966–2017)."
             ]
         )
 
-        # 9. Generate 16-Section Decision Brief
+        # 9. Generate Complete Decision Brief
         brief = decision_brief_generator.generate_brief(
             context=context,
             evidence_items=evidence_items,
@@ -167,10 +175,16 @@ class DecisionIntelligenceService:
             robustness=robustness,
             metrics=metrics,
             provenance=provenance,
-            audit_record=audit_record
+            audit_record=audit_record,
+            forecast_summary=forecast_summary,
+            historical_context=historical_context,
+            validation_evidence=validation_evidence,
+            uncertainty_evidence=uncertainty_evidence,
+            monitoring_evidence=monitoring_evidence,
+            attribution_evidence=attribution_evidence
         )
 
-        # 10. 11-Rule Scientific Validation
+        # 10. Scientific Validation
         val_res = decision_validator.validate_decision_brief(
             brief=brief,
             evidence_items=evidence_items,
@@ -201,7 +215,6 @@ class DecisionIntelligenceService:
         if not audit:
             return None
         ctx = audit.get("context", {})
-        # Re-derive deterministic brief
         return self.analyze_decision(
             crop=ctx.get("crop", "Rice"),
             state=ctx.get("state", "Punjab"),
@@ -229,28 +242,36 @@ class DecisionIntelligenceService:
         """Returns methodology, taxonomy, and scientific limitations."""
         return {
             "title": "Agricultural Decision Intelligence & Evidence Synthesis Methodology",
-            "version": "3.2.0",
-            "dataset_version": "ICRISAT 1966-2017 Cleaned Panel",
-            "registered_model": "exogenous_rf_forecaster v2.1.0",
+            "version": "Day 31 Evidence Architecture",
+            "dataset_version": "AGRI_PANEL_1.0 (71,601 verified records, 1966-2017)",
             "evidence_taxonomies": [
-                {"type": "OBSERVED", "description": "Empirical historical data points directly recorded in verified dataset."},
-                {"type": "PREDICTED", "description": "Machine learning estimates produced by registered validation models."},
-                {"type": "SIMULATED", "description": "Hypothetical scenario and optimization projections under modified parameters."},
-                {"type": "DERIVED", "description": "Deterministic mathematical and statistical transformations (trends, z-scores, rolling means)."},
-                {"type": "MODEL_ATTRIBUTION", "description": "Feature contribution explanations quantifying model behavior."},
-                {"type": "VALIDATION", "description": "Out-of-time chronological validation metrics (R², MAE, RMSE, MAPE)."}
+                {"type": "OBSERVED", "description": "Empirical historical harvest observations recorded in panel dataset."},
+                {"type": "PREDICTED", "description": "Governed pre-season estimates from certified forecast strategies."},
+                {"type": "SIMULATED", "description": "Hypothetical scenario projections under controlled input assumptions."},
+                {"type": "DERIVED", "description": "Empirical statistical moments, trends, ranges, and ensemble spread."},
+                {"type": "MODEL_ATTRIBUTION", "description": "Tree SHAP feature contributions decomposing model adjustments."},
+                {"type": "VALIDATION", "description": "4-Fold expanding walk-forward out-of-time error metrics (MAE, RMSE, Win Rate)."},
+                {"type": "MONITORING", "description": "Runtime Population Stability Index (PSI) drift, bias, and operational health."},
+                {"type": "PROVENANCE", "description": "Cryptographic SHA-256 lineage hash and audit trails."},
+                {"type": "ASSUMPTION", "description": "Explicit operating assumptions required for interpretation."},
+                {"type": "LIMITATION", "description": "Known data, temporal, or non-causal boundaries."}
             ],
             "non_causal_principles": [
-                "Model attribution does not establish biological crop causation.",
-                "Simulations are mathematical responses within the trained feature space.",
-                "No unmodeled agricultural inputs (chemicals, fertilizers) are fabricated."
+                "Model attribution describes mathematical dependency within feature space, not biological causation.",
+                "Simulations are non-prescriptive scenarios and must not be interpreted as guaranteed outcomes.",
+                "Zero fabricated operational traffic, unmodeled chemical inputs, or synthetic outcomes."
+            ],
+            "evidence_completeness_levels": [
+                "STRONG_EVIDENCE: Certified ML model with walk-forward validation + empirical uncertainty + historical depth >= 10.",
+                "PARTIAL_EVIDENCE: Certified baseline model with walk-forward benchmarks and historical depth >= 5.",
+                "LIMITED_EVIDENCE: Sparse historical records (< 5) or fallback used.",
+                "INSUFFICIENT_EVIDENCE: Unsupported crop or unmapped geographic entity."
             ],
             "confidence_dimensions": [
-                "Evidence Agreement",
-                "Model Reliability",
-                "Data Quality",
-                "Prediction Spread",
-                "Signal Persistence"
+                {"dimension": "Walk-Forward Validation Gain", "description": "Out-of-time fold win rate and MAE improvement vs baseline."},
+                {"dimension": "Empirical Historical Depth", "description": "Number of historical district panel observations."},
+                {"dimension": "Ensemble Dispersion Spread", "description": "Empirical P10-P90 range across estimator predictions."},
+                {"dimension": "Operational Data Integrity", "description": "Telemetry error rate, PSI drift, and boundary checks."}
             ]
         }
 

@@ -12,7 +12,12 @@ const TYPE_COLORS: Record<EvidenceType, string> = {
   SIMULATED: 'bg-indigo-500/10 text-indigo-400 border-indigo-500/30',
   DERIVED: 'bg-purple-500/10 text-purple-400 border-purple-500/30',
   MODEL_ATTRIBUTION: 'bg-amber-500/10 text-amber-400 border-amber-500/30',
-  VALIDATION: 'bg-blue-500/10 text-blue-400 border-blue-500/30'
+  VALIDATION: 'bg-blue-500/10 text-blue-400 border-blue-500/30',
+  MONITORING: 'bg-teal-500/10 text-teal-400 border-teal-500/30',
+  PROVENANCE: 'bg-slate-500/10 text-slate-400 border-slate-500/30',
+  DECISION_EVIDENCE: 'bg-emerald-500/10 text-emerald-300 border-emerald-500/30',
+  ASSUMPTION: 'bg-sky-500/10 text-sky-400 border-sky-500/30',
+  LIMITATION: 'bg-rose-500/10 text-rose-400 border-rose-500/30'
 }
 
 export const DecisionEvidenceTable: React.FC<Props> = ({ items }) => {

@@ -45,7 +45,9 @@ class DecisionOptionsEngine:
             "model_reliability": "HIGH (Trained feature distribution)",
             "tradeoffs": "Zero transition friction; vulnerable to unaddressed historical downward trends.",
             "limitations": "Does not test adaptive crop allocation.",
-            "supporting_evidence": scen_ev_ids[:2] if scen_ev_ids else []
+            "supporting_evidence": scen_ev_ids[:2] if scen_ev_ids else [],
+            "is_simulated": True,
+            "semantic_classification": "DERIVED"
         })
 
         # 2. Options from Scenario Results
@@ -75,7 +77,9 @@ class DecisionOptionsEngine:
                 "model_reliability": "VALIDATED (Within ±20% perturbation bounds)",
                 "tradeoffs": f"Changes allocation: {sc.get('modifications', {}) or sc.get('interpretation', 'Scenario projection')}.",
                 "limitations": "Hypothetical model projection; not a biological certainty.",
-                "supporting_evidence": [e_id for e_id in scen_ev_ids if sc_id in str(e_id)] or scen_ev_ids
+                "supporting_evidence": [e_id for e_id in scen_ev_ids if sc_id in str(e_id)] or scen_ev_ids,
+                "is_simulated": True,
+                "semantic_classification": "DERIVED"
             })
 
         # 3. Option from Multi-Objective Optimization (if present)
@@ -96,7 +100,9 @@ class DecisionOptionsEngine:
                 "model_reliability": "VALIDATED (Feasible constrained solution)",
                 "tradeoffs": f"Optimized multi-objective trade-off weights: {optimization_result.get('weights', {})}.",
                 "limitations": "Constrained linear scalarization within ICRISAT land allocation space.",
-                "supporting_evidence": opt_ev_ids if opt_ev_ids else scen_ev_ids
+                "supporting_evidence": opt_ev_ids if opt_ev_ids else scen_ev_ids,
+                "is_simulated": True,
+                "semantic_classification": "DERIVED"
             })
 
         return options

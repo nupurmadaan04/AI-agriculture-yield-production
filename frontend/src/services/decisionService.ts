@@ -91,7 +91,34 @@ export const decisionService = {
   getMethodology: async (): Promise<any> => {
     const res = await fetch(`${API_BASE}/methodology`)
     return handleResponse<any>(res, 'Failed to fetch methodology')
+  },
+
+  getBriefQuery: async (params: { crop: string; state: string; district?: string; year?: number; horizon?: string }): Promise<DecisionBrief> => {
+    const q = new URLSearchParams({
+      crop: params.crop,
+      state: params.state,
+      year: String(params.year || 2017),
+      decision_horizon: params.horizon || 'next_season'
+    })
+    if (params.district) q.set('district', params.district)
+    const res = await fetch(`${API_BASE}/brief?${q.toString()}`)
+    return handleResponse<DecisionBrief>(res, 'Failed to fetch decision brief')
+  },
+
+  getCropEvidence: async (crop: string, state: string = 'Punjab', district?: string, year: number = 2017): Promise<any> => {
+    const q = new URLSearchParams({ state, year: String(year) })
+    if (district) q.set('district', district)
+    const res = await fetch(`${API_BASE}/evidence/${encodeURIComponent(crop)}?${q.toString()}`)
+    return handleResponse<any>(res, `Failed to fetch evidence for ${crop}`)
   }
+}
+
+export const useDecisionBriefQuery = (params: { crop: string; state: string; district?: string; year?: number; horizon?: string }) => {
+  return useQuery({
+    queryKey: ['decision', 'brief', params.crop, params.state, params.district, params.year, params.horizon],
+    queryFn: () => decisionService.getBriefQuery(params),
+    staleTime: 60 * 1000
+  })
 }
 
 

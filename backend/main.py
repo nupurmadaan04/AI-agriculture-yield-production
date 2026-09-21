@@ -1952,6 +1952,90 @@ async def analyze_agricultural_decision(body: DecisionAnalyzeRequest):
         raise HTTPException(status_code=500, detail=f"Decision intelligence analysis failed: {str(e)}")
 
 
+@app.get("/api/decision/brief", response_model=DecisionBrief, tags=["Decision Intelligence"])
+async def get_decision_brief_query(
+    crop: str = Query("Rice", description="Target crop"),
+    state: str = Query("Punjab", description="State name"),
+    district: Optional[str] = Query(None, description="Optional district name"),
+    year: int = Query(2017, description="Target agricultural year"),
+    decision_horizon: str = Query("next_season", description="Decision horizon")
+):
+    """
+    Returns structured 16-section executive decision brief via GET query parameters.
+    """
+    try:
+        res = decision_intelligence_service.analyze_decision(
+            crop=crop,
+            state=state,
+            district=district,
+            year=year,
+            decision_horizon=decision_horizon
+        )
+        return DecisionBrief(**res["brief"])
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Failed to generate decision brief: {str(e)}")
+
+
+@app.get("/api/decision/analyze", response_model=DecisionAnalyzeResponse, tags=["Decision Intelligence"])
+async def analyze_agricultural_decision_get(
+    crop: str = Query("Rice", description="Target crop"),
+    state: str = Query("Punjab", description="State name"),
+    district: Optional[str] = Query(None, description="Optional district name"),
+    year: int = Query(2017, description="Target agricultural year"),
+    decision_horizon: str = Query("next_season", description="Decision horizon")
+):
+    """
+    Executes complete multi-layer decision intelligence analysis via GET query parameters.
+    """
+    try:
+        res = decision_intelligence_service.analyze_decision(
+            crop=crop,
+            state=state,
+            district=district,
+            year=year,
+            decision_horizon=decision_horizon
+        )
+        return DecisionAnalyzeResponse(
+            decision_id=res["decision_id"],
+            context=res["context"],
+            brief=DecisionBrief(**res["brief"]),
+            is_scientifically_validated=res["is_scientifically_validated"],
+            validation_checks_passed=res["validation_checks_passed"],
+            validation_total_rules=res["validation_total_rules"]
+        )
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Decision intelligence analysis failed: {str(e)}")
+
+
+@app.get("/api/decision/evidence/{crop}", tags=["Decision Intelligence"])
+async def get_crop_decision_evidence(
+    crop: str,
+    state: str = Query("Punjab", description="State name"),
+    district: Optional[str] = Query(None, description="District name"),
+    year: int = Query(2017, description="Year")
+):
+    """
+    Returns structured decision evidence list for a specific crop and region.
+    """
+    try:
+        res = decision_intelligence_service.analyze_decision(
+            crop=crop,
+            state=state,
+            district=district,
+            year=year
+        )
+        return {
+            "crop": crop,
+            "decision_id": res["decision_id"],
+            "evidence_count": len(res["brief"]["evidence_items"]),
+            "evidence_items": res["brief"]["evidence_items"],
+            "validation_evidence": res["brief"].get("validation_evidence"),
+            "monitoring_evidence": res["brief"].get("monitoring_evidence")
+        }
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Failed to fetch decision evidence for '{crop}': {str(e)}")
+
+
 @app.post("/api/decision/brief", response_model=DecisionBrief, tags=["Decision Intelligence"])
 async def generate_decision_brief(body: DecisionAnalyzeRequest):
     """

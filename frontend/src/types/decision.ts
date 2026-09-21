@@ -1,5 +1,5 @@
 /**
- * TypeScript definitions for Day 14 Agricultural Decision Intelligence & Evidence Reports.
+ * TypeScript definitions for Day 31 Agricultural Decision Intelligence & Evidence Reports.
  */
 
 export interface DecisionContext {
@@ -18,6 +18,109 @@ export type EvidenceType =
   | 'DERIVED'
   | 'MODEL_ATTRIBUTION'
   | 'VALIDATION'
+  | 'MONITORING'
+  | 'PROVENANCE'
+  | 'DECISION_EVIDENCE'
+  | 'ASSUMPTION'
+  | 'LIMITATION'
+
+export interface DecisionForecastSummary {
+  crop: string
+  state: string
+  district?: string | null
+  forecast_year: number
+  forecast_yield_kg_ha: number
+  unit: string
+  strategy: string
+  model_name: string
+  model_version: string
+  certification_status: string
+  is_deterministic: boolean
+  fallback_used: boolean
+  request_id: string
+  provenance_hash: string
+  timestamp: string
+}
+
+export interface HistoricalObservationPoint {
+  year: number
+  observed_yield_kg_ha: number
+  observed_area_ha?: number | null
+  observed_production_tonnes?: number | null
+  source: string
+  semantic_type: string
+}
+
+export interface HistoricalContext {
+  crop: string
+  state: string
+  district?: string | null
+  start_year: number
+  end_year: number
+  sample_count: number
+  historical_mean_yield_kg_ha: number
+  historical_median_yield_kg_ha: number
+  historical_min_yield_kg_ha: number
+  historical_max_yield_kg_ha: number
+  historical_std_yield_kg_ha: number
+  trend_slope_kg_ha_yr: number
+  recent_observations: HistoricalObservationPoint[]
+  source: string
+  semantic_classification: string
+}
+
+export interface ValidationEvidence {
+  strategy_tier: string
+  primary_strategy: string
+  validation_protocol: string
+  validation_period: string
+  mae_kg_ha: number
+  rmse_kg_ha?: number | null
+  r2_score?: number | null
+  fold_win_rate_pct: number
+  mean_improvement_pct: number
+  baseline_mae_kg_ha: number
+  baseline_strategy: string
+  is_ml_certified: boolean
+  legacy_benchmark_note?: string | null
+  source: string
+  semantic_classification: string
+}
+
+export interface UncertaintyEvidence {
+  is_available: boolean
+  predicted_yield_kg_ha?: number | null
+  empirical_p10_kg_ha?: number | null
+  empirical_p90_kg_ha?: number | null
+  ensemble_spread_kg_ha?: number | null
+  spread_percentage?: number | null
+  methodology: string
+  disclaimer: string
+  semantic_classification: string
+}
+
+export interface MonitoringEvidence {
+  operational_records_count: number
+  monitoring_status: string
+  prediction_drift_psi?: number | null
+  feature_drift_summary?: string | null
+  post_outcome_evaluation_status: string
+  observed_harvest_yield_kg_ha?: number | null
+  signed_bias_kg_ha?: number | null
+  active_alerts_count: number
+  alerts_summary: string[]
+  source: string
+  semantic_classification: string
+}
+
+export interface AttributionItem {
+  feature_name: string
+  feature_label: string
+  importance_or_shap: number
+  attribution_type: string
+  semantic_classification: string
+  interpretation: string
+}
 
 export interface EvidenceItem {
   evidence_id: string
@@ -32,6 +135,10 @@ export interface EvidenceItem {
   timestamp: string
   model_version: string
   dataset_version: string
+  period?: string | null
+  population?: string | null
+  interpretation?: string | null
+  limitation?: string | null
 }
 
 export interface DecisionSignal {
@@ -43,6 +150,7 @@ export interface DecisionSignal {
   persistence: string
   supporting_evidence: string[]
   interpretation: string
+  semantic_classification?: string
 }
 
 export interface DecisionPriority {
@@ -67,6 +175,8 @@ export interface DecisionOption {
   tradeoffs: string
   limitations: string
   supporting_evidence: string[]
+  is_simulated?: boolean
+  semantic_classification?: string
 }
 
 export interface DecisionRobustness {
@@ -100,6 +210,7 @@ export interface DecisionProvenance {
   nodes: DecisionProvenanceNode[]
   edges: DecisionProvenanceEdge[]
   context: Record<string, any>
+  provenance_hash?: string | null
 }
 
 export interface DecisionAudit {
@@ -124,7 +235,7 @@ export interface DecisionAudit {
 export interface DecisionSection {
   section_number: number
   title: string
-  classification: 'FACT' | 'MODEL OUTPUT' | 'SIMULATION' | 'INTERPRETATION' | 'DERIVED' | 'VALIDATION'
+  classification: string
   content: string
 }
 
@@ -146,22 +257,30 @@ export interface EvidenceStatus {
   data_quality_score: string
   prediction_spread: string
   signal_persistence: string
+  completeness_level?: string
 }
 
 export interface DecisionBrief {
   decision_id: string
   context: DecisionContext
+  forecast_summary?: DecisionForecastSummary | null
   executive_summary: ExecutiveSummary
   evidence_status: EvidenceStatus
+  historical_context?: HistoricalContext | null
+  validation_evidence?: ValidationEvidence | null
+  uncertainty_evidence?: UncertaintyEvidence | null
+  monitoring_evidence?: MonitoringEvidence | null
+  attribution_evidence?: AttributionItem[]
   sections: DecisionSection[]
   signals: DecisionSignal[]
   analytical_priorities: DecisionPriority[]
   decision_options: DecisionOption[]
   robustness: DecisionRobustness[]
   evidence_items: EvidenceItem[]
+  assumptions?: string[]
+  limitations: string[]
   provenance: DecisionProvenance
   audit_record: DecisionAudit
-  limitations: string[]
   generated_at: string
   footer_disclaimer: string
 }

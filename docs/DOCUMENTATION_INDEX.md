@@ -188,6 +188,16 @@ This index organizes all research, architecture, methodology, operational, and d
 - [DAY30_SCIENTIFIC_VALIDATION.md](DAY30_SCIENTIFIC_VALIDATION.md) — Scientific integrity audit, determinism invariance, and 4-golden-case validation scorecard.
 - [DAY30_FINAL_STATUS.md](DAY30_FINAL_STATUS.md) — Day 30 final compliance scorecard, operational statistics, and sign-off report.
 
+---
+
+## 16. Decision Intelligence & Evidence-Based Forecast Briefs (Day 31)
+- [DAY31_DECISION_INTELLIGENCE.md](DAY31_DECISION_INTELLIGENCE.md) — Decision intelligence architecture, evidence harvesting engine, and lifecycle integration.
+- [DAY31_EVIDENCE_FRAMEWORK.md](DAY31_EVIDENCE_FRAMEWORK.md) — Semantic evidence typologies, completeness scoring, and structured evidence schema.
+- [DAY31_DECISION_BRIEF.md](DAY31_DECISION_BRIEF.md) — 9-dimension decision brief specification, export formats, and section layout.
+- [DAY31_SCIENTIFIC_VALIDATION.md](DAY31_SCIENTIFIC_VALIDATION.md) — 11-rule automated validation suite, non-causal language guard, and test suite verification.
+- [DAY31_FINAL_STATUS.md](DAY31_FINAL_STATUS.md) — Day 31 final compliance matrix, deliverables checklist, and release sign-off.
+
+
 
 
 
