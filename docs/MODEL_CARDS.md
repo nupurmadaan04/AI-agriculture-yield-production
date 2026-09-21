@@ -54,8 +54,8 @@ The platform operates on a strict **evidence-first governance mandate**:
  Input Features (6)         yield_lag_1, yield_lag_2, yield_rolling_3yr_mean, 
                             area_lag_1, state_encoded, year
  Validation Protocol        4-Fold Expanding Walk-Forward Validation (2014–2017 origins)
- Mean Validation MAE        9,469.76 kg/ha (Baseline: 10,033.40 kg/ha)
- Relative Gain vs Baseline  +5.62% Error Reduction
+ Mean Validation MAE        1,467.97 kg/ha (Baseline: 1,485.70 kg/ha)
+ Relative Gain vs Baseline  +1.19% Error Reduction (Historical +5.62% draft resolved)
  Fold Win Rate              50.0% (2 out of 4 validation folds won vs baseline)
  Fallback Strategy          Sparse District Mean + Boundary Clipping
  Reproducibility Status     VERIFIED_BITWISE (Zero prediction drift: Δ = 0.000000)

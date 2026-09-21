@@ -12,8 +12,11 @@ The **Agricultural Intelligence Unified Panel (`AGRI_PANEL_1.0`)** is a standard
 ----------------------------------------------------------------------------------------
  Canonical Dataset Name     AGRI_PANEL_1.0
  Primary File Path          Datasets/processed/agricultural_panel.csv
+ SHA-256 Checksum           13f882d7d4617e77b6ded31c7febb55e599f3f6a13e981f23b94c4cecd47f13b
  Total Observations         71,601 verified records
- Temporal Boundary          1966–2017 (Annual Agricultural Years)
+ Active Panel Coverage      2010–2017 (8 normalized multi-crop years)
+ Historical Panel Context   1966–2017 (ICRISAT baseline records)
+ Walk-Forward Origins       2014, 2015, 2016, 2017 (Evaluation splits)
  Total Crops Covered        29 verified commodities
  Model-Evaluated Crops      14 commodities (Walk-forward temporal evaluation)
  Geographic Extent          20 Indian States, 311 Districts
