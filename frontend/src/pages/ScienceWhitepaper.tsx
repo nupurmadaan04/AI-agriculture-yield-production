@@ -73,17 +73,11 @@ export const ScienceWhitepaper: React.FC = () => {
         </div>
 
         <Button
-          asChild
+          onClick={() => window.open("https://github.com/nupurmadaan04/AI-agriculture-yield-production/blob/main/docs/RESEARCH_PAPER.md", "_blank", "noopener,noreferrer")}
           className="gap-2 text-xs font-bold shadow-md"
         >
-          <a
-            href="https://github.com/nupurmadaan04/AI-agriculture-yield-production/blob/main/docs/RESEARCH_PAPER.md"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Download className="w-3.5 h-3.5" />
-            <span>View Scientific Report</span>
-          </a>
+          <Download className="w-3.5 h-3.5" />
+          <span>View Scientific Report</span>
         </Button>
       </div>
 

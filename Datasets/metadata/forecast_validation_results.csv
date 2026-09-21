@@ -1,15 +1,15 @@
 crop,state,district,certification_status,strategy,pass_1_pred,pass_2_pred,prediction_diff,is_deterministic,fallback_used,status,provenance_hash
-Oilseeds,Andhra Pradesh,Ananthapur,PRODUCTION_READY,Historical ML (RandomForestRegressor),817.06,817.06,0.0,True,False,SUCCESS,SHA256:23b6383742150e1747bbc622be867f1a84b8dca3e9bdcaed2d0a75a1b3e37ae8
-Sugarcane,Andhra Pradesh,Ananthapur,CONDITIONAL_PRODUCTION,Historical ML (GradientBoostingRegressor),9469.76,9469.76,0.0,True,False,SUCCESS,SHA256:4386522a26c36f606022ca98e30cd05f704454793cf65a530229f8087a7f2f08
-Chickpea,Andhra Pradesh,Ananthapur,BASELINE_PRODUCTION,Historical District Mean / Persistence,610.86,610.86,0.0,True,False,SUCCESS,SHA256:ff1647681464613c6fb5b9180c2df57c7290f1bd88665bfbc5e74d30a9e30718
-Kharif Sorghum,Andhra Pradesh,Ananthapur,BASELINE_PRODUCTION,Historical District Mean / Persistence,645.28,645.28,0.0,True,False,SUCCESS,SHA256:38b860d6d016b539d7345fe746407125c8d11c602f29c06223fb248858705223
-Minor Pulses,Andhra Pradesh,Ananthapur,BASELINE_PRODUCTION,Historical District Mean / Persistence,503.16,503.16,0.0,True,False,SUCCESS,SHA256:bd3f4a9bc3e2e790dd3c61e47c647493a1fb02e8e73108dfcd62558cdf62d530
-Maize,Andhra Pradesh,Ananthapur,BASELINE_PRODUCTION,Historical District Mean / Persistence,3707.98,3707.98,0.0,True,False,SUCCESS,SHA256:4bd8490ea96788bd912982b1d8bd56aa7022ae315c68564d5e216cd2123123f4
-Wheat,Andhra Pradesh,Ananthapur,BASELINE_PRODUCTION,Historical District Mean / Persistence,696.89,696.89,0.0,True,False,SUCCESS,SHA256:adc6f6be80e685b95aa8f26ade2fa53cfdacc5b23d5b9b6f3d33ac105bfe1b41
-Rice,Andhra Pradesh,Ananthapur,BASELINE_PRODUCTION,Historical District Mean / Persistence,2625.84,2625.84,0.0,True,False,SUCCESS,SHA256:a4cf7572f6a53e257077288bdebfff3ad95ab54ad5b533950c391875c8c096e6
-Sesamum,Andhra Pradesh,Ananthapur,BASELINE_PRODUCTION,Historical District Mean / Persistence,0.0,0.0,0.0,True,False,SUCCESS,SHA256:3b2a1d0b54f8c34155fb96aa2f49d97f3fc62eed9917cd4273810431bfc3898e
-Pigeonpea,Andhra Pradesh,Ananthapur,BASELINE_PRODUCTION,Historical District Mean / Persistence,146.33,146.33,0.0,True,False,SUCCESS,SHA256:183b9d8cd28b3bdc24645f9ae4f471769306ef9b40d2e551a7504043d4f1877a
-Rapeseed and Mustard,Andhra Pradesh,Ananthapur,BASELINE_PRODUCTION,Historical District Mean / Persistence,0.0,0.0,0.0,True,False,SUCCESS,SHA256:7af85fd3398743f366a90af66f32d159d84c48ce83274132a3a2c57ae4e7cb05
-Groundnut,Andhra Pradesh,Ananthapur,BASELINE_PRODUCTION,Historical District Mean / Persistence,436.55,436.55,0.0,True,False,SUCCESS,SHA256:49831633b4a21252727bc2e8c7e68889a0fe3c9f9ecab2d950a74911e4ea65ef
-Sorghum,Andhra Pradesh,Ananthapur,BASELINE_PRODUCTION,Historical District Mean / Persistence,532.95,532.95,0.0,True,False,SUCCESS,SHA256:d9d407bc5c38736bcb94d5b18eefec57b63ea97123a33df8ceb08cb11420f3c6
-Pearl Millet,Andhra Pradesh,Ananthapur,BASELINE_PRODUCTION,Historical District Mean / Persistence,815.38,815.38,0.0,True,False,SUCCESS,SHA256:2a05b72e56684a8a6bf200ade4b175e0abb2e0a008504701e6ada1ff3e21ee78
+Oilseeds,Andhra Pradesh,Ananthapur,PRODUCTION_READY,Historical ML (RandomForestRegressor),817.06,817.06,0.0,True,False,SUCCESS,SHA256:ab446739ffaaa45081f30937e39cbd64c82c01bc5ffe0e368f8d53b631ece29a
+Sugarcane,Andhra Pradesh,Ananthapur,CONDITIONAL_PRODUCTION,Historical ML (GradientBoostingRegressor),9469.76,9469.76,0.0,True,False,SUCCESS,SHA256:d79003c1a707e66a8dd59e7eec2868eb02548c71f967816d535fbc4043fce199
+Chickpea,Andhra Pradesh,Ananthapur,BASELINE_PRODUCTION,Historical District Mean / Persistence,610.86,610.86,0.0,True,False,SUCCESS,SHA256:75f3d8a201cdde178122aa1f3b95286607e3c1181e8f55782742a2afdb5aa4b0
+Kharif Sorghum,Andhra Pradesh,Ananthapur,BASELINE_PRODUCTION,Historical District Mean / Persistence,645.28,645.28,0.0,True,False,SUCCESS,SHA256:649bd258a71edc64e980c793427b567d1455c510a46f1c604b6764755248d1e0
+Minor Pulses,Andhra Pradesh,Ananthapur,BASELINE_PRODUCTION,Historical District Mean / Persistence,503.16,503.16,0.0,True,False,SUCCESS,SHA256:1b13eb64c1e757e5b7e82d7f5357c52b244b76dad177c14241e465fdcac010d4
+Maize,Andhra Pradesh,Ananthapur,BASELINE_PRODUCTION,Historical District Mean / Persistence,3707.98,3707.98,0.0,True,False,SUCCESS,SHA256:9eda467ff7a42cff4e24f4c08648577eb65f9c9985d3ddb132649c5580c780a1
+Wheat,Andhra Pradesh,Ananthapur,BASELINE_PRODUCTION,Historical District Mean / Persistence,696.89,696.89,0.0,True,False,SUCCESS,SHA256:569630fdbfbe8ddc63425a35a313ddc02be70d3421a7ccd150e8183cd397f93d
+Rice,Andhra Pradesh,Ananthapur,BASELINE_PRODUCTION,Historical District Mean / Persistence,2625.84,2625.84,0.0,True,False,SUCCESS,SHA256:cca7fb34e93f83f44622c88435d4eb8df1cd003d971631b98f10fa532e51fdfd
+Sesamum,Andhra Pradesh,Ananthapur,BASELINE_PRODUCTION,Historical District Mean / Persistence,0.0,0.0,0.0,True,False,SUCCESS,SHA256:edbf9063f9cfbede3a673216300d4e176f6a9e59fc6f69c158f28bd58fc5552c
+Pigeonpea,Andhra Pradesh,Ananthapur,BASELINE_PRODUCTION,Historical District Mean / Persistence,146.33,146.33,0.0,True,False,SUCCESS,SHA256:6926664d41290079ac3c196811029a9211e6ba78f54b3a37d1abca07d88e81ee
+Rapeseed and Mustard,Andhra Pradesh,Ananthapur,BASELINE_PRODUCTION,Historical District Mean / Persistence,0.0,0.0,0.0,True,False,SUCCESS,SHA256:7904b9b94a5628e20c8cf13d0ace54964a73da6f8e215d1419aff44edacec079
+Groundnut,Andhra Pradesh,Ananthapur,BASELINE_PRODUCTION,Historical District Mean / Persistence,436.55,436.55,0.0,True,False,SUCCESS,SHA256:f60619bed44c33855b3e7072ae82ca69e7f8884838d45bca4d82d64687686696
+Sorghum,Andhra Pradesh,Ananthapur,BASELINE_PRODUCTION,Historical District Mean / Persistence,532.95,532.95,0.0,True,False,SUCCESS,SHA256:bb62e35dc4ac6e9ca8c5b856d3d7ee284ab08d755c95ed620b32f95b61c40c2f
+Pearl Millet,Andhra Pradesh,Ananthapur,BASELINE_PRODUCTION,Historical District Mean / Persistence,815.38,815.38,0.0,True,False,SUCCESS,SHA256:f328360ba69af81802447e5f1fade9e4664f98577bc647065fbad3490cf39f02

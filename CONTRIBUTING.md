@@ -6,7 +6,7 @@ Thank you for your interest in contributing to the **Agricultural Intelligence P
 
 ## Code of Conduct
 
-Please be respectful, collaborative, and constructive. We adhere to standard open-source community standards to ensure a welcoming environment for everyone.
+Please be respectful, collaborative, and constructive. We adhere to the [Contributor Covenant Code of Conduct](CODE_OF_CONDUCT.md) to ensure a welcoming environment for everyone.
 
 ---
 
@@ -113,11 +113,12 @@ AI-agriculture-yield-production/
 ├── Datasets/                 # Unified longitudinal panel & metadata
 ├── Models/                   # Certified crop model pipelines & registries
 ├── tests/                    # Pytest test suite (100% passing)
-├── docs/                     # Scientific whitepapers, model cards & audit logs
 ├── Dockerfile                # Production container definition
 ├── docker-compose.yml        # Multi-container local orchestration
 ├── pyproject.toml            # Project dependencies & pytest configuration
 ├── Requirements.txt          # Python dependencies
+├── CONTRIBUTING.md           # Contribution guidelines & setup
+├── CODE_OF_CONDUCT.md        # Contributor Covenant Code of Conduct
 ├── LICENSE                   # MIT License
 └── README.md                 # Scientific & architectural platform documentation
 ```

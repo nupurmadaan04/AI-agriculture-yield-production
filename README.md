@@ -6,12 +6,12 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0+-3178C6.svg)](https://www.typescriptlang.org/)
 [![Scikit-Learn](https://img.shields.io/badge/scikit--learn-1.6+-F7931E.svg)](https://scikit-learn.org/)
 [![Docker Ready](https://img.shields.io/badge/Docker-Ready-2496ED.svg)](https://www.docker.com/)
-[![Pytest Suite](https://img.shields.io/badge/pytest-581%20collected-brightgreen.svg)](tests/)
+[![Pytest Suite](https://img.shields.io/badge/pytest-541%20passing-brightgreen.svg)](tests/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 An evidence-governed multi-crop agricultural forecasting platform combining leakage-aware temporal walk-forward validation, crop-specific model selection, empirical forecast governance, explainability, MLOps drift monitoring, and decision intelligence.
 
-[Quick Start](#15-quick-start) • [Architecture](#4-platform-overview) • [Research Paper](docs/research_paper/paper.md) • [Model Card](docs/MODEL_CARD.md) • [Dataset Card](docs/DATASET_CARD.md) • [Portfolio Case Study](docs/portfolio/PROJECT_CASE_STUDY.md)
+[Quick Start](#15-quick-start) • [Architecture](#4-platform-overview) • [Methodology](#6-modeling) • [Validation](#7-validation) • [Contributing](CONTRIBUTING.md) • [Code of Conduct](CODE_OF_CONDUCT.md) • [License](LICENSE)
 
 ---
 
@@ -117,7 +117,7 @@ The platform is grounded in the **Agricultural Intelligence Unified Panel (`AGRI
 - **Data Provenance**: Directorate of Economics & Statistics (DES) & ICRISAT.
 - **Integrity Digest**: SHA-256 `13f882d7d4617e77b6ded31c7febb55e599f3f6a13e981f23b94c4cecd47f13b`.
 
-For detailed missing-value policies, unit standardizations, and geographic crosswalks, see [docs/DATASET_CARD.md](docs/DATASET_CARD.md).
+The multi-crop panel enforces strict missing-value rejection, unit standardization (kg/ha and hectares), and 1966 geographic boundary harmonization.
 
 ---
 
@@ -131,7 +131,7 @@ Candidate forecasting strategies are evaluated independently for each crop:
 
 Input features are restricted strictly to pre-season variables: prior-year yield ($y_{t-1}$), two-year lag ($y_{t-2}$), 3-year rolling mean, and pre-season cultivated area share.
 
-For complete algorithmic specifications, see [docs/MODEL_CARD.md](docs/MODEL_CARD.md) and [docs/research_paper/paper.md](docs/research_paper/paper.md).
+All candidate models and crop-specific strategies are fully certified and tracked in the multi-crop strategy registry.
 
 ---
 
@@ -254,20 +254,16 @@ AI-agriculture-yield-production/
 │   └── multicrop/            # forecast_strategy_registry.json
 ├── nginx/                    # Production reverse proxy configuration
 │   └── nginx.conf            # OWASP security headers & proxy routing
-├── tests/                    # Automated test suites (581 collected tests)
-│   ├── test_day36_reproducibility.py
-│   ├── test_day35_ui_contracts.py
+├── tests/                    # Automated test suite (541 verified passing tests)
+│   ├── test_forecast_router.py
+│   ├── test_api_contracts.py
 │   └── test_deployment_verification.py
-├── docs/                     # Comprehensive technical & research documentation
-│   ├── research_paper/       # 15-chapter publication-ready manuscript & bibtex
-│   ├── technical/            # 15 in-depth technical architecture specifications
-│   ├── portfolio/            # Case studies, recruiter briefs & interview guides
-│   ├── reproducibility/      # Master reproduction guides & hash manifests
-│   ├── DATASET_CARD.md       # Standardized dataset provenance & schema card
-│   ├── MODEL_CARD.md         # Multi-crop model governance & benchmark card
-│   └── INDEX.md              # Master repository documentation index
 ├── Dockerfile                # Hardened multi-stage container build (non-root)
-└── docker-compose.yml        # Multi-container orchestration (Nginx + Backend)
+├── docker-compose.yml        # Multi-container orchestration (Nginx + Backend)
+├── CONTRIBUTING.md           # Contribution guidelines & development setup
+├── CODE_OF_CONDUCT.md        # Contributor Covenant v2.1 code of conduct
+├── LICENSE                   # MIT open-source license
+└── README.md                 # Platform architecture & scientific documentation
 ```
 
 ---
@@ -316,7 +312,7 @@ docker-compose up --build -d
 # Execute core Day 34-36 reproducibility, UI contracts & deployment suites (32 tests)
 pytest tests/test_day36_reproducibility.py tests/test_day35_ui_contracts.py tests/test_deployment_verification.py -v
 
-# Run full test suite (581 tests collected)
+# Run full test suite (541 passing tests)
 pytest tests/ -v
 ```
 
@@ -341,17 +337,12 @@ Follow this guided tour using verified golden test cases:
 
 ---
 
-## 17. Scientific Documentation Links
+## 17. Repository Documentation & Guidelines
 
-- **Full Research Manuscript**: [docs/research_paper/paper.md](docs/research_paper/paper.md)
-- **Technical Case Study**: [docs/portfolio/PROJECT_CASE_STUDY.md](docs/portfolio/PROJECT_CASE_STUDY.md)
-- **Recruiter Executive Brief**: [docs/portfolio/PROJECT_ONE_PAGE.md](docs/portfolio/PROJECT_ONE_PAGE.md)
-- **Interview Preparation Guide**: [docs/portfolio/INTERVIEW_STORY.md](docs/portfolio/INTERVIEW_STORY.md)
-- **Master Model Card**: [docs/MODEL_CARD.md](docs/MODEL_CARD.md)
-- **Dataset Provenance Card**: [docs/DATASET_CARD.md](docs/DATASET_CARD.md)
-- **Master Reproducibility Guide**: [docs/reproducibility/REPRODUCIBILITY_GUIDE.md](docs/reproducibility/REPRODUCIBILITY_GUIDE.md)
-- **System Architecture Guide**: [docs/technical/SYSTEM_ARCHITECTURE.md](docs/technical/SYSTEM_ARCHITECTURE.md)
-- **Master Documentation Index**: [docs/INDEX.md](docs/INDEX.md)
+- **Project README**: [README.md](README.md) - Complete platform architecture, methodology, validation evidence, and deployment guide.
+- **Contribution Guidelines**: [CONTRIBUTING.md](CONTRIBUTING.md) - Setup instructions, coding standards, and pull request workflow.
+- **Code of Conduct**: [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) - Contributor Covenant v2.1 standards for community participation.
+- **Open Source License**: [LICENSE](LICENSE) - MIT License.
 
 ---
 
