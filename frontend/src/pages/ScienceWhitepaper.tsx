@@ -77,7 +77,7 @@ export const ScienceWhitepaper: React.FC = () => {
           className="gap-2 text-xs font-bold shadow-md"
         >
           <a
-            href="https://github.com/nupurmadaan04/AI-agriculture-yield-production/blob/main/docs/research_paper/paper.md"
+            href="https://github.com/nupurmadaan04/AI-agriculture-yield-production/blob/main/docs/RESEARCH_PAPER.md"
             target="_blank"
             rel="noopener noreferrer"
           >
