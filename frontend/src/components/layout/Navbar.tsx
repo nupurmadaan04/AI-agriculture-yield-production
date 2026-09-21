@@ -41,12 +41,12 @@ interface NavGroup {
 
 const navGroups: NavGroup[] = [
   {
-    name: 'Forecast',
+    name: 'Explore',
     items: [
       {
         name: 'Prediction Explorer',
         path: '/prediction-explorer',
-        description: 'Traceable pre-season predictions with empirical baseline comparisons & XAI.',
+        description: 'Traceable pre-season predictions with empirical baseline comparisons & attribution.',
         badge: 'Explorer',
         icon: Sparkles,
       },
@@ -57,6 +57,11 @@ const navGroups: NavGroup[] = [
         badge: 'Production',
         icon: LineChart,
       },
+    ],
+  },
+  {
+    name: 'Monitor',
+    items: [
       {
         name: 'Forecast Monitoring',
         path: '/forecast-monitoring',
@@ -65,22 +70,22 @@ const navGroups: NavGroup[] = [
         icon: Activity,
       },
       {
-        name: 'Operational Intelligence',
+        name: 'Observability Center',
         path: '/observability',
         description: 'Runtime telemetry, forecast tracing, model integrity, and alert logs.',
         badge: 'Ops',
-        icon: Activity,
+        icon: ShieldCheck,
       },
       {
-        name: 'Forecast Audit & Provenance',
-        path: '/forecast',
-        description: 'Cryptographic execution logs, model artifacts, and audit trails.',
-        icon: ShieldCheck,
+        name: 'Temporal Monitoring',
+        path: '/monitoring',
+        description: 'Continuous signal surveillance, change detection, and health probes.',
+        icon: BarChart3,
       },
     ],
   },
   {
-    name: 'Decision Intelligence',
+    name: 'Decide',
     items: [
       {
         name: 'Decision Workspace',
@@ -111,42 +116,14 @@ const navGroups: NavGroup[] = [
     ],
   },
   {
-    name: 'Analytics',
+    name: 'Governance & Science',
     items: [
       {
-        name: 'Reliability & Drift',
-        path: '/model-reliability',
-        description: 'Calibration curves, covariate drift tracking, and error regimes.',
-        icon: Activity,
-      },
-      {
-        name: 'Explainable AI (XAI)',
-        path: '/explainability',
-        description: 'SHAP values, Permutation feature importance, and partial dependence.',
-        icon: Sparkles,
-      },
-      {
-        name: 'Geospatial Intelligence',
-        path: '/geospatial',
-        description: 'Pan-India district maps, agro-climatic clusters, and spatial outliers.',
-        icon: Globe2,
-      },
-      {
-        name: 'Temporal Monitoring',
-        path: '/monitoring',
-        description: 'Continuous signal surveillance, change detection, and health probes.',
-        icon: BarChart3,
-      },
-    ],
-  },
-  {
-    name: 'Data & Science',
-    items: [
-      {
-        name: 'Agricultural Data Portal',
-        path: '/portal',
-        description: '71,601 unified records across 20 Indian states and 311 districts.',
-        icon: Database,
+        name: 'Model Governance',
+        path: '/modeling-readiness',
+        description: '14-crop tournament evaluations and certified strategy registries.',
+        badge: 'Certified',
+        icon: FileCheck2,
       },
       {
         name: 'Scientific Validation',
@@ -156,16 +133,11 @@ const navGroups: NavGroup[] = [
         icon: BookOpen,
       },
       {
-        name: 'Modeling Readiness',
-        path: '/modeling-readiness',
-        description: '14-crop tournament evaluations and certified strategy registries.',
-        icon: FileCheck2,
+        name: 'Agricultural Data Portal',
+        path: '/portal',
+        description: '71,601 unified records across 20 Indian states and 311 districts.',
+        icon: Database,
       },
-    ],
-  },
-  {
-    name: 'Tools',
-    items: [
       {
         name: 'Yield Verification',
         path: '/calculator',
@@ -178,18 +150,6 @@ const navGroups: NavGroup[] = [
         description: 'Evidence-grounded agronomic assistant for query reasoning.',
         badge: 'AI',
         icon: Bot,
-      },
-      {
-        name: 'Risk Analytics',
-        path: '/intelligence',
-        description: 'Historical yield anomalies and empirical state risk profiles.',
-        icon: AlertCircle,
-      },
-      {
-        name: 'Decision Support',
-        path: '/decision-support',
-        description: 'Automated executive summaries and PDF brief generation.',
-        icon: Layers,
       },
     ],
   },
@@ -366,6 +326,9 @@ export const Navbar: React.FC = () => {
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               className="p-2 rounded-lg text-muted-foreground hover:text-foreground hover:bg-muted"
+              aria-expanded={mobileMenuOpen}
+              aria-controls="mobile-menu"
+              aria-label={mobileMenuOpen ? 'Close navigation menu' : 'Open navigation menu'}
             >
               {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
             </button>
@@ -376,7 +339,7 @@ export const Navbar: React.FC = () => {
 
       {/* Mobile Drawer Menu */}
       {mobileMenuOpen && (
-        <div className="lg:hidden border-t border-border bg-card/95 backdrop-blur-md px-4 pt-3 pb-8 space-y-4 shadow-elevated max-h-[85vh] overflow-y-auto">
+        <div id="mobile-menu" className="lg:hidden border-t border-border bg-card/95 backdrop-blur-md px-4 pt-3 pb-8 space-y-4 shadow-elevated max-h-[85vh] overflow-y-auto">
           {navGroups.map((group) => (
             <div key={group.name} className="space-y-1.5">
               <span className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground px-2">

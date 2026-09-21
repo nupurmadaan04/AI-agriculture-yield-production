@@ -123,24 +123,21 @@ export const DecisionWorkspace: React.FC = () => {
   }
 
   return (
-    <div className="min-h-screen bg-[#FBFBF9] text-[#1E293B] py-8 px-4 sm:px-6 lg:px-8 font-sans antialiased">
+    <div className="min-h-screen bg-background text-foreground py-8 px-4 sm:px-6 lg:px-8 font-sans antialiased">
       <div className="max-w-7xl mx-auto space-y-8">
 
         {/* 1. Header & Governance Invariant */}
-        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 pb-6 border-b border-emerald-900/10">
+        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 pb-6 border-b border-border/60">
           <div>
             <div className="flex items-center gap-2.5">
-              <span className="p-2 rounded-lg bg-emerald-950 text-emerald-400">
+              <span className="p-2 rounded-lg bg-primary/10 text-primary">
                 <Layers className="w-5 h-5" />
               </span>
-              <h1 className="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900">
+              <h1 className="text-2xl sm:text-3xl font-bold tracking-tight text-foreground">
                 Production Decision Workspace
               </h1>
-              <span className="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-100 text-emerald-800 border border-emerald-300">
-                Day 32 Production
-              </span>
             </div>
-            <p className="mt-1.5 text-sm text-slate-600 max-w-3xl">
+            <p className="mt-1.5 text-sm text-muted-foreground max-w-3xl">
               Inspect governed pre-season forecasts, explore what-if scenario simulations, evaluate out-of-time validation benchmarks,
               and compare quantitative trade-offs without autonomous prescriptive ranking.
             </p>
@@ -150,7 +147,7 @@ export const DecisionWorkspace: React.FC = () => {
             <button
               onClick={exportJSON}
               disabled={!workspaceData}
-              className="inline-flex items-center gap-1.5 px-3.5 py-2 text-xs font-semibold rounded-md border border-slate-300 bg-white text-slate-700 hover:bg-slate-50 transition shadow-sm disabled:opacity-50"
+              className="inline-flex items-center gap-1.5 px-3.5 py-2 text-xs font-semibold rounded-md border border-border bg-card text-foreground hover:bg-muted transition shadow-sm disabled:opacity-50"
             >
               <Download className="w-3.5 h-3.5" />
               JSON
@@ -158,7 +155,7 @@ export const DecisionWorkspace: React.FC = () => {
             <button
               onClick={exportMarkdown}
               disabled={!workspaceData}
-              className="inline-flex items-center gap-1.5 px-3.5 py-2 text-xs font-semibold rounded-md border border-slate-300 bg-white text-slate-700 hover:bg-slate-50 transition shadow-sm disabled:opacity-50"
+              className="inline-flex items-center gap-1.5 px-3.5 py-2 text-xs font-semibold rounded-md border border-border bg-card text-foreground hover:bg-muted transition shadow-sm disabled:opacity-50"
             >
               <FileText className="w-3.5 h-3.5" />
               Markdown
@@ -167,11 +164,11 @@ export const DecisionWorkspace: React.FC = () => {
         </div>
 
         {/* Non-Autonomous Decision Banner */}
-        <div className="p-3.5 rounded-lg bg-emerald-50/70 border border-emerald-200/80 text-xs text-emerald-900 flex items-start gap-2.5">
-          <Info className="w-4 h-4 text-emerald-700 shrink-0 mt-0.5" />
+        <div className="p-3.5 rounded-lg bg-primary/5 border border-primary/20 text-xs text-foreground flex items-start gap-2.5">
+          <Info className="w-4 h-4 text-primary shrink-0 mt-0.5" />
           <div className="space-y-0.5">
             <span className="font-semibold">Decision-Support Governance:</span>
-            <p className="text-emerald-800/90">
+            <p className="text-foreground/80">
               The Decision Workspace synthesizes analytical evidence to assist agricultural planners. It does not rank options as "BEST" or "RECOMMENDED".
               Scenario projections represent hypothetical mathematical simulations, not physical causal certainties.
             </p>
@@ -179,9 +176,9 @@ export const DecisionWorkspace: React.FC = () => {
         </div>
 
         {/* 2. Control Panel & Commodity Selector */}
-        <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-6 space-y-6">
+        <div className="bg-card rounded-xl border border-border shadow-sm p-6 space-y-6">
           <div className="space-y-3">
-            <label className="text-xs font-semibold uppercase tracking-wider text-slate-500">
+            <label className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
               Commodity Selection (14 Certified Agricultural Crops)
             </label>
             <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-7 gap-2">
@@ -194,8 +191,8 @@ export const DecisionWorkspace: React.FC = () => {
                     onClick={() => setSelectedCrop(c.name)}
                     className={`px-3 py-2 text-xs rounded-lg text-left transition font-medium border ${
                       isSel
-                        ? 'bg-emerald-950 text-white border-emerald-950 shadow-sm'
-                        : 'bg-slate-50 text-slate-700 border-slate-200 hover:bg-slate-100'
+                        ? 'bg-primary text-primary-foreground border-primary shadow-sm'
+                        : 'bg-muted/30 text-foreground border-border hover:bg-muted'
                     }`}
                   >
                     <div className="font-semibold truncate">{c.name}</div>
@@ -210,11 +207,11 @@ export const DecisionWorkspace: React.FC = () => {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 pt-2">
             <div>
-              <label className="block text-xs font-medium text-slate-700 mb-1">State</label>
+              <label className="block text-xs font-medium text-muted-foreground mb-1">State</label>
               <select
                 value={selectedState}
                 onChange={e => setSelectedState(e.target.value)}
-                className="w-full text-xs rounded-md border border-slate-300 py-2 px-3 bg-white focus:outline-none focus:ring-1 focus:ring-emerald-500 text-slate-800"
+                className="w-full text-xs rounded-md border border-border py-2 px-3 bg-background focus:outline-none focus:ring-1 focus:ring-primary text-foreground"
               >
                 {stateNames.map(s => (
                   <option key={s} value={s}>{s}</option>
@@ -223,25 +220,25 @@ export const DecisionWorkspace: React.FC = () => {
             </div>
 
             <div>
-              <label className="block text-xs font-medium text-slate-700 mb-1">District</label>
+              <label className="block text-xs font-medium text-muted-foreground mb-1">District</label>
               <input
                 type="text"
                 value={district}
                 onChange={e => setDistrict(e.target.value)}
                 placeholder="District (e.g. Ludhiana, Meerut)"
-                className="w-full text-xs rounded-md border border-slate-300 py-2 px-3 bg-white focus:outline-none focus:ring-1 focus:ring-emerald-500 text-slate-800"
+                className="w-full text-xs rounded-md border border-border py-2 px-3 bg-background focus:outline-none focus:ring-1 focus:ring-primary text-foreground"
               />
             </div>
 
             <div>
-              <label className="block text-xs font-medium text-slate-700 mb-1">Forecast Target Year</label>
+              <label className="block text-xs font-medium text-muted-foreground mb-1">Forecast Target Year</label>
               <input
                 type="number"
                 min={1966}
                 max={2026}
                 value={selectedYear}
                 onChange={e => setSelectedYear(parseInt(e.target.value) || 2017)}
-                className="w-full text-xs rounded-md border border-slate-300 py-2 px-3 bg-white focus:outline-none focus:ring-1 focus:ring-emerald-500 text-slate-800"
+                className="w-full text-xs rounded-md border border-border py-2 px-3 bg-background focus:outline-none focus:ring-1 focus:ring-primary text-foreground"
               />
             </div>
 
@@ -249,7 +246,7 @@ export const DecisionWorkspace: React.FC = () => {
               <button
                 onClick={handleRunAnalysis}
                 disabled={isLoading}
-                className="w-full inline-flex items-center justify-center gap-2 py-2 px-4 rounded-md text-xs font-semibold text-white bg-emerald-800 hover:bg-emerald-900 transition shadow disabled:opacity-50"
+                className="w-full inline-flex items-center justify-center gap-2 py-2 px-4 rounded-md text-xs font-semibold text-white bg-primary hover:bg-primary/90 transition shadow disabled:opacity-50"
               >
                 {isLoading ? (
                   <>
@@ -268,8 +265,8 @@ export const DecisionWorkspace: React.FC = () => {
         </div>
 
         {errorMsg && (
-          <div className="p-4 rounded-lg bg-rose-50 border border-rose-200 text-xs text-rose-800 flex items-center gap-2">
-            <AlertCircle className="w-4 h-4 text-rose-600 shrink-0" />
+          <div className="p-4 rounded-lg bg-destructive/5 border border-destructive/20 text-xs text-destructive flex items-center gap-2">
+            <AlertCircle className="w-4 h-4 text-destructive shrink-0" />
             <span>{errorMsg}</span>
           </div>
         )}
@@ -282,9 +279,9 @@ export const DecisionWorkspace: React.FC = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
 
               {/* Card 1: Governed Baseline Forecast */}
-              <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-5 space-y-4">
+              <div className="bg-card rounded-xl border border-border shadow-sm p-5 space-y-4">
                 <div className="flex items-center justify-between">
-                  <span className="text-xs font-semibold text-slate-500 uppercase tracking-wider">
+                  <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">
                     Governed Baseline Forecast
                   </span>
                   <span className="px-2 py-0.5 rounded text-[10px] font-semibold bg-emerald-100 text-emerald-800">
@@ -293,42 +290,42 @@ export const DecisionWorkspace: React.FC = () => {
                 </div>
 
                 <div className="flex items-baseline gap-2">
-                  <span className="text-3xl font-bold tracking-tight text-slate-900">
+                  <span className="text-3xl font-bold tracking-tight text-foreground">
                     {workspaceData.baseline_forecast.forecast_yield_kg_ha.toLocaleString()}
                   </span>
-                  <span className="text-xs text-slate-500 font-medium">kg/ha</span>
+                  <span className="text-xs text-muted-foreground font-medium">kg/ha</span>
                 </div>
 
-                <div className="space-y-1.5 text-xs text-slate-600 pt-2 border-t border-slate-100">
+                <div className="space-y-1.5 text-xs text-muted-foreground pt-2 border-t border-border/50">
                   <div className="flex justify-between">
-                    <span className="text-slate-500">Strategy:</span>
-                    <span className="font-medium text-slate-800 truncate max-w-[180px]" title={workspaceData.baseline_forecast.strategy}>
+                    <span className="text-muted-foreground">Strategy:</span>
+                    <span className="font-medium text-foreground truncate max-w-[180px]" title={workspaceData.baseline_forecast.strategy}>
                       {workspaceData.baseline_forecast.strategy}
                     </span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-slate-500">Certification:</span>
-                    <span className="font-semibold text-emerald-800">
+                    <span className="text-muted-foreground">Certification:</span>
+                    <span className="font-semibold text-primary">
                       {workspaceData.baseline_forecast.certification_status}
                     </span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-slate-500">Model Artifact:</span>
-                    <span className="font-medium text-slate-700">
+                    <span className="text-muted-foreground">Model Artifact:</span>
+                    <span className="font-medium text-foreground">
                       {workspaceData.baseline_forecast.model_name}
                     </span>
                   </div>
                 </div>
 
-                <div className="pt-2 border-t border-slate-100 text-[11px] text-slate-400 font-mono truncate">
+                <div className="pt-2 border-t border-border/50 text-[11px] text-muted-foreground font-mono truncate">
                   SHA: {workspaceData.baseline_forecast.provenance_hash}
                 </div>
               </div>
 
               {/* Card 2: Historical Context & Trajectory */}
-              <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-5 space-y-4">
+              <div className="bg-card rounded-xl border border-border shadow-sm p-5 space-y-4">
                 <div className="flex items-center justify-between">
-                  <span className="text-xs font-semibold text-slate-500 uppercase tracking-wider">
+                  <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">
                     Historical Benchmark
                   </span>
                   <span className="px-2 py-0.5 rounded text-[10px] font-semibold bg-amber-100 text-amber-800">
@@ -337,42 +334,42 @@ export const DecisionWorkspace: React.FC = () => {
                 </div>
 
                 <div className="flex items-baseline gap-2">
-                  <span className="text-3xl font-bold tracking-tight text-slate-900">
+                  <span className="text-3xl font-bold tracking-tight text-foreground">
                     {workspaceData.historical_context.historical_mean_yield_kg_ha.toLocaleString()}
                   </span>
-                  <span className="text-xs text-slate-500 font-medium">kg/ha (Mean)</span>
+                  <span className="text-xs text-muted-foreground font-medium">kg/ha (Mean)</span>
                 </div>
 
-                <div className="space-y-1.5 text-xs text-slate-600 pt-2 border-t border-slate-100">
+                <div className="space-y-1.5 text-xs text-muted-foreground pt-2 border-t border-border/50">
                   <div className="flex justify-between">
-                    <span className="text-slate-500">Historical Window:</span>
-                    <span className="font-medium text-slate-800">
+                    <span className="text-muted-foreground">Historical Window:</span>
+                    <span className="font-medium text-foreground">
                       {workspaceData.historical_context.historical_period} ({workspaceData.historical_context.sample_count} pts)
                     </span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-slate-500">Observed Spread:</span>
-                    <span className="font-medium text-slate-800">
+                    <span className="text-muted-foreground">Observed Spread:</span>
+                    <span className="font-medium text-foreground">
                       {workspaceData.historical_context.historical_min_yield_kg_ha} – {workspaceData.historical_context.historical_max_yield_kg_ha} kg/ha
                     </span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-slate-500">Trajectory Slope:</span>
+                    <span className="text-muted-foreground">Trajectory Slope:</span>
                     <span className={`font-semibold ${workspaceData.historical_context.trend_slope_kg_ha_yr >= 0 ? 'text-emerald-700' : 'text-rose-700'}`}>
                       {workspaceData.historical_context.trend_slope_kg_ha_yr > 0 ? '+' : ''}{workspaceData.historical_context.trend_slope_kg_ha_yr} kg/ha/yr
                     </span>
                   </div>
                 </div>
 
-                <div className="pt-2 border-t border-slate-100 text-[11px] text-slate-500">
+                <div className="pt-2 border-t border-slate-100 text-[11px] text-muted-foreground">
                   Temporal boundary isolated strictly to observations &lt; {workspaceData.forecast_year}
                 </div>
               </div>
 
               {/* Card 3: Validation & Empirical Uncertainty */}
-              <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-5 space-y-4">
+              <div className="bg-card rounded-xl border border-border shadow-sm p-5 space-y-4">
                 <div className="flex items-center justify-between">
-                  <span className="text-xs font-semibold text-slate-500 uppercase tracking-wider">
+                  <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">
                     Validation & Uncertainty
                   </span>
                   <span className="px-2 py-0.5 rounded text-[10px] font-semibold bg-teal-100 text-teal-800">
@@ -381,50 +378,50 @@ export const DecisionWorkspace: React.FC = () => {
                 </div>
 
                 <div className="flex items-baseline gap-2">
-                  <span className="text-3xl font-bold tracking-tight text-slate-900">
+                  <span className="text-3xl font-bold tracking-tight text-foreground">
                     {workspaceData.validation.mae_kg_ha}
                   </span>
-                  <span className="text-xs text-slate-500 font-medium">kg/ha (Test MAE)</span>
+                  <span className="text-xs text-muted-foreground font-medium">kg/ha (Test MAE)</span>
                 </div>
 
-                <div className="space-y-1.5 text-xs text-slate-600 pt-2 border-t border-slate-100">
+                <div className="space-y-1.5 text-xs text-muted-foreground pt-2 border-t border-border/50">
                   <div className="flex justify-between">
-                    <span className="text-slate-500">Fold Win Rate:</span>
-                    <span className="font-semibold text-emerald-800">
+                    <span className="text-muted-foreground">Fold Win Rate:</span>
+                    <span className="font-semibold text-primary">
                       {workspaceData.validation.fold_win_rate_pct}% vs baseline
                     </span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-slate-500">Ensemble Dispersion:</span>
-                    <span className="font-medium text-slate-800">
+                    <span className="text-muted-foreground">Ensemble Dispersion:</span>
+                    <span className="font-medium text-foreground">
                       {workspaceData.uncertainty.is_available
                         ? `±${((workspaceData.uncertainty.ensemble_spread_kg_ha || 0) / 2).toFixed(1)} kg/ha (P10–P90)`
                         : 'Unavailable (Deterministic Baseline)'}
                     </span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-slate-500">Validation Protocol:</span>
-                    <span className="font-medium text-slate-700">
+                    <span className="text-muted-foreground">Validation Protocol:</span>
+                    <span className="font-medium text-foreground">
                       {workspaceData.validation.validation_protocol}
                     </span>
                   </div>
                 </div>
 
-                <div className="pt-2 border-t border-slate-100 text-[11px] text-slate-500 italic">
+                <div className="pt-2 border-t border-slate-100 text-[11px] text-muted-foreground italic">
                   {workspaceData.uncertainty.disclaimer}
                 </div>
               </div>
             </div>
 
             {/* 4. What-If Scenario Simulator & Interactive Controls */}
-            <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-6 space-y-5">
+            <div className="bg-card rounded-xl border border-border shadow-sm p-6 space-y-5">
               <div className="flex items-center justify-between">
                 <div>
-                  <h3 className="text-base font-bold text-slate-900 flex items-center gap-2">
+                  <h3 className="text-base font-bold text-foreground flex items-center gap-2">
                     <Sliders className="w-4 h-4 text-emerald-700" />
                     What-If Scenario Simulation
                   </h3>
-                  <p className="text-xs text-slate-500 mt-0.5">
+                  <p className="text-xs text-muted-foreground mt-0.5">
                     Test counterfactual assumptions by perturbing input acreage allocation or historical yield anchors.
                   </p>
                 </div>
@@ -436,18 +433,18 @@ export const DecisionWorkspace: React.FC = () => {
                     onChange={e => setIncludeCustom(e.target.checked)}
                     className="rounded text-emerald-700 focus:ring-emerald-500"
                   />
-                  <label htmlFor="enable-custom" className="font-medium text-slate-700 cursor-pointer">
+                  <label htmlFor="enable-custom" className="font-medium text-foreground cursor-pointer">
                     Enable Custom Perturbation
                   </label>
                 </div>
               </div>
 
               {includeCustom && (
-                <div className="p-4 rounded-lg bg-slate-50 border border-slate-200 grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="p-4 rounded-lg bg-muted/30 border border-border grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-1.5">
                     <div className="flex justify-between text-xs font-medium">
-                      <span className="text-slate-700">Acreage Allocation Perturbation:</span>
-                      <span className="text-emerald-800 font-bold">{areaDelta > 0 ? `+${areaDelta}%` : `${areaDelta}%`}</span>
+                      <span className="text-foreground">Acreage Allocation Perturbation:</span>
+                      <span className="text-primary font-bold">{areaDelta > 0 ? `+${areaDelta}%` : `${areaDelta}%`}</span>
                     </div>
                     <input
                       type="range"
@@ -456,7 +453,7 @@ export const DecisionWorkspace: React.FC = () => {
                       step={1}
                       value={areaDelta}
                       onChange={e => setAreaDelta(parseInt(e.target.value))}
-                      className="w-full h-1.5 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-emerald-800"
+                      className="w-full h-1.5 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-primary"
                     />
                     <div className="flex justify-between text-[10px] text-slate-400">
                       <span>-30%</span>
@@ -467,8 +464,8 @@ export const DecisionWorkspace: React.FC = () => {
 
                   <div className="space-y-1.5">
                     <div className="flex justify-between text-xs font-medium">
-                      <span className="text-slate-700">Historical Yield Lag Perturbation:</span>
-                      <span className="text-emerald-800 font-bold">{lagDelta > 0 ? `+${lagDelta}%` : `${lagDelta}%`}</span>
+                      <span className="text-foreground">Historical Yield Lag Perturbation:</span>
+                      <span className="text-primary font-bold">{lagDelta > 0 ? `+${lagDelta}%` : `${lagDelta}%`}</span>
                     </div>
                     <input
                       type="range"
@@ -477,7 +474,7 @@ export const DecisionWorkspace: React.FC = () => {
                       step={1}
                       value={lagDelta}
                       onChange={e => setLagDelta(parseInt(e.target.value))}
-                      className="w-full h-1.5 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-emerald-800"
+                      className="w-full h-1.5 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-primary"
                     />
                     <div className="flex justify-between text-[10px] text-slate-400">
                       <span>-30%</span>
@@ -490,61 +487,61 @@ export const DecisionWorkspace: React.FC = () => {
             </div>
 
             {/* 5. Side-by-Side Scenario Comparison Matrix */}
-            <div className="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden">
-              <div className="p-5 border-b border-slate-100 bg-slate-50/50 flex items-center justify-between">
+            <div className="bg-card rounded-xl border border-border shadow-sm overflow-hidden">
+              <div className="p-5 border-b border-border/50 bg-muted/20 flex items-center justify-between">
                 <div>
-                  <h3 className="text-base font-bold text-slate-900 flex items-center gap-2">
+                  <h3 className="text-base font-bold text-foreground flex items-center gap-2">
                     <Scale className="w-4 h-4 text-emerald-700" />
                     Scenario Comparison Matrix
                   </h3>
-                  <p className="text-xs text-slate-500 mt-0.5">
+                  <p className="text-xs text-muted-foreground mt-0.5">
                     Quantitative differences across simulated archetypes. Scenarios are not ranked or prescribed.
                   </p>
                 </div>
-                <span className="px-2.5 py-1 rounded text-xs font-semibold bg-slate-200 text-slate-700">
+                <span className="px-2.5 py-1 rounded text-xs font-semibold bg-slate-200 text-foreground">
                   {workspaceData.scenarios.length + 1} Columns
                 </span>
               </div>
 
               <div className="overflow-x-auto">
                 <table className="w-full text-xs text-left">
-                  <thead className="bg-slate-100/75 text-slate-700 border-b border-slate-200 font-semibold">
+                  <thead className="bg-slate-100/75 text-foreground border-b border-slate-200 font-semibold">
                     <tr>
                       <th className="py-3 px-4 w-1/4">Evaluation Dimension</th>
-                      <th className="py-3 px-4 bg-emerald-50/50 border-r border-slate-200 text-emerald-950">
+                      <th className="py-3 px-4 bg-primary/5 border-r border-border text-primary">
                         Baseline (Governed)
                       </th>
                       {workspaceData.scenarios.map(s => (
-                        <th key={s.scenario_id} className="py-3 px-4 text-slate-800">
+                        <th key={s.scenario_id} className="py-3 px-4 text-foreground">
                           {s.scenario_name}
                         </th>
                       ))}
                     </tr>
                   </thead>
-                  <tbody className="divide-y divide-slate-100 text-slate-600">
+                  <tbody className="divide-y divide-border/50 text-muted-foreground">
 
                     {/* Row 1: Output Yield */}
-                    <tr className="hover:bg-slate-50/80">
-                      <td className="py-3 px-4 font-semibold text-slate-800">Projected Yield (kg/ha)</td>
-                      <td className="py-3 px-4 font-bold text-emerald-950 bg-emerald-50/30 border-r border-slate-200">
+                    <tr className="hover:bg-muted/20">
+                      <td className="py-3 px-4 font-semibold text-foreground">Projected Yield (kg/ha)</td>
+                      <td className="py-3 px-4 font-bold text-primary bg-primary/5 border-r border-border">
                         {workspaceData.baseline_forecast.forecast_yield_kg_ha.toFixed(1)}
                       </td>
                       {workspaceData.scenarios.map(s => (
-                        <td key={s.scenario_id} className="py-3 px-4 font-semibold text-slate-900">
+                        <td key={s.scenario_id} className="py-3 px-4 font-semibold text-foreground">
                           {s.scenario_output_kg_ha.toFixed(1)}
                         </td>
                       ))}
                     </tr>
 
                     {/* Row 2: Delta vs Baseline */}
-                    <tr className="hover:bg-slate-50/80">
-                      <td className="py-3 px-4 font-semibold text-slate-800">Yield Delta vs Baseline (kg/ha)</td>
-                      <td className="py-3 px-4 font-mono text-slate-500 bg-emerald-50/30 border-r border-slate-200">
+                    <tr className="hover:bg-muted/20">
+                      <td className="py-3 px-4 font-semibold text-foreground">Yield Delta vs Baseline (kg/ha)</td>
+                      <td className="py-3 px-4 font-mono text-muted-foreground bg-emerald-50/30 border-r border-slate-200">
                         0.0
                       </td>
                       {workspaceData.scenarios.map(s => (
                         <td key={s.scenario_id} className="py-3 px-4 font-mono font-semibold">
-                          <span className={s.yield_delta_kg_ha > 0 ? 'text-emerald-700' : s.yield_delta_kg_ha < 0 ? 'text-rose-700' : 'text-slate-600'}>
+                          <span className={s.yield_delta_kg_ha > 0 ? 'text-emerald-700' : s.yield_delta_kg_ha < 0 ? 'text-rose-700' : 'text-muted-foreground'}>
                             {s.yield_delta_kg_ha > 0 ? `+${s.yield_delta_kg_ha.toFixed(1)}` : s.yield_delta_kg_ha.toFixed(1)}
                           </span>
                         </td>
@@ -552,14 +549,14 @@ export const DecisionWorkspace: React.FC = () => {
                     </tr>
 
                     {/* Row 3: Relative Change */}
-                    <tr className="hover:bg-slate-50/80">
-                      <td className="py-3 px-4 font-semibold text-slate-800">Relative Change (%)</td>
-                      <td className="py-3 px-4 font-mono text-slate-500 bg-emerald-50/30 border-r border-slate-200">
+                    <tr className="hover:bg-muted/20">
+                      <td className="py-3 px-4 font-semibold text-foreground">Relative Change (%)</td>
+                      <td className="py-3 px-4 font-mono text-muted-foreground bg-emerald-50/30 border-r border-slate-200">
                         0.0%
                       </td>
                       {workspaceData.scenarios.map(s => (
                         <td key={s.scenario_id} className="py-3 px-4 font-mono font-semibold">
-                          <span className={s.yield_percent_change > 0 ? 'text-emerald-700' : s.yield_percent_change < 0 ? 'text-rose-700' : 'text-slate-600'}>
+                          <span className={s.yield_percent_change > 0 ? 'text-emerald-700' : s.yield_percent_change < 0 ? 'text-rose-700' : 'text-muted-foreground'}>
                             {s.yield_percent_change > 0 ? `+${s.yield_percent_change.toFixed(2)}%` : `${s.yield_percent_change.toFixed(2)}%`}
                           </span>
                         </td>
@@ -567,36 +564,36 @@ export const DecisionWorkspace: React.FC = () => {
                     </tr>
 
                     {/* Row 4: Uncertainty */}
-                    <tr className="hover:bg-slate-50/80">
-                      <td className="py-3 px-4 font-semibold text-slate-800">Uncertainty Bounds</td>
-                      <td className="py-3 px-4 text-slate-700 bg-emerald-50/30 border-r border-slate-200">
+                    <tr className="hover:bg-muted/20">
+                      <td className="py-3 px-4 font-semibold text-foreground">Uncertainty Bounds</td>
+                      <td className="py-3 px-4 text-foreground bg-emerald-50/30 border-r border-slate-200">
                         {workspaceData.uncertainty.is_available
                           ? `±${((workspaceData.uncertainty.ensemble_spread_kg_ha || 0) / 2).toFixed(1)} kg/ha (Tree P10–P90)`
                           : 'Not Available (Deterministic)'}
                       </td>
                       {workspaceData.scenarios.map(s => (
-                        <td key={s.scenario_id} className="py-3 px-4 text-slate-600">
+                        <td key={s.scenario_id} className="py-3 px-4 text-muted-foreground">
                           {s.uncertainty_note}
                         </td>
                       ))}
                     </tr>
 
                     {/* Row 5: Assumptions */}
-                    <tr className="hover:bg-slate-50/80">
-                      <td className="py-3 px-4 font-semibold text-slate-800">Simulation Assumption</td>
-                      <td className="py-3 px-4 text-slate-600 bg-emerald-50/30 border-r border-slate-200">
+                    <tr className="hover:bg-muted/20">
+                      <td className="py-3 px-4 font-semibold text-foreground">Simulation Assumption</td>
+                      <td className="py-3 px-4 text-muted-foreground bg-primary/5 border-r border-border">
                         Baseline empirical conditions (no intervention)
                       </td>
                       {workspaceData.scenarios.map(s => (
-                        <td key={s.scenario_id} className="py-3 px-4 text-slate-600">
+                        <td key={s.scenario_id} className="py-3 px-4 text-muted-foreground">
                           {s.scenario_assumption}
                         </td>
                       ))}
                     </tr>
 
                     {/* Row 6: Evidence Type */}
-                    <tr className="hover:bg-slate-50/80">
-                      <td className="py-3 px-4 font-semibold text-slate-800">Semantic Classification</td>
+                    <tr className="hover:bg-muted/20">
+                      <td className="py-3 px-4 font-semibold text-foreground">Semantic Classification</td>
                       <td className="py-3 px-4 bg-emerald-50/30 border-r border-slate-200">
                         <span className="px-2 py-0.5 rounded text-[10px] font-semibold bg-emerald-100 text-emerald-800">
                           PREDICTED
@@ -612,14 +609,14 @@ export const DecisionWorkspace: React.FC = () => {
                     </tr>
 
                     {/* Row 7: Status */}
-                    <tr className="hover:bg-slate-50/80">
-                      <td className="py-3 px-4 font-semibold text-slate-800">Operational Status</td>
-                      <td className="py-3 px-4 text-emerald-800 font-semibold bg-emerald-50/30 border-r border-slate-200">
+                    <tr className="hover:bg-muted/20">
+                      <td className="py-3 px-4 font-semibold text-foreground">Operational Status</td>
+                      <td className="py-3 px-4 text-primary font-semibold bg-primary/5 border-r border-border">
                         {workspaceData.baseline_forecast.certification_status}
                       </td>
                       {workspaceData.scenarios.map(s => (
                         <td key={s.scenario_id} className="py-3 px-4">
-                          <span className="px-2 py-0.5 rounded text-[10px] font-medium bg-slate-100 text-slate-700">
+                          <span className="px-2 py-0.5 rounded text-[10px] font-medium bg-slate-100 text-foreground">
                             {s.status}
                           </span>
                         </td>
@@ -634,9 +631,9 @@ export const DecisionWorkspace: React.FC = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 
               {/* Attribution (Tree SHAP) */}
-              <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-5 space-y-4">
+              <div className="bg-card rounded-xl border border-border shadow-sm p-5 space-y-4">
                 <div className="flex items-center justify-between">
-                  <span className="text-xs font-semibold text-slate-500 uppercase tracking-wider">
+                  <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">
                     Model Feature Attribution
                   </span>
                   <span className="px-2 py-0.5 rounded text-[10px] font-semibold bg-indigo-100 text-indigo-800">
@@ -647,7 +644,7 @@ export const DecisionWorkspace: React.FC = () => {
                 <div className="space-y-3 pt-2">
                   {workspaceData.attribution.top_features.map((feat, idx) => (
                     <div key={idx} className="space-y-1 text-xs">
-                      <div className="flex justify-between font-medium text-slate-800">
+                      <div className="flex justify-between font-medium text-foreground">
                         <span>{feat.feature_label}</span>
                         <span className="font-mono text-indigo-700">
                           {feat.importance_or_shap.toFixed(2)}
@@ -659,20 +656,20 @@ export const DecisionWorkspace: React.FC = () => {
                           style={{ width: `${Math.min(100, Math.abs(feat.importance_or_shap) * 100)}%` }}
                         />
                       </div>
-                      <p className="text-[11px] text-slate-500">{feat.interpretation}</p>
+                      <p className="text-[11px] text-muted-foreground">{feat.interpretation}</p>
                     </div>
                   ))}
                 </div>
 
-                <p className="text-[11px] text-slate-500 pt-2 border-t border-slate-100 italic">
+                <p className="text-[11px] text-muted-foreground pt-2 border-t border-slate-100 italic">
                   {workspaceData.attribution.methodology}
                 </p>
               </div>
 
               {/* Monitoring & Outcome Evaluation */}
-              <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-5 space-y-4">
+              <div className="bg-card rounded-xl border border-border shadow-sm p-5 space-y-4">
                 <div className="flex items-center justify-between">
-                  <span className="text-xs font-semibold text-slate-500 uppercase tracking-wider">
+                  <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">
                     Operational Monitoring & Outcomes
                   </span>
                   <span className="px-2 py-0.5 rounded text-[10px] font-semibold bg-rose-100 text-rose-800">
@@ -681,40 +678,40 @@ export const DecisionWorkspace: React.FC = () => {
                 </div>
 
                 <div className="space-y-2 text-xs pt-2">
-                  <div className="flex justify-between py-1 border-b border-slate-50">
-                    <span className="text-slate-600">Prediction PSI Drift:</span>
+                  <div className="flex justify-between py-1 border-b border-border/30">
+                    <span className="text-muted-foreground">Prediction PSI Drift:</span>
                     <span className={`font-mono font-semibold ${workspaceData.monitoring.overall_psi < 0.1 ? 'text-emerald-700' : 'text-amber-700'}`}>
                       {workspaceData.monitoring.overall_psi.toFixed(4)} ({workspaceData.monitoring.drift_status})
                     </span>
                   </div>
 
-                  <div className="flex justify-between py-1 border-b border-slate-50">
-                    <span className="text-slate-600">Outcome Evaluation:</span>
-                    <span className={`font-semibold ${workspaceData.monitoring.outcome_evaluation_status === 'EVALUATION_AVAILABLE' ? 'text-emerald-700' : 'text-slate-500'}`}>
+                  <div className="flex justify-between py-1 border-b border-border/30">
+                    <span className="text-muted-foreground">Outcome Evaluation:</span>
+                    <span className={`font-semibold ${workspaceData.monitoring.outcome_evaluation_status === 'EVALUATION_AVAILABLE' ? 'text-emerald-700' : 'text-muted-foreground'}`}>
                       {workspaceData.monitoring.outcome_evaluation_status}
                     </span>
                   </div>
 
                   {workspaceData.monitoring.observed_outcome_kg_ha !== null && (
-                    <div className="flex justify-between py-1 border-b border-slate-50">
-                      <span className="text-slate-600">Observed Harvest Outcome:</span>
-                      <span className="font-semibold text-slate-900">
+                    <div className="flex justify-between py-1 border-b border-border/30">
+                      <span className="text-muted-foreground">Observed Harvest Outcome:</span>
+                      <span className="font-semibold text-foreground">
                         {workspaceData.monitoring.observed_outcome_kg_ha} kg/ha (Error: {workspaceData.monitoring.forecast_error_kg_ha} kg/ha)
                       </span>
                     </div>
                   )}
 
                   <div className="flex justify-between py-1">
-                    <span className="text-slate-600">Active Operational Alerts:</span>
-                    <span className="font-medium text-slate-800">
+                    <span className="text-muted-foreground">Active Operational Alerts:</span>
+                    <span className="font-medium text-foreground">
                       {workspaceData.monitoring.active_alerts.length === 0 ? 'None (Clean)' : `${workspaceData.monitoring.active_alerts.length} active`}
                     </span>
                   </div>
                 </div>
 
-                <div className="p-3 rounded bg-slate-50 border border-slate-200/80 text-[11px] text-slate-600">
-                  <span className="font-semibold text-slate-800">Cryptographic Lineage:</span>
-                  <div className="font-mono text-[10px] text-slate-500 truncate mt-0.5">
+                <div className="p-3 rounded bg-slate-50 border border-slate-200/80 text-[11px] text-muted-foreground">
+                  <span className="font-semibold text-foreground">Cryptographic Lineage:</span>
+                  <div className="font-mono text-[10px] text-muted-foreground truncate mt-0.5">
                     Ref: {workspaceData.provenance.audit_reference} | SHA: {workspaceData.provenance.prediction_fingerprint}
                   </div>
                 </div>

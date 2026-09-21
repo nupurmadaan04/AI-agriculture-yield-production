@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+﻿import React, { useState } from 'react'
 import {
   Activity,
   ShieldCheck,
@@ -69,25 +69,25 @@ export const ForecastMonitoring: React.FC = () => {
   )
 
   return (
-    <div className="min-h-screen bg-[#FDFBF7] text-[#1E293B] font-sans pb-24">
+    <div className="min-h-screen bg-background text-foreground font-sans pb-24">
       {/* ----------------------------------------------------------------- */}
       {/* 1. Header Banner */}
       {/* ----------------------------------------------------------------- */}
-      <section className="border-b border-[#E2E8F0] bg-white pt-10 pb-8 px-4 sm:px-6 lg:px-8">
+      <section className="border-b border-border bg-card pt-10 pb-8 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
             <div>
               <div className="flex items-center gap-2 mb-2">
-                <span className="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-[#2D5A27]/10 text-[#2D5A27] border border-[#2D5A27]/20 flex items-center gap-1.5">
+                <span className="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-primary/10 text-primary border border-primary/20 flex items-center gap-1.5">
                   <Activity className="w-3.5 h-3.5" />
-                  Day 30 Governance
+                  Governance Layer
                 </span>
-                <span className="text-xs text-[#64748B] font-mono">AGRI_PANEL_1.0 • Out-of-Time Evaluation</span>
+                <span className="text-xs text-muted-foreground font-mono">AGRI_PANEL_1.0 • Out-of-Time Evaluation</span>
               </div>
-              <h1 className="text-3xl font-bold tracking-tight text-[#0F172A] sm:text-4xl">
+              <h1 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
                 Forecast Monitoring & Outcome Intelligence
               </h1>
-              <p className="mt-1.5 text-base text-[#475569] max-w-3xl">
+              <p className="mt-1.5 text-base text-muted-foreground max-w-3xl">
                 Monitoring live forecast operations, prediction distributions, statistical covariate drift,
                 and leak-free post-outcome forecast accuracy.
               </p>
@@ -98,7 +98,7 @@ export const ForecastMonitoring: React.FC = () => {
                 variant="outline"
                 size="sm"
                 onClick={() => refetchSummary()}
-                className="border-[#CBD5E1] text-[#334155] hover:bg-[#F8FAFC]"
+                className="border-border text-foreground hover:bg-muted/30"
               >
                 <RefreshCw className="w-4 h-4 mr-1.5" />
                 Refresh Telemetry
@@ -107,13 +107,13 @@ export const ForecastMonitoring: React.FC = () => {
           </div>
 
           {/* Quick Filters */}
-          <div className="mt-8 flex flex-wrap items-center gap-4 pt-4 border-t border-[#F1F5F9]">
+          <div className="mt-8 flex flex-wrap items-center gap-4 pt-4 border-t border-border/60">
             <div className="flex items-center gap-2">
-              <label className="text-xs font-semibold text-[#475569] uppercase tracking-wider">Crop Filter:</label>
+              <label className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">Crop Filter:</label>
               <select
                 value={selectedCrop}
                 onChange={(e) => setSelectedCrop(e.target.value)}
-                className="bg-white border border-[#CBD5E1] rounded-lg px-3 py-1.5 text-sm font-medium text-[#1E293B] shadow-sm focus:outline-none focus:ring-2 focus:ring-[#2D5A27]"
+                className="bg-white border border-border rounded-lg px-3 py-1.5 text-sm font-medium text-foreground shadow-sm focus:outline-none focus:ring-2 focus:ring-primary"
               >
                 {cropsList.map((c) => (
                   <option key={c} value={c}>{c}</option>
@@ -122,11 +122,11 @@ export const ForecastMonitoring: React.FC = () => {
             </div>
 
             <div className="flex items-center gap-2">
-              <label className="text-xs font-semibold text-[#475569] uppercase tracking-wider">Evaluation Horizon:</label>
+              <label className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">Evaluation Horizon:</label>
               <select
                 value={selectedYear}
                 onChange={(e) => setSelectedYear(Number(e.target.value))}
-                className="bg-white border border-[#CBD5E1] rounded-lg px-3 py-1.5 text-sm font-medium text-[#1E293B] shadow-sm focus:outline-none focus:ring-2 focus:ring-[#2D5A27]"
+                className="bg-white border border-border rounded-lg px-3 py-1.5 text-sm font-medium text-foreground shadow-sm focus:outline-none focus:ring-2 focus:ring-primary"
               >
                 <option value={2017}>2017 (Observed Harvest Fold 4)</option>
                 <option value={2016}>2016 (Observed Harvest Fold 3)</option>
@@ -145,9 +145,9 @@ export const ForecastMonitoring: React.FC = () => {
         {/* ----------------------------------------------------------------- */}
         <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
           {/* Status Card */}
-          <div className="bg-white border border-[#E2E8F0] rounded-xl p-5 shadow-sm">
+          <div className="bg-white border border-border rounded-xl p-5 shadow-sm">
             <div className="flex items-center justify-between">
-              <span className="text-xs font-semibold text-[#64748B] uppercase tracking-wider">System State</span>
+              <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">System State</span>
               {summary?.monitoring_status === 'HEALTHY' ? (
                 <span className="p-1.5 rounded-lg bg-emerald-50 text-emerald-700">
                   <CheckCircle2 className="w-5 h-5" />
@@ -163,65 +163,65 @@ export const ForecastMonitoring: React.FC = () => {
               )}
             </div>
             <div className="mt-2 flex items-baseline gap-2">
-              <span className="text-2xl font-bold text-[#0F172A]">{summary?.monitoring_status || 'HEALTHY'}</span>
+              <span className="text-2xl font-bold text-foreground">{summary?.monitoring_status || 'HEALTHY'}</span>
             </div>
-            <p className="mt-2 text-xs text-[#64748B] line-clamp-2">
+            <p className="mt-2 text-xs text-muted-foreground line-clamp-2">
               {summary?.status_reason || 'All governed operations within acceptable bounds.'}
             </p>
           </div>
 
           {/* Audit Records Volume */}
-          <div className="bg-white border border-[#E2E8F0] rounded-xl p-5 shadow-sm">
+          <div className="bg-white border border-border rounded-xl p-5 shadow-sm">
             <div className="flex items-center justify-between">
-              <span className="text-xs font-semibold text-[#64748B] uppercase tracking-wider">Forecast Operations</span>
-              <span className="p-1.5 rounded-lg bg-[#2D5A27]/10 text-[#2D5A27]">
+              <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">Forecast Operations</span>
+              <span className="p-1.5 rounded-lg bg-primary/10 text-primary">
                 <FileText className="w-5 h-5" />
               </span>
             </div>
             <div className="mt-2 flex items-baseline gap-2">
-              <span className="text-2xl font-bold text-[#0F172A]">
+              <span className="text-2xl font-bold text-foreground">
                 {loadingSummary ? '...' : summary?.total_forecast_requests.toLocaleString()}
               </span>
-              <span className="text-xs text-[#64748B]">requests logged</span>
+              <span className="text-xs text-muted-foreground">requests logged</span>
             </div>
-            <div className="mt-2 flex items-center justify-between text-xs text-[#64748B]">
+            <div className="mt-2 flex items-center justify-between text-xs text-muted-foreground">
               <span className="text-emerald-700 font-medium">✓ {summary?.successful_forecasts} Success</span>
               <span className="text-amber-700 font-medium">✕ {summary?.rejected_requests} Blocked</span>
             </div>
           </div>
 
           {/* Evaluated Outcomes */}
-          <div className="bg-white border border-[#E2E8F0] rounded-xl p-5 shadow-sm">
+          <div className="bg-white border border-border rounded-xl p-5 shadow-sm">
             <div className="flex items-center justify-between">
-              <span className="text-xs font-semibold text-[#64748B] uppercase tracking-wider">Evaluated Outcomes</span>
+              <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">Evaluated Outcomes</span>
               <span className="p-1.5 rounded-lg bg-indigo-50 text-indigo-700">
                 <ShieldCheck className="w-5 h-5" />
               </span>
             </div>
             <div className="mt-2 flex items-baseline gap-2">
-              <span className="text-2xl font-bold text-[#0F172A]">
+              <span className="text-2xl font-bold text-foreground">
                 {loadingSummary ? '...' : summary?.evaluated_outcomes_count}
               </span>
-              <span className="text-xs text-[#64748B]">folds verified</span>
+              <span className="text-xs text-muted-foreground">folds verified</span>
             </div>
-            <p className="mt-2 text-xs text-[#64748B]">
+            <p className="mt-2 text-xs text-muted-foreground">
               Walk-forward test years (2014–2017) with zero future outcome leakage.
             </p>
           </div>
 
           {/* Active Alerts */}
-          <div className="bg-white border border-[#E2E8F0] rounded-xl p-5 shadow-sm">
+          <div className="bg-white border border-border rounded-xl p-5 shadow-sm">
             <div className="flex items-center justify-between">
-              <span className="text-xs font-semibold text-[#64748B] uppercase tracking-wider">Active Alerts</span>
+              <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">Active Alerts</span>
               <span className="p-1.5 rounded-lg bg-amber-50 text-amber-700">
                 <AlertTriangle className="w-5 h-5" />
               </span>
             </div>
             <div className="mt-2 flex items-baseline gap-2">
-              <span className="text-2xl font-bold text-[#0F172A]">{summary?.active_alerts_count || 0}</span>
-              <span className="text-xs text-[#64748B]">evidence signals</span>
+              <span className="text-2xl font-bold text-foreground">{summary?.active_alerts_count || 0}</span>
+              <span className="text-xs text-muted-foreground">evidence signals</span>
             </div>
-            <p className="mt-2 text-xs text-[#64748B]">
+            <p className="mt-2 text-xs text-muted-foreground">
               Covariate drift and systematic directional bias tracking.
             </p>
           </div>
@@ -230,19 +230,19 @@ export const ForecastMonitoring: React.FC = () => {
         {/* ----------------------------------------------------------------- */}
         {/* 3. Prediction Distribution vs Historical Baseline Reference */}
         {/* ----------------------------------------------------------------- */}
-        <section className="bg-white border border-[#E2E8F0] rounded-xl p-6 shadow-sm">
-          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between pb-5 border-b border-[#F1F5F9] gap-2">
+        <section className="bg-white border border-border rounded-xl p-6 shadow-sm">
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between pb-5 border-b border-border/60 gap-2">
             <div>
               <div className="flex items-center gap-2">
-                <span className="px-2 py-0.5 text-xs font-bold rounded bg-[#0284C7]/10 text-[#0284C7] uppercase">
+                <span className="px-2 py-0.5 text-xs font-bold rounded bg-sky-500/10 text-sky-600 uppercase">
                   Statistical Moments
                 </span>
-                <span className="text-xs text-[#64748B]">Semantic Classification: MONITORING</span>
+                <span className="text-xs text-muted-foreground">Semantic Classification: MONITORING</span>
               </div>
-              <h2 className="text-lg font-bold text-[#0F172A] mt-1">
+              <h2 className="text-lg font-bold text-foreground mt-1">
                 Prediction Distribution Monitoring: {selectedCrop}
               </h2>
-              <p className="text-xs text-[#64748B]">
+              <p className="text-xs text-muted-foreground">
                 Empirical distribution of live/logged predictions compared against canonical historical reference distribution (1966–2017).
               </p>
             </div>
@@ -257,87 +257,87 @@ export const ForecastMonitoring: React.FC = () => {
 
           <div className="mt-6 grid grid-cols-1 lg:grid-cols-2 gap-6">
             {/* Live Audit Prediction Moments */}
-            <div className="bg-[#F8FAFC] border border-[#E2E8F0] rounded-xl p-5">
-              <div className="flex items-center justify-between pb-3 border-b border-[#E2E8F0]">
-                <h3 className="text-sm font-bold text-[#1E293B] flex items-center gap-1.5">
-                  <Zap className="w-4 h-4 text-[#2D5A27]" />
+            <div className="bg-muted/30 border border-border rounded-xl p-5">
+              <div className="flex items-center justify-between pb-3 border-b border-border">
+                <h3 className="text-sm font-bold text-foreground flex items-center gap-1.5">
+                  <Zap className="w-4 h-4 text-primary" />
                   Live Generated Predictions
                 </h3>
-                <span className="text-xs font-mono bg-white px-2 py-0.5 rounded border border-[#CBD5E1]">
+                <span className="text-xs font-mono bg-card px-2 py-0.5 rounded border border-border">
                   N = {activeCropDist?.current_predictions.count || 0}
                 </span>
               </div>
 
               <div className="mt-4 grid grid-cols-2 sm:grid-cols-4 gap-3 text-center">
-                <div className="bg-white p-3 rounded-lg border border-[#E2E8F0]">
-                  <span className="text-[11px] text-[#64748B] block">Mean</span>
-                  <span className="text-base font-bold text-[#0F172A]">{activeCropDist?.current_predictions.mean || 0}</span>
-                  <span className="text-[10px] text-[#94A3B8] block">kg/ha</span>
+                <div className="bg-white p-3 rounded-lg border border-border">
+                  <span className="text-[11px] text-muted-foreground block">Mean</span>
+                  <span className="text-base font-bold text-foreground">{activeCropDist?.current_predictions.mean || 0}</span>
+                  <span className="text-[10px] text-muted-foreground/60 block">kg/ha</span>
                 </div>
-                <div className="bg-white p-3 rounded-lg border border-[#E2E8F0]">
-                  <span className="text-[11px] text-[#64748B] block">Median</span>
-                  <span className="text-base font-bold text-[#0F172A]">{activeCropDist?.current_predictions.median || 0}</span>
-                  <span className="text-[10px] text-[#94A3B8] block">kg/ha</span>
+                <div className="bg-white p-3 rounded-lg border border-border">
+                  <span className="text-[11px] text-muted-foreground block">Median</span>
+                  <span className="text-base font-bold text-foreground">{activeCropDist?.current_predictions.median || 0}</span>
+                  <span className="text-[10px] text-muted-foreground/60 block">kg/ha</span>
                 </div>
-                <div className="bg-white p-3 rounded-lg border border-[#E2E8F0]">
-                  <span className="text-[11px] text-[#64748B] block">Std Dev</span>
-                  <span className="text-base font-bold text-[#0F172A]">{activeCropDist?.current_predictions.std || 0}</span>
-                  <span className="text-[10px] text-[#94A3B8] block">kg/ha</span>
+                <div className="bg-white p-3 rounded-lg border border-border">
+                  <span className="text-[11px] text-muted-foreground block">Std Dev</span>
+                  <span className="text-base font-bold text-foreground">{activeCropDist?.current_predictions.std || 0}</span>
+                  <span className="text-[10px] text-muted-foreground/60 block">kg/ha</span>
                 </div>
-                <div className="bg-white p-3 rounded-lg border border-[#E2E8F0]">
-                  <span className="text-[11px] text-[#64748B] block">P10 – P90</span>
-                  <span className="text-xs font-bold text-[#0F172A] block mt-0.5">
+                <div className="bg-white p-3 rounded-lg border border-border">
+                  <span className="text-[11px] text-muted-foreground block">P10 – P90</span>
+                  <span className="text-xs font-bold text-foreground block mt-0.5">
                     {activeCropDist?.current_predictions.p10 || 0} - {activeCropDist?.current_predictions.p90 || 0}
                   </span>
-                  <span className="text-[10px] text-[#94A3B8] block">kg/ha</span>
+                  <span className="text-[10px] text-muted-foreground/60 block">kg/ha</span>
                 </div>
               </div>
 
-              <div className="mt-4 text-xs text-[#64748B] flex items-center justify-between">
-                <span>Active Strategy: <strong className="text-[#334155]">{activeCropDist?.strategy}</strong></span>
+              <div className="mt-4 text-xs text-muted-foreground flex items-center justify-between">
+                <span>Active Strategy: <strong className="text-foreground">{activeCropDist?.strategy}</strong></span>
                 <span>Min: {activeCropDist?.current_predictions.min_val} | Max: {activeCropDist?.current_predictions.max_val}</span>
               </div>
             </div>
 
             {/* Historical Reference Moments */}
-            <div className="bg-[#F8FAFC] border border-[#E2E8F0] rounded-xl p-5">
-              <div className="flex items-center justify-between pb-3 border-b border-[#E2E8F0]">
-                <h3 className="text-sm font-bold text-[#1E293B] flex items-center gap-1.5">
-                  <Calendar className="w-4 h-4 text-[#0284C7]" />
+            <div className="bg-muted/30 border border-border rounded-xl p-5">
+              <div className="flex items-center justify-between pb-3 border-b border-border">
+                <h3 className="text-sm font-bold text-foreground flex items-center gap-1.5">
+                  <Calendar className="w-4 h-4 text-sky-600" />
                   Historical Reference Baseline (1966–2017)
                 </h3>
-                <span className="text-xs font-mono bg-white px-2 py-0.5 rounded border border-[#CBD5E1]">
+                <span className="text-xs font-mono bg-card px-2 py-0.5 rounded border border-border">
                   N = {activeCropDist?.historical_reference.count.toLocaleString() || 0}
                 </span>
               </div>
 
               <div className="mt-4 grid grid-cols-2 sm:grid-cols-4 gap-3 text-center">
-                <div className="bg-white p-3 rounded-lg border border-[#E2E8F0]">
-                  <span className="text-[11px] text-[#64748B] block">Mean</span>
-                  <span className="text-base font-bold text-[#0F172A]">{activeCropDist?.historical_reference.mean || 0}</span>
-                  <span className="text-[10px] text-[#94A3B8] block">kg/ha</span>
+                <div className="bg-white p-3 rounded-lg border border-border">
+                  <span className="text-[11px] text-muted-foreground block">Mean</span>
+                  <span className="text-base font-bold text-foreground">{activeCropDist?.historical_reference.mean || 0}</span>
+                  <span className="text-[10px] text-muted-foreground/60 block">kg/ha</span>
                 </div>
-                <div className="bg-white p-3 rounded-lg border border-[#E2E8F0]">
-                  <span className="text-[11px] text-[#64748B] block">Median</span>
-                  <span className="text-base font-bold text-[#0F172A]">{activeCropDist?.historical_reference.median || 0}</span>
-                  <span className="text-[10px] text-[#94A3B8] block">kg/ha</span>
+                <div className="bg-white p-3 rounded-lg border border-border">
+                  <span className="text-[11px] text-muted-foreground block">Median</span>
+                  <span className="text-base font-bold text-foreground">{activeCropDist?.historical_reference.median || 0}</span>
+                  <span className="text-[10px] text-muted-foreground/60 block">kg/ha</span>
                 </div>
-                <div className="bg-white p-3 rounded-lg border border-[#E2E8F0]">
-                  <span className="text-[11px] text-[#64748B] block">Std Dev</span>
-                  <span className="text-base font-bold text-[#0F172A]">{activeCropDist?.historical_reference.std || 0}</span>
-                  <span className="text-[10px] text-[#94A3B8] block">kg/ha</span>
+                <div className="bg-white p-3 rounded-lg border border-border">
+                  <span className="text-[11px] text-muted-foreground block">Std Dev</span>
+                  <span className="text-base font-bold text-foreground">{activeCropDist?.historical_reference.std || 0}</span>
+                  <span className="text-[10px] text-muted-foreground/60 block">kg/ha</span>
                 </div>
-                <div className="bg-white p-3 rounded-lg border border-[#E2E8F0]">
-                  <span className="text-[11px] text-[#64748B] block">P10 – P90</span>
-                  <span className="text-xs font-bold text-[#0F172A] block mt-0.5">
+                <div className="bg-white p-3 rounded-lg border border-border">
+                  <span className="text-[11px] text-muted-foreground block">P10 – P90</span>
+                  <span className="text-xs font-bold text-foreground block mt-0.5">
                     {activeCropDist?.historical_reference.p10 || 0} - {activeCropDist?.historical_reference.p90 || 0}
                   </span>
-                  <span className="text-[10px] text-[#94A3B8] block">kg/ha</span>
+                  <span className="text-[10px] text-muted-foreground/60 block">kg/ha</span>
                 </div>
               </div>
 
-              <div className="mt-4 text-xs text-[#64748B] flex items-center justify-between">
-                <span>Dataset: <strong className="text-[#334155]">AGRI_PANEL_1.0</strong></span>
+              <div className="mt-4 text-xs text-muted-foreground flex items-center justify-between">
+                <span>Dataset: <strong className="text-foreground">AGRI_PANEL_1.0</strong></span>
                 <span>Min: {activeCropDist?.historical_reference.min_val} | Max: {activeCropDist?.historical_reference.max_val}</span>
               </div>
             </div>
@@ -347,24 +347,24 @@ export const ForecastMonitoring: React.FC = () => {
         {/* ----------------------------------------------------------------- */}
         {/* 4. Post-Outcome Evaluation (Leak-Free) */}
         {/* ----------------------------------------------------------------- */}
-        <section className="bg-white border border-[#E2E8F0] rounded-xl p-6 shadow-sm">
-          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between pb-5 border-b border-[#F1F5F9] gap-2">
+        <section className="bg-white border border-border rounded-xl p-6 shadow-sm">
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between pb-5 border-b border-border/60 gap-2">
             <div>
               <div className="flex items-center gap-2">
                 <span className="px-2 py-0.5 text-xs font-bold rounded bg-emerald-50 text-emerald-700 uppercase">
                   Strict Temporal Cutoff
                 </span>
-                <span className="text-xs text-[#64748B]">Semantic Classification: POST_OUTCOME_EVALUATION</span>
+                <span className="text-xs text-muted-foreground">Semantic Classification: POST_OUTCOME_EVALUATION</span>
               </div>
-              <h2 className="text-lg font-bold text-[#0F172A] mt-1">
+              <h2 className="text-lg font-bold text-foreground mt-1">
                 Post-Outcome Evaluation: {selectedCrop} ({selectedYear})
               </h2>
-              <p className="text-xs text-[#64748B]">
+              <p className="text-xs text-muted-foreground">
                 Evaluating frozen forecasts against observed outcomes strictly when forecast origin precedes the harvest horizon.
               </p>
             </div>
 
-            <div className="text-xs font-mono bg-[#F8FAFC] border border-[#CBD5E1] px-3 py-1.5 rounded-lg text-[#475569]">
+            <div className="text-xs font-mono bg-muted/30 border border-border px-3 py-1.5 rounded-lg text-muted-foreground">
               Boundary: forecast_origin &lt; forecast_year
             </div>
           </div>
@@ -387,68 +387,68 @@ export const ForecastMonitoring: React.FC = () => {
               {/* Summary KPIs */}
               {outcomes?.summary && (
                 <div className="grid grid-cols-2 sm:grid-cols-5 gap-4">
-                  <div className="bg-[#F8FAFC] p-4 rounded-xl border border-[#E2E8F0]">
-                    <span className="text-xs text-[#64748B] block">Walk-Forward MAE</span>
-                    <span className="text-xl font-bold text-[#0F172A]">{outcomes.summary.mae}</span>
-                    <span className="text-[10px] text-[#94A3B8] block">kg/ha</span>
+                  <div className="bg-muted/30 p-4 rounded-xl border border-border">
+                    <span className="text-xs text-muted-foreground block">Walk-Forward MAE</span>
+                    <span className="text-xl font-bold text-foreground">{outcomes.summary.mae}</span>
+                    <span className="text-[10px] text-muted-foreground/60 block">kg/ha</span>
                   </div>
-                  <div className="bg-[#F8FAFC] p-4 rounded-xl border border-[#E2E8F0]">
-                    <span className="text-xs text-[#64748B] block">RMSE</span>
-                    <span className="text-xl font-bold text-[#0F172A]">{outcomes.summary.rmse}</span>
-                    <span className="text-[10px] text-[#94A3B8] block">kg/ha</span>
+                  <div className="bg-muted/30 p-4 rounded-xl border border-border">
+                    <span className="text-xs text-muted-foreground block">RMSE</span>
+                    <span className="text-xl font-bold text-foreground">{outcomes.summary.rmse}</span>
+                    <span className="text-[10px] text-muted-foreground/60 block">kg/ha</span>
                   </div>
-                  <div className="bg-[#F8FAFC] p-4 rounded-xl border border-[#E2E8F0]">
-                    <span className="text-xs text-[#64748B] block">Median Abs Error</span>
-                    <span className="text-xl font-bold text-[#0F172A]">{outcomes.summary.median_absolute_error}</span>
-                    <span className="text-[10px] text-[#94A3B8] block">kg/ha</span>
+                  <div className="bg-muted/30 p-4 rounded-xl border border-border">
+                    <span className="text-xs text-muted-foreground block">Median Abs Error</span>
+                    <span className="text-xl font-bold text-foreground">{outcomes.summary.median_absolute_error}</span>
+                    <span className="text-[10px] text-muted-foreground/60 block">kg/ha</span>
                   </div>
-                  <div className="bg-[#F8FAFC] p-4 rounded-xl border border-[#E2E8F0]">
-                    <span className="text-xs text-[#64748B] block">Mean Signed Bias</span>
+                  <div className="bg-muted/30 p-4 rounded-xl border border-border">
+                    <span className="text-xs text-muted-foreground block">Mean Signed Bias</span>
                     <span className={`text-xl font-bold ${outcomes.summary.mean_signed_bias >= 0 ? 'text-amber-700' : 'text-blue-700'}`}>
                       {outcomes.summary.mean_signed_bias > 0 ? `+${outcomes.summary.mean_signed_bias}` : outcomes.summary.mean_signed_bias}
                     </span>
-                    <span className="text-[10px] text-[#94A3B8] block">kg/ha</span>
+                    <span className="text-[10px] text-muted-foreground/60 block">kg/ha</span>
                   </div>
-                  <div className="bg-[#F8FAFC] p-4 rounded-xl border border-[#E2E8F0]">
-                    <span className="text-xs text-[#64748B] block">Relative Error (MAPE)</span>
-                    <span className="text-xl font-bold text-[#0F172A]">{outcomes.summary.mape || 'N/A'}%</span>
-                    <span className="text-[10px] text-[#94A3B8] block">mean % deviation</span>
+                  <div className="bg-muted/30 p-4 rounded-xl border border-border">
+                    <span className="text-xs text-muted-foreground block">Relative Error (MAPE)</span>
+                    <span className="text-xl font-bold text-foreground">{outcomes.summary.mape || 'N/A'}%</span>
+                    <span className="text-[10px] text-muted-foreground/60 block">mean % deviation</span>
                   </div>
                 </div>
               )}
 
               {/* Verified Outcome Records Table */}
-              <div className="overflow-x-auto border border-[#E2E8F0] rounded-xl">
-                <table className="min-w-full divide-y divide-[#E2E8F0] text-sm">
-                  <thead className="bg-[#F8FAFC]">
+              <div className="overflow-x-auto border border-border rounded-xl">
+                <table className="min-w-full divide-y divide-border text-sm">
+                  <thead className="bg-muted/30">
                     <tr>
-                      <th className="px-4 py-3 text-left font-semibold text-[#475569]">Crop / Fold</th>
-                      <th className="px-4 py-3 text-left font-semibold text-[#475569]">Origin / Target</th>
-                      <th className="px-4 py-3 text-right font-semibold text-[#475569]">Predicted (kg/ha)</th>
-                      <th className="px-4 py-3 text-right font-semibold text-[#475569]">Observed (kg/ha)</th>
-                      <th className="px-4 py-3 text-right font-semibold text-[#475569]">Signed Error</th>
-                      <th className="px-4 py-3 text-right font-semibold text-[#475569]">Abs Error</th>
-                      <th className="px-4 py-3 text-center font-semibold text-[#475569]">Strategy</th>
-                      <th className="px-4 py-3 text-center font-semibold text-[#475569]">Status</th>
+                      <th className="px-4 py-3 text-left font-semibold text-muted-foreground">Crop / Fold</th>
+                      <th className="px-4 py-3 text-left font-semibold text-muted-foreground">Origin / Target</th>
+                      <th className="px-4 py-3 text-right font-semibold text-muted-foreground">Predicted (kg/ha)</th>
+                      <th className="px-4 py-3 text-right font-semibold text-muted-foreground">Observed (kg/ha)</th>
+                      <th className="px-4 py-3 text-right font-semibold text-muted-foreground">Signed Error</th>
+                      <th className="px-4 py-3 text-right font-semibold text-muted-foreground">Abs Error</th>
+                      <th className="px-4 py-3 text-center font-semibold text-muted-foreground">Strategy</th>
+                      <th className="px-4 py-3 text-center font-semibold text-muted-foreground">Status</th>
                     </tr>
                   </thead>
-                  <tbody className="divide-y divide-[#E2E8F0] bg-white">
+                  <tbody className="divide-y divide-border bg-card">
                     {outcomes?.records.map((rec, i) => (
-                      <tr key={i} className="hover:bg-[#F8FAFC]">
-                        <td className="px-4 py-3 font-medium text-[#0F172A]">
+                      <tr key={i} className="hover:bg-muted/30">
+                        <td className="px-4 py-3 font-medium text-foreground">
                           {rec.crop}
-                          <span className="text-xs text-[#64748B] block">{rec.district}</span>
+                          <span className="text-xs text-muted-foreground block">{rec.district}</span>
                         </td>
-                        <td className="px-4 py-3 text-xs text-[#475569] font-mono">
+                        <td className="px-4 py-3 text-xs text-muted-foreground font-mono">
                           {rec.forecast_origin} → {rec.forecast_year}
                         </td>
-                        <td className="px-4 py-3 text-right font-semibold text-[#0F172A]">{rec.predicted_yield}</td>
-                        <td className="px-4 py-3 text-right font-semibold text-[#0F172A]">{rec.observed_yield}</td>
+                        <td className="px-4 py-3 text-right font-semibold text-foreground">{rec.predicted_yield}</td>
+                        <td className="px-4 py-3 text-right font-semibold text-foreground">{rec.observed_yield}</td>
                         <td className={`px-4 py-3 text-right font-mono font-medium ${rec.signed_error >= 0 ? 'text-amber-700' : 'text-blue-700'}`}>
                           {rec.signed_error > 0 ? `+${rec.signed_error}` : rec.signed_error}
                         </td>
-                        <td className="px-4 py-3 text-right font-semibold text-[#0F172A]">{rec.absolute_error}</td>
-                        <td className="px-4 py-3 text-center text-xs font-mono text-[#64748B]">{rec.strategy}</td>
+                        <td className="px-4 py-3 text-right font-semibold text-foreground">{rec.absolute_error}</td>
+                        <td className="px-4 py-3 text-center text-xs font-mono text-muted-foreground">{rec.strategy}</td>
                         <td className="px-4 py-3 text-center">
                           <span className="px-2 py-0.5 text-[11px] font-semibold rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200">
                             {rec.evaluation_status}
@@ -466,26 +466,26 @@ export const ForecastMonitoring: React.FC = () => {
         {/* ----------------------------------------------------------------- */}
         {/* 5. Stratified Error Diagnostics & Directional Bias */}
         {/* ----------------------------------------------------------------- */}
-        <section className="bg-white border border-[#E2E8F0] rounded-xl p-6 shadow-sm">
-          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between pb-5 border-b border-[#F1F5F9] gap-2">
+        <section className="bg-white border border-border rounded-xl p-6 shadow-sm">
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between pb-5 border-b border-border/60 gap-2">
             <div>
               <div className="flex items-center gap-2">
                 <span className="px-2 py-0.5 text-xs font-bold rounded bg-purple-50 text-purple-700 uppercase">
                   Decomposition
                 </span>
-                <span className="text-xs text-[#64748B]">Semantic Classification: POST_OUTCOME_EVALUATION</span>
+                <span className="text-xs text-muted-foreground">Semantic Classification: POST_OUTCOME_EVALUATION</span>
               </div>
-              <h2 className="text-lg font-bold text-[#0F172A] mt-1">
+              <h2 className="text-lg font-bold text-foreground mt-1">
                 Stratified Error Decomposition: {selectedCrop}
               </h2>
             </div>
 
             {/* Error Tabs */}
-            <div className="flex items-center gap-1 bg-[#F1F5F9] p-1 rounded-lg">
+            <div className="flex items-center gap-1 bg-muted p-1 rounded-lg">
               <button
                 onClick={() => setErrorTab('temporal')}
                 className={`px-3 py-1.5 text-xs font-semibold rounded-md transition-colors ${
-                  errorTab === 'temporal' ? 'bg-white text-[#0F172A] shadow-sm' : 'text-[#64748B] hover:text-[#0F172A]'
+                  errorTab === 'temporal' ? 'bg-white text-foreground shadow-sm' : 'text-muted-foreground hover:text-foreground'
                 }`}
               >
                 Temporal Folds
@@ -493,7 +493,7 @@ export const ForecastMonitoring: React.FC = () => {
               <button
                 onClick={() => setErrorTab('geographic')}
                 className={`px-3 py-1.5 text-xs font-semibold rounded-md transition-colors ${
-                  errorTab === 'geographic' ? 'bg-white text-[#0F172A] shadow-sm' : 'text-[#64748B] hover:text-[#0F172A]'
+                  errorTab === 'geographic' ? 'bg-white text-foreground shadow-sm' : 'text-muted-foreground hover:text-foreground'
                 }`}
               >
                 District Slice
@@ -501,7 +501,7 @@ export const ForecastMonitoring: React.FC = () => {
               <button
                 onClick={() => setErrorTab('regimes')}
                 className={`px-3 py-1.5 text-xs font-semibold rounded-md transition-colors ${
-                  errorTab === 'regimes' ? 'bg-white text-[#0F172A] shadow-sm' : 'text-[#64748B] hover:text-[#0F172A]'
+                  errorTab === 'regimes' ? 'bg-white text-foreground shadow-sm' : 'text-muted-foreground hover:text-foreground'
                 }`}
               >
                 Yield Regimes
@@ -511,29 +511,29 @@ export const ForecastMonitoring: React.FC = () => {
 
           <div className="mt-6">
             {errorTab === 'temporal' && (
-              <div className="overflow-x-auto border border-[#E2E8F0] rounded-xl">
-                <table className="min-w-full divide-y divide-[#E2E8F0] text-sm">
-                  <thead className="bg-[#F8FAFC]">
+              <div className="overflow-x-auto border border-border rounded-xl">
+                <table className="min-w-full divide-y divide-border text-sm">
+                  <thead className="bg-muted/30">
                     <tr>
-                      <th className="px-4 py-3 text-left font-semibold text-[#475569]">Validation Year</th>
-                      <th className="px-4 py-3 text-right font-semibold text-[#475569]">Sample Size (N)</th>
-                      <th className="px-4 py-3 text-right font-semibold text-[#475569]">MAE (kg/ha)</th>
-                      <th className="px-4 py-3 text-right font-semibold text-[#475569]">RMSE (kg/ha)</th>
-                      <th className="px-4 py-3 text-right font-semibold text-[#475569]">Mean Bias</th>
-                      <th className="px-4 py-3 text-right font-semibold text-[#475569]">IQR Error (P25 - P75)</th>
+                      <th className="px-4 py-3 text-left font-semibold text-muted-foreground">Validation Year</th>
+                      <th className="px-4 py-3 text-right font-semibold text-muted-foreground">Sample Size (N)</th>
+                      <th className="px-4 py-3 text-right font-semibold text-muted-foreground">MAE (kg/ha)</th>
+                      <th className="px-4 py-3 text-right font-semibold text-muted-foreground">RMSE (kg/ha)</th>
+                      <th className="px-4 py-3 text-right font-semibold text-muted-foreground">Mean Bias</th>
+                      <th className="px-4 py-3 text-right font-semibold text-muted-foreground">IQR Error (P25 - P75)</th>
                     </tr>
                   </thead>
-                  <tbody className="divide-y divide-[#E2E8F0] bg-white">
+                  <tbody className="divide-y divide-border bg-card">
                     {errors?.temporal_breakdown.map((t) => (
-                      <tr key={t.year} className="hover:bg-[#F8FAFC]">
-                        <td className="px-4 py-3 font-semibold text-[#0F172A]">{t.year}</td>
-                        <td className="px-4 py-3 text-right text-[#64748B] font-mono">{t.evaluated_forecasts}</td>
-                        <td className="px-4 py-3 text-right font-bold text-[#0F172A]">{t.mae}</td>
-                        <td className="px-4 py-3 text-right font-semibold text-[#0F172A]">{t.rmse}</td>
+                      <tr key={t.year} className="hover:bg-muted/30">
+                        <td className="px-4 py-3 font-semibold text-foreground">{t.year}</td>
+                        <td className="px-4 py-3 text-right text-muted-foreground font-mono">{t.evaluated_forecasts}</td>
+                        <td className="px-4 py-3 text-right font-bold text-foreground">{t.mae}</td>
+                        <td className="px-4 py-3 text-right font-semibold text-foreground">{t.rmse}</td>
                         <td className={`px-4 py-3 text-right font-mono ${t.bias >= 0 ? 'text-amber-700' : 'text-blue-700'}`}>
                           {t.bias > 0 ? `+${t.bias}` : t.bias}
                         </td>
-                        <td className="px-4 py-3 text-right text-xs text-[#64748B] font-mono">{t.p25_error} – {t.p75_error}</td>
+                        <td className="px-4 py-3 text-right text-xs text-muted-foreground font-mono">{t.p25_error} – {t.p75_error}</td>
                       </tr>
                     ))}
                   </tbody>
@@ -542,26 +542,26 @@ export const ForecastMonitoring: React.FC = () => {
             )}
 
             {errorTab === 'geographic' && (
-              <div className="overflow-x-auto border border-[#E2E8F0] rounded-xl max-h-80 overflow-y-auto">
-                <table className="min-w-full divide-y divide-[#E2E8F0] text-sm">
-                  <thead className="bg-[#F8FAFC] sticky top-0">
+              <div className="overflow-x-auto border border-border rounded-xl max-h-80 overflow-y-auto">
+                <table className="min-w-full divide-y divide-border text-sm">
+                  <thead className="bg-muted/30 sticky top-0">
                     <tr>
-                      <th className="px-4 py-3 text-left font-semibold text-[#475569]">State</th>
-                      <th className="px-4 py-3 text-left font-semibold text-[#475569]">District</th>
-                      <th className="px-4 py-3 text-right font-semibold text-[#475569]">Observations</th>
-                      <th className="px-4 py-3 text-right font-semibold text-[#475569]">MAE (kg/ha)</th>
-                      <th className="px-4 py-3 text-right font-semibold text-[#475569]">RMSE (kg/ha)</th>
-                      <th className="px-4 py-3 text-right font-semibold text-[#475569]">Signed Bias</th>
+                      <th className="px-4 py-3 text-left font-semibold text-muted-foreground">State</th>
+                      <th className="px-4 py-3 text-left font-semibold text-muted-foreground">District</th>
+                      <th className="px-4 py-3 text-right font-semibold text-muted-foreground">Observations</th>
+                      <th className="px-4 py-3 text-right font-semibold text-muted-foreground">MAE (kg/ha)</th>
+                      <th className="px-4 py-3 text-right font-semibold text-muted-foreground">RMSE (kg/ha)</th>
+                      <th className="px-4 py-3 text-right font-semibold text-muted-foreground">Signed Bias</th>
                     </tr>
                   </thead>
-                  <tbody className="divide-y divide-[#E2E8F0] bg-white">
+                  <tbody className="divide-y divide-border bg-card">
                     {errors?.geographic_breakdown.map((g, i) => (
-                      <tr key={i} className="hover:bg-[#F8FAFC]">
-                        <td className="px-4 py-2.5 text-[#0F172A]">{g.state}</td>
-                        <td className="px-4 py-2.5 font-medium text-[#0F172A]">{g.district}</td>
-                        <td className="px-4 py-2.5 text-right font-mono text-xs text-[#64748B]">{g.evaluated_forecasts}</td>
-                        <td className="px-4 py-2.5 text-right font-bold text-[#0F172A]">{g.mae}</td>
-                        <td className="px-4 py-2.5 text-right text-[#475569]">{g.rmse}</td>
+                      <tr key={i} className="hover:bg-muted/30">
+                        <td className="px-4 py-2.5 text-foreground">{g.state}</td>
+                        <td className="px-4 py-2.5 font-medium text-foreground">{g.district}</td>
+                        <td className="px-4 py-2.5 text-right font-mono text-xs text-muted-foreground">{g.evaluated_forecasts}</td>
+                        <td className="px-4 py-2.5 text-right font-bold text-foreground">{g.mae}</td>
+                        <td className="px-4 py-2.5 text-right text-muted-foreground">{g.rmse}</td>
                         <td className={`px-4 py-2.5 text-right font-mono ${g.bias >= 0 ? 'text-amber-700' : 'text-blue-700'}`}>
                           {g.bias > 0 ? `+${g.bias}` : g.bias}
                         </td>
@@ -575,19 +575,19 @@ export const ForecastMonitoring: React.FC = () => {
             {errorTab === 'regimes' && (
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 {errors?.regime_breakdown.map((r) => (
-                  <div key={r.regime} className="bg-[#F8FAFC] border border-[#E2E8F0] rounded-xl p-4">
-                    <div className="flex items-center justify-between pb-2 border-b border-[#E2E8F0]">
-                      <span className="text-xs font-bold text-[#0F172A]">{r.regime} Yield Regime</span>
-                      <span className="text-xs font-mono text-[#64748B]">N={r.sample_count}</span>
+                  <div key={r.regime} className="bg-muted/30 border border-border rounded-xl p-4">
+                    <div className="flex items-center justify-between pb-2 border-b border-border">
+                      <span className="text-xs font-bold text-foreground">{r.regime} Yield Regime</span>
+                      <span className="text-xs font-mono text-muted-foreground">N={r.sample_count}</span>
                     </div>
-                    <div className="mt-3 space-y-1.5 text-xs text-[#475569]">
+                    <div className="mt-3 space-y-1.5 text-xs text-muted-foreground">
                       <div className="flex justify-between">
                         <span>MAE:</span>
-                        <strong className="text-[#0F172A]">{r.mae} kg/ha</strong>
+                        <strong className="text-foreground">{r.mae} kg/ha</strong>
                       </div>
                       <div className="flex justify-between">
                         <span>RMSE:</span>
-                        <strong className="text-[#0F172A]">{r.rmse} kg/ha</strong>
+                        <strong className="text-foreground">{r.rmse} kg/ha</strong>
                       </div>
                       <div className="flex justify-between">
                         <span>Signed Bias:</span>
@@ -604,15 +604,15 @@ export const ForecastMonitoring: React.FC = () => {
 
           {/* Directional Systematic Bias Card */}
           {activeCropBias && (
-            <div className="mt-6 p-4 rounded-xl bg-[#F8FAFC] border border-[#E2E8F0] flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+            <div className="mt-6 p-4 rounded-xl bg-muted/30 border border-border flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
               <div>
-                <span className="text-xs font-semibold text-[#64748B] uppercase">Directional Bias Assessment</span>
-                <h4 className="text-sm font-bold text-[#0F172A] mt-0.5">
+                <span className="text-xs font-semibold text-muted-foreground uppercase">Directional Bias Assessment</span>
+                <h4 className="text-sm font-bold text-foreground mt-0.5">
                   Status: {activeCropBias.bias_status} (NME = {activeCropBias.normalized_mean_error_pct}%)
                 </h4>
-                <p className="text-xs text-[#64748B] mt-0.5">{activeCropBias.bias_description}</p>
+                <p className="text-xs text-muted-foreground mt-0.5">{activeCropBias.bias_description}</p>
               </div>
-              <div className="text-xs text-[#64748B] bg-white px-3 py-1.5 rounded-lg border border-[#CBD5E1]">
+              <div className="text-xs text-muted-foreground bg-card px-3 py-1.5 rounded-lg border border-border">
                 Rule: {activeCropBias.bias_threshold_rule}
               </div>
             </div>
@@ -622,47 +622,47 @@ export const ForecastMonitoring: React.FC = () => {
         {/* ----------------------------------------------------------------- */}
         {/* 6. Covariate Drift & Distribution Shift Tracking (PSI / KS) */}
         {/* ----------------------------------------------------------------- */}
-        <section className="bg-white border border-[#E2E8F0] rounded-xl p-6 shadow-sm">
-          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between pb-5 border-b border-[#F1F5F9] gap-2">
+        <section className="bg-white border border-border rounded-xl p-6 shadow-sm">
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between pb-5 border-b border-border/60 gap-2">
             <div>
               <div className="flex items-center gap-2">
                 <span className="px-2 py-0.5 text-xs font-bold rounded bg-amber-50 text-amber-700 uppercase">
                   PSI & KS Diagnostics
                 </span>
-                <span className="text-xs text-[#64748B]">Semantic Classification: MONITORING</span>
+                <span className="text-xs text-muted-foreground">Semantic Classification: MONITORING</span>
               </div>
-              <h2 className="text-lg font-bold text-[#0F172A] mt-1">
+              <h2 className="text-lg font-bold text-foreground mt-1">
                 Statistical Feature Drift & Dataset Stability
               </h2>
-              <p className="text-xs text-[#64748B]">
+              <p className="text-xs text-muted-foreground">
                 Population Stability Index (PSI) evaluating covariate distribution shifts between reference (2010–2015) and evaluation (2016–2017) sets.
               </p>
             </div>
 
-            <div className="text-xs font-mono bg-[#F8FAFC] border border-[#CBD5E1] px-3 py-1.5 rounded-lg text-[#475569]">
+            <div className="text-xs font-mono bg-muted/30 border border-border px-3 py-1.5 rounded-lg text-muted-foreground">
               Overall State: <strong>{drift?.overall_drift_status || 'STABLE'}</strong>
             </div>
           </div>
 
-          <div className="mt-6 overflow-x-auto border border-[#E2E8F0] rounded-xl">
-            <table className="min-w-full divide-y divide-[#E2E8F0] text-sm">
-              <thead className="bg-[#F8FAFC]">
+          <div className="mt-6 overflow-x-auto border border-border rounded-xl">
+            <table className="min-w-full divide-y divide-border text-sm">
+              <thead className="bg-muted/30">
                 <tr>
-                  <th className="px-4 py-3 text-left font-semibold text-[#475569]">Monitored Feature</th>
-                  <th className="px-4 py-3 text-right font-semibold text-[#475569]">Metric</th>
-                  <th className="px-4 py-3 text-right font-semibold text-[#475569]">Observed Value</th>
-                  <th className="px-4 py-3 text-right font-semibold text-[#475569]">Threshold</th>
-                  <th className="px-4 py-3 text-center font-semibold text-[#475569]">Status</th>
-                  <th className="px-4 py-3 text-left font-semibold text-[#475569]">Windows (Ref vs Eval)</th>
+                  <th className="px-4 py-3 text-left font-semibold text-muted-foreground">Monitored Feature</th>
+                  <th className="px-4 py-3 text-right font-semibold text-muted-foreground">Metric</th>
+                  <th className="px-4 py-3 text-right font-semibold text-muted-foreground">Observed Value</th>
+                  <th className="px-4 py-3 text-right font-semibold text-muted-foreground">Threshold</th>
+                  <th className="px-4 py-3 text-center font-semibold text-muted-foreground">Status</th>
+                  <th className="px-4 py-3 text-left font-semibold text-muted-foreground">Windows (Ref vs Eval)</th>
                 </tr>
               </thead>
-              <tbody className="divide-y divide-[#E2E8F0] bg-white">
+              <tbody className="divide-y divide-border bg-card">
                 {drift?.features.map((f, i) => (
-                  <tr key={i} className="hover:bg-[#F8FAFC]">
-                    <td className="px-4 py-3 font-medium text-[#0F172A] font-mono text-xs">{f.feature_name}</td>
-                    <td className="px-4 py-3 text-right font-semibold text-[#475569]">{f.metric}</td>
-                    <td className="px-4 py-3 text-right font-bold text-[#0F172A] font-mono">{f.observed_value}</td>
-                    <td className="px-4 py-3 text-right text-xs text-[#64748B] font-mono">{f.threshold}</td>
+                  <tr key={i} className="hover:bg-muted/30">
+                    <td className="px-4 py-3 font-medium text-foreground font-mono text-xs">{f.feature_name}</td>
+                    <td className="px-4 py-3 text-right font-semibold text-muted-foreground">{f.metric}</td>
+                    <td className="px-4 py-3 text-right font-bold text-foreground font-mono">{f.observed_value}</td>
+                    <td className="px-4 py-3 text-right text-xs text-muted-foreground font-mono">{f.threshold}</td>
                     <td className="px-4 py-3 text-center">
                       <span className={`px-2.5 py-0.5 text-xs font-semibold rounded-full border ${
                         f.status === 'NO_DRIFT'
@@ -674,7 +674,7 @@ export const ForecastMonitoring: React.FC = () => {
                         {f.status}
                       </span>
                     </td>
-                    <td className="px-4 py-3 text-xs text-[#64748B]">
+                    <td className="px-4 py-3 text-xs text-muted-foreground">
                       {f.reference_window} (N={f.reference_samples}) vs {f.evaluation_window} (N={f.evaluation_samples})
                     </td>
                   </tr>
@@ -687,42 +687,42 @@ export const ForecastMonitoring: React.FC = () => {
         {/* ----------------------------------------------------------------- */}
         {/* 7. Evidence-First Monitoring Alerts */}
         {/* ----------------------------------------------------------------- */}
-        <section className="bg-white border border-[#E2E8F0] rounded-xl p-6 shadow-sm">
-          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between pb-5 border-b border-[#F1F5F9] gap-2">
+        <section className="bg-white border border-border rounded-xl p-6 shadow-sm">
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between pb-5 border-b border-border/60 gap-2">
             <div>
               <div className="flex items-center gap-2">
                 <span className="px-2 py-0.5 text-xs font-bold rounded bg-red-50 text-red-700 uppercase">
                   Evidence-First
                 </span>
-                <span className="text-xs text-[#64748B]">Semantic Classification: MONITORING</span>
+                <span className="text-xs text-muted-foreground">Semantic Classification: MONITORING</span>
               </div>
-              <h2 className="text-lg font-bold text-[#0F172A] mt-1">
+              <h2 className="text-lg font-bold text-foreground mt-1">
                 Active Operational & Statistical Alerts
               </h2>
-              <p className="text-xs text-[#64748B]">
+              <p className="text-xs text-muted-foreground">
                 Signals generated strictly from verified feature drift, directional bias diagnostics, and operational request telemetry.
               </p>
             </div>
 
-            <span className="text-xs font-mono bg-[#F8FAFC] border border-[#CBD5E1] px-3 py-1.5 rounded-lg text-[#475569]">
+            <span className="text-xs font-mono bg-muted/30 border border-border px-3 py-1.5 rounded-lg text-muted-foreground">
               Total Active: {alerts?.total_alerts || 0}
             </span>
           </div>
 
           <div className="mt-6">
             {!alerts || alerts.active_alerts.length === 0 ? (
-              <div className="p-8 text-center bg-[#F8FAFC] rounded-xl border border-[#E2E8F0]">
+              <div className="p-8 text-center bg-muted/30 rounded-xl border border-border">
                 <CheckCircle2 className="w-8 h-8 text-emerald-600 mx-auto mb-2" />
-                <h4 className="text-sm font-bold text-[#0F172A]">No Active Monitoring Alerts</h4>
-                <p className="text-xs text-[#64748B] mt-1">
+                <h4 className="text-sm font-bold text-foreground">No Active Monitoring Alerts</h4>
+                <p className="text-xs text-muted-foreground mt-1">
                   All monitored feature distributions, forecast operations, and model biases are operating within certified tolerances.
                 </p>
               </div>
             ) : (
               <div className="space-y-4">
                 {alerts.active_alerts.map((a) => (
-                  <div key={a.alert_id} className="bg-[#F8FAFC] border border-[#E2E8F0] rounded-xl p-5 hover:border-[#CBD5E1] transition-colors">
-                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 pb-3 border-b border-[#E2E8F0]">
+                  <div key={a.alert_id} className="bg-muted/30 border border-border rounded-xl p-5 hover:border-border transition-colors">
+                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 pb-3 border-b border-border">
                       <div className="flex items-center gap-2">
                         <span className={`px-2.5 py-0.5 rounded-full text-xs font-bold uppercase ${
                           a.severity === 'WARNING'
@@ -733,26 +733,26 @@ export const ForecastMonitoring: React.FC = () => {
                         }`}>
                           {a.severity}
                         </span>
-                        <span className="text-xs font-mono text-[#64748B]">{a.alert_id}</span>
-                        <span className="text-xs font-semibold text-[#1E293B]">[{a.category}] {a.signal}</span>
+                        <span className="text-xs font-mono text-muted-foreground">{a.alert_id}</span>
+                        <span className="text-xs font-semibold text-foreground">[{a.category}] {a.signal}</span>
                       </div>
-                      <span className="text-xs text-[#94A3B8] font-mono">{a.timestamp}</span>
+                      <span className="text-xs text-muted-foreground/60 font-mono">{a.timestamp}</span>
                     </div>
 
                     <div className="mt-3 grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
                       <div>
-                        <span className="text-[#64748B] block font-semibold mb-1">Evidence & Observed Metric:</span>
-                        <p className="text-[#334155]">{a.evidence}</p>
-                        <div className="mt-2 flex gap-4 text-[#64748B] font-mono">
-                          <span>Observed: <strong className="text-[#0F172A]">{a.observed_value}</strong></span>
-                          {a.threshold && <span>Threshold: <strong className="text-[#0F172A]">{a.threshold}</strong></span>}
-                          {a.sample_size && <span>Sample Size: <strong className="text-[#0F172A]">N={a.sample_size}</strong></span>}
+                        <span className="text-muted-foreground block font-semibold mb-1">Evidence & Observed Metric:</span>
+                        <p className="text-foreground">{a.evidence}</p>
+                        <div className="mt-2 flex gap-4 text-muted-foreground font-mono">
+                          <span>Observed: <strong className="text-foreground">{a.observed_value}</strong></span>
+                          {a.threshold && <span>Threshold: <strong className="text-foreground">{a.threshold}</strong></span>}
+                          {a.sample_size && <span>Sample Size: <strong className="text-foreground">N={a.sample_size}</strong></span>}
                         </div>
                       </div>
 
                       <div>
-                        <span className="text-[#64748B] block font-semibold mb-1">Recommended Platform Action:</span>
-                        <p className="text-[#334155]">{a.recommended_action}</p>
+                        <span className="text-muted-foreground block font-semibold mb-1">Recommended Platform Action:</span>
+                        <p className="text-foreground">{a.recommended_action}</p>
                       </div>
                     </div>
                   </div>

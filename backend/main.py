@@ -1,3 +1,4 @@
+import os
 import time
 import uuid
 from contextlib import asynccontextmanager
@@ -452,6 +453,7 @@ async def readiness_probe():
     components["temporal_monitoring"] = "ready"
     components["explainability_engine"] = "ready"
     components["decision_intelligence"] = "ready"
+    components["decision_workspace"] = "ready"
 
     # 6. Multi-Crop Strategy Registry & Forecast Router check
     try:
@@ -461,11 +463,13 @@ async def readiness_probe():
             components["forecast_strategy_registry"] = "ready"
             components["forecast_router"] = "ready"
         else:
-            components["forecast_strategy_registry"] = "ready"
-            components["forecast_router"] = "ready"
+            components["forecast_strategy_registry"] = "not_ready"
+            components["forecast_router"] = "not_ready"
+            is_ready = False
     except Exception:
         components["forecast_strategy_registry"] = "not_ready"
         components["forecast_router"] = "not_ready"
+        is_ready = False
 
     status_code = status.HTTP_200_OK if is_ready else status.HTTP_503_SERVICE_UNAVAILABLE
     return JSONResponse(

@@ -35,9 +35,9 @@ export const EmptyState: React.FC<{
 
 export const LoadingState: React.FC<{ message?: string }> = ({ message = "Loading agricultural intelligence..." }) => {
   return (
-    <div className="space-y-4 p-6">
+    <div className="space-y-4 p-6" role="status" aria-live="polite" aria-label={message}>
       <div className="flex items-center gap-3 text-sm text-muted-foreground">
-        <RefreshCw className="w-4 h-4 animate-spin text-primary" />
+        <RefreshCw className="w-4 h-4 animate-spin text-primary" aria-hidden="true" />
         <span>{message}</span>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
@@ -84,9 +84,9 @@ export const Breadcrumbs: React.FC = () => {
   }
 
   return (
-    <nav className="flex items-center space-x-1.5 text-xs text-muted-foreground">
+    <nav aria-label="Breadcrumb" className="flex items-center space-x-1.5 text-xs text-muted-foreground">
       <Link to="/" className="hover:text-foreground flex items-center gap-1 transition-colors">
-        <Home className="w-3.5 h-3.5" />
+        <Home className="w-3.5 h-3.5" aria-hidden="true" />
         <span>Intelligence</span>
       </Link>
       {pathnames.map((value, index) => {
@@ -95,9 +95,9 @@ export const Breadcrumbs: React.FC = () => {
 
         return (
           <React.Fragment key={to}>
-            <ChevronRight className="w-3 h-3 text-muted-foreground/50" />
+            <ChevronRight className="w-3 h-3 text-muted-foreground/50" aria-hidden="true" />
             {isLast ? (
-              <span className="font-medium text-foreground">{formatName(value)}</span>
+              <span className="font-medium text-foreground" aria-current="page">{formatName(value)}</span>
             ) : (
               <Link to={to} className="hover:text-foreground transition-colors">
                 {formatName(value)}
